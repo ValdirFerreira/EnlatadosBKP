@@ -1,0 +1,107 @@
+.container-diagnostico-propaganda {
+    .container-dados {
+        height: 307px;
+        overflow: auto;
+    }
+
+    .conteudo-linha {
+        height: 48px;
+        width: 100%;
+        background: #fefefe;
+        display: flex;
+        align-items: center;
+
+        .descricao-linha {
+            width: 300px;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 16px;
+            @media screen and (max-width: 1020px) {
+                width: 100%;
+            }
+            color: #1b212d;
+        }
+
+        .grupo-colunas {
+            width: 200px;
+
+            @media screen and (max-width: 1020px) {
+                width: inherit;
+            }
+
+            .card-coluna {
+                display: flex;
+                align-items: center;
+            }
+
+            .coluna-marca {
+                width: 69%;
+                height: 10px;
+                background: #4056b7;
+                border-radius: 2px;
+            }
+
+            .coluna-cinza {
+                width: 29%;
+                height: 10px;
+                background: #bdbdbd;
+                border-radius: 2px;
+            }
+
+            .porc-coluna {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 16px;
+                color: #6e778b;
+                padding-left: 2px;
+                padding-right: 2px;
+                min-width: 20px;
+                text-align: center;
+            }
+        }
+        .coluna-valor {
+            width: 69px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 16px;
+            color: #6e778b;
+            text-align: center;
+        }
+
+        .coluna-titulo {
+            width: 69px;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 16px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: #6e778b;
+        }
+    }
+
+    .active-line {
+        background: #f8f8fa;
+    }
+}
+
+.valor-base {
+    border: 1px solid #6e778b;
+    border-radius: 4px;
+    margin-right: 1px;
+    font-size: 10px !important;
+}
+
+.valor-sem-base {
+    border: 1px solid transparent;
+    border-radius: 4px;
+    margin-right: 1px;
+    font-size: 10px !important;
+}

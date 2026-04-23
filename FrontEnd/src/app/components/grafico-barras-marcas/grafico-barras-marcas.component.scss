@@ -1,0 +1,163 @@
+.container-barras-marcas {
+    display: flex;
+    // height: 1087px;
+    height: 995px;
+    justify-content: center;
+
+    @media screen and (max-width: 1020px) {
+        justify-content: start;
+    }
+    
+
+    .separacao-filtro {
+        height: 95px;
+    }
+
+    .coluna-descricao {
+        width: 249px;
+        height: 48px;
+        background: #fefefe;
+
+        .titulo-coluna {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 16px;
+            display: flex;
+            align-items: center;
+            color: #1b212d;
+            width: 220px;
+            height: 48px;
+        }
+    }
+
+    .cor-conteudo-barra {
+        background: #f8f8fa;
+    }
+
+    .coluna-barra {
+        width: 187px;
+        height: 48px;
+        background: #fefefe;
+
+     
+
+        .conteudo-barra-total {
+            width: 200px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .linha-divisao {
+                background: #ccd4db;
+                position: relative;
+                top: 23px;
+                height: 55px;
+                width: 1px;
+            }
+
+            .linha-divisao-branca {        
+                position: relative;
+                top: 23px;
+                height: 55px;
+                width: 1px;
+            }
+            
+        }
+
+        .conteudo-linha-positiva {
+            width: 70px;
+            display: flex;
+            border-radius: 2px;
+            align-items: center;
+            justify-content: initial;
+        }
+
+        .conteudo-linha-negativa {
+            width: 70px;
+            display: flex;
+            border-radius: 2px;
+            align-items: center;
+            justify-content: end;
+        }
+
+        .barra {
+            width: 50px;
+        }
+
+        .valor-barra {
+            height: 15px;
+            width: 18px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 16px;
+            color: #6e778b;
+            border-radius: 2px;
+            margin: 6px;
+        }
+
+        .valor-barra-sig {
+            height: 15px;
+            width: 18px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 16px;
+            color: #6e778b;
+            border: 1px solid #4056b7;
+            border-radius: 2px;
+            margin: 6px;
+            padding: 2px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .valor-info {
+            text-align: center;
+        }
+
+        .sem-valor-barra {
+            height: 15px;
+            width: 18px;
+        }
+
+        .porc-barra-positivo {
+            height: 10px;
+            background: #4056b7;
+            border-radius: 2px;
+        }
+
+        .porc-barra-negativo {
+            height: 10px;
+            background: #fefefe;
+             border: 1px solid;
+            border-radius: 2px;
+        }
+    }
+
+    .total-coluna {
+        margin: auto;
+        margin-top: 10px;
+        background: #fff;
+        width: 20px;
+        height: 20px;
+
+        .texto-total {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 20px;
+            text-align: center;
+            color: #6e778b;
+        }
+    }
+}
+
+.group-filtro-coluna {
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,248 @@
+.container-grafico {
+  // height: 380px;
+  // width: 85%; /// DEFINIR AQUI O TAMANHO PARA SETAR DIV NA ESQUERDA
+  margin: auto;
+  overflow: hidden;
+  overflow-x: auto;
+}
+
+.tabelagraficoEvolutivo,
+#areacoluna {
+  height: 100%;
+  width: 60%;
+  margin: auto;
+}
+
+.coluna1 {
+  background-color: #bfbfbf;
+  width: 10px;
+  background: #bfbfbf;
+  border-radius: 2px;
+}
+
+.coluna2 {
+  background-color: #b379cb;
+  width: 10px;
+  border: #b379cb;
+  background: #b379cb;
+  border-radius: 2px;
+}
+
+.coluna3 {
+  background-color: #7a3796;
+  width: 10px;
+  border: #7a3796;
+  border-radius: 10px;
+  background: #7a3796;
+  border-radius: 2px;
+}
+
+.bolha-resultado {
+  background: #fff;
+  border: 1px solid #eaf2ff;
+  box-sizing: border-box;
+  height: 20px;
+  min-width: 20px;
+  border-radius: 22px;
+  margin-right: 11px;
+  padding: 0 8px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 20px;
+  text-align: center;
+  color: #585656;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.seta-resultado {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 17px;
+}
+
+.div-bolha {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.div-colunas-tabela {
+  display: flex;
+  flex-direction: row;
+}
+
+.bolha-topo-grafico {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: -8px;
+  margin-left: 17px;
+}
+
+table {
+  td {
+    width: 102px;
+  }
+}
+
+.bolha-resultado-topo {
+  width: 26px;
+  height: 26px;
+  border-radius: 22px;
+  // margin-bottom: 12px;
+  background: #0fafa9;
+  border: 1px solid #e2fbd7;
+  box-sizing: border-box;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 10px;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  justify-content: center;
+  display: flex;
+}
+
+.div-texto-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 12px;
+  height: 35px;
+}
+
+.div-resultado-bottom {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  color: #1b212d;
+  color: #585656;
+}
+
+.paragrafo-valor-base {
+  margin: 0 0 0 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  color: #6e778b;
+}
+
+.div-principal-grafico-colunas {
+  height: 380px;
+  // width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  padding: 0px 0 8px 0px;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar {
+  display: inline;
+  height: 6px;
+}
+
+// .sig-negative {
+//   background-image: url(../../../assets/icones/sig-negative.svg) !important;
+//   background-repeat: no-repeat !important;
+//   width: 20px;
+//   height: 20px;
+// }
+
+// .sig-positive {
+//   background-image: url(../../../assets/icones/sig-positive.svg) !important;
+//   background-repeat: no-repeat !important;
+//   width: 20px;
+//   height: 20px;
+// }
+
+.group-filtro-coluna {
+  padding-bottom: 26px;
+}
+
+.group-filtro-marcas {
+  display: flex;
+  align-items: center;
+}
+.filtro-marcas-evolutiva {
+}
+
+.selectFiltroColunaEvolutivo,
+.selectFiltroColunaQ {
+  background: #fefefe;
+  border: 0px solid transparent;
+  box-sizing: border-box;
+  border-radius: 3px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px !important;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  color: #000000;
+  padding-bottom: 5px;
+}
+
+::ng-deep .ng-select.selectFiltroColunaEvolutivo .ng-select-container {
+  height: 40px;
+  border: 0px solid;
+  width: 190px;
+  outline: none !important;
+  margin-right: 16px;
+  @media screen and (max-width: 1020px) {
+    width: 90% !important;
+  }
+}
+
+::ng-deep .ng-select.selectFiltroColunaQ .ng-select-container {
+  height: 40px;
+  border: 0px solid;
+  width: 80px;
+  outline: none !important;
+
+  @media screen and (max-width: 1020px) {
+    width: 75px !important;
+  }
+}
+
+::ng-deep .ng-select.ng-select-focused:not(.ng-select-opened) > .ng-select-container {
+  box-shadow: none !important;
+}
+
+.coluna-sem-dados {
+  width: 10px;
+  background-color: #bfbfbf12;
+  height: 84.8%;
+}
+
+.logo-marcas-evolutivo {
+  // padding: 8px;
+  // max-width: 150px;
+  // max-height: 20px;
+  // width: auto;
+  // height: auto;
+}

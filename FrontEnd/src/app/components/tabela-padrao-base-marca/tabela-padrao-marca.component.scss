@@ -1,0 +1,199 @@
+body {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.25px;
+  color: #585656;
+}
+
+.container-tabela-principal {
+  width: 100%;
+  height: 100%;
+  overflow-x: auto;
+  position: relative;
+  max-height: 850px;
+}
+
+table {
+  position: relative;
+  border-collapse: collapse;
+}
+
+td,
+th {
+  // padding: 0.25em;
+  text-align: center;
+}
+
+thead th {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  min-width: 130px;
+  background: #f8f8f8;
+}
+
+thead th:first-child {
+  left: 0;
+  z-index: 1;
+  width: 100%;
+}
+
+tbody th {
+  position: sticky;
+  left: 0px;
+  background: #fff;
+  min-width: 120px;
+}
+
+
+.titulo {
+  background: #f8f8f8;
+}
+
+.coluna {
+  width: 120px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.desc-base
+{
+  font-size: 12px;
+  font-weight: 600;
+}
+
+
+.linha {
+  background: #ffffff;
+  border-radius: 4px;
+  height: 35px;
+  border-top: 3px solid #f8f8f8;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.25px;
+  color: #585656;
+}
+
+.primeira-coluna {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.25px;
+  color: #585656;
+}
+
+.tabela-footer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+}
+
+.mostrar {
+  margin-left: 24px;
+  margin-right: 16px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: #585656;
+}
+
+.container-pagination {
+  margin-left: auto;
+}
+
+.titulo-label {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.25px;
+  padding-top: 12px;
+}
+
+.container-titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 54px;
+  margin-bottom: 10px;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.periodo-label {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.25px;
+  color: #302525;
+}
+.container-pagination {
+  margin-left: auto;
+}
+
+::ng-deep .ngx-pagination .current {
+  padding: 0.1875rem 0.525rem !important;
+  background: #00448d !important;
+  color: #fefefe !important;
+  cursor: default !important;
+  border-radius: 5px !important;
+}
+
+
+.container-linha-drop {
+  display: flex;
+  align-items: center;
+}
+
+.group-filtro-marcas-adhoc {
+  // padding-bottom: 26px;
+  width: 190px;
+  display: flex;
+}
+
+
+.selectFiltroTabela {
+  background: #fefefe;
+  border: 0px solid transparent;
+  box-sizing: border-box;
+  border-radius: 3px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  color: #000000;
+  padding-bottom: 5px;
+}
+
+::ng-deep .ng-select.selectFiltroTabela .ng-select-container {
+  height: 40px;
+  border: 0px solid;
+  width: 190px;
+  outline: none !important;
+  @media screen and (max-width: 1020px) {
+      width: 90% !important;
+  }
+}
+
+
+::ng-deep .ng-select.ng-select-focused:not(.ng-select-opened) > .ng-select-container {
+  box-shadow: none !important;
+}

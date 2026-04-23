@@ -1,0 +1,60 @@
+<div class="container-grafico-propaganda" *ngIf="codFoto > 0">
+    <div class="row" >
+        <div class="card-propaganda" (click)="openPopup(1)">
+            <img class="img-propaganda" [src]="montaImagePropaganda(1)">
+        </div>
+
+        <div class="card-propaganda" (click)="openPopup(2)">
+            <img class="img-propaganda" [src]="montaImagePropaganda(2)">
+        </div>
+
+        <div class="card-propaganda" (click)="openPopup(3)">
+            <img class="img-propaganda" [src]="montaImagePropaganda(3)">
+        </div>
+        <div class="card-propaganda" (click)="openPopup(4)">
+            <img class="img-propaganda" [src]="montaImagePropaganda(4)">
+        </div>
+        <div class="card-propaganda" (click)="openPopup(5)">
+            <img class="img-propaganda" [src]="montaImagePropaganda(5)">
+        </div>
+        <div class="card-propaganda" (click)="openPopup(6)">
+            <img class="img-propaganda" [src]="montaImagePropaganda(6)">
+        </div>
+        <div class="card-propaganda" (click)="openPopup(7)">
+            <img class="img-propaganda" [src]="montaImagePropaganda(7)">
+        </div>
+        <div class="card-propaganda" (click)="openPopup(8)">
+            <img class="img-propaganda" [src]="montaImagePropaganda(8)">
+        </div>
+        <div class="card-propaganda" (click)="openPopup(9)">
+            <img class="img-propaganda" [src]="montaImagePropaganda(9)">
+        </div>
+        <div class="card-propaganda" (click)="openPopup(10)">
+            <img class="img-propaganda" [src]="montaImagePropaganda(10)">
+        </div>
+        <div class="card-propaganda" (click)="openPopup(11)">
+            <img class="img-propaganda" [src]="montaImagePropaganda(11)">
+        </div>
+        <div class="card-propaganda" (click)="openPopup(12)">
+            <img class="img-propaganda" [src]="montaImagePropaganda(12)">
+        </div>
+    </div>
+
+    <div class="card-textos-propaganda">
+        
+        <div *ngFor="let item of graficoComunicacaoQuadroResumo" class="texto-propaganda"> {{item.Texto}}</div>
+        <!-- <div  class="texto-propaganda"> Investimento (Quantidade de TRPs) – 306</div>
+        <div class="texto-propaganda"> Ondas em que foi avaliado – Fevereiro a Março’22</div>
+        <div class="texto-propaganda"> Período de Veiculação – 23/01/22 a 06/02/22</div>
+        <div class="texto-propaganda"> Praças: Nacional | SP | RJ | BH | POA | DF -->
+
+        </div>
+    </div>
+
+
+    <div class="popup-wrapper" id="popupWrapper">
+    <div class="popup-content">
+        <span class="close-btn" (click)="closePopup()"><img src="assets/icones/btn-close-preview.png"></span>
+        <img class="image-view" src="{{itemSelected}}">
+    </div>
+</div>

@@ -1,0 +1,1 @@
+V1|14:38:12.245 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: []Não é possível converter implicitamente tipo 'System.Net.Http.HttpRequestMessage' em 'System.Collections.IEnumerable'. Existe uma conversão explícita (há uma conversão ausente?)

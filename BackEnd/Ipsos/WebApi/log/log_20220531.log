@@ -1,0 +1,42 @@
+V1|14:14:56.649 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Referência de objeto não definida para uma instância de um objeto.
+V1|14:14:59.967 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Referência de objeto não definida para uma instância de um objeto.
+V1|14:15:00.590 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Referência de objeto não definida para uma instância de um objeto.
+V1|14:15:02.095 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Referência de objeto não definida para uma instância de um objeto.
+V1|14:15:02.570 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Referência de objeto não definida para uma instância de um objeto.
+V1|14:15:03.466 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Referência de objeto não definida para uma instância de um objeto.
+V1|14:15:03.795 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Referência de objeto não definida para uma instância de um objeto.
+V1|14:17:02.287 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: [ipsos@teste.com.br]Referência de objeto não definida para uma instância de um objeto.
+V1|14:25:07.110 == Class: DashboardThreeDataAccess      Method: CarregarGraficoComparativoExperiencia   Routine: ERROR***       Message: [ipsos@teste.com.br]Referência de objeto não definida para uma instância de um objeto.
+V1|14:25:07.571 == Class: DashboardThreeDataAccess      Method: CarregarGraficoComparativoExperiencia   Routine: ERROR***       Message: [ipsos@teste.com.br]Referência de objeto não definida para uma instância de um objeto.
+V1|14:25:07.723 == Class: DashboardThreeDataAccess      Method: CarregarGraficoComparativoExperiencia   Routine: ERROR***       Message: [ipsos@teste.com.br]Referência de objeto não definida para uma instância de um objeto.
+V1|15:05:49.496 == Class: DashBoardFourDataAccess       Method: ComparativoMarcas                       Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_FiltroMarca'. Cannot insert duplicate key in object 'dbo.tblTMP_FiltroMarca'. The duplicate key value is (1, B089EB7B-9127-4DC5-A2FE-7E6E01C6D2AB, 1, 1).
+The statement has been terminated.
+V1|17:58:04.708 == Class: DashBoardFourDataAccess       Method: ImagemEvolutiva                         Routine: ERROR***       Message: []Referência de objeto não definida para uma instância de um objeto.
+V1|17:58:57.330 == Class: DashBoardFourDataAccess       Method: ComparativoMarcas                       Routine: ERROR***       Message: []Referência de objeto não definida para uma instância de um objeto.
+V1|17:58:57.333 == Class: DashBoardFourDataAccess       Method: ImagemEvolutiva                         Routine: ERROR***       Message: []Referência de objeto não definida para uma instância de um objeto.
+V1|17:58:57.339 == Class: DashBoardFourDataAccess       Method: ImagemEvolutiva                         Routine: ERROR***       Message: []Referência de objeto não definida para uma instância de um objeto.
+V1|17:58:57.346 == Class: DashBoardFourDataAccess       Method: ImagemEvolutiva                         Routine: ERROR***       Message: []Referência de objeto não definida para uma instância de um objeto.
+V1|17:58:57.894 == Class: DashBoardFourDataAccess       Method: ImagemEvolutiva                         Routine: ERROR***       Message: []Referência de objeto não definida para uma instância de um objeto.
+V1|17:59:12.696 == Class: DashBoardFourDataAccess       Method: ComparativoMarcas                       Routine: ERROR***       Message: []Referência de objeto não definida para uma instância de um objeto.
+V1|18:28:28.415 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Divide by zero error encountered.
+The statement has been terminated.
+V1|18:28:39.671 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Divide by zero error encountered.
+The statement has been terminated.
+V1|18:28:40.926 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Divide by zero error encountered.
+The statement has been terminated.
+V1|18:28:43.978 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Divide by zero error encountered.
+The statement has been terminated.
+V1|18:28:48.253 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Divide by zero error encountered.
+The statement has been terminated.
+V1|18:28:48.333 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Divide by zero error encountered.
+The statement has been terminated.
+V1|18:28:49.671 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Divide by zero error encountered.
+The statement has been terminated.
+V1|18:28:51.811 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Divide by zero error encountered.
+The statement has been terminated.
+V1|18:28:55.349 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Divide by zero error encountered.
+The statement has been terminated.
+V1|18:28:55.809 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Divide by zero error encountered.
+The statement has been terminated.
+V1|18:28:57.415 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Divide by zero error encountered.
+The statement has been terminated.

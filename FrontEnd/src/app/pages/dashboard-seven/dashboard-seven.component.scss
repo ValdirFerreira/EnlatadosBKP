@@ -1,0 +1,56 @@
+.desc-onda-top {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #1b212d;
+    justify-content: end;
+    height: 0px;
+    position: relative;
+    top: 10px;
+    .group-filtro-coluna {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.selectFiltroColunaQ-top {
+    background: #fefefe;
+    border: 0px solid transparent;
+    box-sizing: border-box;
+    border-radius: 3px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    color: #1b212d;
+    padding-bottom: 5px;
+    font-style: normal;
+   
+}
+
+
+::ng-deep .ng-select.selectFiltroColunaQ-top .ng-select-container {
+    height: 40px;
+    border: 0px solid;
+    // width: 80px;
+    outline: none !important;
+
+    // @media screen and (max-width: 1020px) {
+    //     width: 90% !important;
+    // }
+}
+
+
+::ng-deep .ng-select.ng-select-single .ng-select-container .ng-value-container,
+::ng-deep .ng-select.ng-select-single .ng-select-container .ng-value-container .ng-value {
+    white-space: normal !important;
+    text-align: center;
+}

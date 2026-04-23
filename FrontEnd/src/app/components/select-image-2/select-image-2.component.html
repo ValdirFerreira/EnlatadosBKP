@@ -1,0 +1,8 @@
+<div class="group-filtro-image">
+  <ng-select placeholder={{descInicial}} id="tipoAtivoModel" class="selectFiltroMarcas" (change)="onGroupChanged()"
+    bindLabel="DescItem" [items]="listaMarcas" [(ngModel)]="ModelMarcas" [searchable]="false" [clearable]="false"
+    [multiple]="false" >
+  </ng-select>
+  <div class="container-logo-marca"> <img class="logo-marcas" src={{montaImageMarca()}}></div>
+
+</div>

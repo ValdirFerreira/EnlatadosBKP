@@ -1,0 +1,22 @@
+.titulo-menu-central {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  text-align: center;
+  color: #1b212d;
+  padding-top: 140px;
+
+  @media screen and (max-width: 1020px) {
+    padding-top: 0px;
+    font-size: 25px;
+  }
+}
+
+.sub-titulo-menu-central {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  color: #6e778b;
+}

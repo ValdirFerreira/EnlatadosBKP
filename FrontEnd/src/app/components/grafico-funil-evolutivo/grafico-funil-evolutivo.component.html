@@ -1,0 +1,699 @@
+<div class="container-grafico">
+
+
+    <div class="container-linha-drop">
+        <div class="group-filtro-marcas-evolutivo">
+            <ng-select placeholder={{descInicial}} [items]="filtroService.listaMarcas" id="tipoAtivoModel"
+                class="selectFiltroFunil" [(ngModel)]="ModelMarcas" (change)="onchangeMarcaGrafico(ModelMarcas)"
+                bindLabel="DescItem" [searchable]="false" [clearable]="false" [multiple]="false"></ng-select>
+            <img class="logo-marcas-evolutivo" src={{montaImageMarca()}}>
+            <!-- <img class="logo-pages" src="assets/imagePages/logo-pequeno.svg"> -->
+        </div>
+    </div>
+
+    <div>
+
+        <div class="container-base-funil-evolutivo">
+
+            <div class="container-colunas-funil">
+
+
+                <div class="container-linha-drop">
+                    <div class="group-filtro-funil-coluna1">
+                        <ng-select placeholder="N/A" id="tipoAtivoModel" class="selectFiltroFunilEvolutivo"
+                            [items]="filtroService.listaOnda" (change)="onchangeOndaColuna1(onda1)" [(ngModel)]="onda1"
+                            bindLabel="DescItem" [searchable]="false" [clearable]="false" [multiple]="false">
+                        </ng-select>
+                    </div>
+                </div>
+
+                <div class="coluna-dados">
+                    <div class="linha-dados">
+                        <div class="descricao-linha"> {{'grafico-funil-conhecimento' | translate}}</div>
+
+                        <div class="container-funil-porc">
+
+                            <div class="porc-funil"
+                                [ngStyle]="{  background: setCorGrafico() ,width: definePorcentagem(graficoFunil1.ConhecimentoAtual)}">
+                                <div class="bolha-porc-funil">
+                                    <div class="text-bolha-porc-funil">{{graficoFunil1.ConhecimentoAtual}}</div>
+                                </div>
+                            </div>
+                        </div>
+
+                         <div class="seta-resultado">
+                            <div class={{validaSigConhecimento(graficoFunil1)}}></div>
+                        </div>
+                       <!-- <div class="seta-resultado-funil">
+                            <div class="seta-pontinhada"></div>
+                        </div>
+
+                        <div class="bolha-resultado">
+                            <div class="text-bolha-resultado">
+                                <div class="text-bolha">{{graficoFunil1.ConhecimentoADV}}</div>
+                            </div>
+                        </div> -->
+
+                    </div>
+
+                    <div class="linha-dados">
+                        <div class="descricao-linha"> {{'grafico-funil-consideracao'| translate}}</div>
+
+                        <div class="container-funil-porc">
+
+                            <div class="porc-funil"
+                                [ngStyle]="{  background: setCorGrafico(), width: definePorcentagem(graficoFunil1.ConsideracaoAtual)}">
+                                <div class="bolha-porc-funil">
+                                    <div class="text-bolha-porc-funil">{{graficoFunil1.ConsideracaoAtual}}</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="seta-resultado">
+                            <div class={{validaSigConsideracao(graficoFunil1)}}></div>
+                        </div>
+                        <div class="seta-resultado-funil">
+                            <div class="seta-pontinhada"></div>
+                        </div>
+
+                        <div class="bolha-resultado">
+                            <div class="text-bolha-resultado">
+                                <div class="text-bolha">{{graficoFunil1.ConsideracaoADV}}</div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="linha-dados">
+                        <div class="descricao-linha">{{'grafico-funil-uso'| translate}}</div>
+
+                        <div class="container-funil-porc">
+
+                            <div class="porc-funil"
+                                [ngStyle]="{  background: setCorGrafico(), width: definePorcentagem(graficoFunil1.UsoAtual)}">
+                                <div class="bolha-porc-funil">
+                                    <div class="text-bolha-porc-funil">{{graficoFunil1.UsoAtual}}</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="seta-resultado">
+                            <div class={{validaSigUso(graficoFunil1)}}></div>
+                        </div>
+                        <div class="seta-resultado-funil">
+                            <div class="seta-pontinhada"></div>
+                        </div>
+
+                        <div class="bolha-resultado">
+                            <div class="text-bolha-resultado">
+                                <div class="text-bolha">{{graficoFunil1.UsoADV}}</div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="linha-dados">
+                        <div class="descricao-linha"> {{'grafico-funil-preferencia'| translate}}</div>
+
+                        <div class="container-funil-porc">
+
+                            <div class="porc-funil"
+                                [ngStyle]="{  background: setCorGrafico(), width: definePorcentagem(graficoFunil1.PreferenciaAtual)}">
+                                <div class="bolha-porc-funil">
+                                    <div class="text-bolha-porc-funil">{{graficoFunil1.PreferenciaAtual}}</div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- <div class="seta-resultado">
+                            <div class={{validaSigPreferencia(graficoFunil1)}}></div>
+                        </div>
+                        <div class="seta-resultado-funil">
+                            <div class="seta-pontinhada"></div>
+                        </div>
+
+                        <div class="bolha-resultado">
+                            <div class="text-bolha-resultado">
+                                <div class="text-bolha">{{graficoFunil1.PreferenciaADV}}</div>
+                            </div>
+                        </div> -->
+
+                    </div>
+
+                    <div class="linha-dados">
+                        <div class="descricao-linha"> {{'grafico-funil-Loyalty'| translate}}</div>
+
+                        <div class="container-funil-porc">
+
+                            <!-- <div class="porc-funil"
+                                [ngStyle]="{  background: setCorGrafico(), width: definePorcentagem(graficoFunil1.LoyaltyAtual)}">
+                                <div class="bolha-porc-funil">
+                                    <div class="text-bolha-porc-funil">{{graficoFunil1.LoyaltyAtual}}</div>
+                                </div>
+                            </div> -->
+
+                              <div class="text-bolha-porc-funil-red">{{graficoFunil1.LoyaltyAtual}}</div>
+
+                        </div>
+
+                        <!-- <div class="seta-resultado">
+                            <div class={{validaSigLoyalty(graficoFunil1)}}></div>
+                        </div>
+                        <div class="seta-resultado-funil">
+                            <div class="seta-pontinhada"></div>
+                        </div>
+
+                        <div class="bolha-resultado">
+                            <div class="text-bolha-resultado">
+                                <div class="text-bolha">{{graficoFunil1.LoyaltyADV}}</div>
+                            </div>
+                        </div> -->
+
+                    </div>
+
+
+                    <div class="linha-dados">
+                        <div class="descricao-linha"></div>
+
+                        <div class="container-funil-porc">
+                            <div [ngClass]="{'base-vermelha' : graficoFunil1.BaseMinimaAtual != '' , '':graficoFunil1.BaseMinimaAtual==''}"
+                                class="text-funil-base">{{graficoFunil1.BaseAbsAtual}}</div>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="container-colunas-funil">
+
+                <div class="container-linha-drop">
+                    <div class="group-filtro-funil-alinhado-evolutivo">
+                        <ng-select placeholder="N/A" id="tipoAtivoModel" class="selectFiltroFunilEvolutivo"
+                            [items]="filtroService.listaOnda" (change)="onchangeOndaColuna2(onda2)" [(ngModel)]="onda2"
+                            bindLabel="DescItem" [searchable]="false" [clearable]="false" [multiple]="false">
+                        </ng-select>
+                    </div>
+                </div>
+
+                <div class="coluna-dados">
+                    <div class="linha-dados">
+                        <div class="separacao-dados-periodo"></div>
+                    </div>
+
+                    <div class="linha-dados">
+
+                        <div class="container-funil-porc">
+
+                            <div class="porc-funil"
+                                [ngStyle]="{  background: setCorGrafico(), width: definePorcentagem(graficoFunil2.ConhecimentoAtual)}">
+                                <div class="bolha-porc-funil">
+                                    <div class="text-bolha-porc-funil">{{graficoFunil2.ConhecimentoAtual}}</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="seta-resultado">
+                            <div class={{validaSigConhecimento(graficoFunil2)}}></div>
+                        </div>
+                         <!--<div class="seta-resultado-funil">
+                            <div class="seta-pontinhada"></div>
+                        </div>
+
+                        <div class="bolha-resultado">
+                            <div class="text-bolha-resultado">
+                                <div class="text-bolha">{{graficoFunil2.ConhecimentoADV}}</div>
+                            </div>
+                        </div> -->
+
+                    </div>
+
+                    <div class="linha-dados">
+                        <div class="container-funil-porc">
+
+                            <div class="porc-funil"
+                                [ngStyle]="{  background: setCorGrafico(), width: definePorcentagem(graficoFunil2.ConsideracaoAtual)}">
+                                <div class="bolha-porc-funil">
+                                    <div class="text-bolha-porc-funil">{{graficoFunil2.ConsideracaoAtual}}</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="seta-resultado">
+                            <div class={{validaSigConsideracao(graficoFunil2)}}></div>
+                        </div>
+                        <div class="seta-resultado-funil">
+                            <div class="seta-pontinhada"></div>
+                        </div>
+
+                        <div class="bolha-resultado">
+                            <div class="text-bolha-resultado">
+                                <div class="text-bolha">{{graficoFunil2.ConsideracaoADV}}</div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="linha-dados">
+
+                        <div class="container-funil-porc">
+
+                            <div class="porc-funil"
+                                [ngStyle]="{  background: setCorGrafico(), width: definePorcentagem(graficoFunil2.UsoAtual)}">
+                                <div class="bolha-porc-funil">
+                                    <div class="text-bolha-porc-funil">{{graficoFunil2.UsoAtual}}</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="seta-resultado">
+                            <div class={{validaSigUso(graficoFunil2)}}></div>
+                        </div>
+                        <div class="seta-resultado-funil">
+                            <div class="seta-pontinhada"></div>
+                        </div>
+
+                        <div class="bolha-resultado">
+                            <div class="text-bolha-resultado">
+                                <div class="text-bolha">{{graficoFunil2.UsoADV}}</div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="linha-dados">
+                        <div class="container-funil-porc">
+
+                            <div class="porc-funil"
+                                [ngStyle]="{  background: setCorGrafico(), width: definePorcentagem(graficoFunil2.PreferenciaAtual)}">
+                                <div class="bolha-porc-funil">
+                                    <div class="text-bolha-porc-funil">{{graficoFunil2.PreferenciaAtual}}</div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- <div class="seta-resultado">
+                            <div class={{validaSigPreferencia(graficoFunil2)}}></div>
+                        </div>
+                        <div class="seta-resultado-funil">
+                            <div class="seta-pontinhada"></div>
+                        </div>
+
+                        <div class="bolha-resultado">
+                            <div class="text-bolha-resultado">
+                                <div class="text-bolha">{{graficoFunil2.PreferenciaADV}}</div>
+                            </div>
+                        </div> -->
+
+                    </div>
+
+                    <div class="linha-dados">
+               
+                        <div class="container-funil-porc">
+
+                            <!-- <div class="porc-funil"
+                                [ngStyle]="{  background: setCorGrafico(), width: definePorcentagem(graficoFunil2.LoyaltyAtual)}">
+                                <div class="bolha-porc-funil">
+                                    <div class="text-bolha-porc-funil">{{graficoFunil2.LoyaltyAtual}}</div>
+                                </div>
+                            </div> -->
+                              <div class="text-bolha-porc-funil-red">{{graficoFunil2.LoyaltyAtual}}</div>
+
+                        </div>
+
+                        <!-- <div class="seta-resultado">
+                            <div class={{validaSigLoyalty(graficoFunil2)}}></div>
+                        </div>
+                        <div class="seta-resultado-funil">
+                            <div class="seta-pontinhada"></div>
+                        </div>
+
+                        <div class="bolha-resultado">
+                            <div class="text-bolha-resultado">
+                                <div class="text-bolha">{{graficoFunil2.LoyaltyADV}}</div>
+                            </div>
+                        </div> -->
+
+                    </div>
+
+
+                    <div class="linha-dados">
+
+                        <div class="container-funil-porc">
+                            <div [ngClass]="{'base-vermelha' : graficoFunil2.BaseMinimaAtual != '' , '':graficoFunil2.BaseMinimaAtual==''}"
+                                class="text-funil-base">{{graficoFunil2.BaseAbsAtual}}</div>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="container-colunas-funil">
+
+                <div class="container-linha-drop">
+                    <div class="group-filtro-funil-alinhado-evolutivo">
+                        <ng-select placeholder="N/A" id="tipoAtivoModel" class="selectFiltroFunilEvolutivo"
+                            [items]="filtroService.listaOnda" (change)="onchangeOndaColuna3(onda3)" [(ngModel)]="onda3"
+                            bindLabel="DescItem" [searchable]="false" [clearable]="false" [multiple]="false">
+                        </ng-select>
+                    </div>
+                </div>
+                <div class="coluna-dados">
+                    <div class="linha-dados">
+                        <div class="separacao-dados-periodo"></div>
+                    </div>
+
+                    <div class="linha-dados">
+                        <div class="container-funil-porc">
+                            <div class="porc-funil"
+                                [ngStyle]="{  background: setCorGrafico(), width: definePorcentagem(graficoFunil3.ConhecimentoAtual)}">
+                                <div class="bolha-porc-funil">
+                                    <div class="text-bolha-porc-funil">{{graficoFunil3.ConhecimentoAtual}}</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="seta-resultado">
+                            <div class={{validaSigConhecimento(graficoFunil3)}}></div>
+                        </div>
+                        <!-- <div class="seta-resultado-funil">
+                            <div class="seta-pontinhada"></div>
+                        </div>
+
+                        <div class="bolha-resultado">
+                            <div class="text-bolha-resultado">
+                                <div class="text-bolha">{{graficoFunil3.ConhecimentoADV}}</div>
+                            </div>
+                        </div> -->
+
+                    </div>
+
+                    <div class="linha-dados">
+                        <div class="container-funil-porc">
+
+                            <div class="porc-funil"
+                                [ngStyle]="{  background: setCorGrafico(), width: definePorcentagem(graficoFunil3.ConsideracaoAtual)}">
+                                <div class="bolha-porc-funil">
+                                    <div class="text-bolha-porc-funil">{{graficoFunil3.ConsideracaoAtual}}</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="seta-resultado">
+                            <div class={{validaSigConsideracao(graficoFunil3)}}></div>
+                        </div>
+                        <div class="seta-resultado-funil">
+                            <div class="seta-pontinhada"></div>
+                        </div>
+
+                        <div class="bolha-resultado">
+                            <div class="text-bolha-resultado">
+                                <div class="text-bolha">{{graficoFunil3.ConsideracaoADV}}</div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="linha-dados">
+                        <div class="container-funil-porc">
+
+                            <div class="porc-funil"
+                                [ngStyle]="{  background: setCorGrafico(), width: definePorcentagem(graficoFunil3.UsoAtual)}">
+                                <div class="bolha-porc-funil">
+                                    <div class="text-bolha-porc-funil">{{graficoFunil3.UsoAtual}}</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="seta-resultado">
+                            <div class={{validaSigUso(graficoFunil3)}}></div>
+                        </div>
+                        <div class="seta-resultado-funil">
+                            <div class="seta-pontinhada"></div>
+                        </div>
+
+                        <div class="bolha-resultado">
+                            <div class="text-bolha-resultado">
+                                <div class="text-bolha">{{graficoFunil3.UsoADV}}</div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="linha-dados">
+
+                        <div class="container-funil-porc">
+
+                            <div class="porc-funil"
+                                [ngStyle]="{  background: setCorGrafico(), width: definePorcentagem(graficoFunil3.PreferenciaAtual)}">
+                                <div class="bolha-porc-funil">
+                                    <div class="text-bolha-porc-funil">{{graficoFunil3.PreferenciaAtual}}</div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- <div class="seta-resultado">
+                            <div class={{validaSigPreferencia(graficoFunil3)}}></div>
+                        </div>
+                        <div class="seta-resultado-funil">
+                            <div class="seta-pontinhada"></div>
+                        </div>
+
+                        <div class="bolha-resultado">
+                            <div class="text-bolha-resultado">
+                                <div class="text-bolha">{{graficoFunil3.PreferenciaADV}}</div>
+                            </div>
+                        </div> -->
+
+                    </div>
+
+                    <div class="linha-dados">
+         
+                        <div class="container-funil-porc">
+
+                            <!-- <div class="porc-funil"
+                                [ngStyle]="{  background: setCorGrafico(), width: definePorcentagem(graficoFunil3.LoyaltyAtual)}">
+                                <div class="bolha-porc-funil">
+                                    <div class="text-bolha-porc-funil">{{graficoFunil3.LoyaltyAtual}}</div>
+                                </div>
+                            </div> -->
+
+                              <div class="text-bolha-porc-funil-red">{{graficoFunil3.LoyaltyAtual}}</div>
+
+                        </div>
+
+                        <!-- <div class="seta-resultado">
+                            <div class={{validaSigLoyalty(graficoFunil3)}}></div>
+                        </div>
+                        <div class="seta-resultado-funil">
+                            <div class="seta-pontinhada"></div>
+                        </div>
+
+                        <div class="bolha-resultado">
+                            <div class="text-bolha-resultado">
+                                <div class="text-bolha">{{graficoFunil3.LoyaltyADV}}</div>
+                            </div>
+                        </div> -->
+
+                    </div>
+
+                    <div class="linha-dados">
+
+                        <div class="container-funil-porc">
+                            <div [ngClass]="{'base-vermelha' : graficoFunil3.BaseMinimaAtual != '' , '':graficoFunil3.BaseMinimaAtual==''}"
+                                class="text-funil-base">{{graficoFunil3.BaseAbsAtual}}</div>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="container-colunas-funil">
+
+                <div class="container-linha-drop">
+                    <div class="group-filtro-funil-alinhado-evolutivo">
+                        <ng-select placeholder="N/A" id="tipoAtivoModel" class="selectFiltroFunilEvolutivo"
+                            [items]="filtroService.listaOnda" (change)="onchangeOndaColuna4(onda4)" [(ngModel)]="onda4"
+                            bindLabel="DescItem" [searchable]="false" [clearable]="false" [multiple]="false">
+                        </ng-select>
+                    </div>
+                </div>
+
+                <div class="coluna-dados">
+                    <div class="linha-dados">
+                        <div class="separacao-dados-periodo"></div>
+                    </div>
+
+                    <div class="linha-dados">
+                        <div class="container-funil-porc">
+                            <div class="porc-funil"
+                                [ngStyle]="{  background: setCorGrafico(), width: definePorcentagem(graficoFunil4.ConhecimentoAtual)}">
+                                <div class="bolha-porc-funil">
+                                    <div class="text-bolha-porc-funil">{{graficoFunil4.ConhecimentoAtual}}</div>
+                                </div>
+                            </div>
+                        </div>
+                       
+                        <div class="seta-resultado">
+                            <div class={{validaSigConhecimento(graficoFunil4)}}></div>
+                        </div>
+                        <!--  <div class="seta-resultado-funil">
+                            <div class="seta-pontinhada"></div>
+                        </div>
+
+                        <div class="bolha-resultado">
+                            <div class="text-bolha-resultado">
+                                <div class="text-bolha">{{graficoFunil4.ConhecimentoADV}}</div>
+                            </div>
+                        </div> -->
+
+                    </div>
+
+                    <div class="linha-dados">
+                        <div class="container-funil-porc">
+
+                            <div class="porc-funil"
+                                [ngStyle]="{  background: setCorGrafico(), width: definePorcentagem(graficoFunil4.ConsideracaoAtual)}">
+                                <div class="bolha-porc-funil">
+                                    <div class="text-bolha-porc-funil">{{graficoFunil4.ConsideracaoAtual}}</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="seta-resultado">
+                            <div class={{validaSigConsideracao(graficoFunil4)}}></div>
+                        </div>
+                        <div class="seta-resultado-funil">
+                            <div class="seta-pontinhada"></div>
+                        </div>
+
+                        <div class="bolha-resultado">
+                            <div class="text-bolha-resultado">
+                                <div class="text-bolha">{{graficoFunil4.ConsideracaoADV}}</div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="linha-dados">
+
+                        <div class="container-funil-porc">
+
+                            <div class="porc-funil"
+                                [ngStyle]="{  background: setCorGrafico(), width: definePorcentagem(graficoFunil4.UsoAtual)}">
+                                <div class="bolha-porc-funil">
+                                    <div class="text-bolha-porc-funil">{{graficoFunil4.UsoAtual}}</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="seta-resultado">
+                            <div class={{validaSigUso(graficoFunil4)}}></div>
+                        </div>
+                        <div class="seta-resultado-funil">
+                            <div class="seta-pontinhada"></div>
+                        </div>
+
+                        <div class="bolha-resultado">
+                            <div class="text-bolha-resultado">
+                                <div class="text-bolha">{{graficoFunil4.UsoADV}}</div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="linha-dados">
+
+                        <div class="container-funil-porc">
+
+                            <div class="porc-funil"
+                                [ngStyle]="{  background: setCorGrafico(), width: definePorcentagem(graficoFunil4.PreferenciaAtual)}">
+                                <div class="bolha-porc-funil">
+                                    <div class="text-bolha-porc-funil">{{graficoFunil4.PreferenciaAtual}}</div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- <div class="seta-resultado">
+                            <div class={{validaSigPreferencia(graficoFunil4)}}></div>
+                        </div>
+                        <div class="seta-resultado-funil">
+                            <div class="seta-pontinhada"></div>
+                        </div>
+
+                        <div class="bolha-resultado">
+                            <div class="text-bolha-resultado">
+                                <div class="text-bolha">{{graficoFunil4.PreferenciaADV}}</div>
+                            </div>
+                        </div> -->
+
+                    </div>
+
+                    <div class="linha-dados">
+
+                        <div class="container-funil-porc">
+
+                            <!-- <div class="porc-funil"
+                                [ngStyle]="{  background: setCorGrafico(), width: definePorcentagem(graficoFunil4.LoyaltyAtual)}">
+                                <div class="bolha-porc-funil">
+                                    <div class="text-bolha-porc-funil">{{graficoFunil4.LoyaltyAtual}}</div>
+                                </div>
+                            </div> -->
+
+                              <div class="text-bolha-porc-funil-red">{{graficoFunil4.LoyaltyAtual}}</div>
+
+                        </div>
+
+                        <!-- <div class="seta-resultado">
+                            <div class={{validaSigLoyalty(graficoFunil4)}}></div>
+                        </div>
+                        <div class="seta-resultado-funil">
+                            <div class="seta-pontinhada"></div>
+                        </div>
+
+                        <div class="bolha-resultado">
+                            <div class="text-bolha-resultado">
+                                <div class="text-bolha">{{graficoFunil4.LoyaltyADV}}</div>
+                            </div>
+                        </div> -->
+
+                    </div>
+
+
+                    <div class="linha-dados">
+
+                        <div class="container-funil-porc">
+                            <div [ngClass]="{'base-vermelha' : graficoFunil4.BaseMinimaAtual != '' , '':graficoFunil4.BaseMinimaAtual==''}"
+                                class="text-funil-base">{{graficoFunil4.BaseAbsAtual}}</div>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+<div class="descricao-base">
+    {{verificaMsgBase()}}
+</div>

@@ -1,0 +1,304 @@
+<app-sidebar></app-sidebar>
+<app-navbar></app-navbar>
+
+<div class="container-dashboard" *ngIf="paginaAtiva">
+
+    <!-- <div class="card card-info-for-text">
+        Em imagem de marca, marcas líderes tendem a ser mais lembradas pelos
+        consumidores e, assim, mais associadas à quase todos os atributos de
+        marca.
+        <div><b>A imagem modelizada neutraliza o efeito do tamanho das
+                marcas</b>, ajudando a enxergar o que realmente as diferencia,
+            destacando pontos fortes e fracos de cada marca.
+        </div>
+        <br>
+        <strong>IMPORTANTE:</strong>
+        Nas marcas menores, a variação pode gerar índices muito altos, por isso
+        é importante analisar com cautela.
+    </div> -->
+
+    <!-- <div class="card" [ngStyle]="{ height:  ajusteTelaFiltro == 1 ? '1340px': ajusteTelaFiltro == 2 ? '1016px': '815px'}" id="comparativo-marcas" *ngIf="ativaGraficoComparativoMarcas"> -->
+    <div class="card" id="comparativo-marcas"
+        [ngStyle]="{ height:  ajusteHeight1(graficoColunaModel1)}"
+        *ngIf="ativaGraficoComparativoMarcas">
+        <div class="container-card">
+            <div class="header-card">
+                <div class="container-title">
+                    <div class="title">
+                        {{'dashboard-five-grafico1-titulo' | translate}}
+                    </div>
+                    <div class="legend">
+                        {{'dashboard-five-grafico1-subtitulo' | translate}}
+                    </div>
+                    <div class="legend-sub">
+                        <div class="container-sig">
+                            <!-- <div class="sig-positive"> </div> -->
+                            <div class="sig-square"> </div> {{'dashboard-square'
+                            | translate}}
+                        </div>
+                    </div>
+                </div>
+                <div class="container-export">
+                    <div class="icon-export" (click)="exportToExcelGrafico1()">
+                        <div class="icon-excel">
+                        </div>
+                        <div class="titulo-exportar">{{'dashboard-exporta' |
+                            translate}}</div>
+                    </div>
+                    <div class="icon-export"
+                        (click)="exportToPptComparativoMarcas()">
+                        <div class="icon-powerpoint">
+                        </div>
+                        <div class="titulo-exportar">{{'dashboard-exporta' |
+                            translate}}</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="content-card p-relative">
+                <div class="container-legenda">
+                    <div class="container-texto">
+                        <div class="sinal-roxo"></div>
+                        <div class="texto-legenda">{{'dashboard-two-leg-Awareness' | translate}}</div>
+                    </div>
+                    <div class="container-texto">
+                        <div class="sinal-roxo-claro"></div>
+                        <div class="texto-legenda">{{'dashboard-two-leg-Spontaneous' | translate}}</div>
+                    </div>
+                    <div class="container-texto">
+                        <div class="sinal-cinza-claro"></div>
+                        <div class="texto-legenda">{{'dashboard-two-leg-Prompeted' | translate}}</div>
+                    </div>
+                    <div class="container-texto">
+                        <div class="sinal-verde"></div>
+                        <div class="texto-legenda">{{'dashboard-two-leg-total-Awareness' | translate}}</div>
+                    </div>
+                </div>             
+            </div> -->
+
+            <grafico-barras-marcas (marcaColuna1)="onchangeMarca($event,1)"
+                (marcaColuna2)="onchangeMarca($event,2)"
+                (marcaColuna3)="onchangeMarca($event,3)"
+                (marcaColuna4)="onchangeMarca($event,4)"
+                (marcaColuna5)="onchangeMarca($event,5)"
+                [graficoColunaModel1]="graficoColunaModel1"
+                [graficoColunaModel2]="graficoColunaModel2"
+                [graficoColunaModel3]="graficoColunaModel3"
+                [graficoColunaModel4]="graficoColunaModel4"
+                [graficoColunaModel5]="graficoColunaModel5">
+            </grafico-barras-marcas>
+
+            <!-- <div class="content-card">
+                <app-aviso-sem-dados></app-aviso-sem-dados>
+            </div> -->
+        </div>
+    </div>
+
+    <!-- <div class="card" [ngStyle]="{ height:  ajusteTelaFiltro == 1 ? '1490px': ajusteTelaFiltro == 2 ? '1016px': '815px'}" id="comparativo-marcas-evolutivo" *ngIf="ativaGraficoEvolutivoMarcas" > -->
+    <div class="card"
+        [ngStyle]="{ height:  ajusteHeight2(grafico2ColunaModel2)}"
+        id="comparativo-marcas-evolutivo" *ngIf="ativaGraficoEvolutivoMarcas">
+        <div class="container-card">
+            <div class="header-card">
+                <div class="container-title">
+                    <div class="title">
+                        {{'dashboard-five-grafico2-titulo' | translate}}
+                    </div>
+                    <div class="legend">
+                        {{'dashboard-two-grafico2-subtitulo' | translate}}
+                    </div>
+                    <div class="legend-sub">
+                        <div class="container-sig">
+                            <!-- <div class="sig-positive"> </div> -->
+                            <div class="sig-square"> </div> {{'dashboard-square'
+                            | translate}}
+                        </div>
+                    </div>
+                </div>
+                <div class="container-export">
+                    <div class="icon-export" (click)="exportToExcelGrafico2()">
+                        <div class="icon-excel">
+                        </div>
+                        <div class="titulo-exportar">{{'dashboard-exporta' |
+                            translate}}</div>
+                    </div>
+                    <div class="icon-export"
+                        (click)="exportToPptComparativoMarcasEvolutivo()">
+                        <div class="icon-powerpoint">
+                        </div>
+                        <div class="titulo-exportar">{{'dashboard-exporta' |
+                            translate}}</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="content-card p-relative">
+                <div class="container-legenda">
+                    <div class="container-texto">
+                        <div class="sinal-roxo"></div>
+                        <div class="texto-legenda">{{'dashboard-two-leg-Awareness' | translate}}</div>
+                    </div>
+                    <div class="container-texto">
+                        <div class="sinal-roxo-claro"></div>
+                        <div class="texto-legenda">{{'dashboard-two-leg-Spontaneous' | translate}}</div>
+                    </div>
+                    <div class="container-texto">
+                        <div class="sinal-cinza-claro"></div>
+                        <div class="texto-legenda">{{'dashboard-two-leg-Prompeted' | translate}}</div>
+                    </div>
+                    <div class="container-texto">
+                        <div class="sinal-verde"></div>
+                        <div class="texto-legenda">{{'dashboard-two-leg-total-Awareness' | translate}}</div>
+                    </div>
+                </div>             
+            </div> -->
+
+            <!-- <grafico-barras-evolutivo-marcas (ondaColuna1)="onchangeEvolutivoOnda($event,1)"
+                (ondaColuna2)="onchangeEvolutivoOnda($event,2)" (ondaColuna3)="onchangeEvolutivoOnda($event,3)"
+                (ondaColuna4)="onchangeEvolutivoOnda($event,4)" (marcaGrafico)="onchangeMarcaEvolutivo($event)"
+                [graficoColunaModel1]="grafico2ColunaModel1" [graficoColunaModel2]="grafico2ColunaModel2"
+                [graficoColunaModel3]="grafico2ColunaModel3" [graficoColunaModel4]="grafico2ColunaModel4">
+
+                ></grafico-barras-evolutivo-marcas> -->
+
+            <grafico-barras-evolutivo-marcas
+                (ondaColuna1)="onchangeEvolutivoOnda($event,1)"
+                (ondaColuna2)="onchangeEvolutivoOnda($event,2)"
+                (ondaColuna3)="onchangeEvolutivoOnda($event,3)"
+                (ondaColuna4)="onchangeEvolutivoOnda($event,4)"
+                (marcaGrafico)="onchangeMarcaEvolutivo($event)"
+                [graficoColunaModel1]="grafico2ColunaModel1"
+                [graficoColunaModel2]="grafico2ColunaModel2"
+                [graficoColunaModel3]="grafico2ColunaModel3"
+                [graficoColunaModel4]="grafico2ColunaModel4">
+
+                ></grafico-barras-evolutivo-marcas>
+
+            <!-- <div class="content-card">
+                <app-aviso-sem-dados></app-aviso-sem-dados>
+            </div> -->
+        </div>
+    </div>
+
+    <!-- <div class="card" [ngStyle]="{ height:  ajusteTelaFiltro == 1 ? '1380px': ajusteTelaFiltro == 2 ? '1040px': '890px'}"
+    id="comparativo-marcas-duplo" *ngIf="ativaGraficoComparativoMarcasDuplo"> -->
+    <div class="card"
+        [ngStyle]="{ height:  ajusteHeight(grafico3ColunaModel1)}"
+        id="comparativo-marcas-duplo"
+        *ngIf="ativaGraficoComparativoMarcasDuplo">
+        <div class="container-card">
+            <div class="header-card">
+                <div class="container-title">
+                    <div class="title">
+                        {{'dashboard-five-grafico3-titulo' | translate}}
+                    </div>
+                    <div class="legend">
+                        {{'dashboard-five-grafico3-subtitulo' | translate}}
+                    </div>
+                    <div class="legend-sub">
+                        <div class="container-sig">
+                            <!-- <div class="sig-positive"> </div> -->
+                            <div class="sig-square"> </div> {{'dashboard-square'
+                            | translate}}
+                        </div>
+                    </div>
+                </div>
+                <div class="container-export">
+                    <div class="icon-export" (click)="exportToExcelGrafico3()">
+                        <div class="icon-excel">
+                        </div>
+                        <div class="titulo-exportar">{{'dashboard-exporta' |
+                            translate}}</div>
+                    </div>
+                    <div class="icon-export"
+                        (click)="exportToPptComparativoMarcasDuplo()">
+                        <div class="icon-powerpoint">
+                        </div>
+                        <div class="titulo-exportar">{{'dashboard-exporta' |
+                            translate}}</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="content-card p-relative">
+                <div class="container-legenda">
+                    <div class="container-texto">
+                        <div class="sinal-roxo"></div>
+                        <div class="texto-legenda">{{'dashboard-two-leg-Awareness' | translate}}</div>
+                    </div>
+                    <div class="container-texto">
+                        <div class="sinal-roxo-claro"></div>
+                        <div class="texto-legenda">{{'dashboard-two-leg-Spontaneous' | translate}}</div>
+                    </div>
+                    <div class="container-texto">
+                        <div class="sinal-cinza-claro"></div>
+                        <div class="texto-legenda">{{'dashboard-two-leg-Prompeted' | translate}}</div>
+                    </div>
+                    <div class="container-texto">
+                        <div class="sinal-verde"></div>
+                        <div class="texto-legenda">{{'dashboard-two-leg-total-Awareness' | translate}}</div>
+                    </div>
+                </div>             
+            </div> -->
+
+            <!-- <grafico-barras-marcas-duplo (ondaColuna1)="onchangeOndaDuplo($event,1)"
+                (ondaColuna2)="onchangeOndaDuplo($event,2)" (ondaColuna3)="onchangeOndaDuplo($event,3)"
+                (ondaColuna4)="onchangeOndaDuplo($event,4)" (ondaColuna5)="onchangeOndaDuplo($event,5)"
+                (ondaColuna6)="onchangeOndaDuplo($event,6)" (ondaColuna7)="onchangeOndaDuplo($event,7)"
+                (ondaColuna8)="onchangeOndaDuplo($event,8)" (ondaColuna9)="onchangeOndaDuplo($event,9)"
+                (ondaColuna10)="onchangeOndaDuplo($event,10)" (marcaColuna1)="onchangeDuploMarca($event,1)"
+                (marcaColuna2)="onchangeDuploMarca($event,2)" (marcaColuna3)="onchangeDuploMarca($event,3)"
+                (marcaColuna4)="onchangeDuploMarca($event,4)" (marcaColuna5)="onchangeDuploMarca($event,5)"
+                [graficoColunaModel1]="grafico3ColunaModel1" [graficoColunaModel2]="grafico3ColunaModel2"
+                [graficoColunaModel3]="grafico3ColunaModel3" [graficoColunaModel4]="grafico3ColunaModel4"
+                [graficoColunaModel5]="grafico3ColunaModel5" [graficoColunaModel6]="grafico3ColunaModel6"
+                [graficoColunaModel7]="grafico3ColunaModel7" [graficoColunaModel8]="grafico3ColunaModel8"
+                [graficoColunaModel9]="grafico3ColunaModel9"
+                [graficoColunaModel10]="grafico3ColunaModel10"></grafico-barras-marcas-duplo> -->
+
+            <grafico-barras-marcas-triplo
+                (ondaColuna1)="onchangeOndaDuplo($event,1)"
+                (ondaColuna2)="onchangeOndaDuplo($event,2)"
+                (ondaColuna1_3)="onchangeOndaDuplo($event,13)"
+                (ondaColuna3)="onchangeOndaDuplo($event,3)"
+                (ondaColuna4)="onchangeOndaDuplo($event,4)"
+                (ondaColuna3_3)="onchangeOndaDuplo($event,33)"
+                (ondaColuna5)="onchangeOndaDuplo($event,5)"
+                (ondaColuna6)="onchangeOndaDuplo($event,6)"
+                (ondaColuna5_3)="onchangeOndaDuplo($event,53)"
+                (ondaColuna7)="onchangeOndaDuplo($event,7)"
+                (ondaColuna8)="onchangeOndaDuplo($event,8)"
+                (ondaColuna7_3)="onchangeOndaDuplo($event,73)"
+                (ondaColuna9)="onchangeOndaDuplo($event,9)"
+                (ondaColuna10)="onchangeOndaDuplo($event,10)"
+                (ondaColuna9_3)="onchangeOndaDuplo($event,93)"
+                (marcaColuna1)="onchangeDuploMarca($event,1)"
+                (marcaColuna2)="onchangeDuploMarca($event,2)"
+                (marcaColuna3)="onchangeDuploMarca($event,3)"
+                (marcaColuna4)="onchangeDuploMarca($event,4)"
+                (marcaColuna5)="onchangeDuploMarca($event,5)"
+                [graficoColunaModel1]="grafico3ColunaModel1"
+                [graficoColunaModel2]="grafico3ColunaModel2"
+                [graficoColunaModel1_3]="grafico3ColunaModel1_3"
+                [graficoColunaModel3]="grafico3ColunaModel3"
+                [graficoColunaModel4]="grafico3ColunaModel4"
+                [graficoColunaModel3_3]="grafico3ColunaModel3_3"
+                [graficoColunaModel5]="grafico3ColunaModel5"
+                [graficoColunaModel6]="grafico3ColunaModel6"
+                [graficoColunaModel5_3]="grafico3ColunaModel5_3"
+                [graficoColunaModel7]="grafico3ColunaModel7"
+                [graficoColunaModel8]="grafico3ColunaModel8"
+                [graficoColunaModel7_3]="grafico3ColunaModel7_3"
+                [graficoColunaModel9]="grafico3ColunaModel9"
+                [graficoColunaModel10]="grafico3ColunaModel10"
+                [graficoColunaModel9_3]="grafico3ColunaModel9_3"></grafico-barras-marcas-triplo>
+
+            <!-- <div class="content-card">
+                <app-aviso-sem-dados></app-aviso-sem-dados>
+            </div> -->
+        </div>
+    </div>
+
+</div>
+
+<footer-bottom></footer-bottom>

@@ -1,0 +1,2294 @@
+<div class="container-barras-marcas-duplo">
+
+
+
+
+    <div class="coluna-descricao">
+        <div class="separacao-filtro">
+
+        </div>
+        <div class="periodo-barras"></div>
+
+
+        <div *ngFor="let item of graficoColunaModel9_3;let i = index">
+            <!-- <div class="titulo-coluna" [ngClass]="{'cor-conteudo-barra': i%2 !== 0 ,'' : i%2 === 0}">
+                {{item.Descricao}}
+            </div> -->
+            <div class="titulo-coluna">
+                {{item.Descricao}}
+            </div>
+        </div>
+
+    </div>
+
+    <div class="coluna-barra">
+        <div class="separacao-filtro">
+            <div class="group-filtro-coluna">
+                <select-image [IndexCombo]=0 (ImageModelMarcas)="onchangeMarcaColuna1($event)"></select-image>
+            </div>
+        </div>
+        <div class="conteudo-duplo">
+
+            <div>
+                <div class="periodo-barras">
+                    <div class="group-filtro-coluna">
+                        <ng-select placeholder="N/A" id="tipoAtivoModel" class="selectFiltroColunaQ"
+                            [items]="filtroService.listaOnda" (change)="onchangeOndaColuna1(onda1)" [(ngModel)]="onda1"
+                            bindLabel="DescItem" [searchable]="false" [clearable]="false" [multiple]="false">
+                        </ng-select>
+                    </div>
+                </div>
+
+
+                <div *ngFor="let item of graficoColunaModel1;let i = index">
+                    <div class="conteudo-barra-total" *ngIf="item.PercAtual >= 0"
+                        [ngClass]="{'cor-conteudo-barra': i%2 !== 0 ,'' : i%2 === 0}">
+
+                        <div class="tooltip-barra">
+                            <!-- <div class="container-tooltip">
+                                <div class="titulo-tooltip">
+                                    Média
+                                </div>
+                                <div class="valor-tooltip">
+                                    {{item.Media}}
+                                </div>
+                            </div> -->
+                            <div class="container-tooltip">
+                                <div class="titulo-tooltip">
+                                    Perc
+                                </div>
+                                <div class="valor-tooltip">
+                                    {{item.PercAtual}}
+                                </div>
+                            </div>
+                            <div class="container-tooltip">
+                                <div class="titulo-tooltip">
+                                    Base
+                                </div>
+                                <div class="valor-tooltip"
+                                    [ngClass]="{'base-vermelha' : item.BaseMinima != '' , '':item.BaseMinima==''}">
+                                    {{item.Base}}
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="conteudo-linha-negativa">
+
+                            <div class="sem-valor-barra">
+                                <div class="valor-info"></div>
+                            </div>
+                            <div class="porc-barra-negativo" [style]="montaCorBarra(item)"
+                                [ngStyle]="{ width: porcBarraNegativa(0),border:  0 <= 0 ? '0 solid': '1 solid'}">
+                            </div>
+
+                        </div>
+
+                        <div *ngIf="qtdLinhas== i" class="linha-divisao-branca"></div>
+                        <div *ngIf="qtdLinhas!= i" class="linha-divisao"></div>
+
+                        <div class="conteudo-linha-positiva">
+
+                            <div class="porc-barra-positivo"
+                                [ngStyle]="{ width: porcBarraPositiva(item.PercAtual), background: item.CorSiteMarca}">
+                            </div>
+
+                            <!-- <div class="valor-barra-sig">
+                                        <div class="valor-info">{{item.PercAtual}}</div>
+                                    </div> -->
+
+                            <div class="valor-barra" [style]="montaCorBarraTesteSig(item)"
+                                [ngClass]="{'valor-barra-sig' : item.PercAtual> 20 , '':item.PercAtual< 20  }">
+                                <div class="valor-info">{{item.PercAtual}}</div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="conteudo-barra-total" *ngIf="item.PercAtual < 0"
+                        [ngClass]="{'cor-conteudo-barra': i%2 !== 0 ,'' : i%2 === 0}">
+
+                        <div class="tooltip-barra">
+                            <!-- <div class="container-tooltip">
+                                <div class="titulo-tooltip">
+                                    Média
+                                </div>
+                                <div class="valor-tooltip">
+                                    {{item.Media}}
+                                </div>
+                            </div> -->
+                            <div class="container-tooltip">
+                                <div class="titulo-tooltip">
+                                    Perc
+                                </div>
+                                <div class="valor-tooltip">
+                                    {{item.PercAtual}}
+                                </div>
+                            </div>
+                            <div class="container-tooltip">
+                                <div class="titulo-tooltip">
+                                    Base
+                                </div>
+                                <div class="valor-tooltip"
+                                    [ngClass]="{'base-vermelha' : item.BaseMinima != '' , '':item.BaseMinima==''}">
+                                    {{item.Base}}
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="conteudo-linha-negativa">
+
+                            <div class="valor-barra" [style]="montaCorBarraTesteSig(item)"
+                                [ngClass]="{'valor-barra-sig' : item.PercAtual < -20 , '' :item.PercAtual>-20 }">
+                                <div class="valor-info">{{item.PercAtual}}</div>
+                            </div>
+
+                            <div class="porc-barra-negativo" [style]="montaCorBarra(item)"
+                                [ngStyle]="{ width: porcBarraNegativa(item.PercAtual),border:  item.PercAtual > 0 ? '0 solid': '1 solid '}">
+                            </div>
+
+                        </div>
+
+
+                        <div *ngIf="qtdLinhas== i" class="linha-divisao-branca"></div>
+                        <div *ngIf="qtdLinhas!= i" class="linha-divisao"></div>
+
+                        <div class="conteudo-linha-positiva">
+
+                            <div class="porc-barra-positivo"
+                                [ngStyle]="{ width: porcBarraPositiva(item.PercAtual), background: item.CorSiteMarca}">
+                            </div>
+
+                            <div class="sem-valor-barra">
+                                <div class="valor-info"></div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div>
+                <div class="periodo-barras">
+                    <div class="group-filtro-coluna">
+                        <ng-select placeholder="N/A" id="tipoAtivoModel" class="selectFiltroColunaQ"
+                            [items]="filtroService.listaOnda" (change)="onchangeOndaColuna2(onda2)" [(ngModel)]="onda2"
+                            bindLabel="DescItem" [searchable]="false" [clearable]="false" [multiple]="false">
+                        </ng-select>
+                    </div>
+                </div>
+
+                <div *ngFor="let item of graficoColunaModel2;let i = index">
+                    <div class="conteudo-barra-total" *ngIf="item.PercAtual >= 0"
+                        [ngClass]="{'cor-conteudo-barra': i%2 !== 0 ,'' : i%2 === 0}">
+
+                        <div class="tooltip-barra">
+                            <!-- <div class="container-tooltip">
+                                <div class="titulo-tooltip">
+                                    Média
+                                </div>
+                                <div class="valor-tooltip">
+                                    {{item.Media}}
+                                </div>
+                            </div> -->
+                            <div class="container-tooltip">
+                                <div class="titulo-tooltip">
+                                    Perc
+                                </div>
+                                <div class="valor-tooltip">
+                                    {{item.PercAtual}}
+                                </div>
+                            </div>
+                            <div class="container-tooltip">
+                                <div class="titulo-tooltip">
+                                    Base
+                                </div>
+                                <div class="valor-tooltip"
+                                    [ngClass]="{'base-vermelha' : item.BaseMinima != '' , '':item.BaseMinima==''}">
+                                    {{item.Base}}
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="conteudo-linha-negativa">
+
+                            <div class="sem-valor-barra">
+                                <div class="valor-info"></div>
+                            </div>
+                            <div class="porc-barra-negativo" [style]="montaCorBarra(item)"
+                                [ngStyle]="{ width: porcBarraNegativa(0),border:  0 <= 0 ? '0 solid': '1 solid'}"></div>
+
+                        </div>
+
+                        <div *ngIf="qtdLinhas== i" class="linha-divisao-branca"></div>
+                        <div *ngIf="qtdLinhas!= i" class="linha-divisao"></div>
+
+                        <div class="conteudo-linha-positiva">
+
+                            <div class="porc-barra-positivo"
+                                [ngStyle]="{ width: porcBarraPositiva(item.PercAtual), background: item.CorSiteMarca}">
+                            </div>
+
+                            <!-- <div class="valor-barra-sig">
+                                        <div class="valor-info">{{item.PercAtual}}</div>
+                                    </div> -->
+
+                            <div class="valor-barra" [style]="montaCorBarraTesteSig(item)"
+                                [ngClass]="{'valor-barra-sig' : item.PercAtual> 20 , '':item.PercAtual< 20  }">
+                                <div class="valor-info">{{item.PercAtual}}</div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="conteudo-barra-total" *ngIf="item.PercAtual < 0"
+                        [ngClass]="{'cor-conteudo-barra': i%2 !== 0 ,'' : i%2 === 0}">
+
+                        <div class="tooltip-barra">
+                            <!-- <div class="container-tooltip">
+                                <div class="titulo-tooltip">
+                                    Média
+                                </div>
+                                <div class="valor-tooltip">
+                                    {{item.Media}}
+                                </div>
+                            </div> -->
+                            <div class="container-tooltip">
+                                <div class="titulo-tooltip">
+                                    Perc
+                                </div>
+                                <div class="valor-tooltip">
+                                    {{item.PercAtual}}
+                                </div>
+                            </div>
+                            <div class="container-tooltip">
+                                <div class="titulo-tooltip">
+                                    Base
+                                </div>
+                                <div class="valor-tooltip"
+                                    [ngClass]="{'base-vermelha' : item.BaseMinima != '' , '':item.BaseMinima==''}">
+                                    {{item.Base}}
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="conteudo-linha-negativa">
+
+                            <div class="valor-barra" [style]="montaCorBarraTesteSig(item)"
+                                [ngClass]="{'valor-barra-sig' : item.PercAtual < -20 , '' :item.PercAtual>-20 }">
+                                <div class="valor-info">{{item.PercAtual}}</div>
+                            </div>
+
+                            <div class="porc-barra-negativo" [style]="montaCorBarra(item)"
+                                [ngStyle]="{ width: porcBarraNegativa(item.PercAtual),border:  item.PercAtual > 0 ? '0 solid': '1 solid'}">
+                            </div>
+
+                        </div>
+
+
+                        <div *ngIf="qtdLinhas== i" class="linha-divisao-branca"></div>
+                        <div *ngIf="qtdLinhas!= i" class="linha-divisao"></div>
+
+                        <div class="conteudo-linha-positiva">
+
+                            <div class="porc-barra-positivo"
+                                [ngStyle]="{ width: porcBarraPositiva(item.PercAtual), background: item.CorSiteMarca}">
+                            </div>
+
+                            <div class="sem-valor-barra">
+                                <div class="valor-info"></div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div>
+                <div class="periodo-barras">
+                    <div class="group-filtro-coluna">
+                        <ng-select placeholder="N/A" id="tipoAtivoModel" class="selectFiltroColunaQ"
+                            [items]="filtroService.listaOnda" (change)="onchangeOndaColuna1_3(onda1_3)" [(ngModel)]="onda1_3"
+                            bindLabel="DescItem" [searchable]="false" [clearable]="false" [multiple]="false">
+                        </ng-select>
+                    </div>
+                </div>
+
+                <div *ngFor="let item of graficoColunaModel1_3;let i = index">
+                    <div class="conteudo-barra-total" *ngIf="item.PercAtual >= 0"
+                        [ngClass]="{'cor-conteudo-barra': i%2 !== 0 ,'' : i%2 === 0}">
+
+                        <div class="tooltip-barra">
+                            <!-- <div class="container-tooltip">
+                                <div class="titulo-tooltip">
+                                    Média
+                                </div>
+                                <div class="valor-tooltip">
+                                    {{item.Media}}
+                                </div>
+                            </div> -->
+                            <div class="container-tooltip">
+                                <div class="titulo-tooltip">
+                                    Perc
+                                </div>
+                                <div class="valor-tooltip">
+                                    {{item.PercAtual}}
+                                </div>
+                            </div>
+                            <div class="container-tooltip">
+                                <div class="titulo-tooltip">
+                                    Base
+                                </div>
+                                <div class="valor-tooltip"
+                                    [ngClass]="{'base-vermelha' : item.BaseMinima != '' , '':item.BaseMinima==''}">
+                                    {{item.Base}}
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="conteudo-linha-negativa">
+
+                            <div class="sem-valor-barra">
+                                <div class="valor-info"></div>
+                            </div>
+                            <div class="porc-barra-negativo" [style]="montaCorBarra(item)"
+                                [ngStyle]="{ width: porcBarraNegativa(0),border:  0 <= 0 ? '0 solid': '1 solid'}"></div>
+
+                        </div>
+
+                        <div *ngIf="qtdLinhas== i" class="linha-divisao-branca"></div>
+                        <div *ngIf="qtdLinhas!= i" class="linha-divisao"></div>
+
+                        <div class="conteudo-linha-positiva">
+
+                            <div class="porc-barra-positivo"
+                                [ngStyle]="{ width: porcBarraPositiva(item.PercAtual), background: item.CorSiteMarca}">
+                            </div>
+
+                            <!-- <div class="valor-barra-sig">
+                                        <div class="valor-info">{{item.PercAtual}}</div>
+                                    </div> -->
+
+                            <div class="valor-barra" [style]="montaCorBarraTesteSig(item)"
+                                [ngClass]="{'valor-barra-sig' : item.PercAtual> 20 , '':item.PercAtual< 20  }">
+                                <div class="valor-info">{{item.PercAtual}}</div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="conteudo-barra-total" *ngIf="item.PercAtual < 0"
+                        [ngClass]="{'cor-conteudo-barra': i%2 !== 0 ,'' : i%2 === 0}">
+
+                        <div class="tooltip-barra">
+                            <!-- <div class="container-tooltip">
+                                <div class="titulo-tooltip">
+                                    Média
+                                </div>
+                                <div class="valor-tooltip">
+                                    {{item.Media}}
+                                </div>
+                            </div> -->
+                            <div class="container-tooltip">
+                                <div class="titulo-tooltip">
+                                    Perc
+                                </div>
+                                <div class="valor-tooltip">
+                                    {{item.PercAtual}}
+                                </div>
+                            </div>
+                            <div class="container-tooltip">
+                                <div class="titulo-tooltip">
+                                    Base
+                                </div>
+                                <div class="valor-tooltip"
+                                    [ngClass]="{'base-vermelha' : item.BaseMinima != '' , '':item.BaseMinima==''}">
+                                    {{item.Base}}
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="conteudo-linha-negativa">
+
+                            <div class="valor-barra" [style]="montaCorBarraTesteSig(item)"
+                                [ngClass]="{'valor-barra-sig' : item.PercAtual < -20 , '' :item.PercAtual>-20 }">
+                                <div class="valor-info">{{item.PercAtual}}</div>
+                            </div>
+
+                            <div class="porc-barra-negativo" [style]="montaCorBarra(item)"
+                                [ngStyle]="{ width: porcBarraNegativa(item.PercAtual),border:  item.PercAtual > 0 ? '0 solid': '1 solid'}">
+                            </div>
+
+                        </div>
+
+
+                        <div *ngIf="qtdLinhas== i" class="linha-divisao-branca"></div>
+                        <div *ngIf="qtdLinhas!= i" class="linha-divisao"></div>
+
+                        <div class="conteudo-linha-positiva">
+
+                            <div class="porc-barra-positivo"
+                                [ngStyle]="{ width: porcBarraPositiva(item.PercAtual), background: item.CorSiteMarca}">
+                            </div>
+
+                            <div class="sem-valor-barra">
+                                <div class="valor-info"></div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- <div class="total-coluna">
+            <div class="texto-total">
+                {{graficoColunaModel1[0]?.Base}}
+            </div>
+        </div> -->
+
+
+    </div>
+
+
+    <div class="coluna-barra">
+        <div class="separacao-filtro">
+            <div class="group-filtro-coluna">
+                <select-image [IndexCombo]=1 (ImageModelMarcas)="onchangeMarcaColuna2($event)"></select-image>
+            </div>
+        </div>
+        <div class="conteudo-duplo">
+
+            <div>
+                <div class="periodo-barras">
+                    <div class="group-filtro-coluna">
+                        <ng-select placeholder="N/A" id="tipoAtivoModel" class="selectFiltroColunaQ"
+                            [items]="filtroService.listaOnda" (change)="onchangeOndaColuna3(onda3)" [(ngModel)]="onda3"
+                            bindLabel="DescItem" [searchable]="false" [clearable]="false" [multiple]="false">
+                        </ng-select>
+                    </div>
+                </div>
+
+                <div *ngFor="let item of graficoColunaModel3;let i = index">
+                    <div class="conteudo-barra-total" *ngIf="item.PercAtual >= 0"
+                        [ngClass]="{'cor-conteudo-barra': i%2 !== 0 ,'' : i%2 === 0}">
+
+                        <div class="tooltip-barra">
+                            <!-- <div class="container-tooltip">
+                                <div class="titulo-tooltip">
+                                    Média
+                                </div>
+                                <div class="valor-tooltip">
+                                    {{item.Media}}
+                                </div>
+                            </div> -->
+                            <div class="container-tooltip">
+                                <div class="titulo-tooltip">
+                                    Perc
+                                </div>
+                                <div class="valor-tooltip">
+                                    {{item.PercAtual}}
+                                </div>
+                            </div>
+                            <div class="container-tooltip">
+                                <div class="titulo-tooltip">
+                                    Base
+                                </div>
+                                <div class="valor-tooltip"
+                                    [ngClass]="{'base-vermelha' : item.BaseMinima != '' , '':item.BaseMinima==''}">
+                                    {{item.Base}}
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="conteudo-linha-negativa">
+
+                            <div class="sem-valor-barra">
+                                <div class="valor-info"></div>
+                            </div>
+                            <div class="porc-barra-negativo" [style]="montaCorBarra(item)"
+                                [ngStyle]="{ width: porcBarraNegativa(0),border:  0 <= 0 ? '0 solid': '1 solid'}"></div>
+
+                        </div>
+
+                        <div *ngIf="qtdLinhas== i" class="linha-divisao-branca"></div>
+                        <div *ngIf="qtdLinhas!= i" class="linha-divisao"></div>
+
+                        <div class="conteudo-linha-positiva">
+
+                            <div class="porc-barra-positivo"
+                                [ngStyle]="{ width: porcBarraPositiva(item.PercAtual), background: item.CorSiteMarca}">
+                            </div>
+
+                            <!-- <div class="valor-barra-sig">
+                                <div class="valor-info">{{item.PercAtual}}</div>
+                            </div> -->
+
+                            <div class="valor-barra" [style]="montaCorBarraTesteSig(item)"
+                                [ngClass]="{'valor-barra-sig' : item.PercAtual> 20 , '':item.PercAtual< 20  }">
+                                <div class="valor-info">{{item.PercAtual}}</div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="conteudo-barra-total" *ngIf="item.PercAtual < 0"
+                        [ngClass]="{'cor-conteudo-barra': i%2 !== 0 ,'' : i%2 === 0}">
+
+                        <div class="tooltip-barra">
+                            <!-- <div class="container-tooltip">
+                                <div class="titulo-tooltip">
+                                    Média
+                                </div>
+                                <div class="valor-tooltip">
+                                    {{item.Media}}
+                                </div>
+                            </div> -->
+                            <div class="container-tooltip">
+                                <div class="titulo-tooltip">
+                                    Perc
+                                </div>
+                                <div class="valor-tooltip">
+                                    {{item.PercAtual}}
+                                </div>
+                            </div>
+                            <div class="container-tooltip">
+                                <div class="titulo-tooltip">
+                                    Base
+                                </div>
+                                <div class="valor-tooltip"
+                                    [ngClass]="{'base-vermelha' : item.BaseMinima != '' , '':item.BaseMinima==''}">
+                                    {{item.Base}}
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="conteudo-linha-negativa">
+
+                            <div class="valor-barra" [style]="montaCorBarraTesteSig(item)"
+                                [ngClass]="{'valor-barra-sig' : item.PercAtual < -20 , '' :item.PercAtual>-20 }">
+                                <div class="valor-info">{{item.PercAtual}}</div>
+                            </div>
+
+                            <div class="porc-barra-negativo" [style]="montaCorBarra(item)"
+                                [ngStyle]="{ width: porcBarraNegativa(item.PercAtual),border:  item.PercAtual > 0 ? '0 solid': '1 solid'}">
+                            </div>
+
+                        </div>
+
+
+                        <div *ngIf="qtdLinhas== i" class="linha-divisao-branca"></div>
+                        <div *ngIf="qtdLinhas!= i" class="linha-divisao"></div>
+
+                        <div class="conteudo-linha-positiva">
+
+                            <div class="porc-barra-positivo"
+                                [ngStyle]="{ width: porcBarraPositiva(item.PercAtual), background: item.CorSiteMarca}">
+                            </div>
+
+                            <div class="sem-valor-barra">
+                                <div class="valor-info"></div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div>
+                <div class="periodo-barras">
+                    <div class="group-filtro-coluna">
+                        <ng-select placeholder="N/A" id="tipoAtivoModel" class="selectFiltroColunaQ"
+                            [items]="filtroService.listaOnda" (change)="onchangeOndaColuna4(onda4)" [(ngModel)]="onda4"
+                            bindLabel="DescItem" [searchable]="false" [clearable]="false" [multiple]="false">
+                        </ng-select>
+                    </div>
+                </div>
+
+                <div *ngFor="let item of graficoColunaModel4;let i = index">
+                    <div class="conteudo-barra-total" *ngIf="item.PercAtual >= 0"
+                        [ngClass]="{'cor-conteudo-barra': i%2 !== 0 ,'' : i%2 === 0}">
+
+                        <div class="tooltip-barra">
+                            <!-- <div class="container-tooltip">
+                                <div class="titulo-tooltip">
+                                    Média
+                                </div>
+                                <div class="valor-tooltip">
+                                    {{item.Media}}
+                                </div>
+                            </div> -->
+                            <div class="container-tooltip">
+                                <div class="titulo-tooltip">
+                                    Perc
+                                </div>
+                                <div class="valor-tooltip">
+                                    {{item.PercAtual}}
+                                </div>
+                            </div>
+                            <div class="container-tooltip">
+                                <div class="titulo-tooltip">
+                                    Base
+                                </div>
+                                <div class="valor-tooltip"
+                                    [ngClass]="{'base-vermelha' : item.BaseMinima != '' , '':item.BaseMinima==''}">
+                                    {{item.Base}}
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="conteudo-linha-negativa">
+
+                            <div class="sem-valor-barra">
+                                <div class="valor-info"></div>
+                            </div>
+                            <div class="porc-barra-negativo" [style]="montaCorBarra(item)"
+                                [ngStyle]="{ width: porcBarraNegativa(0),border:  0 <= 0 ? '0 solid': '1 solid'}"></div>
+
+                        </div>
+
+                        <div *ngIf="qtdLinhas== i" class="linha-divisao-branca"></div>
+                        <div *ngIf="qtdLinhas!= i" class="linha-divisao"></div>
+
+                        <div class="conteudo-linha-positiva">
+
+                            <div class="porc-barra-positivo"
+                                [ngStyle]="{ width: porcBarraPositiva(item.PercAtual), background: item.CorSiteMarca}">
+                            </div>
+
+                            <!-- <div class="valor-barra-sig">
+                                <div class="valor-info">{{item.PercAtual}}</div>
+                            </div> -->
+
+                            <div class="valor-barra" [style]="montaCorBarraTesteSig(item)"
+                                [ngClass]="{'valor-barra-sig' : item.PercAtual> 20 , '':item.PercAtual< 20  }">
+                                <div class="valor-info">{{item.PercAtual}}</div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="conteudo-barra-total" *ngIf="item.PercAtual < 0"
+                        [ngClass]="{'cor-conteudo-barra': i%2 !== 0 ,'' : i%2 === 0}">
+
+                        <div class="tooltip-barra">
+                            <!-- <div class="container-tooltip">
+                                <div class="titulo-tooltip">
+                                    Média
+                                </div>
+                                <div class="valor-tooltip">
+                                    {{item.Media}}
+                                </div>
+                            </div> -->
+                            <div class="container-tooltip">
+                                <div class="titulo-tooltip">
+                                    Perc
+                                </div>
+                                <div class="valor-tooltip">
+                                    {{item.PercAtual}}
+                                </div>
+                            </div>
+                            <div class="container-tooltip">
+                                <div class="titulo-tooltip">
+                                    Base
+                                </div>
+                                <div class="valor-tooltip"
+                                    [ngClass]="{'base-vermelha' : item.BaseMinima != '' , '':item.BaseMinima==''}">
+                                    {{item.Base}}
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="conteudo-linha-negativa">
+
+                            <div class="valor-barra" [style]="montaCorBarraTesteSig(item)"
+                                [ngClass]="{'valor-barra-sig' : item.PercAtual < -20 , '' :item.PercAtual>-20 }">
+                                <div class="valor-info">{{item.PercAtual}}</div>
+                            </div>
+
+                            <div class="porc-barra-negativo" [style]="montaCorBarra(item)"
+                                [ngStyle]="{ width: porcBarraNegativa(item.PercAtual),border:  item.PercAtual > 0 ? '0 solid': '1 solid'}">
+                            </div>
+
+                        </div>
+
+
+                        <div *ngIf="qtdLinhas== i" class="linha-divisao-branca"></div>
+                        <div *ngIf="qtdLinhas!= i" class="linha-divisao"></div>
+
+                        <div class="conteudo-linha-positiva">
+
+                            <div class="porc-barra-positivo"
+                                [ngStyle]="{ width: porcBarraPositiva(item.PercAtual), background: item.CorSiteMarca}">
+                            </div>
+
+                            <div class="sem-valor-barra">
+                                <div class="valor-info"></div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div>
+                <div class="periodo-barras">
+                    <div class="group-filtro-coluna">
+                        <ng-select placeholder="N/A" id="tipoAtivoModel" class="selectFiltroColunaQ"
+                            [items]="filtroService.listaOnda" (change)="onchangeOndaColuna3_3(onda3_3)" [(ngModel)]="onda3_3"
+                            bindLabel="DescItem" [searchable]="false" [clearable]="false" [multiple]="false">
+                        </ng-select>
+                    </div>
+                </div>
+
+                <div *ngFor="let item of graficoColunaModel3_3;let i = index">
+                    <div class="conteudo-barra-total" *ngIf="item.PercAtual >= 0"
+                        [ngClass]="{'cor-conteudo-barra': i%2 !== 0 ,'' : i%2 === 0}">
+
+                        <div class="tooltip-barra">
+                            <!-- <div class="container-tooltip">
+                                <div class="titulo-tooltip">
+                                    Média
+                                </div>
+                                <div class="valor-tooltip">
+                                    {{item.Media}}
+                                </div>
+                            </div> -->
+                            <div class="container-tooltip">
+                                <div class="titulo-tooltip">
+                                    Perc
+                                </div>
+                                <div class="valor-tooltip">
+                                    {{item.PercAtual}}
+                                </div>
+                            </div>
+                            <div class="container-tooltip">
+                                <div class="titulo-tooltip">
+                                    Base
+                                </div>
+                                <div class="valor-tooltip"
+                                    [ngClass]="{'base-vermelha' : item.BaseMinima != '' , '':item.BaseMinima==''}">
+                                    {{item.Base}}
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="conteudo-linha-negativa">
+
+                            <div class="sem-valor-barra">
+                                <div class="valor-info"></div>
+                            </div>
+                            <div class="porc-barra-negativo" [style]="montaCorBarra(item)"
+                                [ngStyle]="{ width: porcBarraNegativa(0),border:  0 <= 0 ? '0 solid': '1 solid'}"></div>
+
+                        </div>
+
+                        <div *ngIf="qtdLinhas== i" class="linha-divisao-branca"></div>
+                        <div *ngIf="qtdLinhas!= i" class="linha-divisao"></div>
+
+                        <div class="conteudo-linha-positiva">
+
+                            <div class="porc-barra-positivo"
+                                [ngStyle]="{ width: porcBarraPositiva(item.PercAtual), background: item.CorSiteMarca}">
+                            </div>
+
+                            <!-- <div class="valor-barra-sig">
+                                <div class="valor-info">{{item.PercAtual}}</div>
+                            </div> -->
+
+                            <div class="valor-barra" [style]="montaCorBarraTesteSig(item)"
+                                [ngClass]="{'valor-barra-sig' : item.PercAtual> 20 , '':item.PercAtual< 20  }">
+                                <div class="valor-info">{{item.PercAtual}}</div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="conteudo-barra-total" *ngIf="item.PercAtual < 0"
+                        [ngClass]="{'cor-conteudo-barra': i%2 !== 0 ,'' : i%2 === 0}">
+
+                        <div class="tooltip-barra">
+                            <!-- <div class="container-tooltip">
+                                <div class="titulo-tooltip">
+                                    Média
+                                </div>
+                                <div class="valor-tooltip">
+                                    {{item.Media}}
+                                </div>
+                            </div> -->
+                            <div class="container-tooltip">
+                                <div class="titulo-tooltip">
+                                    Perc
+                                </div>
+                                <div class="valor-tooltip">
+                                    {{item.PercAtual}}
+                                </div>
+                            </div>
+                            <div class="container-tooltip">
+                                <div class="titulo-tooltip">
+                                    Base
+                                </div>
+                                <div class="valor-tooltip"
+                                    [ngClass]="{'base-vermelha' : item.BaseMinima != '' , '':item.BaseMinima==''}">
+                                    {{item.Base}}
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="conteudo-linha-negativa">
+
+                            <div class="valor-barra" [style]="montaCorBarraTesteSig(item)"
+                                [ngClass]="{'valor-barra-sig' : item.PercAtual < -20 , '' :item.PercAtual>-20 }">
+                                <div class="valor-info">{{item.PercAtual}}</div>
+                            </div>
+
+                            <div class="porc-barra-negativo" [style]="montaCorBarra(item)"
+                                [ngStyle]="{ width: porcBarraNegativa(item.PercAtual),border:  item.PercAtual > 0 ? '0 solid': '1 solid'}">
+                            </div>
+
+                        </div>
+
+
+                        <div *ngIf="qtdLinhas== i" class="linha-divisao-branca"></div>
+                        <div *ngIf="qtdLinhas!= i" class="linha-divisao"></div>
+
+                        <div class="conteudo-linha-positiva">
+
+                            <div class="porc-barra-positivo"
+                                [ngStyle]="{ width: porcBarraPositiva(item.PercAtual), background: item.CorSiteMarca}">
+                            </div>
+
+                            <div class="sem-valor-barra">
+                                <div class="valor-info"></div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            
+
+        </div>
+
+
+        <!-- <div class="total-coluna">
+            <div class="texto-total">
+                {{graficoColunaModel3[0]?.Base}}
+            </div>
+        </div> -->
+
+
+    </div>
+
+    <div class="coluna-barra">
+        <div class="separacao-filtro">
+            <div class="group-filtro-coluna">
+                <select-image [IndexCombo]=2 (ImageModelMarcas)="onchangeMarcaColuna3($event)"></select-image>
+            </div>
+        </div>
+        <div class="conteudo-duplo">
+
+            <div>
+                <div class="periodo-barras">
+                    <div class="group-filtro-coluna">
+                        <ng-select placeholder="N/A" id="tipoAtivoModel" class="selectFiltroColunaQ"
+                            [items]="filtroService.listaOnda" (change)="onchangeOndaColuna5(onda5)" [(ngModel)]="onda5"
+                            bindLabel="DescItem" [searchable]="false" [clearable]="false" [multiple]="false">
+                        </ng-select>
+                    </div>
+                </div>
+
+                <div *ngFor="let item of graficoColunaModel5;let i = index">
+                    <div class="conteudo-barra-total" *ngIf="item.PercAtual >= 0"
+                        [ngClass]="{'cor-conteudo-barra': i%2 !== 0 ,'' : i%2 === 0}">
+
+                        <div class="tooltip-barra">
+                            <!-- <div class="container-tooltip">
+                                <div class="titulo-tooltip">
+                                    Média
+                                </div>
+                                <div class="valor-tooltip">
+                                    {{item.Media}}
+                                </div>
+                            </div> -->
+                            <div class="container-tooltip">
+                                <div class="titulo-tooltip">
+                                    Perc
+                                </div>
+                                <div class="valor-tooltip">
+                                    {{item.PercAtual}}
+                                </div>
+                            </div>
+                            <div class="container-tooltip">
+                                <div class="titulo-tooltip">
+                                    Base
+                                </div>
+                                <div class="valor-tooltip"
+                                    [ngClass]="{'base-vermelha' : item.BaseMinima != '' , '':item.BaseMinima==''}">
+                                    {{item.Base}}
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="conteudo-linha-negativa">
+
+                            <div class="sem-valor-barra">
+                                <div class="valor-info"></div>
+                            </div>
+                            <div class="porc-barra-negativo" [style]="montaCorBarra(item)"
+                                [ngStyle]="{ width: porcBarraNegativa(0),border:  0 <= 0 ? '0 solid': '1 solid'}"></div>
+
+                        </div>
+
+                        <div *ngIf="qtdLinhas== i" class="linha-divisao-branca"></div>
+                        <div *ngIf="qtdLinhas!= i" class="linha-divisao"></div>
+
+                        <div class="conteudo-linha-positiva">
+
+                            <div class="porc-barra-positivo"
+                                [ngStyle]="{ width: porcBarraPositiva(item.PercAtual), background: item.CorSiteMarca}">
+                            </div>
+
+                            <!-- <div class="valor-barra-sig">
+                                <div class="valor-info">{{item.PercAtual}}</div>
+                            </div> -->
+
+                            <div class="valor-barra" [style]="montaCorBarraTesteSig(item)"
+                                [ngClass]="{'valor-barra-sig' : item.PercAtual> 20 , '':item.PercAtual< 20  }">
+                                <div class="valor-info">{{item.PercAtual}}</div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="conteudo-barra-total" *ngIf="item.PercAtual < 0"
+                        [ngClass]="{'cor-conteudo-barra': i%2 !== 0 ,'' : i%2 === 0}">
+
+                        <div class="tooltip-barra">
+                            <!-- <div class="container-tooltip">
+                                <div class="titulo-tooltip">
+                                    Média
+                                </div>
+                                <div class="valor-tooltip">
+                                    {{item.Media}}
+                                </div>
+                            </div> -->
+                            <div class="container-tooltip">
+                                <div class="titulo-tooltip">
+                                    Perc
+                                </div>
+                                <div class="valor-tooltip">
+                                    {{item.PercAtual}}
+                                </div>
+                            </div>
+                            <div class="container-tooltip">
+                                <div class="titulo-tooltip">
+                                    Base
+                                </div>
+                                <div class="valor-tooltip"
+                                    [ngClass]="{'base-vermelha' : item.BaseMinima != '' , '':item.BaseMinima==''}">
+                                    {{item.Base}}
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="conteudo-linha-negativa">
+
+                            <div class="valor-barra" [style]="montaCorBarraTesteSig(item)"
+                                [ngClass]="{'valor-barra-sig' : item.PercAtual < -20 , '' :item.PercAtual>-20 }">
+                                <div class="valor-info">{{item.PercAtual}}</div>
+                            </div>
+
+                            <div class="porc-barra-negativo" [style]="montaCorBarra(item)"
+                                [ngStyle]="{ width: porcBarraNegativa(item.PercAtual),border:  item.PercAtual > 0 ? '0 solid': '1 solid'}">
+                            </div>
+
+                        </div>
+
+
+                        <div *ngIf="qtdLinhas== i" class="linha-divisao-branca"></div>
+                        <div *ngIf="qtdLinhas!= i" class="linha-divisao"></div>
+
+                        <div class="conteudo-linha-positiva">
+
+                            <div class="porc-barra-positivo"
+                                [ngStyle]="{ width: porcBarraPositiva(item.PercAtual), background: item.CorSiteMarca}">
+                            </div>
+
+                            <div class="sem-valor-barra">
+                                <div class="valor-info"></div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div>
+                <div class="periodo-barras">
+                    <div class="group-filtro-coluna">
+                        <ng-select placeholder="N/A" id="tipoAtivoModel" class="selectFiltroColunaQ"
+                            [items]="filtroService.listaOnda" (change)="onchangeOndaColuna6(onda6)" [(ngModel)]="onda6"
+                            bindLabel="DescItem" [searchable]="false" [clearable]="false" [multiple]="false">
+                        </ng-select>
+                    </div>
+                </div>
+
+                <div *ngFor="let item of graficoColunaModel6;let i = index">
+                    <div class="conteudo-barra-total" *ngIf="item.PercAtual >= 0"
+                        [ngClass]="{'cor-conteudo-barra': i%2 !== 0 ,'' : i%2 === 0}">
+
+                        <div class="tooltip-barra">
+                            <!-- <div class="container-tooltip">
+                                <div class="titulo-tooltip">
+                                    Média
+                                </div>
+                                <div class="valor-tooltip">
+                                    {{item.Media}}
+                                </div>
+                            </div> -->
+                            <div class="container-tooltip">
+                                <div class="titulo-tooltip">
+                                    Perc
+                                </div>
+                                <div class="valor-tooltip">
+                                    {{item.PercAtual}}
+                                </div>
+                            </div>
+                            <div class="container-tooltip">
+                                <div class="titulo-tooltip">
+                                    Base
+                                </div>
+                                <div class="valor-tooltip"
+                                    [ngClass]="{'base-vermelha' : item.BaseMinima != '' , '':item.BaseMinima==''}">
+                                    {{item.Base}}
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="conteudo-linha-negativa">
+
+                            <div class="sem-valor-barra">
+                                <div class="valor-info"></div>
+                            </div>
+                            <div class="porc-barra-negativo" [style]="montaCorBarra(item)"
+                                [ngStyle]="{ width: porcBarraNegativa(0),border:  0 <= 0 ? '0 solid': '1 solid'}"></div>
+
+                        </div>
+
+                        <div *ngIf="qtdLinhas== i" class="linha-divisao-branca"></div>
+                        <div *ngIf="qtdLinhas!= i" class="linha-divisao"></div>
+
+                        <div class="conteudo-linha-positiva">
+
+                            <div class="porc-barra-positivo"
+                                [ngStyle]="{ width: porcBarraPositiva(item.PercAtual), background: item.CorSiteMarca}">
+                            </div>
+
+                            <!-- <div class="valor-barra-sig">
+                                <div class="valor-info">{{item.PercAtual}}</div>
+                            </div> -->
+
+                            <div class="valor-barra" [style]="montaCorBarraTesteSig(item)"
+                                [ngClass]="{'valor-barra-sig' : item.PercAtual> 20 , '':item.PercAtual< 20  }">
+                                <div class="valor-info">{{item.PercAtual}}</div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="conteudo-barra-total" *ngIf="item.PercAtual < 0"
+                        [ngClass]="{'cor-conteudo-barra': i%2 !== 0 ,'' : i%2 === 0}">
+
+                        <div class="tooltip-barra">
+                            <!-- <div class="container-tooltip">
+                                <div class="titulo-tooltip">
+                                    Média
+                                </div>
+                                <div class="valor-tooltip">
+                                    {{item.Media}}
+                                </div>
+                            </div> -->
+                            <div class="container-tooltip">
+                                <div class="titulo-tooltip">
+                                    Perc
+                                </div>
+                                <div class="valor-tooltip">
+                                    {{item.PercAtual}}
+                                </div>
+                            </div>
+                            <div class="container-tooltip">
+                                <div class="titulo-tooltip">
+                                    Base
+                                </div>
+                                <div class="valor-tooltip"
+                                    [ngClass]="{'base-vermelha' : item.BaseMinima != '' , '':item.BaseMinima==''}">
+                                    {{item.Base}}
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="conteudo-linha-negativa">
+
+                            <div class="valor-barra" [style]="montaCorBarraTesteSig(item)"
+                                [ngClass]="{'valor-barra-sig' : item.PercAtual < -20 , '' :item.PercAtual>-20 }">
+                                <div class="valor-info">{{item.PercAtual}}</div>
+                            </div>
+
+                            <div class="porc-barra-negativo" [style]="montaCorBarra(item)"
+                                [ngStyle]="{ width: porcBarraNegativa(item.PercAtual),border:  item.PercAtual > 0 ? '0 solid': '1 solid'}">
+                            </div>
+
+                        </div>
+
+
+                        <div *ngIf="qtdLinhas== i" class="linha-divisao-branca"></div>
+                        <div *ngIf="qtdLinhas!= i" class="linha-divisao"></div>
+
+                        <div class="conteudo-linha-positiva">
+
+                            <div class="porc-barra-positivo"
+                                [ngStyle]="{ width: porcBarraPositiva(item.PercAtual), background: item.CorSiteMarca}">
+                            </div>
+
+                            <div class="sem-valor-barra">
+                                <div class="valor-info"></div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div>
+                <div class="periodo-barras">
+                    <div class="group-filtro-coluna">
+                        <ng-select placeholder="N/A" id="tipoAtivoModel" class="selectFiltroColunaQ"
+                            [items]="filtroService.listaOnda" (change)="onchangeOndaColuna5_3(onda5_3)" [(ngModel)]="onda5_3"
+                            bindLabel="DescItem" [searchable]="false" [clearable]="false" [multiple]="false">
+                        </ng-select>
+                    </div>
+                </div>
+
+                <div *ngFor="let item of graficoColunaModel5_3;let i = index">
+                    <div class="conteudo-barra-total" *ngIf="item.PercAtual >= 0"
+                        [ngClass]="{'cor-conteudo-barra': i%2 !== 0 ,'' : i%2 === 0}">
+
+                        <div class="tooltip-barra">
+                            <!-- <div class="container-tooltip">
+                                <div class="titulo-tooltip">
+                                    Média
+                                </div>
+                                <div class="valor-tooltip">
+                                    {{item.Media}}
+                                </div>
+                            </div> -->
+                            <div class="container-tooltip">
+                                <div class="titulo-tooltip">
+                                    Perc
+                                </div>
+                                <div class="valor-tooltip">
+                                    {{item.PercAtual}}
+                                </div>
+                            </div>
+                            <div class="container-tooltip">
+                                <div class="titulo-tooltip">
+                                    Base
+                                </div>
+                                <div class="valor-tooltip"
+                                    [ngClass]="{'base-vermelha' : item.BaseMinima != '' , '':item.BaseMinima==''}">
+                                    {{item.Base}}
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="conteudo-linha-negativa">
+
+                            <div class="sem-valor-barra">
+                                <div class="valor-info"></div>
+                            </div>
+                            <div class="porc-barra-negativo" [style]="montaCorBarra(item)"
+                                [ngStyle]="{ width: porcBarraNegativa(0),border:  0 <= 0 ? '0 solid': '1 solid'}"></div>
+
+                        </div>
+
+                        <div *ngIf="qtdLinhas== i" class="linha-divisao-branca"></div>
+                        <div *ngIf="qtdLinhas!= i" class="linha-divisao"></div>
+
+                        <div class="conteudo-linha-positiva">
+
+                            <div class="porc-barra-positivo"
+                                [ngStyle]="{ width: porcBarraPositiva(item.PercAtual), background: item.CorSiteMarca}">
+                            </div>
+
+                            <!-- <div class="valor-barra-sig">
+                                <div class="valor-info">{{item.PercAtual}}</div>
+                            </div> -->
+
+                            <div class="valor-barra" [style]="montaCorBarraTesteSig(item)"
+                                [ngClass]="{'valor-barra-sig' : item.PercAtual> 20 , '':item.PercAtual< 20  }">
+                                <div class="valor-info">{{item.PercAtual}}</div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="conteudo-barra-total" *ngIf="item.PercAtual < 0"
+                        [ngClass]="{'cor-conteudo-barra': i%2 !== 0 ,'' : i%2 === 0}">
+
+                        <div class="tooltip-barra">
+                            <!-- <div class="container-tooltip">
+                                <div class="titulo-tooltip">
+                                    Média
+                                </div>
+                                <div class="valor-tooltip">
+                                    {{item.Media}}
+                                </div>
+                            </div> -->
+                            <div class="container-tooltip">
+                                <div class="titulo-tooltip">
+                                    Perc
+                                </div>
+                                <div class="valor-tooltip">
+                                    {{item.PercAtual}}
+                                </div>
+                            </div>
+                            <div class="container-tooltip">
+                                <div class="titulo-tooltip">
+                                    Base
+                                </div>
+                                <div class="valor-tooltip"
+                                    [ngClass]="{'base-vermelha' : item.BaseMinima != '' , '':item.BaseMinima==''}">
+                                    {{item.Base}}
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="conteudo-linha-negativa">
+
+                            <div class="valor-barra" [style]="montaCorBarraTesteSig(item)"
+                                [ngClass]="{'valor-barra-sig' : item.PercAtual < -20 , '' :item.PercAtual>-20 }">
+                                <div class="valor-info">{{item.PercAtual}}</div>
+                            </div>
+
+                            <div class="porc-barra-negativo" [style]="montaCorBarra(item)"
+                                [ngStyle]="{ width: porcBarraNegativa(item.PercAtual),border:  item.PercAtual > 0 ? '0 solid': '1 solid'}">
+                            </div>
+
+                        </div>
+
+
+                        <div *ngIf="qtdLinhas== i" class="linha-divisao-branca"></div>
+                        <div *ngIf="qtdLinhas!= i" class="linha-divisao"></div>
+
+                        <div class="conteudo-linha-positiva">
+
+                            <div class="porc-barra-positivo"
+                                [ngStyle]="{ width: porcBarraPositiva(item.PercAtual), background: item.CorSiteMarca}">
+                            </div>
+
+                            <div class="sem-valor-barra">
+                                <div class="valor-info"></div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- <div class="total-coluna">
+            <div class="texto-total">
+                {{graficoColunaModel5[0]?.Base}}
+            </div>
+        </div> -->
+
+
+    </div>
+
+    <div class="coluna-barra">
+        <div class="separacao-filtro">
+            <div class="group-filtro-coluna">
+                <select-image [IndexCombo]=3 (ImageModelMarcas)="onchangeMarcaColuna4($event)"></select-image>
+            </div>
+        </div>
+
+        <div class="conteudo-duplo">
+
+            <div>
+                <div class="periodo-barras">
+                    <div class="group-filtro-coluna">
+                        <ng-select placeholder="N/A" id="tipoAtivoModel" class="selectFiltroColunaQ"
+                            [items]="filtroService.listaOnda" (change)="onchangeOndaColuna7(onda7)" [(ngModel)]="onda7"
+                            bindLabel="DescItem" [searchable]="false" [clearable]="false" [multiple]="false">
+                        </ng-select>
+                    </div>
+                </div>
+
+                <div *ngFor="let item of graficoColunaModel7;let i = index">
+                    <div class="conteudo-barra-total" *ngIf="item.PercAtual >= 0"
+                        [ngClass]="{'cor-conteudo-barra': i%2 !== 0 ,'' : i%2 === 0}">
+
+                        <div class="tooltip-barra">
+                            <!-- <div class="container-tooltip">
+                                <div class="titulo-tooltip">
+                                    Média
+                                </div>
+                                <div class="valor-tooltip">
+                                    {{item.Media}}
+                                </div>
+                            </div> -->
+                            <div class="container-tooltip">
+                                <div class="titulo-tooltip">
+                                    Perc
+                                </div>
+                                <div class="valor-tooltip">
+                                    {{item.PercAtual}}
+                                </div>
+                            </div>
+                            <div class="container-tooltip">
+                                <div class="titulo-tooltip">
+                                    Base
+                                </div>
+                                <div class="valor-tooltip"
+                                    [ngClass]="{'base-vermelha' : item.BaseMinima != '' , '':item.BaseMinima==''}">
+                                    {{item.Base}}
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="conteudo-linha-negativa">
+
+                            <div class="sem-valor-barra">
+                                <div class="valor-info"></div>
+                            </div>
+                            <div class="porc-barra-negativo" [style]="montaCorBarra(item)"
+                                [ngStyle]="{ width: porcBarraNegativa(0),border:  0 <= 0 ? '0 solid': '1 solid'}"></div>
+
+                        </div>
+
+                        <div *ngIf="qtdLinhas== i" class="linha-divisao-branca"></div>
+                        <div *ngIf="qtdLinhas!= i" class="linha-divisao"></div>
+
+                        <div class="conteudo-linha-positiva">
+
+                            <div class="porc-barra-positivo"
+                                [ngStyle]="{ width: porcBarraPositiva(item.PercAtual), background: item.CorSiteMarca}">
+                            </div>
+
+                            <!-- <div class="valor-barra-sig">
+                                <div class="valor-info">{{item.PercAtual}}</div>
+                            </div> -->
+
+                            <div class="valor-barra" [style]="montaCorBarraTesteSig(item)"
+                                [ngClass]="{'valor-barra-sig' : item.PercAtual> 20 , '':item.PercAtual< 20  }">
+                                <div class="valor-info">{{item.PercAtual}}</div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="conteudo-barra-total" *ngIf="item.PercAtual < 0"
+                        [ngClass]="{'cor-conteudo-barra': i%2 !== 0 ,'' : i%2 === 0}">
+
+                        <div class="tooltip-barra">
+                            <!-- <div class="container-tooltip">
+                                <div class="titulo-tooltip">
+                                    Média
+                                </div>
+                                <div class="valor-tooltip">
+                                    {{item.Media}}
+                                </div>
+                            </div> -->
+                            <div class="container-tooltip">
+                                <div class="titulo-tooltip">
+                                    Perc
+                                </div>
+                                <div class="valor-tooltip">
+                                    {{item.PercAtual}}
+                                </div>
+                            </div>
+                            <div class="container-tooltip">
+                                <div class="titulo-tooltip">
+                                    Base
+                                </div>
+                                <div class="valor-tooltip"
+                                    [ngClass]="{'base-vermelha' : item.BaseMinima != '' , '':item.BaseMinima==''}">
+                                    {{item.Base}}
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="conteudo-linha-negativa">
+
+                            <div class="valor-barra" [style]="montaCorBarraTesteSig(item)"
+                                [ngClass]="{'valor-barra-sig' : item.PercAtual < -20 , '' :item.PercAtual>-20 }">
+                                <div class="valor-info">{{item.PercAtual}}</div>
+                            </div>
+
+                            <div class="porc-barra-negativo" [style]="montaCorBarra(item)"
+                                [ngStyle]="{ width: porcBarraNegativa(item.PercAtual),border:  item.PercAtual > 0 ? '0 solid': '1 solid'}">
+                            </div>
+
+                        </div>
+
+
+                        <div *ngIf="qtdLinhas== i" class="linha-divisao-branca"></div>
+                        <div *ngIf="qtdLinhas!= i" class="linha-divisao"></div>
+
+                        <div class="conteudo-linha-positiva">
+
+                            <div class="porc-barra-positivo"
+                                [ngStyle]="{ width: porcBarraPositiva(item.PercAtual), background: item.CorSiteMarca}">
+                            </div>
+
+                            <div class="sem-valor-barra">
+                                <div class="valor-info"></div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div>
+                <div class="periodo-barras">
+                    <div class="group-filtro-coluna">
+                        <ng-select placeholder="N/A" id="tipoAtivoModel" class="selectFiltroColunaQ"
+                            [items]="filtroService.listaOnda" (change)="onchangeOndaColuna8(onda8)" [(ngModel)]="onda8"
+                            bindLabel="DescItem" [searchable]="false" [clearable]="false" [multiple]="false">
+                        </ng-select>
+                    </div>
+                </div>
+
+                <div *ngFor="let item of graficoColunaModel8;let i = index">
+                    <div class="conteudo-barra-total" *ngIf="item.PercAtual >= 0"
+                        [ngClass]="{'cor-conteudo-barra': i%2 !== 0 ,'' : i%2 === 0}">
+
+                        <div class="tooltip-barra">
+                            <!-- <div class="container-tooltip">
+                                <div class="titulo-tooltip">
+                                    Média
+                                </div>
+                                <div class="valor-tooltip">
+                                    {{item.Media}}
+                                </div>
+                            </div> -->
+                            <div class="container-tooltip">
+                                <div class="titulo-tooltip">
+                                    Perc
+                                </div>
+                                <div class="valor-tooltip">
+                                    {{item.PercAtual}}
+                                </div>
+                            </div>
+                            <div class="container-tooltip">
+                                <div class="titulo-tooltip">
+                                    Base
+                                </div>
+                                <div class="valor-tooltip"
+                                    [ngClass]="{'base-vermelha' : item.BaseMinima != '' , '':item.BaseMinima==''}">
+                                    {{item.Base}}
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="conteudo-linha-negativa">
+
+                            <div class="sem-valor-barra">
+                                <div class="valor-info"></div>
+                            </div>
+                            <div class="porc-barra-negativo" [style]="montaCorBarra(item)"
+                                [ngStyle]="{ width: porcBarraNegativa(0),border:  0 <= 0 ? '0 solid': '1 solid'}"></div>
+
+                        </div>
+
+                        <div *ngIf="qtdLinhas== i" class="linha-divisao-branca"></div>
+                        <div *ngIf="qtdLinhas!= i" class="linha-divisao"></div>
+
+                        <div class="conteudo-linha-positiva">
+
+                            <div class="porc-barra-positivo"
+                                [ngStyle]="{ width: porcBarraPositiva(item.PercAtual), background: item.CorSiteMarca}">
+                            </div>
+
+                            <!-- <div class="valor-barra-sig">
+                                <div class="valor-info">{{item.PercAtual}}</div>
+                            </div> -->
+
+                            <div class="valor-barra" [style]="montaCorBarraTesteSig(item)"
+                                [ngClass]="{'valor-barra-sig' : item.PercAtual> 20 , '':item.PercAtual< 20  }">
+                                <div class="valor-info">{{item.PercAtual}}</div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="conteudo-barra-total" *ngIf="item.PercAtual < 0"
+                        [ngClass]="{'cor-conteudo-barra': i%2 !== 0 ,'' : i%2 === 0}">
+
+                        <div class="tooltip-barra">
+                            <!-- <div class="container-tooltip">
+                                <div class="titulo-tooltip">
+                                    Média
+                                </div>
+                                <div class="valor-tooltip">
+                                    {{item.Media}}
+                                </div>
+                            </div> -->
+                            <div class="container-tooltip">
+                                <div class="titulo-tooltip">
+                                    Perc
+                                </div>
+                                <div class="valor-tooltip">
+                                    {{item.PercAtual}}
+                                </div>
+                            </div>
+                            <div class="container-tooltip">
+                                <div class="titulo-tooltip">
+                                    Base
+                                </div>
+                                <div class="valor-tooltip"
+                                    [ngClass]="{'base-vermelha' : item.BaseMinima != '' , '':item.BaseMinima==''}">
+                                    {{item.Base}}
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="conteudo-linha-negativa">
+
+                            <div class="valor-barra" [style]="montaCorBarraTesteSig(item)"
+                                [ngClass]="{'valor-barra-sig' : item.PercAtual < -20 , '' :item.PercAtual>-20 }">
+                                <div class="valor-info">{{item.PercAtual}}</div>
+                            </div>
+
+                            <div class="porc-barra-negativo" [style]="montaCorBarra(item)"
+                                [ngStyle]="{ width: porcBarraNegativa(item.PercAtual),border:  item.PercAtual > 0 ? '0 solid': '1 solid'}">
+                            </div>
+
+                        </div>
+
+
+                        <div *ngIf="qtdLinhas== i" class="linha-divisao-branca"></div>
+                        <div *ngIf="qtdLinhas!= i" class="linha-divisao"></div>
+
+                        <div class="conteudo-linha-positiva">
+
+                            <div class="porc-barra-positivo"
+                                [ngStyle]="{ width: porcBarraPositiva(item.PercAtual), background: item.CorSiteMarca}">
+                            </div>
+
+                            <div class="sem-valor-barra">
+                                <div class="valor-info"></div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div>
+                <div class="periodo-barras">
+                    <div class="group-filtro-coluna">
+                        <ng-select placeholder="N/A" id="tipoAtivoModel" class="selectFiltroColunaQ"
+                            [items]="filtroService.listaOnda" (change)="onchangeOndaColuna7_3(onda7_3)" [(ngModel)]="onda7_3"
+                            bindLabel="DescItem" [searchable]="false" [clearable]="false" [multiple]="false">
+                        </ng-select>
+                    </div>
+                </div>
+
+                <div *ngFor="let item of graficoColunaModel7_3;let i = index">
+                    <div class="conteudo-barra-total" *ngIf="item.PercAtual >= 0"
+                        [ngClass]="{'cor-conteudo-barra': i%2 !== 0 ,'' : i%2 === 0}">
+
+                        <div class="tooltip-barra">
+                            <!-- <div class="container-tooltip">
+                                <div class="titulo-tooltip">
+                                    Média
+                                </div>
+                                <div class="valor-tooltip">
+                                    {{item.Media}}
+                                </div>
+                            </div> -->
+                            <div class="container-tooltip">
+                                <div class="titulo-tooltip">
+                                    Perc
+                                </div>
+                                <div class="valor-tooltip">
+                                    {{item.PercAtual}}
+                                </div>
+                            </div>
+                            <div class="container-tooltip">
+                                <div class="titulo-tooltip">
+                                    Base
+                                </div>
+                                <div class="valor-tooltip"
+                                    [ngClass]="{'base-vermelha' : item.BaseMinima != '' , '':item.BaseMinima==''}">
+                                    {{item.Base}}
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="conteudo-linha-negativa">
+
+                            <div class="sem-valor-barra">
+                                <div class="valor-info"></div>
+                            </div>
+                            <div class="porc-barra-negativo" [style]="montaCorBarra(item)"
+                                [ngStyle]="{ width: porcBarraNegativa(0),border:  0 <= 0 ? '0 solid': '1 solid'}"></div>
+
+                        </div>
+
+                        <div *ngIf="qtdLinhas== i" class="linha-divisao-branca"></div>
+                        <div *ngIf="qtdLinhas!= i" class="linha-divisao"></div>
+
+                        <div class="conteudo-linha-positiva">
+
+                            <div class="porc-barra-positivo"
+                                [ngStyle]="{ width: porcBarraPositiva(item.PercAtual), background: item.CorSiteMarca}">
+                            </div>
+
+                            <!-- <div class="valor-barra-sig">
+                                <div class="valor-info">{{item.PercAtual}}</div>
+                            </div> -->
+
+                            <div class="valor-barra" [style]="montaCorBarraTesteSig(item)"
+                                [ngClass]="{'valor-barra-sig' : item.PercAtual> 20 , '':item.PercAtual< 20  }">
+                                <div class="valor-info">{{item.PercAtual}}</div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="conteudo-barra-total" *ngIf="item.PercAtual < 0"
+                        [ngClass]="{'cor-conteudo-barra': i%2 !== 0 ,'' : i%2 === 0}">
+
+                        <div class="tooltip-barra">
+                            <!-- <div class="container-tooltip">
+                                <div class="titulo-tooltip">
+                                    Média
+                                </div>
+                                <div class="valor-tooltip">
+                                    {{item.Media}}
+                                </div>
+                            </div> -->
+                            <div class="container-tooltip">
+                                <div class="titulo-tooltip">
+                                    Perc
+                                </div>
+                                <div class="valor-tooltip">
+                                    {{item.PercAtual}}
+                                </div>
+                            </div>
+                            <div class="container-tooltip">
+                                <div class="titulo-tooltip">
+                                    Base
+                                </div>
+                                <div class="valor-tooltip"
+                                    [ngClass]="{'base-vermelha' : item.BaseMinima != '' , '':item.BaseMinima==''}">
+                                    {{item.Base}}
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="conteudo-linha-negativa">
+
+                            <div class="valor-barra" [style]="montaCorBarraTesteSig(item)"
+                                [ngClass]="{'valor-barra-sig' : item.PercAtual < -20 , '' :item.PercAtual>-20 }">
+                                <div class="valor-info">{{item.PercAtual}}</div>
+                            </div>
+
+                            <div class="porc-barra-negativo" [style]="montaCorBarra(item)"
+                                [ngStyle]="{ width: porcBarraNegativa(item.PercAtual),border:  item.PercAtual > 0 ? '0 solid': '1 solid'}">
+                            </div>
+
+                        </div>
+
+
+                        <div *ngIf="qtdLinhas== i" class="linha-divisao-branca"></div>
+                        <div *ngIf="qtdLinhas!= i" class="linha-divisao"></div>
+
+                        <div class="conteudo-linha-positiva">
+
+                            <div class="porc-barra-positivo"
+                                [ngStyle]="{ width: porcBarraPositiva(item.PercAtual), background: item.CorSiteMarca}">
+                            </div>
+
+                            <div class="sem-valor-barra">
+                                <div class="valor-info"></div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- 
+        <div class="total-coluna">
+            <div class="texto-total">
+                {{graficoColunaModel7[0]?.Base}}
+            </div>
+        </div> -->
+
+    </div>
+
+
+    <div class="coluna-barra" style="display: none;">
+        <div class="separacao-filtro">
+            <div class="group-filtro-coluna">
+                <select-image [IndexCombo]=4 (ImageModelMarcas)="onchangeMarcaColuna5($event)"></select-image>
+            </div>
+        </div>
+
+        <div class="conteudo-duplo">
+
+            <div>
+                <div class="periodo-barras">
+                    <div class="group-filtro-coluna">
+                        <ng-select placeholder="N/A" id="tipoAtivoModel" class="selectFiltroColunaQ"
+                            [items]="filtroService.listaOnda" (change)="onchangeOndaColuna9(onda9)" [(ngModel)]="onda9"
+                            bindLabel="DescItem" [searchable]="false" [clearable]="false" [multiple]="false">
+                        </ng-select>
+                    </div>
+                </div>
+
+                <div *ngFor="let item of graficoColunaModel9;let i = index">
+                    <div class="conteudo-barra-total" *ngIf="item.PercAtual >= 0"
+                        [ngClass]="{'cor-conteudo-barra': i%2 !== 0 ,'' : i%2 === 0}">
+
+                        <div class="tooltip-barra">
+                            <!-- <div class="container-tooltip">
+                                <div class="titulo-tooltip">
+                                    Média
+                                </div>
+                                <div class="valor-tooltip">
+                                    {{item.Media}}
+                                </div>
+                            </div> -->
+                            <div class="container-tooltip">
+                                <div class="titulo-tooltip">
+                                    Perc
+                                </div>
+                                <div class="valor-tooltip">
+                                    {{item.PercAtual}}
+                                </div>
+                            </div>
+                            <div class="container-tooltip">
+                                <div class="titulo-tooltip">
+                                    Base
+                                </div>
+                                <div class="valor-tooltip"
+                                    [ngClass]="{'base-vermelha' : item.BaseMinima != '' , '':item.BaseMinima==''}">
+                                    {{item.Base}}
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="conteudo-linha-negativa">
+
+                            <div class="sem-valor-barra">
+                                <div class="valor-info"></div>
+                            </div>
+                            <div class="porc-barra-negativo" [style]="montaCorBarra(item)"
+                                [ngStyle]="{ width: porcBarraNegativa(0),border:  0 <= 0 ? '0 solid': '1 solid'}"></div>
+
+                        </div>
+
+                        <div *ngIf="qtdLinhas== i" class="linha-divisao-branca"></div>
+                        <div *ngIf="qtdLinhas!= i" class="linha-divisao"></div>
+
+                        <div class="conteudo-linha-positiva">
+
+                            <div class="porc-barra-positivo"
+                                [ngStyle]="{ width: porcBarraPositiva(item.PercAtual), background: item.CorSiteMarca}">
+                            </div>
+
+                            <!-- <div class="valor-barra-sig">
+                                <div class="valor-info">{{item.PercAtual}}</div>
+                            </div> -->
+
+                            <div class="valor-barra" [style]="montaCorBarraTesteSig(item)"
+                                [ngClass]="{'valor-barra-sig' : item.PercAtual> 20 , '':item.PercAtual< 20  }">
+                                <div class="valor-info">{{item.PercAtual}}</div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="conteudo-barra-total" *ngIf="item.PercAtual < 0"
+                        [ngClass]="{'cor-conteudo-barra': i%2 !== 0 ,'' : i%2 === 0}">
+
+                        <div class="tooltip-barra">
+                            <!-- <div class="container-tooltip">
+                                <div class="titulo-tooltip">
+                                    Média
+                                </div>
+                                <div class="valor-tooltip">
+                                    {{item.Media}}
+                                </div>
+                            </div> -->
+                            <div class="container-tooltip">
+                                <div class="titulo-tooltip">
+                                    Perc
+                                </div>
+                                <div class="valor-tooltip">
+                                    {{item.PercAtual}}
+                                </div>
+                            </div>
+                            <div class="container-tooltip">
+                                <div class="titulo-tooltip">
+                                    Base
+                                </div>
+                                <div class="valor-tooltip"
+                                    [ngClass]="{'base-vermelha' : item.BaseMinima != '' , '':item.BaseMinima==''}">
+                                    {{item.Base}}
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="conteudo-linha-negativa">
+
+                            <div class="valor-barra" [style]="montaCorBarraTesteSig(item)"
+                                [ngClass]="{'valor-barra-sig' : item.PercAtual < -20 , '' :item.PercAtual>-20 }">
+                                <div class="valor-info">{{item.PercAtual}}</div>
+                            </div>
+
+                            <div class="porc-barra-negativo" [style]="montaCorBarra(item)"
+                                [ngStyle]="{ width: porcBarraNegativa(item.PercAtual),border:  item.PercAtual > 0 ? '0 solid': '1 solid'}">
+                            </div>
+
+                        </div>
+
+
+                        <div *ngIf="qtdLinhas== i" class="linha-divisao-branca"></div>
+                        <div *ngIf="qtdLinhas!= i" class="linha-divisao"></div>
+
+                        <div class="conteudo-linha-positiva">
+
+                            <div class="porc-barra-positivo"
+                                [ngStyle]="{ width: porcBarraPositiva(item.PercAtual), background: item.CorSiteMarca}">
+                            </div>
+
+                            <div class="sem-valor-barra">
+                                <div class="valor-info"></div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div>
+                <div class="periodo-barras">
+                    <div class="group-filtro-coluna">
+                        <ng-select placeholder="N/A" id="tipoAtivoModel" class="selectFiltroColunaQ"
+                            [items]="filtroService.listaOnda" (change)="onchangeOndaColuna10(onda10)"
+                            [(ngModel)]="onda10" bindLabel="DescItem" [searchable]="false" [clearable]="false"
+                            [multiple]="false">
+                        </ng-select>
+                    </div>
+                </div>
+
+                <div *ngFor="let item of graficoColunaModel10;let i = index">
+                    <div class="conteudo-barra-total" *ngIf="item.PercAtual >= 0"
+                        [ngClass]="{'cor-conteudo-barra': i%2 !== 0 ,'' : i%2 === 0}">
+
+                        <div class="tooltip-barra">
+                            <!-- <div class="container-tooltip">
+                                <div class="titulo-tooltip">
+                                    Média
+                                </div>
+                                <div class="valor-tooltip">
+                                    {{item.Media}}
+                                </div>
+                            </div> -->
+                            <div class="container-tooltip">
+                                <div class="titulo-tooltip">
+                                    Perc
+                                </div>
+                                <div class="valor-tooltip">
+                                    {{item.PercAtual}}
+                                </div>
+                            </div>
+                            <div class="container-tooltip">
+                                <div class="titulo-tooltip">
+                                    Base
+                                </div>
+                                <div class="valor-tooltip"
+                                    [ngClass]="{'base-vermelha' : item.BaseMinima != '' , '':item.BaseMinima==''}">
+                                    {{item.Base}}
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="conteudo-linha-negativa">
+
+                            <div class="sem-valor-barra">
+                                <div class="valor-info"></div>
+                            </div>
+                            <div class="porc-barra-negativo" [style]="montaCorBarra(item)"
+                                [ngStyle]="{ width: porcBarraNegativa(0),border:  0 <= 0 ? '0 solid': '1 solid'}"></div>
+
+                        </div>
+
+                        <div *ngIf="qtdLinhas== i" class="linha-divisao-branca"></div>
+                        <div *ngIf="qtdLinhas!= i" class="linha-divisao"></div>
+
+                        <div class="conteudo-linha-positiva">
+
+                            <div class="porc-barra-positivo"
+                                [ngStyle]="{ width: porcBarraPositiva(item.PercAtual), background: item.CorSiteMarca}">
+                            </div>
+
+                            <!-- <div class="valor-barra-sig">
+                                <div class="valor-info">{{item.PercAtual}}</div>
+                            </div> -->
+
+                            <div class="valor-barra" [style]="montaCorBarraTesteSig(item)"
+                                [ngClass]="{'valor-barra-sig' : item.PercAtual> 20 , '':item.PercAtual< 20  }">
+                                <div class="valor-info">{{item.PercAtual}}</div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="conteudo-barra-total" *ngIf="item.PercAtual < 0"
+                        [ngClass]="{'cor-conteudo-barra': i%2 !== 0 ,'' : i%2 === 0}">
+
+                        <div class="tooltip-barra">
+                            <!-- <div class="container-tooltip">
+                                <div class="titulo-tooltip">
+                                    Média
+                                </div>
+                                <div class="valor-tooltip">
+                                    {{item.Media}}
+                                </div>
+                            </div> -->
+                            <div class="container-tooltip">
+                                <div class="titulo-tooltip">
+                                    Perc
+                                </div>
+                                <div class="valor-tooltip">
+                                    {{item.PercAtual}}
+                                </div>
+                            </div>
+                            <div class="container-tooltip">
+                                <div class="titulo-tooltip">
+                                    Base
+                                </div>
+                                <div class="valor-tooltip"
+                                    [ngClass]="{'base-vermelha' : item.BaseMinima != '' , '':item.BaseMinima==''}">
+                                    {{item.Base}}
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="conteudo-linha-negativa">
+
+                            <div class="valor-barra" [style]="montaCorBarraTesteSig(item)"
+                                [ngClass]="{'valor-barra-sig' : item.PercAtual < -20 , '' :item.PercAtual>-20 }">
+                                <div class="valor-info">{{item.PercAtual}}</div>
+                            </div>
+
+                            <div class="porc-barra-negativo" [style]="montaCorBarra(item)"
+                                [ngStyle]="{ width: porcBarraNegativa(item.PercAtual),border:  item.PercAtual > 0 ? '0 solid': '1 solid'}">
+                            </div>
+
+                        </div>
+
+
+                        <div *ngIf="qtdLinhas== i" class="linha-divisao-branca"></div>
+                        <div *ngIf="qtdLinhas!= i" class="linha-divisao"></div>
+
+                        <div class="conteudo-linha-positiva">
+
+                            <div class="porc-barra-positivo"
+                                [ngStyle]="{ width: porcBarraPositiva(item.PercAtual), background: item.CorSiteMarca}">
+                            </div>
+
+                            <div class="sem-valor-barra">
+                                <div class="valor-info"></div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div>
+                <div class="periodo-barras">
+                    <div class="group-filtro-coluna">
+                        <ng-select placeholder="N/A" id="tipoAtivoModel" class="selectFiltroColunaQ"
+                            [items]="filtroService.listaOnda" (change)="onchangeOndaColuna9_3(onda9_3)" [(ngModel)]="onda9_3"
+                            bindLabel="DescItem" [searchable]="false" [clearable]="false" [multiple]="false">
+                        </ng-select>
+                    </div>
+                </div>
+
+                <div *ngFor="let item of graficoColunaModel9_3;let i = index">
+                    <div class="conteudo-barra-total" *ngIf="item.PercAtual >= 0"
+                        [ngClass]="{'cor-conteudo-barra': i%2 !== 0 ,'' : i%2 === 0}">
+
+                        <div class="tooltip-barra">
+                            <!-- <div class="container-tooltip">
+                                <div class="titulo-tooltip">
+                                    Média
+                                </div>
+                                <div class="valor-tooltip">
+                                    {{item.Media}}
+                                </div>
+                            </div> -->
+                            <div class="container-tooltip">
+                                <div class="titulo-tooltip">
+                                    Perc
+                                </div>
+                                <div class="valor-tooltip">
+                                    {{item.PercAtual}}
+                                </div>
+                            </div>
+                            <div class="container-tooltip">
+                                <div class="titulo-tooltip">
+                                    Base
+                                </div>
+                                <div class="valor-tooltip"
+                                    [ngClass]="{'base-vermelha' : item.BaseMinima != '' , '':item.BaseMinima==''}">
+                                    {{item.Base}}
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="conteudo-linha-negativa">
+
+                            <div class="sem-valor-barra">
+                                <div class="valor-info"></div>
+                            </div>
+                            <div class="porc-barra-negativo" [style]="montaCorBarra(item)"
+                                [ngStyle]="{ width: porcBarraNegativa(0),border:  0 <= 0 ? '0 solid': '1 solid'}"></div>
+
+                        </div>
+
+                        <div *ngIf="qtdLinhas== i" class="linha-divisao-branca"></div>
+                        <div *ngIf="qtdLinhas!= i" class="linha-divisao"></div>
+
+                        <div class="conteudo-linha-positiva">
+
+                            <div class="porc-barra-positivo"
+                                [ngStyle]="{ width: porcBarraPositiva(item.PercAtual), background: item.CorSiteMarca}">
+                            </div>
+
+                            <!-- <div class="valor-barra-sig">
+                                <div class="valor-info">{{item.PercAtual}}</div>
+                            </div> -->
+
+                            <div class="valor-barra" [style]="montaCorBarraTesteSig(item)"
+                                [ngClass]="{'valor-barra-sig' : item.PercAtual> 20 , '':item.PercAtual< 20  }">
+                                <div class="valor-info">{{item.PercAtual}}</div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="conteudo-barra-total" *ngIf="item.PercAtual < 0"
+                        [ngClass]="{'cor-conteudo-barra': i%2 !== 0 ,'' : i%2 === 0}">
+
+                        <div class="tooltip-barra">
+                            <!-- <div class="container-tooltip">
+                                <div class="titulo-tooltip">
+                                    Média
+                                </div>
+                                <div class="valor-tooltip">
+                                    {{item.Media}}
+                                </div>
+                            </div> -->
+                            <div class="container-tooltip">
+                                <div class="titulo-tooltip">
+                                    Perc
+                                </div>
+                                <div class="valor-tooltip">
+                                    {{item.PercAtual}}
+                                </div>
+                            </div>
+                            <div class="container-tooltip">
+                                <div class="titulo-tooltip">
+                                    Base
+                                </div>
+                                <div class="valor-tooltip"
+                                    [ngClass]="{'base-vermelha' : item.BaseMinima != '' , '':item.BaseMinima==''}">
+                                    {{item.Base}}
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="conteudo-linha-negativa">
+
+                            <div class="valor-barra" [style]="montaCorBarraTesteSig(item)"
+                                [ngClass]="{'valor-barra-sig' : item.PercAtual < -20 , '' :item.PercAtual>-20 }">
+                                <div class="valor-info">{{item.PercAtual}}</div>
+                            </div>
+
+                            <div class="porc-barra-negativo" [style]="montaCorBarra(item)"
+                                [ngStyle]="{ width: porcBarraNegativa(item.PercAtual),border:  item.PercAtual > 0 ? '0 solid': '1 solid'}">
+                            </div>
+
+                        </div>
+
+
+                        <div *ngIf="qtdLinhas== i" class="linha-divisao-branca"></div>
+                        <div *ngIf="qtdLinhas!= i" class="linha-divisao"></div>
+
+                        <div class="conteudo-linha-positiva">
+
+                            <div class="porc-barra-positivo"
+                                [ngStyle]="{ width: porcBarraPositiva(item.PercAtual), background: item.CorSiteMarca}">
+                            </div>
+
+                            <div class="sem-valor-barra">
+                                <div class="valor-info"></div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- <div class="total-coluna">
+            <div class="texto-total">
+                {{graficoColunaModel9[0]?.Base}}
+            </div>
+        </div> -->
+
+
+    </div>
+
+</div>
+
+
+<div class="descricao-base">
+    {{verificaMsgBase()}}
+</div>

@@ -1,0 +1,131 @@
+<div class="container-linha-drop">
+  <!-- <div class="group-filtro-marcas-adhoc">
+    <ng-select placeholder={{descInicial}} [items]="filtroService.listaMarcas" id="tipoAtivoModel"
+      class="selectFiltroTabela" [(ngModel)]="ModelMarcas" (change)="onchangeMarcaGrafico(ModelMarcas)"
+      bindLabel="DescItem" [searchable]="false" [clearable]="false" [multiple]="false"></ng-select>
+    <img class="logo-marcas-evolutivo" src={{montaImageMarca()}}>
+
+  </div> -->
+</div>
+
+<div *ngIf="ativaTela">
+  <div class="container-tabela-principal">
+    <table>
+      <thead>
+        <tr class="titulo">
+
+          <th class="coluna">
+
+          </th>
+
+          <th class="coluna" *ngFor="let item of tabela.Titulos let i = index;">
+            {{item.DescAtributo }}
+          </th>
+        </tr>
+      </thead>
+      <tbody *ngIf="paginacao">
+
+        <tr class="linha" *ngFor="let item of tabela.Dados let i = index;">
+
+
+          <th class="primeira-coluna">
+            <span class="desc-base" *ngIf="i ===0">{{item.Texto }}</span>
+            <span *ngIf="i !==0">{{item.Texto }}</span>
+          </th>
+          <td>
+            <span>{{item.Perc1 }}</span>
+          </td>
+          <td>
+            <span>{{item.Perc2 }}</span>
+          </td>
+          <td>
+            <span>{{item.Perc3 }}</span>
+          </td>
+          <td>
+            <span>{{item.Perc4 }}</span>
+          </td>
+          <td *ngIf="tabela.Titulos.length >=5">
+            <span >{{item.Perc5 }}</span>
+          </td>
+          <td *ngIf="tabela.Titulos.length >=6">
+            <span >{{item.Perc6 }}</span>
+          </td>
+          <td *ngIf="tabela.Titulos.length >=7">
+            <span >{{item.Perc7 }}</span>
+          </td>
+          <td *ngIf="tabela.Titulos.length >=8">
+            <span >{{item.Perc8 }}</span>
+          </td>
+          <td *ngIf="tabela.Titulos.length >=9">
+            <span >{{item.Perc9 }}</span>
+          </td>
+          <td *ngIf="tabela.Titulos.length >=10">
+            <span >{{item.Perc10 }}</span>
+          </td>
+          <!-- <span *ngIf="coluna != '0' && coluna.length != 0 && item.Coluna[0] != 'Muestra'">{{coluna | number : '.1-1'}}</span> -->
+
+        </tr>
+
+      </tbody>
+
+      <tbody *ngIf="!paginacao">
+
+        <tr class="linha" *ngFor="let item of tabela.Dados let i = index;">
+
+
+          <th class="primeira-coluna">
+            <span>{{item.Texto }}</span>
+          </th>
+          <td>
+            <span>{{item.Perc1 }}</span>
+          </td>
+          <td>
+            <span>{{item.Perc2 }}</span>
+          </td>
+          <td>
+            <span>{{item.Perc3 }}</span>
+          </td>
+          <td>
+            <span>{{item.Perc4 }}</span>
+          </td>
+          <td *ngIf="tabela.Titulos.length >=5">
+            <span >{{item.Perc5 }}</span>
+          </td>
+          <td *ngIf="tabela.Titulos.length >=6">
+            <span >{{item.Perc6 }}</span>
+          </td>
+          <td *ngIf="tabela.Titulos.length >=7">
+            <span >{{item.Perc7 }}</span>
+          </td>
+          <td *ngIf="tabela.Titulos.length >=8">
+            <span >{{item.Perc8 }}</span>
+          </td>
+          <td *ngIf="tabela.Titulos.length >=9">
+            <span >{{item.Perc9 }}</span>
+          </td>
+          <td *ngIf="tabela.Titulos.length >=10">
+            <span >{{item.Perc10 }}</span>
+          </td>
+          <!-- <span *ngIf="coluna != '0' && coluna.length != 0 && item.Coluna[0] != 'Muestra'">{{coluna | number : '.1-1'}}</span> -->
+
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+  <div class="tabela-footer" *ngIf="paginacao">
+    <label class="mostrar">Mostrar</label>
+    <ng-select [appendTo]="'body'" (change)="mudarItemsPorPage()" [(ngModel)]="itemsPorPagina" [clearable]="false"
+      [searchable]="false" class="mostrar-drop">
+      <ng-option [value]="10">10</ng-option>
+      <ng-option [value]="50">50</ng-option>
+      <ng-option [value]="100">100</ng-option>
+    </ng-select>
+
+    <div class="container-pagination">
+      <pagination-controls id="{{this.id}}" previousLabel="Anterior" nextLabel="Próximo" [responsive]="true"
+        (pageChange)="mudarPage($event)">
+      </pagination-controls>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,236 @@
+<app-sidebar></app-sidebar>
+<app-navbar></app-navbar>
+<div class="container-dashboard" *ngIf="paginaAtiva" >
+
+  <div class="card" id="div-comparativo-marcas">
+    <div class="container-card card-mobile">
+      <div class="header-card">
+        <div class="container-title">
+          <div class="title">
+            {{'dashboard-four-grafico1-titulo' | translate}}
+          </div>
+          <div class="legend">
+            {{'dashboard-four-grafico1-subtitulo' | translate}}
+          </div>
+
+        </div>
+        <div class="container-export">
+          <select-checkbox (ModeslMarca)="onChangeListaMarcas($event)"></select-checkbox>
+          <div class="icon-export" (click)="exportToExcelGrafico1()">
+            <div class="icon-excel">
+            </div>
+            <div class="titulo-exportar">{{'dashboard-exporta' | translate}}</div>
+          </div>
+          <div class="icon-export" (click)="exportToPptComparativoExperiencia()">
+            <div class="icon-powerpoint">
+            </div>
+            <div class="titulo-exportar">{{'dashboard-exporta' | translate}}</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-card p-relative">
+        <!-- <div class="container-legenda">
+          <div class="container-texto">
+            <mat-radio-group [(ngModel)]="tipoBia1" (change)="changetipoBia(1)">
+              <mat-radio-button class="radio-custo-value" [value]="true">BIA</mat-radio-button>
+              <mat-radio-button class="radio-custo-value" [value]="false">BIA2</mat-radio-button>
+            </mat-radio-group>
+          </div>
+        </div> -->
+
+        <div class="comparativo-marcas" id="comparativo-marcas" *ngIf="ativaComparativoMarcas">
+
+        </div>
+
+        <div class="descricao-base">
+          {{descBaseComparativoMarcas}}
+        </div>
+
+      </div>
+
+      <!-- <div class="content-card">
+                <app-aviso-sem-dados></app-aviso-sem-dados>
+            </div> -->
+    </div>
+  </div>
+
+
+  <div class="card" id="imagem-pura">
+    <div class="container-card card-mobile">
+      <div class="header-card">
+        <div class="container-title">
+          <div class="title">
+
+            {{'dashboard-four-grafico2-titulo' | translate}}
+          </div>
+          <div class="legend">
+            {{'dashboard-four-grafico2-subtitulo' | translate}}
+          </div>
+          <div class="legend-sub">
+            <div class="container-sig">
+              <div class="sig-positive"> </div>
+              <div class="sig-negative"> </div> {{'dashboard-sig' | translate}}
+            </div>
+          </div>
+        </div>
+        <div class="container-export">
+          <div class="icon-export" (click)="exportToExcelGrafico2()">
+            <div class="icon-excel">
+            </div>
+            <div class="titulo-exportar">{{'dashboard-exporta' | translate}}</div>
+          </div>
+          <div class="icon-export" (click)="exportToPptImagemPura()">
+            <div class="icon-powerpoint">
+            </div>
+            <div class="titulo-exportar">{{'dashboard-exporta' | translate}}</div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- <div class="container-legenda">
+        <div class="container-texto">
+          <mat-radio-group [(ngModel)]="tipoBia2" (change)="changetipoBia(2)">
+            <mat-radio-button class="radio-custo-value" [value]="true">BIA</mat-radio-button>
+            <mat-radio-button class="radio-custo-value" [value]="false">BIA2</mat-radio-button>
+          </mat-radio-group>
+        </div>
+      </div> -->
+
+      <div class="content-card p-relative container-grafico-linha">      
+        <div class="separacao-graficos-linha-descricao">
+
+          <div class="container-linha-pura">
+          </div>
+
+          <div id="container-coluna-0">
+          </div>
+        </div>
+
+
+        <div class="separacao-graficos-linha">
+          <div class="container-linha-pura">
+            <select-image [IndexCombo]=0 (ImageModelMarcas)="onchangeMarcaColuna($event,1)"></select-image>
+          </div>
+          <div id="container-coluna-1" class="centraliza-grafico-linhas">
+          </div>
+        </div>
+
+        <div class="separacao-graficos-linha">
+          <div class="container-linha-pura">
+            <select-image [IndexCombo]=1 (ImageModelMarcas)="onchangeMarcaColuna($event,2)"></select-image>
+          </div>
+          <div id="container-coluna-2" class="centraliza-grafico-linhas">
+          </div>
+        </div>
+
+        <div class="separacao-graficos-linha">
+          <div class="container-linha-pura">
+            <select-image [IndexCombo]=2 (ImageModelMarcas)="onchangeMarcaColuna($event,3)"></select-image>
+          </div>
+          <div id="container-coluna-3" class="centraliza-grafico-linhas">
+          </div>
+        </div>
+
+        <div class="separacao-graficos-linha">
+          <div class="container-linha-pura">
+            <select-image [IndexCombo]=3 (ImageModelMarcas)="onchangeMarcaColuna($event,4)"></select-image>
+          </div>
+          <div id="container-coluna-4" class="centraliza-grafico-linhas">
+          </div>
+        </div>
+
+        <div class="separacao-graficos-linha">
+          <div class="container-linha-pura">
+            <select-image [IndexCombo]=4 (ImageModelMarcas)="onchangeMarcaColuna($event,5)"></select-image>
+          </div>
+          <div id="container-coluna-5" class="centraliza-grafico-linhas">
+          </div>
+        </div>
+
+
+      </div>
+
+      <div class="descricao-base">
+        {{descVerificaBaseGraficoLinha}}
+      </div>
+
+      <!-- <div class="content-card">
+                <app-aviso-sem-dados></app-aviso-sem-dados>
+            </div> -->
+    </div>
+  </div>
+
+
+  <div class="card" id="grafico-linhas">
+    <div class="container-card card-mobile">
+      <div class="header-card">
+        <div class="container-title">
+          <div class="title">
+
+            {{'dashboard-four-grafico3-titulo' | translate}}
+          </div>
+          <div class="legend">
+            {{'dashboard-four-grafico3-subtitulo' | translate}}
+            <div class="alinha-marcas">
+              <select-checkbox (ModeslMarca)="onChangeListaMarcasGrafico3($event)"></select-checkbox>
+            </div>
+          </div>
+
+          <div class="legend-sub">
+            <div class="container-sig">
+              <div class="sig-positive"> </div>
+              <div class="sig-negative"> </div> {{'dashboard-sig' | translate}}
+
+            </div>
+          </div>
+        </div>
+        <div class="container-export">
+          <select-checkbox-atributo *ngIf="ativaEvolutivoMarcasLinhas" [tipoBia]="tipoBia3"   (ModelAtributo)="onChangeAtributo($event)"></select-checkbox-atributo>
+          <div class="icon-export" (click)="exportToExcelGrafico3()">
+            <div class="icon-excel">
+            </div>
+            <div class="titulo-exportar">{{'dashboard-exporta' | translate}}</div>
+          </div>
+          <div class="icon-export" (click)="exportToPptEvolutivoMarcas()">
+            <div class="icon-powerpoint">
+            </div>
+            <div class="titulo-exportar">{{'dashboard-exporta' | translate}}</div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="content-card p-relative">
+        <!-- <div class="container-legenda">
+          <div class="container-texto">
+            <mat-radio-group [(ngModel)]="tipoBia3" (change)="changetipoBia(3)">
+              <mat-radio-button class="radio-custo-value" [value]="true">BIA</mat-radio-button>
+              <mat-radio-button class="radio-custo-value" [value]="false">BIA2</mat-radio-button>
+            </mat-radio-group>
+          </div>
+        </div> -->
+
+        <div id="container-evolutivo-marcas-linha">
+
+        </div>
+
+      </div>
+
+      <div class="descricao-base">
+        {{descVerificaBaseEvolutivoMarcas}}
+      </div>
+
+      <!-- <div class="content-card">
+                <app-aviso-sem-dados></app-aviso-sem-dados>
+            </div> -->
+    </div>
+  </div>
+
+
+</div>
+
+<footer-bottom></footer-bottom>

@@ -1,0 +1,882 @@
+V1|10:13:46.329 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 23906687-B094-4AAF-9061-44F82184329D, 1, 1).
+The statement has been terminated.
+V1|10:13:46.601 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Dados_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Dados_Awareness'. The duplicate key value is (1, 23906687-B094-4AAF-9061-44F82184329D, 1, 1, 1).
+Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, D412C34A-895B-4E2F-8F0C-5E0E5E8916B8, 5, 2).
+The statement has been terminated.
+The statement has been terminated.
+V1|10:13:46.651 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 23906687-B094-4AAF-9061-44F82184329D, 1, 1).
+The statement has been terminated.
+V1|10:13:46.691 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Dados_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Dados_Awareness'. The duplicate key value is (1, 55DEECF8-052A-4BF0-B6C5-A3FF7356ACC6, 1, 1, 1).
+The statement has been terminated.
+V1|10:13:47.509 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 9375C920-A222-411B-9B50-8848A1492C9C, 2, 2).
+The statement has been terminated.
+V1|10:13:47.595 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 9375C920-A222-411B-9B50-8848A1492C9C, 2, 2).
+The statement has been terminated.
+V1|10:13:48.050 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 4CE56B43-7ACB-46BF-ADCA-05A3326DB3A4, 5, 2).
+The statement has been terminated.
+V1|10:13:48.521 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 4CE56B43-7ACB-46BF-ADCA-05A3326DB3A4, 5, 2).
+Divide by zero error encountered.
+The statement has been terminated.
+The statement has been terminated.
+V1|10:13:48.898 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, D3EADF62-E574-492F-978D-3716573FE613, 2, 3).
+Divide by zero error encountered.
+The statement has been terminated.
+The statement has been terminated.
+V1|10:13:49.251 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, CED7AC87-7BEA-461F-95F3-FD208DDE1CCE, 3, 3).
+The statement has been terminated.
+V1|10:13:49.824 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, CED7AC87-7BEA-461F-95F3-FD208DDE1CCE, 3, 3).
+Divide by zero error encountered.
+The statement has been terminated.
+The statement has been terminated.
+V1|10:26:48.931 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 51D2455C-905D-4DD1-90DF-51A5B12502F0, 5, 3).
+The statement has been terminated.
+V1|10:26:49.184 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Dados_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Dados_Awareness'. The duplicate key value is (1, 29CB47A2-BFC0-40D2-BFAF-D9408606E4D7, 641, 1, 3).
+Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 51D2455C-905D-4DD1-90DF-51A5B12502F0, 5, 3).
+The statement has been terminated.
+The statement has been terminated.
+V1|10:26:49.227 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Dados_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Dados_Awareness'. The duplicate key value is (1, 11AFD2E0-9954-4974-B253-A263999E93A5, 641, 1, 3).
+Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 51D2455C-905D-4DD1-90DF-51A5B12502F0, 5, 3).
+The statement has been terminated.
+The statement has been terminated.
+V1|10:26:51.272 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, E3D9D3E0-49CC-444F-914D-BEA1A8C725C8, 5, 3).
+The statement has been terminated.
+V1|10:26:51.315 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, E3D9D3E0-49CC-444F-914D-BEA1A8C725C8, 5, 3).
+The statement has been terminated.
+V1|10:26:52.026 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, E3D9D3E0-49CC-444F-914D-BEA1A8C725C8, 5, 3).
+The statement has been terminated.
+V1|10:26:53.455 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 61B9B80E-97C9-4F56-9251-06A7EC2883C6, 3, 1).
+The statement has been terminated.
+V1|10:26:53.543 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 61B9B80E-97C9-4F56-9251-06A7EC2883C6, 3, 1).
+The statement has been terminated.
+V1|10:26:53.598 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 61B9B80E-97C9-4F56-9251-06A7EC2883C6, 3, 1).
+The statement has been terminated.
+V1|10:26:54.435 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 0AA589DA-E23E-485C-9B07-CF4F8F975137, 6, 2).
+The statement has been terminated.
+V1|10:26:54.628 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 0AA589DA-E23E-485C-9B07-CF4F8F975137, 6, 2).
+The statement has been terminated.
+V1|10:26:54.681 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 0AA589DA-E23E-485C-9B07-CF4F8F975137, 6, 2).
+The statement has been terminated.
+V1|10:26:55.228 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 5E43F292-A731-493D-A03E-2577A91CB0D1, 6, 2).
+The statement has been terminated.
+V1|11:30:20.687 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Dados_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Dados_Awareness'. The duplicate key value is (1, 7A2D3BCF-047D-4B9E-B00F-6805808F52B6, 815, 1, 1).
+The statement has been terminated.
+V1|11:30:20.743 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, EDF478C7-03C7-4CD9-BD26-DEAD2FF04162, 6, 1).
+The statement has been terminated.
+V1|11:30:23.329 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Dados_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Dados_Awareness'. The duplicate key value is (1, 9A92C469-2149-40E9-958E-D310F7F6586E, 815, 1, 1).
+Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, EDF478C7-03C7-4CD9-BD26-DEAD2FF04162, 6, 1).
+The statement has been terminated.
+The statement has been terminated.
+V1|11:30:25.814 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 80E7016A-8592-4E53-9287-4B07484E349B, 2, 3).
+The statement has been terminated.
+V1|11:30:27.620 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 80E7016A-8592-4E53-9287-4B07484E349B, 2, 3).
+The statement has been terminated.
+V1|11:30:29.214 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 0A6BCF13-C508-4D4C-AA28-5DB6AD08A1C6, 3, 3).
+The statement has been terminated.
+V1|11:30:29.700 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 0A6BCF13-C508-4D4C-AA28-5DB6AD08A1C6, 3, 3).
+The statement has been terminated.
+V1|11:30:29.890 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 0A6BCF13-C508-4D4C-AA28-5DB6AD08A1C6, 3, 3).
+The statement has been terminated.
+V1|11:30:32.274 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, C5983775-3C50-4898-A14B-EBA888C00A3B, 5, 1).
+An invalid floating point operation occurred.
+The statement has been terminated.
+V1|11:30:32.505 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, C5983775-3C50-4898-A14B-EBA888C00A3B, 5, 1).
+The statement has been terminated.
+V1|11:30:35.664 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 744F5551-23EB-4608-8FF9-92DD3F28DC80, 6, 3).
+The statement has been terminated.
+V1|11:30:35.851 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 744F5551-23EB-4608-8FF9-92DD3F28DC80, 6, 3).
+The statement has been terminated.
+V1|11:30:57.370 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 744F5551-23EB-4608-8FF9-92DD3F28DC80, 6, 3).
+The statement has been terminated.
+V1|11:31:01.189 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 744F5551-23EB-4608-8FF9-92DD3F28DC80, 6, 3).
+The statement has been terminated.
+V1|11:31:04.218 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 744F5551-23EB-4608-8FF9-92DD3F28DC80, 6, 3).
+The statement has been terminated.
+V1|11:31:05.895 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 744F5551-23EB-4608-8FF9-92DD3F28DC80, 6, 3).
+The statement has been terminated.
+V1|11:31:08.944 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Dados_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Dados_Awareness'. The duplicate key value is (1, 5B5639F4-24F7-476B-917A-7C6CA2F6619F, 641, 1, 3).
+Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 744F5551-23EB-4608-8FF9-92DD3F28DC80, 6, 3).
+The statement has been terminated.
+The statement has been terminated.
+V1|11:31:09.642 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 744F5551-23EB-4608-8FF9-92DD3F28DC80, 6, 3).
+The statement has been terminated.
+V1|11:31:14.626 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Dados_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Dados_Awareness'. The duplicate key value is (1, DE3ABB7F-F848-457C-A958-ABCF65DF5F01, 641, 1, 3).
+The statement has been terminated.
+V1|11:31:29.481 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Dados_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Dados_Awareness'. The duplicate key value is (1, BC387FD1-3096-4568-85A0-0D7E9D513593, 815, 1, 1).
+The statement has been terminated.
+V1|11:31:45.725 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Dados_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Dados_Awareness'. The duplicate key value is (1, 9D5BCA60-2127-493E-88B1-B61FED5B4745, 815, 1, 1).
+The statement has been terminated.
+V1|11:33:20.016 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Dados_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Dados_Awareness'. The duplicate key value is (1, E1AC1AC8-613D-4286-8A05-4CF3143D06D7, 815, 1, 1).
+Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 66CC36FF-89EB-40F9-8F23-F9A62F68CC9B, 6, 2).
+The statement has been terminated.
+The statement has been terminated.
+V1|11:33:20.098 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Dados_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Dados_Awareness'. The duplicate key value is (1, 179C1E1F-746E-47A6-8ABE-34FA116EE199, 815, 1, 1).
+Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 66CC36FF-89EB-40F9-8F23-F9A62F68CC9B, 6, 2).
+The statement has been terminated.
+The statement has been terminated.
+V1|11:33:20.210 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 66CC36FF-89EB-40F9-8F23-F9A62F68CC9B, 6, 2).
+The statement has been terminated.
+V1|11:33:20.722 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, CAD8C14F-0BA1-4C5C-9F3E-E020FF8C7B24, 6, 1).
+The statement has been terminated.
+V1|11:33:20.900 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, CAD8C14F-0BA1-4C5C-9F3E-E020FF8C7B24, 6, 1).
+The statement has been terminated.
+V1|11:33:20.965 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, CAD8C14F-0BA1-4C5C-9F3E-E020FF8C7B24, 6, 1).
+The statement has been terminated.
+V1|11:33:21.698 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 01F854F9-8FBB-4D82-82EF-8F9A731AC1E2, 5, 2).
+The statement has been terminated.
+V1|11:33:21.865 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, E1E5699C-143B-4051-A240-D626D369A9DF, 3, 1).
+The statement has been terminated.
+V1|11:33:22.116 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, E1E5699C-143B-4051-A240-D626D369A9DF, 3, 1).
+The statement has been terminated.
+V1|11:33:22.383 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, E1E5699C-143B-4051-A240-D626D369A9DF, 3, 1).
+Divide by zero error encountered.
+The statement has been terminated.
+The statement has been terminated.
+V1|11:33:22.608 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 728A23F6-3284-46F0-A695-DA7FD40EA8BB, 4, 1).
+The statement has been terminated.
+V1|11:33:22.757 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 728A23F6-3284-46F0-A695-DA7FD40EA8BB, 4, 1).
+The statement has been terminated.
+V1|11:33:43.198 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Dados_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Dados_Awareness'. The duplicate key value is (1, 369E2DDF-371B-4F22-A20C-2BE47DBA29FF, 815, 1, 1).
+The statement has been terminated.
+V1|11:33:43.246 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 369E2DDF-371B-4F22-A20C-2BE47DBA29FF, 1, 3).
+The statement has been terminated.
+V1|11:33:44.234 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 9C770C88-99AA-4D2F-A346-64E3524A74A5, 1, 3).
+The statement has been terminated.
+V1|11:33:45.005 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 714A4AE1-A315-44CB-88B7-D00F296DF1C3, 4, 3).
+The statement has been terminated.
+V1|11:33:45.539 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 04B347C6-4E9D-40B9-A690-959D8B399B3E, 3, 3).
+The statement has been terminated.
+V1|11:33:57.805 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Dados_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Dados_Awareness'. The duplicate key value is (1, 7A75B027-38B9-4B5E-A921-F9E70A407BF9, 815, 1, 1).
+The statement has been terminated.
+V1|11:33:57.861 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, FEA1062E-2CFC-44D3-AE9F-61AB464A4F5D, 5, 2).
+The statement has been terminated.
+V1|11:33:57.968 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, FEA1062E-2CFC-44D3-AE9F-61AB464A4F5D, 5, 2).
+The statement has been terminated.
+V1|11:33:58.033 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Dados_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Dados_Awareness'. The duplicate key value is (1, 7475AD16-70B5-4543-8182-865D2FE7C1B9, 815, 1, 1).
+Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, FEA1062E-2CFC-44D3-AE9F-61AB464A4F5D, 5, 2).
+The statement has been terminated.
+The statement has been terminated.
+V1|11:33:58.508 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 28932113-B355-4892-BAF5-97C58073DCC3, 5, 2).
+The statement has been terminated.
+V1|11:33:58.605 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 28932113-B355-4892-BAF5-97C58073DCC3, 5, 2).
+The statement has been terminated.
+V1|11:33:58.671 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 28932113-B355-4892-BAF5-97C58073DCC3, 5, 2).
+The statement has been terminated.
+V1|11:33:59.196 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, D01E9D11-976A-4329-97ED-B976242C248D, 2, 3).
+The statement has been terminated.
+V1|11:33:59.302 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, D01E9D11-976A-4329-97ED-B976242C248D, 2, 3).
+The statement has been terminated.
+V1|11:33:59.366 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, D01E9D11-976A-4329-97ED-B976242C248D, 2, 3).
+The statement has been terminated.
+V1|11:33:59.954 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 540C7DAC-3C9A-4257-85B6-5EB9545554CE, 4, 2).
+The statement has been terminated.
+V1|11:34:00.691 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 540C7DAC-3C9A-4257-85B6-5EB9545554CE, 4, 2).
+The statement has been terminated.
+V1|11:34:00.909 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 540C7DAC-3C9A-4257-85B6-5EB9545554CE, 4, 2).
+The statement has been terminated.
+V1|11:34:33.855 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 543654BD-58C2-4E97-BABB-0C3B690E606F, 6, 1).
+The statement has been terminated.
+V1|11:34:33.884 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 543654BD-58C2-4E97-BABB-0C3B690E606F, 6, 1).
+The statement has been terminated.
+V1|11:34:33.951 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Dados_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Dados_Awareness'. The duplicate key value is (1, E395346D-277C-4557-810A-C3268981FBB4, 815, 1, 1).
+Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 543654BD-58C2-4E97-BABB-0C3B690E606F, 6, 1).
+The statement has been terminated.
+The statement has been terminated.
+V1|11:34:34.005 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Dados_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Dados_Awareness'. The duplicate key value is (1, A5E0C389-C0B4-4B76-B7B5-A54BC0B15236, 815, 1, 1).
+The statement has been terminated.
+V1|11:34:34.628 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 18E46029-703B-4F63-A3BD-90B8EFBD09BB, 1, 3).
+The statement has been terminated.
+V1|11:34:34.888 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 18E46029-703B-4F63-A3BD-90B8EFBD09BB, 1, 3).
+The statement has been terminated.
+V1|11:34:34.936 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 18E46029-703B-4F63-A3BD-90B8EFBD09BB, 1, 3).
+The statement has been terminated.
+V1|11:34:35.392 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, D384042E-E43D-457F-AB08-E7B6D1419323, 2, 2).
+The statement has been terminated.
+V1|11:34:36.214 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, D384042E-E43D-457F-AB08-E7B6D1419323, 2, 2).
+Divide by zero error encountered.
+The statement has been terminated.
+The statement has been terminated.
+V1|11:34:36.393 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 696C4F47-AB14-4FDA-A053-4DC93354DC51, 2, 2).
+The statement has been terminated.
+V1|11:34:36.515 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 696C4F47-AB14-4FDA-A053-4DC93354DC51, 2, 2).
+The statement has been terminated.
+V1|11:34:37.136 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, AF6C0C83-F9C4-4748-B252-CAD3907A1BEC, 5, 3).
+Divide by zero error encountered.
+The statement has been terminated.
+The statement has been terminated.
+V1|11:34:37.867 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 5D0C9635-D8B9-41F4-AF63-8E7052C00E26, 3, 1).
+The statement has been terminated.
+V1|11:34:44.219 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Dados_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Dados_Awareness'. The duplicate key value is (1, 24B202E3-8E58-48FD-B720-C69EBAD6AE96, 641, 1, 3).
+The statement has been terminated.
+V1|11:34:44.330 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, A34E79CD-48EF-4589-A5A7-4BF81325566C, 3, 2).
+The statement has been terminated.
+V1|11:34:44.780 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, F63956C1-DFC4-4206-B0F7-807E41F694DE, 2, 1).
+The statement has been terminated.
+V1|11:34:45.555 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 8E037E0E-F277-4E5F-8C11-FF6C33F5EE15, 3, 1).
+The statement has been terminated.
+V1|11:34:46.232 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 36051EBF-CF26-4DC7-A3A2-9C841510A653, 4, 1).
+The statement has been terminated.
+V1|11:35:42.389 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, B058471E-9948-4D1C-9F6C-579584ABC45A, 1, 1).
+The statement has been terminated.
+V1|11:35:42.556 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Dados_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Dados_Awareness'. The duplicate key value is (1, 167EAECB-DF30-480A-882A-09D35819746D, 641, 1, 3).
+Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, B058471E-9948-4D1C-9F6C-579584ABC45A, 1, 1).
+The statement has been terminated.
+The statement has been terminated.
+V1|11:35:44.791 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 92492ACB-4294-4964-8F3E-B914063B0061, 5, 2).
+The statement has been terminated.
+V1|11:35:45.232 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 3AEE6167-53B6-47EB-8FB4-548C30CE2D21, 5, 3).
+An invalid floating point operation occurred.
+The statement has been terminated.
+V1|11:35:45.464 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 74E97ACC-7397-4F41-8D23-206D28C7A07D, 5, 2).
+The statement has been terminated.
+V1|11:35:45.643 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 3AEE6167-53B6-47EB-8FB4-548C30CE2D21, 5, 3).
+The statement has been terminated.
+V1|11:35:45.858 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 74E97ACC-7397-4F41-8D23-206D28C7A07D, 5, 2).
+The statement has been terminated.
+V1|11:35:45.949 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 74E97ACC-7397-4F41-8D23-206D28C7A07D, 5, 2).
+The statement has been terminated.
+V1|11:35:46.702 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 74E97ACC-7397-4F41-8D23-206D28C7A07D, 5, 2).
+The statement has been terminated.
+V1|11:35:46.940 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 74E97ACC-7397-4F41-8D23-206D28C7A07D, 5, 2).
+The statement has been terminated.
+V1|11:35:47.003 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 74E97ACC-7397-4F41-8D23-206D28C7A07D, 5, 2).
+The statement has been terminated.
+V1|11:35:47.160 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 74E97ACC-7397-4F41-8D23-206D28C7A07D, 5, 2).
+The statement has been terminated.
+V1|11:35:47.233 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 74E97ACC-7397-4F41-8D23-206D28C7A07D, 5, 2).
+The statement has been terminated.
+V1|11:35:47.517 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 74E97ACC-7397-4F41-8D23-206D28C7A07D, 5, 2).
+The statement has been terminated.
+V1|11:35:51.904 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 74E97ACC-7397-4F41-8D23-206D28C7A07D, 5, 2).
+The statement has been terminated.
+V1|11:35:51.981 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Dados_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Dados_Awareness'. The duplicate key value is (1, 520157A7-30B1-4B05-8FE6-D34B10140A34, 641, 1, 3).
+Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 74E97ACC-7397-4F41-8D23-206D28C7A07D, 5, 2).
+The statement has been terminated.
+The statement has been terminated.
+V1|11:35:52.347 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 74E97ACC-7397-4F41-8D23-206D28C7A07D, 5, 2).
+The statement has been terminated.
+V1|11:35:52.402 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 74E97ACC-7397-4F41-8D23-206D28C7A07D, 5, 2).
+The statement has been terminated.
+V1|11:35:53.001 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 74E97ACC-7397-4F41-8D23-206D28C7A07D, 5, 2).
+The statement has been terminated.
+V1|11:35:55.760 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 74E97ACC-7397-4F41-8D23-206D28C7A07D, 5, 2).
+The statement has been terminated.
+V1|11:35:55.804 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 74E97ACC-7397-4F41-8D23-206D28C7A07D, 5, 2).
+The statement has been terminated.
+V1|11:35:57.356 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 74E97ACC-7397-4F41-8D23-206D28C7A07D, 5, 2).
+The statement has been terminated.
+V1|11:36:25.844 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, C9B1F920-A76D-40E2-BBDE-4F3EBDAEF4BE, 5, 1).
+The statement has been terminated.
+V1|11:36:25.976 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Dados_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Dados_Awareness'. The duplicate key value is (1, 964CA9FA-223A-4465-B947-5DABDE7CD406, 641, 1, 3).
+Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, C9B1F920-A76D-40E2-BBDE-4F3EBDAEF4BE, 5, 1).
+The statement has been terminated.
+The statement has been terminated.
+V1|11:36:42.925 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, DB7823C7-F7D1-49AB-9931-CC2FB59136DE, 5, 3).
+The statement has been terminated.
+V1|11:36:43.013 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Tempo Limite de Conexão Expirado. O tempo limite decorrido durante a tentativa de consumo da confirmação de handshake pré-logon. Isso ocorre porque houve falha no handshake pré-logon ou o servidor não pôde responder a tempo.  A duração da tentativa de conexão com este servidor foi: [Pre-Login] initialization=16815; handshake=0; 
+V1|11:36:43.815 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Column name or number of supplied values does not match table definition.
+V1|11:36:43.988 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Dados_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Dados_Awareness'. The duplicate key value is (1, 872216EB-C3E8-4AB5-B1C9-83B02700EA75, 641, 1, 3).
+Column name or number of supplied values does not match table definition.
+The statement has been terminated.
+V1|11:36:44.049 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Column name or number of supplied values does not match table definition.
+V1|11:36:44.106 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Dados_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Dados_Awareness'. The duplicate key value is (1, 07222275-E366-41B0-9523-26919018E65A, 641, 1, 3).
+Column name or number of supplied values does not match table definition.
+The statement has been terminated.
+V1|11:36:44.163 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Column name or number of supplied values does not match table definition.
+V1|11:36:44.598 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Column name or number of supplied values does not match table definition.
+V1|11:36:44.656 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Column name or number of supplied values does not match table definition.
+V1|11:36:44.734 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Column name or number of supplied values does not match table definition.
+V1|11:36:44.764 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Column name or number of supplied values does not match table definition.
+V1|11:36:45.130 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Column name or number of supplied values does not match table definition.
+V1|11:36:45.262 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Column name or number of supplied values does not match table definition.
+V1|11:36:47.432 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Column name or number of supplied values does not match table definition.
+V1|11:36:47.796 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Column name or number of supplied values does not match table definition.
+V1|11:36:47.887 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Column name or number of supplied values does not match table definition.
+V1|11:36:47.941 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Column name or number of supplied values does not match table definition.
+V1|11:36:48.047 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Column name or number of supplied values does not match table definition.
+V1|11:36:48.303 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Column name or number of supplied values does not match table definition.
+V1|11:37:27.062 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Column name or number of supplied values does not match table definition.
+V1|11:37:27.175 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Column name or number of supplied values does not match table definition.
+V1|11:37:27.281 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Dados_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Dados_Awareness'. The duplicate key value is (1, E704EFB9-EA3A-491B-913C-A064EA3A5EB9, 641, 1, 3).
+Column name or number of supplied values does not match table definition.
+The statement has been terminated.
+V1|11:37:27.389 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Dados_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Dados_Awareness'. The duplicate key value is (1, CCE27315-A9DA-42ED-9C8B-FE6BD8326BF7, 641, 1, 3).
+Column name or number of supplied values does not match table definition.
+The statement has been terminated.
+V1|11:37:28.522 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Column name or number of supplied values does not match table definition.
+V1|11:37:29.245 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Column name or number of supplied values does not match table definition.
+V1|11:37:29.439 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Column name or number of supplied values does not match table definition.
+V1|11:37:29.673 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Column name or number of supplied values does not match table definition.
+V1|11:37:29.838 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Column name or number of supplied values does not match table definition.
+V1|11:37:30.140 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Column name or number of supplied values does not match table definition.
+V1|11:37:38.995 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Column name or number of supplied values does not match table definition.
+V1|11:37:40.110 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Column name or number of supplied values does not match table definition.
+V1|11:37:40.721 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Column name or number of supplied values does not match table definition.
+V1|11:37:41.268 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Column name or number of supplied values does not match table definition.
+V1|11:37:42.211 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Column name or number of supplied values does not match table definition.
+V1|11:37:56.974 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Column name or number of supplied values does not match table definition.
+V1|11:38:13.073 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Column name or number of supplied values does not match table definition.
+V1|11:38:13.462 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Column name or number of supplied values does not match table definition.
+V1|11:38:22.950 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Column name or number of supplied values does not match table definition.
+V1|11:38:25.856 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Column name or number of supplied values does not match table definition.
+V1|11:38:56.440 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Dados_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Dados_Awareness'. The duplicate key value is (1, 636F1057-90E6-43C1-B7EA-B0E91EE952FD, 1, 1, 1).
+Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 070EFC09-B9EF-4B1C-947C-61AC63F95FD1, 1, 5, 1).
+The statement has been terminated.
+The statement has been terminated.
+V1|11:38:57.514 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 070EFC09-B9EF-4B1C-947C-61AC63F95FD1, 1, 5, 1).
+The statement has been terminated.
+V1|11:38:59.617 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, B9340A66-6B7E-4FE3-BC95-1B4CF620A39D, 1, 6, 1).
+The statement has been terminated.
+V1|11:38:59.718 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, B9340A66-6B7E-4FE3-BC95-1B4CF620A39D, 3, 6, 1).
+The statement has been terminated.
+V1|11:39:01.460 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, B9340A66-6B7E-4FE3-BC95-1B4CF620A39D, 1, 6, 1).
+The statement has been terminated.
+V1|11:39:36.520 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, B9340A66-6B7E-4FE3-BC95-1B4CF620A39D, 1, 6, 1).
+The statement has been terminated.
+V1|11:39:36.837 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, B9340A66-6B7E-4FE3-BC95-1B4CF620A39D, 1, 6, 1).
+The statement has been terminated.
+V1|11:39:36.861 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Dados_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Dados_Awareness'. The duplicate key value is (1, 96633F35-71CE-408E-AEE3-7F6D686207A0, 641, 1, 3).
+Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, B9340A66-6B7E-4FE3-BC95-1B4CF620A39D, 1, 6, 1).
+The statement has been terminated.
+The statement has been terminated.
+V1|11:39:36.908 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Dados_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Dados_Awareness'. The duplicate key value is (1, 3978A138-14F4-4370-AE2A-C0F1566A2051, 641, 1, 3).
+Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, B9340A66-6B7E-4FE3-BC95-1B4CF620A39D, 1, 6, 1).
+The statement has been terminated.
+The statement has been terminated.
+V1|11:39:37.012 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, B9340A66-6B7E-4FE3-BC95-1B4CF620A39D, 2, 6, 1).
+The statement has been terminated.
+V1|11:39:37.545 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, B9340A66-6B7E-4FE3-BC95-1B4CF620A39D, 3, 6, 1).
+The statement has been terminated.
+V1|11:39:38.221 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, B9340A66-6B7E-4FE3-BC95-1B4CF620A39D, 1, 6, 1).
+The statement has been terminated.
+V1|11:39:38.266 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, B9340A66-6B7E-4FE3-BC95-1B4CF620A39D, 1, 6, 1).
+The statement has been terminated.
+V1|11:39:38.328 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, B9340A66-6B7E-4FE3-BC95-1B4CF620A39D, 2, 6, 1).
+The statement has been terminated.
+V1|11:39:38.416 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, B9340A66-6B7E-4FE3-BC95-1B4CF620A39D, 4, 6, 1).
+The statement has been terminated.
+V1|11:39:39.107 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, B9340A66-6B7E-4FE3-BC95-1B4CF620A39D, 3, 6, 1).
+The statement has been terminated.
+V1|11:39:40.804 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, B9340A66-6B7E-4FE3-BC95-1B4CF620A39D, 5, 6, 1).
+The statement has been terminated.
+V1|11:39:40.850 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, B9340A66-6B7E-4FE3-BC95-1B4CF620A39D, 1, 6, 1).
+The statement has been terminated.
+V1|11:39:41.471 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, B9340A66-6B7E-4FE3-BC95-1B4CF620A39D, 4, 6, 1).
+The statement has been terminated.
+V1|11:39:41.986 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, B9340A66-6B7E-4FE3-BC95-1B4CF620A39D, 1, 6, 1).
+The statement has been terminated.
+V1|11:39:42.040 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, B9340A66-6B7E-4FE3-BC95-1B4CF620A39D, 1, 6, 1).
+The statement has been terminated.
+V1|11:39:42.330 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, B9340A66-6B7E-4FE3-BC95-1B4CF620A39D, 5, 6, 1).
+The statement has been terminated.
+V1|11:40:46.755 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, B9340A66-6B7E-4FE3-BC95-1B4CF620A39D, 1, 6, 1).
+The statement has been terminated.
+V1|11:40:48.607 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Dados_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Dados_Awareness'. The duplicate key value is (1, CC520DB3-216B-4133-BD80-B2387EAF3024, 641, 1, 3).
+Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, B9340A66-6B7E-4FE3-BC95-1B4CF620A39D, 1, 6, 1).
+The statement has been terminated.
+The statement has been terminated.
+V1|11:40:50.107 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, B9340A66-6B7E-4FE3-BC95-1B4CF620A39D, 1, 6, 1).
+The statement has been terminated.
+V1|11:40:50.175 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, B9340A66-6B7E-4FE3-BC95-1B4CF620A39D, 2, 6, 1).
+The statement has been terminated.
+V1|11:40:50.729 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, B9340A66-6B7E-4FE3-BC95-1B4CF620A39D, 3, 6, 1).
+The statement has been terminated.
+V1|11:40:51.280 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, B9340A66-6B7E-4FE3-BC95-1B4CF620A39D, 1, 6, 1).
+The statement has been terminated.
+V1|11:40:51.415 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, B9340A66-6B7E-4FE3-BC95-1B4CF620A39D, 4, 6, 1).
+The statement has been terminated.
+V1|11:40:52.508 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, B9340A66-6B7E-4FE3-BC95-1B4CF620A39D, 5, 6, 1).
+The statement has been terminated.
+V1|11:40:52.561 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, B9340A66-6B7E-4FE3-BC95-1B4CF620A39D, 1, 6, 1).
+The statement has been terminated.
+V1|11:41:43.410 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, B9340A66-6B7E-4FE3-BC95-1B4CF620A39D, 0, 6, 1).
+The statement has been terminated.
+V1|11:42:04.469 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, B9340A66-6B7E-4FE3-BC95-1B4CF620A39D, 1, 6, 1).
+The statement has been terminated.
+V1|11:42:04.508 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Dados_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Dados_Awareness'. The duplicate key value is (1, 98D459D1-C95B-493A-BDE8-807209C2B158, 641, 1, 3).
+Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, B9340A66-6B7E-4FE3-BC95-1B4CF620A39D, 1, 6, 1).
+The statement has been terminated.
+The statement has been terminated.
+V1|11:42:04.607 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, B9340A66-6B7E-4FE3-BC95-1B4CF620A39D, 1, 6, 1).
+The statement has been terminated.
+V1|11:42:04.648 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Dados_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Dados_Awareness'. The duplicate key value is (1, 4EE467C7-B8D8-4360-AFBD-2FE83B94EA27, 641, 1, 3).
+Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, B9340A66-6B7E-4FE3-BC95-1B4CF620A39D, 1, 6, 1).
+The statement has been terminated.
+The statement has been terminated.
+V1|11:42:05.447 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, B9340A66-6B7E-4FE3-BC95-1B4CF620A39D, 2, 6, 1).
+The statement has been terminated.
+V1|11:42:05.580 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, B9340A66-6B7E-4FE3-BC95-1B4CF620A39D, 2, 6, 1).
+The statement has been terminated.
+V1|11:42:08.356 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, B9340A66-6B7E-4FE3-BC95-1B4CF620A39D, 3, 6, 1).
+The statement has been terminated.
+V1|11:42:08.409 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, B9340A66-6B7E-4FE3-BC95-1B4CF620A39D, 1, 6, 1).
+The statement has been terminated.
+V1|11:42:08.961 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, B9340A66-6B7E-4FE3-BC95-1B4CF620A39D, 3, 6, 1).
+The statement has been terminated.
+V1|11:42:09.521 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, B9340A66-6B7E-4FE3-BC95-1B4CF620A39D, 1, 6, 1).
+The statement has been terminated.
+V1|11:42:10.230 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, B9340A66-6B7E-4FE3-BC95-1B4CF620A39D, 4, 6, 1).
+The statement has been terminated.
+V1|11:42:10.431 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, B9340A66-6B7E-4FE3-BC95-1B4CF620A39D, 1, 6, 1).
+The statement has been terminated.
+V1|11:42:10.798 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, B9340A66-6B7E-4FE3-BC95-1B4CF620A39D, 1, 6, 1).
+The statement has been terminated.
+V1|11:42:10.852 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, B9340A66-6B7E-4FE3-BC95-1B4CF620A39D, 5, 6, 1).
+The statement has been terminated.
+V1|11:42:10.937 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, B9340A66-6B7E-4FE3-BC95-1B4CF620A39D, 5, 6, 1).
+The statement has been terminated.
+V1|11:42:12.378 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, B9340A66-6B7E-4FE3-BC95-1B4CF620A39D, 1, 6, 1).
+The statement has been terminated.
+V1|11:42:22.219 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, B9340A66-6B7E-4FE3-BC95-1B4CF620A39D, 3, 6, 1).
+The statement has been terminated.
+V1|11:42:25.161 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, B9340A66-6B7E-4FE3-BC95-1B4CF620A39D, 4, 6, 1).
+The statement has been terminated.
+V1|11:53:40.131 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Procedure or function 'sp_Dashboard_Awareness' expects parameter '@ParamSequencia', which was not supplied.
+V1|11:53:40.155 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Procedure or function 'sp_Dashboard_Awareness' expects parameter '@ParamSequencia', which was not supplied.
+V1|11:53:43.422 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Procedure or function 'sp_Dashboard_Awareness' expects parameter '@ParamSequencia', which was not supplied.
+V1|11:53:43.492 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Procedure or function 'sp_Dashboard_Awareness' expects parameter '@ParamSequencia', which was not supplied.
+V1|11:53:43.546 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Procedure or function 'sp_Dashboard_Awareness' expects parameter '@ParamSequencia', which was not supplied.
+V1|11:53:43.603 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Procedure or function 'sp_Dashboard_Awareness' expects parameter '@ParamSequencia', which was not supplied.
+V1|11:53:43.733 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Procedure or function 'sp_Dashboard_Awareness' expects parameter '@ParamSequencia', which was not supplied.
+V1|11:53:43.789 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Procedure or function 'sp_Dashboard_Awareness' expects parameter '@ParamSequencia', which was not supplied.
+V1|11:53:43.885 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Procedure or function 'sp_Dashboard_Awareness' expects parameter '@ParamSequencia', which was not supplied.
+V1|11:53:43.922 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Procedure or function 'sp_Dashboard_Awareness' expects parameter '@ParamSequencia', which was not supplied.
+V1|11:53:44.014 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Procedure or function 'sp_Dashboard_Awareness' expects parameter '@ParamSequencia', which was not supplied.
+V1|11:53:44.098 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Procedure or function 'sp_Dashboard_Awareness' expects parameter '@ParamSequencia', which was not supplied.
+V1|11:53:44.198 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Procedure or function 'sp_Dashboard_Awareness' expects parameter '@ParamSequencia', which was not supplied.
+V1|11:53:44.259 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Procedure or function 'sp_Dashboard_Awareness' expects parameter '@ParamSequencia', which was not supplied.
+V1|11:53:44.298 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Procedure or function 'sp_Dashboard_Awareness' expects parameter '@ParamSequencia', which was not supplied.
+V1|11:53:44.465 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Procedure or function 'sp_Dashboard_Awareness' expects parameter '@ParamSequencia', which was not supplied.
+V1|11:57:05.686 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 9A396ACB-3A28-4507-B3C0-E785375BE2CA, 1, 5, 1).
+The statement has been terminated.
+V1|11:57:05.688 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Dados_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Dados_Awareness'. The duplicate key value is (1, F550A5CF-B9A8-40B0-AF31-D5A715D56F1B, 641, 1, 3).
+Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, F550A5CF-B9A8-40B0-AF31-D5A715D56F1B, 6, 1, 3).
+The statement has been terminated.
+The statement has been terminated.
+V1|11:57:08.095 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 98588B54-080D-471F-9E9E-C9D24AB72441, 2, 5, 1).
+The statement has been terminated.
+V1|11:57:08.599 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 98588B54-080D-471F-9E9E-C9D24AB72441, 7, 5, 1).
+The statement has been terminated.
+V1|11:57:08.779 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 0A653AAD-D541-41E0-A533-2890E23830F6, 3, 6, 1).
+The statement has been terminated.
+V1|11:57:09.199 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 0B2F0F01-B132-465B-A933-77ED0569C725, 4, 6, 1).
+The statement has been terminated.
+V1|11:57:10.169 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, AE8DBDDF-066F-44E2-97E1-12FFA9F10C61, 5, 6, 1).
+The statement has been terminated.
+V1|11:58:27.606 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, AE2FD642-DE9C-4A22-81DB-99626D4CE720, 1, 6, 1).
+The statement has been terminated.
+V1|11:58:28.542 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Dados_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Dados_Awareness'. The duplicate key value is (1, D56B007E-999C-427A-B987-9C02A466AE72, 641, 1, 3).
+Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, AE2FD642-DE9C-4A22-81DB-99626D4CE720, 6, 6, 1).
+The statement has been terminated.
+The statement has been terminated.
+V1|11:58:29.167 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Dados_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Dados_Awareness'. The duplicate key value is (1, 92BB51CD-15BA-413F-A2C8-E89C8EB0F46B, 641, 1, 3).
+The statement has been terminated.
+V1|11:58:42.797 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 8D4E40FB-F9E4-42F0-AD2A-6BDD6AEE3716, 2, 6, 1).
+The statement has been terminated.
+V1|11:58:42.844 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 8D4E40FB-F9E4-42F0-AD2A-6BDD6AEE3716, 7, 6, 1).
+The statement has been terminated.
+V1|11:58:44.582 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 29DBDB32-7012-4F78-84FB-227A058CAF88, 8, 2, 3).
+The statement has been terminated.
+V1|11:58:44.685 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 29DBDB32-7012-4F78-84FB-227A058CAF88, 3, 2, 3).
+The statement has been terminated.
+V1|11:58:45.574 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, AAECF54E-632A-490F-BD89-9E5456932280, 4, 3, 3).
+The statement has been terminated.
+V1|11:58:45.659 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, AAECF54E-632A-490F-BD89-9E5456932280, 9, 3, 3).
+The statement has been terminated.
+V1|11:58:46.907 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 715E3FF4-7168-48E3-99FA-5D4ABBEC41B5, 5, 6, 3).
+The statement has been terminated.
+V1|11:58:53.456 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Dados_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Dados_Awareness'. The duplicate key value is (1, 906106A5-8E5E-4897-9EC6-EE7DD7B4EE83, 641, 1, 3).
+The statement has been terminated.
+V1|11:58:53.507 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, AB6B211E-4CDE-4D16-9A2E-4D9682134FBD, 1, 5, 1).
+The statement has been terminated.
+V1|11:58:53.674 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Dados_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Dados_Awareness'. The duplicate key value is (1, B800E6FC-C318-4582-819C-84D00EB4DE46, 641, 1, 3).
+Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, AB6B211E-4CDE-4D16-9A2E-4D9682134FBD, 6, 5, 1).
+The statement has been terminated.
+The statement has been terminated.
+V1|11:58:54.231 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 272E2AD9-3F74-44F9-9CC0-D88AD5CF3856, 2, 5, 3).
+An invalid floating point operation occurred.
+The statement has been terminated.
+V1|11:58:54.323 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 272E2AD9-3F74-44F9-9CC0-D88AD5CF3856, 7, 5, 3).
+The statement has been terminated.
+V1|11:58:55.374 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 272E2AD9-3F74-44F9-9CC0-D88AD5CF3856, 3, 5, 3).
+The statement has been terminated.
+V1|11:58:55.516 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 272E2AD9-3F74-44F9-9CC0-D88AD5CF3856, 8, 5, 3).
+The statement has been terminated.
+V1|11:58:56.246 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 272E2AD9-3F74-44F9-9CC0-D88AD5CF3856, 9, 5, 3).
+The statement has been terminated.
+V1|11:58:56.386 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, B6435AEE-88AA-4D2E-B037-5B66F7958198, 4, 4, 2).
+The statement has been terminated.
+V1|11:58:56.723 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 272E2AD9-3F74-44F9-9CC0-D88AD5CF3856, 5, 5, 3).
+The statement has been terminated.
+V1|11:59:00.078 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 272E2AD9-3F74-44F9-9CC0-D88AD5CF3856, 4, 5, 3).
+The statement has been terminated.
+V1|11:59:03.728 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 272E2AD9-3F74-44F9-9CC0-D88AD5CF3856, 4, 5, 3).
+The statement has been terminated.
+V1|12:00:17.928 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Dados_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Dados_Awareness'. The duplicate key value is (1, 86FDAA5A-4BE9-45A1-8EFC-E0B94E7BEFD9, 815, 1, 1).
+The statement has been terminated.
+V1|12:00:27.973 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Dados_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Dados_Awareness'. The duplicate key value is (1, 80D11968-C35E-477E-93EB-07E1099043C6, 815, 1, 1).
+Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 86FDAA5A-4BE9-45A1-8EFC-E0B94E7BEFD9, 6, 1, 3).
+The statement has been terminated.
+The statement has been terminated.
+V1|12:00:28.578 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 86FDAA5A-4BE9-45A1-8EFC-E0B94E7BEFD9, 1, 1, 3).
+The statement has been terminated.
+V1|12:00:29.763 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 0FFF0D44-C991-428A-9D53-6ECDFCFDAA1F, 2, 2, 1).
+The statement has been terminated.
+V1|12:00:30.476 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 0FFF0D44-C991-428A-9D53-6ECDFCFDAA1F, 7, 2, 1).
+The statement has been terminated.
+V1|12:00:31.710 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 8100BFCB-2856-4D6C-92FE-5BEE29FB2D7A, 3, 2, 2).
+The statement has been terminated.
+V1|12:00:32.466 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 8100BFCB-2856-4D6C-92FE-5BEE29FB2D7A, 8, 2, 2).
+The statement has been terminated.
+V1|12:00:33.661 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 4AB47E18-78EF-456B-9E8F-7A74470A37A8, 4, 6, 3).
+The statement has been terminated.
+V1|12:00:34.262 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 2797869D-47A7-4602-B408-F75E795856C5, 5, 6, 3).
+The statement has been terminated.
+V1|12:06:31.843 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Dados_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Dados_Awareness'. The duplicate key value is (1, 8A1ED135-A413-440F-8CA7-2F5BC494E85A, 815, 1, 1).
+Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 8A1ED135-A413-440F-8CA7-2F5BC494E85A, 6, 1, 1).
+The statement has been terminated.
+The statement has been terminated.
+V1|12:06:32.731 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Dados_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Dados_Awareness'. The duplicate key value is (1, EC86F192-5D32-4266-867C-46423B1F843B, 815, 1, 1).
+The statement has been terminated.
+V1|12:06:33.948 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 2747D422-BFEA-4053-89F6-35F4DBC6BB4E, 7, 6, 2).
+The statement has been terminated.
+V1|12:06:34.963 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 37A61105-6CDE-487D-8D3B-F7B12AACF898, 8, 2, 1).
+The statement has been terminated.
+V1|12:06:35.546 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, A071D839-69A2-48BE-85F0-5BBD75E5B209, 9, 6, 2).
+The statement has been terminated.
+V1|12:11:19.177 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, F39E76FF-710B-420F-B528-76352400F97D, 1, 6, 3).
+The statement has been terminated.
+V1|12:11:19.189 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Dados_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Dados_Awareness'. The duplicate key value is (1, BC958693-CCEF-4F1E-B1F8-3B26C8E1326C, 815, 1, 1).
+The statement has been terminated.
+V1|12:11:21.571 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 5D6647D3-2B4B-4E64-AE68-73E47B0565CC, 2, 6, 2).
+The statement has been terminated.
+V1|12:11:21.737 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 5D6647D3-2B4B-4E64-AE68-73E47B0565CC, 7, 6, 2).
+The statement has been terminated.
+V1|12:11:22.140 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 7840C989-9621-4AE3-AD5D-5623B47A7545, 3, 5, 1).
+The statement has been terminated.
+V1|12:11:22.452 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 857AD6DD-327B-438D-B5D4-262F0CD16AD4, 8, 2, 2).
+The statement has been terminated.
+V1|12:11:22.763 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, EF436314-F5DA-4C41-A64F-22A8659D3F87, 4, 6, 3).
+The statement has been terminated.
+V1|12:11:23.320 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 1EFD1736-955C-49E0-BF46-AF30418CC0C4, 5, 3, 1).
+The statement has been terminated.
+V1|12:11:24.156 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 1EFD1736-955C-49E0-BF46-AF30418CC0C4, 9, 3, 1).
+The statement has been terminated.
+V1|15:21:51.905 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 095872B4-45E0-4717-9DB4-CFB99AD84680, 1, 6, 1).
+The statement has been terminated.
+V1|15:21:51.999 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 785631EA-0752-421B-8F50-D3ADB2CA1BF6, 6, 1, 1).
+The statement has been terminated.
+V1|15:21:52.236 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, A24023BB-F518-428F-96A4-2B05241A958D, 2, 6, 1).
+The statement has been terminated.
+V1|15:21:52.510 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 438383C8-65FE-44D1-BFC7-F0F743E92BC5, 3, 2, 2).
+The statement has been terminated.
+V1|15:21:52.648 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 438383C8-65FE-44D1-BFC7-F0F743E92BC5, 7, 2, 2).
+The statement has been terminated.
+V1|15:21:52.829 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 3F2A0826-1A7B-4676-8EB9-C83DB3CD0D15, 4, 6, 2).
+The statement has been terminated.
+V1|15:21:53.003 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 6AA717F0-05A7-4CA0-A360-8521EF0F0781, 8, 3, 1).
+The statement has been terminated.
+V1|15:21:53.085 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 6AA717F0-05A7-4CA0-A360-8521EF0F0781, 5, 3, 1).
+The statement has been terminated.
+V1|15:21:53.450 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: []Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 9B5FF1F4-2439-4D06-B725-F9225655C04D, 9, 4, 1).
+The statement has been terminated.
+V1|15:22:52.028 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 864A4CF0-9C66-4205-B858-F5DCEBE06988, 6, 1, 1).
+The statement has been terminated.
+V1|15:22:58.553 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 5E488A31-716C-4D8E-8D32-3BB6BBE373E5, 1, 6, 2).
+The statement has been terminated.
+V1|15:23:05.645 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, CCD44546-2D68-41AA-A171-7B48A948992E, 3, 3, 1).
+The statement has been terminated.
+V1|15:23:05.979 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 6FC63A71-D4B8-46EF-A72F-853A942C841B, 9, 4, 3).
+The statement has been terminated.
+V1|15:23:29.331 == Class: DashboardThreeDataAccess      Method: CarregarGraficoComparativoExperiencia   Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Dados_Funil'. Cannot insert duplicate key in object 'dbo.tblTMP_Dados_Funil'. The duplicate key value is (1, B2E4D5AB-8641-41AC-98BE-17707B228F68, 815, 1, 1).
+The statement has been terminated.
+V1|15:23:53.708 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, C51D4129-0AAE-4D6B-A85D-51B2DEB7B047, 1, 6, 1).
+The statement has been terminated.
+V1|15:23:54.695 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 821FFCC1-1910-43EA-8E04-B02E5104E47D, 2, 6, 1).
+The statement has been terminated.
+V1|15:23:54.744 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, C51D4129-0AAE-4D6B-A85D-51B2DEB7B047, 6, 6, 1).
+The statement has been terminated.
+V1|15:23:55.094 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, DC3BE7E8-4DE2-48D7-8EAA-FC1B26D4BF54, 3, 6, 2).
+The statement has been terminated.
+V1|15:23:55.450 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 1B39BFAF-8B57-4CEA-9ED7-89AB4A44C96C, 4, 6, 2).
+The statement has been terminated.
+V1|15:23:55.784 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 9EB86505-6FAA-4323-8CA0-510DC1D76853, 5, 4, 3).
+The statement has been terminated.
+V1|15:24:32.896 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 8DB68267-6294-4025-8BB4-BF688A6FDB0A, 1, 6, 3).
+The statement has been terminated.
+V1|15:24:33.754 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, B4499099-F7E8-4209-964E-2AEA36316C56, 9, 4, 2).
+The statement has been terminated.
+V1|15:24:33.842 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, D6ACBEF2-8D45-4449-9570-8B46E47DF812, 4, 6, 2).
+The statement has been terminated.
+V1|15:24:34.128 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 9DC120BA-F94B-47C4-8175-0557A39EA78E, 5, 6, 1).
+The statement has been terminated.
+V1|15:27:14.683 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 80916006-529B-47DD-9B60-B1C2E5819C36, 1, 6, 2).
+The statement has been terminated.
+V1|15:27:14.791 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 4EF1107D-C335-4186-A49A-38F407A0014A, 6, 5, 1).
+The statement has been terminated.
+V1|15:27:15.226 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 8D95A2A8-3ACE-4509-BC71-CFD0E09B5047, 2, 6, 2).
+The statement has been terminated.
+V1|15:27:15.375 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, F8C0C679-40A9-4DE2-8B8B-3C54D4810577, 7, 5, 1).
+The statement has been terminated.
+V1|15:27:16.047 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 74B7EF10-7F76-49CA-94AE-40E0471BA224, 8, 5, 2).
+The statement has been terminated.
+V1|15:27:27.979 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 054C01A3-90D0-44D8-96A1-C0A0512FDEF2, 1, 5, 1).
+The statement has been terminated.
+V1|15:27:28.094 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 054C01A3-90D0-44D8-96A1-C0A0512FDEF2, 6, 5, 1).
+The statement has been terminated.
+V1|15:27:28.455 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 3B8A4D0D-AC76-4ED5-B9E4-84B528689DD3, 2, 2, 1).
+The statement has been terminated.
+V1|15:27:28.567 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 3B8A4D0D-AC76-4ED5-B9E4-84B528689DD3, 7, 2, 1).
+The statement has been terminated.
+V1|15:27:29.019 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, F56BE5A2-0891-4D7B-83EC-8A0201977D98, 3, 5, 1).
+The statement has been terminated.
+V1|15:27:29.228 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 4DA24815-7970-4224-8AF7-9B6B32E6E8AF, 8, 6, 3).
+The statement has been terminated.
+V1|15:27:29.651 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, E58C5087-26D0-4987-8AF5-1A291A66AD62, 9, 6, 1).
+The statement has been terminated.
+V1|15:27:29.813 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, E58C5087-26D0-4987-8AF5-1A291A66AD62, 4, 6, 1).
+The statement has been terminated.
+V1|15:27:30.438 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, F89415E8-DBF9-4847-985C-76E51409EAFF, 5, 6, 1).
+The statement has been terminated.
+V1|15:27:40.400 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 57C3172D-3923-43A8-8067-99274D79A3DC, 6, 6, 3).
+The statement has been terminated.
+V1|15:27:40.459 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 57C3172D-3923-43A8-8067-99274D79A3DC, 1, 6, 3).
+The statement has been terminated.
+V1|15:27:40.989 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 5E370130-46CD-496B-86AF-89E20B9FACA3, 2, 5, 1).
+The statement has been terminated.
+V1|15:27:41.476 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 598CB274-E887-4296-8BDB-2DE4DD23814F, 3, 2, 3).
+The statement has been terminated.
+V1|15:27:41.890 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, FACC52E2-1C59-431A-8883-DC576789271C, 4, 5, 2).
+An invalid floating point operation occurred.
+The statement has been terminated.
+V1|15:27:42.315 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 014966BC-140C-4082-A7EB-11DB7F898657, 9, 6, 3).
+The statement has been terminated.
+V1|15:27:42.460 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 60FA8FFC-8A1D-4E93-A40C-9C915FFBA054, 5, 5, 1).
+The statement has been terminated.
+V1|15:27:47.098 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 014966BC-140C-4082-A7EB-11DB7F898657, 4, 6, 3).
+The statement has been terminated.
+V1|15:27:48.721 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 014966BC-140C-4082-A7EB-11DB7F898657, 4, 6, 3).
+The statement has been terminated.
+V1|15:27:52.026 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 014966BC-140C-4082-A7EB-11DB7F898657, 4, 6, 3).
+The statement has been terminated.
+V1|15:27:53.584 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 014966BC-140C-4082-A7EB-11DB7F898657, 4, 6, 3).
+The statement has been terminated.
+V1|15:28:03.500 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 014966BC-140C-4082-A7EB-11DB7F898657, 4, 6, 3).
+The statement has been terminated.
+V1|15:28:05.054 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 014966BC-140C-4082-A7EB-11DB7F898657, 4, 6, 3).
+The statement has been terminated.
+V1|15:28:18.573 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 014966BC-140C-4082-A7EB-11DB7F898657, 4, 6, 3).
+The statement has been terminated.
+V1|15:28:20.643 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 014966BC-140C-4082-A7EB-11DB7F898657, 4, 6, 3).
+The statement has been terminated.
+V1|15:28:24.120 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 014966BC-140C-4082-A7EB-11DB7F898657, 3, 6, 3).
+The statement has been terminated.
+V1|15:28:26.980 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 014966BC-140C-4082-A7EB-11DB7F898657, 3, 6, 3).
+The statement has been terminated.
+V1|15:28:32.821 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 014966BC-140C-4082-A7EB-11DB7F898657, 4, 6, 3).
+The statement has been terminated.
+V1|15:28:34.662 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 014966BC-140C-4082-A7EB-11DB7F898657, 4, 6, 3).
+The statement has been terminated.
+V1|15:28:36.825 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 014966BC-140C-4082-A7EB-11DB7F898657, 4, 6, 3).
+The statement has been terminated.
+V1|15:28:39.391 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 014966BC-140C-4082-A7EB-11DB7F898657, 4, 6, 3).
+The statement has been terminated.
+V1|15:28:41.195 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 014966BC-140C-4082-A7EB-11DB7F898657, 4, 6, 3).
+The statement has been terminated.
+V1|15:28:43.530 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 014966BC-140C-4082-A7EB-11DB7F898657, 3, 6, 3).
+The statement has been terminated.
+V1|15:28:45.216 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 014966BC-140C-4082-A7EB-11DB7F898657, 3, 6, 3).
+The statement has been terminated.
+V1|15:29:47.940 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 1626BD63-F8C8-45A5-BEB5-2204A05A66A6, 1, 5, 3).
+The statement has been terminated.
+V1|15:29:48.411 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 403C265D-460F-4D43-8FBF-4CE70254B5E7, 2, 5, 3).
+The statement has been terminated.
+V1|15:29:48.874 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, E2D3853A-0827-404B-857D-686128049814, 3, 6, 1).
+The statement has been terminated.
+V1|15:29:49.469 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, A4BE7F79-6C63-4407-8C69-6C98B69C22BF, 4, 5, 3).
+The statement has been terminated.
+V1|15:29:50.046 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 51F434DE-693B-4D40-897F-99B8FCB78A62, 5, 6, 3).
+The statement has been terminated.
+V1|15:29:50.514 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 56B7406E-14D3-49B6-AACA-9EBF0A1D78E1, 6, 1, 1).
+The statement has been terminated.
+V1|15:29:50.940 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 190142C7-62A4-4A0F-A76B-A1345AAAA192, 7, 2, 3).
+The statement has been terminated.
+V1|15:29:51.810 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 8D819916-BA63-4C55-BDE0-C6316775AB98, 8, 3, 1).
+The statement has been terminated.
+V1|15:29:52.667 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 61C74331-064B-4E8B-9465-5835A5DF7021, 9, 4, 1).
+The statement has been terminated.
+V1|15:30:11.631 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 44368F37-1B47-4631-8B46-14022603B6FF, 6, 1, 3).
+The statement has been terminated.
+V1|15:30:12.168 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 3A7CB1A2-AC84-4F27-A0D3-952CFD9DC41C, 7, 2, 1).
+An invalid floating point operation occurred.
+The statement has been terminated.
+V1|15:30:13.055 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 3A7CB1A2-AC84-4F27-A0D3-952CFD9DC41C, 8, 2, 1).
+The statement has been terminated.
+V1|15:30:13.571 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, C3F40BA6-DFE3-48C5-8E18-1586BFA47F68, 9, 3, 3).
+The statement has been terminated.
+V1|15:30:35.227 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 3A7CB1A2-AC84-4F27-A0D3-952CFD9DC41C, 6, 2, 1).
+The statement has been terminated.
+V1|15:30:35.583 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 3A7CB1A2-AC84-4F27-A0D3-952CFD9DC41C, 7, 2, 1).
+The statement has been terminated.
+V1|15:30:35.743 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 3A7CB1A2-AC84-4F27-A0D3-952CFD9DC41C, 7, 2, 1).
+The statement has been terminated.
+V1|15:30:36.027 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 3A7CB1A2-AC84-4F27-A0D3-952CFD9DC41C, 8, 2, 1).
+The statement has been terminated.
+V1|15:30:36.262 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 3A7CB1A2-AC84-4F27-A0D3-952CFD9DC41C, 8, 2, 1).
+The statement has been terminated.
+V1|15:30:36.476 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 3A7CB1A2-AC84-4F27-A0D3-952CFD9DC41C, 9, 2, 1).
+The statement has been terminated.
+V1|15:30:36.811 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 3A7CB1A2-AC84-4F27-A0D3-952CFD9DC41C, 9, 2, 1).
+The statement has been terminated.
+V1|15:32:08.098 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 2AD4F1CC-22EA-43E6-A7F2-960CF3DBCDCF, 6, 1, 3).
+The statement has been terminated.
+V1|15:32:09.110 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 1B7F8494-ED14-4D22-A4A2-8E8ED006E839, 7, 2, 2).
+The statement has been terminated.
+V1|15:32:09.821 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 9B8C20AB-8D7A-4C22-B45A-C92319A07F84, 8, 2, 1).
+The statement has been terminated.
+V1|15:32:11.088 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 4AA51B8D-EF40-4BC6-86D7-1AE437C549AE, 9, 4, 1).
+The statement has been terminated.
+V1|15:33:14.793 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 6FE9235A-0608-42DA-8DDC-42562F5669F9, 6, 1, 3).
+The statement has been terminated.
+V1|15:33:15.536 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 2871DF4C-7DED-4853-8EB5-9DFD050BAEA1, 7, 2, 3).
+The statement has been terminated.
+V1|15:33:15.933 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, B7A0460D-B3D6-4BDA-BD67-8A863836AC2D, 8, 2, 2).
+The statement has been terminated.
+V1|15:33:16.649 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, BCFABBC1-E0A6-4D23-AEF2-A623C0A9B698, 9, 3, 2).
+The statement has been terminated.
+V1|15:34:17.572 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 418891B9-BB6C-4814-8F3A-8AA119D854EA, 6, 1, 2).
+The statement has been terminated.
+V1|15:34:18.442 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 6C8DC5D6-BD69-49F0-B89A-1ADDAEEE14D1, 7, 2, 3).
+The statement has been terminated.
+V1|15:34:19.256 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, E73E51FC-4994-4244-A1F8-38558359889A, 8, 3, 2).
+The statement has been terminated.
+V1|15:34:20.078 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 90F1E57E-452A-43FB-9709-5849119BE5EC, 9, 4, 1).
+The statement has been terminated.
+V1|15:34:23.546 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 3ACE5749-4B6F-41E0-99D8-5F076563EC75, 6, 1, 1).
+The statement has been terminated.
+V1|15:34:24.409 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 86E8AD65-CB39-4A63-9082-63068387A02A, 7, 2, 1).
+The statement has been terminated.
+V1|15:34:25.057 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 04AF8548-FBE5-4FAA-92FD-843EF1C3F631, 8, 2, 1).
+The statement has been terminated.
+V1|15:34:25.503 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 8F984E20-CBE3-4F7B-9BEB-8C54A49CF41C, 9, 4, 2).
+The statement has been terminated.
+V1|15:34:28.094 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, EB5C68D9-FA67-42C4-8126-193303597BA1, 6, 1, 2).
+The statement has been terminated.
+V1|15:34:28.963 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 77F2CBA0-71D7-4E69-AE77-A685E127D842, 7, 1, 1).
+The statement has been terminated.
+V1|15:34:29.811 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, C5D4B65D-962B-4F5D-A56C-03387B5308CF, 8, 2, 1).
+The statement has been terminated.
+V1|15:34:30.345 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 568CF038-51A2-42D6-8960-AE806A1A300A, 9, 3, 2).
+The statement has been terminated.
+V1|15:35:01.876 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 2EFC7675-A423-4D61-91FD-1EBCE6286F87, 6, 1, 1).
+The statement has been terminated.
+V1|15:35:02.254 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, FCDB95CF-7826-4C26-AB6F-8B50A025A280, 7, 1, 2).
+The statement has been terminated.
+V1|15:35:02.864 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, FC50DE64-B686-4780-AC11-E9A6EE28C824, 8, 2, 3).
+The statement has been terminated.
+V1|15:35:03.870 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 8D2BA706-5172-49FD-A398-211D9916CB23, 9, 4, 2).
+The statement has been terminated.
+V1|15:35:15.486 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 77F4BE46-B880-4340-9A18-ECD74923E98E, 6, 1, 3).
+The statement has been terminated.
+V1|15:35:22.897 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 9CE4C1EC-217A-4DD5-A531-8C9E4170355F, 7, 2, 3).
+The statement has been terminated.
+V1|15:35:35.648 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, BDAF04C4-3C17-45A5-972C-556977770A04, 8, 3, 1).
+The statement has been terminated.
+V1|15:35:36.447 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 5AE39726-CA88-47CE-BE68-2DD0D318A79F, 9, 3, 3).
+The statement has been terminated.
+V1|15:36:32.754 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, AA674B57-2453-45CB-9FF1-3936C722E299, 6, 1, 2).
+The statement has been terminated.
+V1|15:36:33.546 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 3CB8294A-9901-4167-8DB2-C8BF36EA53DE, 7, 1, 1).
+The statement has been terminated.
+V1|15:36:34.282 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 70E8B888-1426-46B6-8004-753466A44CB2, 8, 3, 2).
+The statement has been terminated.
+V1|15:36:35.083 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 462E763D-5686-4340-9B8F-0B8FDC34BF8B, 9, 4, 3).
+The statement has been terminated.
+V1|15:36:42.959 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, DDBF1D1B-4E21-4234-BF9B-92C18C8F81E5, 6, 1, 1).
+The statement has been terminated.
+V1|15:36:43.134 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 3DE0FF95-704A-491D-BE2B-1B331AAC62CD, 1, 5, 1).
+The statement has been terminated.
+V1|15:36:43.555 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 23C9D2A7-0CEB-47E9-9860-9104AB1E866B, 2, 6, 3).
+The statement has been terminated.
+V1|15:36:43.848 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 8DE5C42B-FF2F-4C98-A1BF-F13CF02843E3, 7, 2, 2).
+The statement has been terminated.
+V1|15:36:44.281 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 628BA84F-02B7-4E47-86A2-48DF7D218554, 3, 5, 2).
+The statement has been terminated.
+V1|15:36:44.690 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, D5F83528-C5EE-4598-AC02-3A6DA35F7D2A, 4, 5, 2).
+The statement has been terminated.
+V1|15:36:44.939 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 4976D880-FC68-44BC-854F-4083BD90EAF1, 8, 3, 1).
+The statement has been terminated.
+V1|15:36:45.438 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 5F44C5EB-A965-4F06-BCEA-D039E4564658, 5, 6, 3).
+The statement has been terminated.
+V1|15:36:45.492 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 5F44C5EB-A965-4F06-BCEA-D039E4564658, 9, 6, 3).
+The statement has been terminated.
+V1|15:37:26.990 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 02828E96-FB73-4A71-90A9-C4DB4981F3C2, 1, 5, 1).
+The statement has been terminated.
+V1|15:37:27.039 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 02828E96-FB73-4A71-90A9-C4DB4981F3C2, 6, 5, 1).
+The statement has been terminated.
+V1|15:37:27.832 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 1E98F9FB-A896-42E7-BBCB-6B5B2DF4BB07, 2, 5, 1).
+The statement has been terminated.
+V1|15:37:27.996 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 13A71050-F148-4BA4-9B7A-0600D361DD6F, 7, 5, 2).
+The statement has been terminated.
+V1|15:37:28.130 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 194E3BA0-ACAA-4691-8D00-D9A6FFEBF7FE, 3, 6, 1).
+The statement has been terminated.
+V1|15:37:28.688 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 47F361CF-90FC-46FD-A3F3-5161591F2696, 4, 3, 3).
+The statement has been terminated.
+V1|15:37:28.937 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 47F361CF-90FC-46FD-A3F3-5161591F2696, 8, 3, 3).
+The statement has been terminated.
+V1|15:37:29.541 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, FAD5E403-9E09-4270-877F-52046CC2073B, 5, 5, 1).
+The statement has been terminated.
+V1|15:37:29.976 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, B1E1B1E6-4CEE-4D67-AD1A-2B8C62FDF8FC, 9, 3, 3).
+The statement has been terminated.
+V1|15:39:47.882 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 0A7A555C-30BA-4CAE-BE89-B09B5BF5DF1A, 1, 1, 1).
+The statement has been terminated.
+V1|15:39:47.964 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, 0A7A555C-30BA-4CAE-BE89-B09B5BF5DF1A, 6, 1, 1).
+The statement has been terminated.
+V1|15:39:48.598 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, EE7C9C43-3D96-4709-A00A-04B655F203BF, 2, 6, 3).
+An invalid floating point operation occurred.
+The statement has been terminated.
+V1|15:39:48.705 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, EE7C9C43-3D96-4709-A00A-04B655F203BF, 7, 6, 3).
+The statement has been terminated.
+V1|15:39:49.591 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, EE7C9C43-3D96-4709-A00A-04B655F203BF, 8, 6, 3).
+The statement has been terminated.
+V1|15:39:49.666 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, EE7C9C43-3D96-4709-A00A-04B655F203BF, 3, 6, 3).
+The statement has been terminated.
+V1|15:39:50.193 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, EE7C9C43-3D96-4709-A00A-04B655F203BF, 4, 6, 3).
+The statement has been terminated.
+V1|15:39:50.244 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, EE7C9C43-3D96-4709-A00A-04B655F203BF, 9, 6, 3).
+The statement has been terminated.
+V1|15:39:50.861 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, EE7C9C43-3D96-4709-A00A-04B655F203BF, 5, 6, 3).
+The statement has been terminated.
+V1|15:39:55.997 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, EE7C9C43-3D96-4709-A00A-04B655F203BF, 1, 6, 3).
+The statement has been terminated.
+V1|15:39:56.292 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, EE7C9C43-3D96-4709-A00A-04B655F203BF, 6, 6, 3).
+The statement has been terminated.
+V1|15:39:56.437 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, EE7C9C43-3D96-4709-A00A-04B655F203BF, 2, 6, 3).
+The statement has been terminated.
+V1|15:39:56.518 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, EE7C9C43-3D96-4709-A00A-04B655F203BF, 7, 6, 3).
+The statement has been terminated.
+V1|15:39:56.547 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, EE7C9C43-3D96-4709-A00A-04B655F203BF, 2, 6, 3).
+The statement has been terminated.
+V1|15:39:56.964 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, EE7C9C43-3D96-4709-A00A-04B655F203BF, 3, 6, 3).
+The statement has been terminated.
+V1|15:39:57.022 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, EE7C9C43-3D96-4709-A00A-04B655F203BF, 3, 6, 3).
+The statement has been terminated.
+V1|15:39:57.077 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, EE7C9C43-3D96-4709-A00A-04B655F203BF, 8, 6, 3).
+The statement has been terminated.
+V1|15:39:57.205 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, EE7C9C43-3D96-4709-A00A-04B655F203BF, 7, 6, 3).
+The statement has been terminated.
+V1|15:39:57.497 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, EE7C9C43-3D96-4709-A00A-04B655F203BF, 4, 6, 3).
+The statement has been terminated.
+V1|15:39:57.571 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, EE7C9C43-3D96-4709-A00A-04B655F203BF, 9, 6, 3).
+The statement has been terminated.
+V1|15:39:57.715 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, EE7C9C43-3D96-4709-A00A-04B655F203BF, 4, 6, 3).
+The statement has been terminated.
+V1|15:39:57.986 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, EE7C9C43-3D96-4709-A00A-04B655F203BF, 5, 6, 3).
+The statement has been terminated.
+V1|15:39:58.051 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, EE7C9C43-3D96-4709-A00A-04B655F203BF, 5, 6, 3).
+The statement has been terminated.
+V1|15:39:58.130 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_Base_Awareness_1'. Cannot insert duplicate key in object 'dbo.tblTMP_Base_Awareness'. The duplicate key value is (1, EE7C9C43-3D96-4709-A00A-04B655F203BF, 8, 6, 3).
+The definition of object 'sp_Dashboard_Awareness' has changed since it was compiled.
+The statement has been terminated.
+V1|19:40:53.620 == Class: DashboardThreeDataAccess      Method: CarregarGraficoComparativoExperiencia   Routine: ERROR***       Message: [ipsos@teste.com.br]Referência de objeto não definida para uma instância de um objeto.
+V1|19:40:54.225 == Class: DashboardThreeDataAccess      Method: CarregarGraficoComparativoExperiencia   Routine: ERROR***       Message: [ipsos@teste.com.br]Referência de objeto não definida para uma instância de um objeto.
+V1|20:38:56.592 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoEvolutivoMarcasExcel     Routine: ERROR***       Message: [ipsos@teste.com.br]Procedure or function 'sp_Dashboard_Awareness' expects parameter '@ParamSequencia', which was not supplied.

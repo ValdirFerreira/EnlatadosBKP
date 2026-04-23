@@ -1,0 +1,6 @@
+V1|15:00:54.465 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: []Invalid object name 'tblLog'.
+V1|15:00:59.107 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: [ipsos@teste.com.br]Invalid object name 'tblLog'.
+V1|15:01:02.056 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: [ipsos@teste.com.br]Invalid object name 'tblLog'.
+V1|15:01:11.732 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: [ipsos@teste.com.br]Invalid object name 'tblLog'.
+V1|15:01:57.565 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: [ipsos@teste.com.br]Invalid object name 'tblLog'.
+V1|15:02:29.350 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: [ipsos@teste.com.br]Invalid object name 'tblLog'.

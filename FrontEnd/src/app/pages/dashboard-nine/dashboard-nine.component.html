@@ -1,0 +1,349 @@
+<app-sidebar></app-sidebar>
+<app-navbar></app-navbar>
+<div class="container-dashboard" *ngIf="paginaAtiva">
+
+  <div  class="card" id="grafico-linhas">
+    <div class="container-card card-mobile">
+      <div class="header-card">
+        <div class="container-title">
+          <div class="title">
+            <select-checkbox-adHoc *ngIf="ativaEvolutivoMarcasLinhas"
+              (ModelAtributo)="onChangeAtributo($event)"></select-checkbox-adHoc>
+            <!-- {{'dashboard-nine-grafico11-titulo' | translate}} -->
+          </div>
+          <div class="legend">
+            {{'dashboard-nine-grafico3-subtitulo' | translate}}
+
+          </div>
+
+          <div class="legend-sub">
+            <div class="container-sig">
+              <div class="sig-positive"> </div>
+              <div class="sig-negative"> </div> {{'dashboard-sig' | translate}}
+
+            </div>
+          </div>
+        </div>
+        <div class="container-export">
+
+          <div class="icon-export" (click)="exportToExcelGrafico1()">
+            <div class="icon-excel">
+            </div>
+            <div class="titulo-exportar">{{'dashboard-exporta' | translate}}</div>
+          </div>
+          <div class="icon-export" (click)="exportToPptEvolutivoMarcas()">
+            <div class="icon-powerpoint">
+            </div>
+            <div class="titulo-exportar">{{'dashboard-exporta' | translate}}</div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="content-card p-relative"  >
+        <div class="container-legenda">
+
+        </div>
+
+        <div id="container-evolutivo-marcas-linha">
+
+        </div>
+
+      </div>
+
+      <div class="descricao-base">
+        {{descVerificaBaseEvolutivoMarcas}}
+      </div>
+
+      <!-- <div class="content-card">
+                <app-aviso-sem-dados></app-aviso-sem-dados>
+            </div> -->
+    </div>
+  </div>
+
+  <div style="display: none;" class="card" id="grafico-tabela-bloco-6">
+    <div class="container-card card-mobile">
+      <div class="header-card">
+        <div class="container-title">
+          <div class="title">
+
+            {{'dashboard-nine-grafico12-titulo' | translate}}
+          </div>
+          <!-- <div class="legend">
+            {{'dashboard-nine-grafico3-subtitulo' | translate}}
+
+          </div> -->
+
+          <!-- <div class="legend-sub">
+            <div class="container-sig">
+              <div class="sig-positive"> </div>
+              <div class="sig-negative"> </div> {{'dashboard-sig' | translate}}
+
+            </div>
+          </div> -->
+        </div>
+        <div class="container-export">
+
+          <div class="icon-export" (click)="exportToExcelGraficobloco6()">
+            <div class="icon-excel">
+            </div>
+            <div class="titulo-exportar">{{'dashboard-exporta' | translate}}</div>
+          </div>
+          <div class="icon-export" (click)="exportToPptTabelaBloco6()">
+            <div class="icon-powerpoint">
+            </div>
+            <div class="titulo-exportar">{{'dashboard-exporta' | translate}}</div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="content-card p-relative">
+        <div class="container-legenda">
+
+        </div>
+
+        <tabela-padrao [visualizacaoFiltroMarca]="false" [paginacao]="false"
+          (marcaGrafico)="onchangeMarcaTabelaAdHocBloco6($event)" [grafico]="tabelaPadraoAdHocBloco6"></tabela-padrao>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div  class="card" id="grafico-tabela-bloco-10">
+    <div class="container-card card-mobile">
+      <div class="header-card">
+        <div class="container-title">
+          <div class="title">
+
+            {{'dashboard-nine-grafico13-titulo' | translate}}
+          </div>
+          <!-- <div class="legend">
+            {{'dashboard-nine-grafico3-subtitulo' | translate}}
+
+          </div> -->
+
+          <!-- <div class="legend-sub">
+            <div class="container-sig">
+              <div class="sig-positive"> </div>
+              <div class="sig-negative"> </div> {{'dashboard-sig' | translate}}
+
+            </div>
+          </div> -->
+        </div>
+        <div class="container-export">
+
+          <div class="icon-export" (click)="exportToExcelGraficobloco10()">
+            <div class="icon-excel">
+            </div>
+            <div class="titulo-exportar">{{'dashboard-exporta' | translate}}</div>
+          </div>
+          <div class="icon-export" (click)="exportToPptTabelaBloco10()">
+            <div class="icon-powerpoint">
+            </div>
+            <div class="titulo-exportar">{{'dashboard-exporta' | translate}}</div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="content-card p-relative">
+        <div class="container-legenda">
+
+        </div>
+
+        <tabela-padrao-marca [listaMarcas]="listaMarcas10" [paginacao]="false"
+          (marcaGrafico)="onchangeMarcaTabelaAdHocBloco10($event)"
+          [grafico]="tabelaPadraoAdHocBloco10"></tabela-padrao-marca>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div style="display: none;" class="card" id="grafico-linhas2">
+    <div class="container-card card-mobile">
+      <div class="header-card">
+        <div class="container-title">
+          <div class="title">
+
+            {{'dashboard-nine-grafico14-titulo' | translate}}
+          </div>
+          <div class="legend">
+            {{'dashboard-nine-grafico3-subtitulo' | translate}}
+
+          </div>
+
+          <div class="legend-sub">
+            <div class="container-sig">
+              <div class="sig-positive"> </div>
+              <div class="sig-negative"> </div> {{'dashboard-sig' | translate}}
+
+            </div>
+          </div>
+        </div>
+        <div class="container-export">
+
+          <div class="icon-export" (click)="exportToExcelGrafico3()">
+            <div class="icon-excel">
+            </div>
+            <div class="titulo-exportar">{{'dashboard-exporta' | translate}}</div>
+          </div>
+          <div class="icon-export" (click)="exportToPptEvolutivoMarcas2()">
+            <div class="icon-powerpoint">
+            </div>
+            <div class="titulo-exportar">{{'dashboard-exporta' | translate}}</div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="content-card p-relative">
+        <div class="container-legenda">
+
+        </div>
+
+        <div class="container-linha-drop">
+          <div class="group-filtro-marcas-adhoc" style="display: flex;">
+            <ng-select placeholder={{descInicial}} [items]="listaMarcas" id="tipoAtivoModel" class="selectFiltroTabela"
+              [(ngModel)]="ModelMarcas" (change)="onchangeMarcaGrafico(ModelMarcas)" bindLabel="DescItem"
+              [searchable]="false" [clearable]="false" [multiple]="false"></ng-select>
+            <img class="logo-marcas-evolutivo" src={{this.urlImage}}>
+            <!-- <img class="logo-pages" src="assets/imagePages/logo-pequeno.svg"> -->
+          </div>
+        </div>
+
+        <div id="container-evolutivo-marcas-linha-2">
+
+        </div>
+
+      </div>
+
+      <div class="descricao-base">
+        {{descVerificaBaseEvolutivoMarcas2}}
+      </div>
+
+
+    </div>
+  </div>
+
+  <div style="display: none;" class="card" id="grafico-linhas22">
+    <div class="container-card card-mobile">
+      <div class="header-card">
+        <div class="container-title">
+          <div class="title">
+
+            {{'dashboard-nine-grafico16-titulo' | translate}}
+          </div>
+          <div class="legend">
+            {{'dashboard-nine-grafico3-subtitulo' | translate}}
+
+          </div>
+
+          <div class="legend-sub">
+            <div class="container-sig">
+              <div class="sig-positive"> </div>
+              <div class="sig-negative"> </div> {{'dashboard-sig' | translate}}
+
+            </div>
+          </div>
+        </div>
+        <div class="container-export">
+
+          <div class="icon-export" (click)="exportToExcelGrafico03()">
+            <div class="icon-excel">
+            </div>
+            <div class="titulo-exportar">{{'dashboard-exporta' | translate}}</div>
+          </div>
+          <div class="icon-export" (click)="exportToPptEvolutivoMarcas22()">
+            <div class="icon-powerpoint">
+            </div>
+            <div class="titulo-exportar">{{'dashboard-exporta' | translate}}</div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="content-card p-relative">
+        <div class="container-legenda">
+
+        </div>
+
+        <div class="container-linha-drop">
+          <div class="group-filtro-marcas-adhoc" style="display: flex;">
+            <ng-select placeholder={{descInicial2}} [items]="listaMarcas2" id="tipoAtivoModel"
+              class="selectFiltroTabela" [(ngModel)]="ModelMarcas2" (change)="onchangeMarcaGrafico2(ModelMarcas2)"
+              bindLabel="DescItem" [searchable]="false" [clearable]="false" [multiple]="false"></ng-select>
+            <img class="logo-marcas-evolutivo" src={{this.urlImage2}}>
+            <!-- <img class="logo-pages" src="assets/imagePages/logo-pequeno.svg"> -->
+          </div>
+        </div>
+
+        <div id="container-evolutivo-marcas-linha-22">
+
+        </div>
+
+      </div>
+
+      <div class="descricao-base">
+        {{descVerificaBaseEvolutivoMarcas2}}
+      </div>
+
+
+    </div>
+  </div>
+
+  <div style="display: none;" class="card" id="grafico-tabela-bloco-2">
+    <div class="container-card card-mobile">
+      <div class="header-card">
+        <div class="container-title">
+          <div class="title">
+
+            {{'dashboard-nine-grafico15-titulo' | translate}}
+          </div>
+
+        </div>
+        <div class="container-export">
+
+          <div class="icon-export" (click)="exportToExcelGraficobloco2()">
+            <div class="icon-excel">
+            </div>
+            <div class="titulo-exportar">{{'dashboard-exporta' | translate}}</div>
+          </div>
+          <div class="icon-export" (click)="exportToPptTabelaBloco2()">
+            <div class="icon-powerpoint">
+            </div>
+            <div class="titulo-exportar">{{'dashboard-exporta' | translate}}</div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="content-card p-relative">
+        <div class="container-legenda">
+
+        </div>
+
+        <tabela-padrao-base [paginacao]="false" [grafico]="tabelaPadraoAdHocBloco2"></tabela-padrao-base>
+
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<footer-bottom></footer-bottom>

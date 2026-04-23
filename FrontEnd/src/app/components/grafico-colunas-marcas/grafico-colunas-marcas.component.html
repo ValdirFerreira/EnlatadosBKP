@@ -1,0 +1,362 @@
+<div class="container-grafico">
+    <table border="0" cellpadding="0" cellspacing="0" class="tabelagrafico">
+        <tr>
+            <td>
+                <div class="div-principal-grafico-colunas">
+
+                    <div class="group-filtro-coluna">
+                        <select-image [IndexCombo]=0 (ImageModelMarcas)="onchangeMarcaColuna1($event)"></select-image>
+
+                    </div>
+
+                    <div class="bolha-topo-grafico">
+                        <div class="bolha-resultado-topo">
+                            <!-- {{ graficoColunaModel1.PercTotal | number:'1.1-1' }} -->
+                            {{ graficoColunaModel1.PercTotal }}
+                        </div>
+                        <div class="seta-resultado">
+                            <div class={{validaSigTotal(graficoColunaModel1)}}></div>
+                        </div>
+                    </div>
+
+                    <div class="coluna-sem-dados"
+                        [ngStyle]="{  display: validaColunaSemDados(graficoColunaModel1)? 'none' : 'block'}">
+                    </div>
+
+                    <div class="coluna1"
+                        [ngStyle]="{ height: ajusteDeColuna1(graficoColunaModel1.PercPrompeted,graficoColunaModel1.PercOM,graficoColunaModel1.PercTOM, graficoColunaModel1.PercTotal), display: graficoColunaModel1.PercPrompeted == 0? 'none' : 'block'}">
+                        <div class="div-bolha">
+                            <div class="bolha-resultado">
+                                <!-- {{ graficoColunaModel1.PercPrompeted | number:'1.1-1' }} -->
+                                {{ graficoColunaModel1.PercPrompeted }}
+                            </div>
+                            <div class="seta-resultado">
+                                <div class={{validaSigPrompeted(graficoColunaModel1)}}></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="coluna2"
+                        [ngStyle]="{ height: ajusteDeColuna2(graficoColunaModel1.PercPrompeted,graficoColunaModel1.PercOM,graficoColunaModel1.PercTOM, graficoColunaModel1.PercTotal), display: graficoColunaModel1.PercOM == 0? 'none' : 'block'}">
+                        <div class="div-bolha">
+                            <div class="bolha-resultado">
+                                <!-- {{ graficoColunaModel1.PercOM | number:'1.1-1' }} -->
+                                {{ graficoColunaModel1.PercOM }}
+                            </div>
+                            <div class="seta-resultado">
+                                <div class={{validaSigOm(graficoColunaModel1)}}></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="coluna3"
+                        [ngStyle]="{ height: ajusteDeColuna3(graficoColunaModel1.PercPrompeted,graficoColunaModel1.PercOM,graficoColunaModel1.PercTOM, graficoColunaModel1.PercTotal), display: graficoColunaModel1.PercTOM == 0? 'none' : 'block'}">
+                        <div class="div-bolha">
+                            <div class="bolha-resultado">
+                                <!-- {{ graficoColunaModel1.PercTOM | number:'1.1-1' }} -->
+                                {{ graficoColunaModel1.PercTOM }}
+                            </div>
+
+                            <div class="seta-resultado">
+                                <div class={{validaSigTom(graficoColunaModel1)}}></div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    
+
+                    <div class="div-texto-bottom">
+                        <div class="div-resultado-bottom">
+                            <!-- {{graficoColunaModel1.DescMarca}} -->
+                            <p [ngClass]="{'base-vermelha' : graficoColunaModel1.BaseMinima != '' , '':graficoColunaModel1.BaseMinima==''}"
+                                class="paragrafo-valor-base">{{ graficoColunaModel1.BaseAbs }}</p>
+                        </div>
+                    </div>
+                </div>
+            </td>
+
+            <td>
+                <div class="div-principal-grafico-colunas">
+
+                    <div class="group-filtro-coluna">
+                        <select-image [IndexCombo]=1 (ImageModelMarcas)="onchangeMarcaColuna2($event)"></select-image>
+
+                    </div>
+
+                    <div class="bolha-topo-grafico">
+                        <div class="bolha-resultado-topo">
+                            <!-- {{ graficoColunaModel2.PercTotal | number:'1.1-1' }} -->
+                            {{ graficoColunaModel2.PercTotal }}
+                        </div>
+                        <div class="seta-resultado">
+                            <div class={{validaSigTotal(graficoColunaModel2)}}></div>
+                        </div>
+                    </div>
+                    <div class="coluna-sem-dados"
+                        [ngStyle]="{  display: validaColunaSemDados(graficoColunaModel2)? 'none' : 'block'}">
+                    </div>
+                    <div class="coluna1"
+                        [ngStyle]="{ height: ajusteDeColuna1(graficoColunaModel2.PercPrompeted,graficoColunaModel2.PercOM,graficoColunaModel2.PercTOM, graficoColunaModel2.PercTotal), display: graficoColunaModel2.PercPrompeted == 0? 'none' : 'block'}">
+                        <div class="div-bolha">
+                            <div class="bolha-resultado">
+                                <!-- {{ graficoColunaModel2.PercPrompeted | number:'1.1-1' }} -->
+                                {{ graficoColunaModel2.PercPrompeted }}
+                            </div>
+                            <div class="seta-resultado">
+                                <div class={{validaSigPrompeted(graficoColunaModel2)}}></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="coluna2"
+                        [ngStyle]="{ height: ajusteDeColuna2(graficoColunaModel2.PercPrompeted,graficoColunaModel2.PercOM,graficoColunaModel2.PercTOM, graficoColunaModel2.PercTotal), display: graficoColunaModel2.PercOM == 0? 'none' : 'block'}">
+                        <div class="div-bolha">
+                            <div class="bolha-resultado">
+                                <!-- {{ graficoColunaModel2.PercOM | number:'1.1-1' }} -->
+                                {{ graficoColunaModel2.PercOM }}
+                            </div>
+                            <div class="seta-resultado">
+                                <div class={{validaSigOm(graficoColunaModel2)}}></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="coluna3"
+                        [ngStyle]="{ height: ajusteDeColuna3(graficoColunaModel2.PercPrompeted,graficoColunaModel2.PercOM,graficoColunaModel2.PercTOM, graficoColunaModel2.PercTotal), display: graficoColunaModel2.PercTOM == 0? 'none' : 'block'}">
+                        <div class="div-bolha">
+                            <div class="bolha-resultado">
+                                <!-- {{ graficoColunaModel2.PercTOM | number:'1.1-1' }} -->
+                                {{ graficoColunaModel2.PercTOM }}
+                            </div>
+
+                            <div class="seta-resultado">
+                                <div class={{validaSigTom(graficoColunaModel2)}}></div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="div-texto-bottom">
+                        <div class="div-resultado-bottom">
+                            <!-- {{graficoColunaModel2.DescMarca}} -->
+                            <p [ngClass]="{'base-vermelha' : graficoColunaModel2.BaseMinima != '' , '':graficoColunaModel2.BaseMinima==''}"
+                                class="paragrafo-valor-base">{{ graficoColunaModel2.BaseAbs }}</p>
+                        </div>
+                    </div>
+                </div>
+            </td>
+
+            <td>
+                <div class="div-principal-grafico-colunas">
+
+                    <div class="group-filtro-coluna">
+                        <select-image [IndexCombo]=2 (ImageModelMarcas)="onchangeMarcaColuna3($event)"></select-image>
+                    </div>
+
+                    <div class="bolha-topo-grafico">
+                        <div class="bolha-resultado-topo">
+                            <!-- {{ graficoColunaModel3.PercTotal | number:'1.1-1' }} -->
+                            {{ graficoColunaModel3.PercTotal }}
+                        </div>
+                        <div class="seta-resultado">
+                            <div class={{validaSigTotal(graficoColunaModel3)}}></div>
+                        </div>
+                    </div>
+                    <div class="coluna-sem-dados"
+                        [ngStyle]="{  display: validaColunaSemDados(graficoColunaModel3)? 'none' : 'block'}">
+                    </div>
+                    <div class="coluna1"
+                        [ngStyle]="{ height: ajusteDeColuna1(graficoColunaModel3.PercPrompeted,graficoColunaModel3.PercOM,graficoColunaModel3.PercTOM, graficoColunaModel3.PercTotal), display: graficoColunaModel3.PercPrompeted == 0? 'none' : 'block'}">
+                        <div class="div-bolha">
+                            <div class="bolha-resultado">
+                                <!-- {{ graficoColunaModel3.PercPrompeted | number:'1.1-1' }} -->
+                                {{ graficoColunaModel3.PercPrompeted }}
+                            </div>
+                            <div class="seta-resultado">
+                                <div class={{validaSigPrompeted(graficoColunaModel3)}}></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="coluna2"
+                        [ngStyle]="{ height: ajusteDeColuna2(graficoColunaModel3.PercPrompeted,graficoColunaModel3.PercOM,graficoColunaModel3.PercTOM, graficoColunaModel3.PercTotal), display: graficoColunaModel3.PercOM == 0? 'none' : 'block'}">
+                        <div class="div-bolha">
+                            <div class="bolha-resultado">
+                                <!-- {{ graficoColunaModel3.PercOM | number:'1.1-1' }} -->
+                                {{ graficoColunaModel3.PercOM }}
+                            </div>
+                            <div class="seta-resultado">
+                                <div class={{validaSigOm(graficoColunaModel3)}}></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="coluna3"
+                        [ngStyle]="{ height: ajusteDeColuna3(graficoColunaModel3.PercPrompeted,graficoColunaModel3.PercOM,graficoColunaModel3.PercTOM, graficoColunaModel3.PercTotal), display: graficoColunaModel3.PercTOM == 0? 'none' : 'block'}">
+                        <div class="div-bolha">
+                            <div class="bolha-resultado">
+                                <!-- {{ graficoColunaModel3.PercTOM | number:'1.1-1' }} -->
+                                {{ graficoColunaModel3.PercTOM }}
+                            </div>
+
+                            <div class="seta-resultado">
+                                <div class={{validaSigTom(graficoColunaModel3)}}></div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="div-texto-bottom">
+                        <div class="div-resultado-bottom">
+                            <!-- {{graficoColunaModel3.DescMarca}} -->
+                            <p [ngClass]="{'base-vermelha' : graficoColunaModel3.BaseMinima != '' , '':graficoColunaModel3.BaseMinima==''}"
+                                class="paragrafo-valor-base">{{ graficoColunaModel3.BaseAbs }}</p>
+                        </div>
+                    </div>
+                </div>
+            </td>
+
+            <td>
+                <div class="div-principal-grafico-colunas">
+
+                    <div class="group-filtro-coluna">
+                        <select-image [IndexCombo]=3 (ImageModelMarcas)="onchangeMarcaColuna4($event)"></select-image>
+                    </div>
+
+                    <div class="bolha-topo-grafico">
+                        <div class="bolha-resultado-topo">
+                            <!-- {{ graficoColunaModel4.PercTotal | number:'1.1-1' }} -->
+                            {{ graficoColunaModel4.PercTotal }}
+                        </div>
+                        <div class="seta-resultado">
+                            <div class={{validaSigTotal(graficoColunaModel4)}}></div>
+                        </div>
+                    </div>
+                    <div class="coluna-sem-dados"
+                        [ngStyle]="{  display: validaColunaSemDados(graficoColunaModel4)? 'none' : 'block'}">
+                    </div>
+                    <div class="coluna1"
+                        [ngStyle]="{ height: ajusteDeColuna1(graficoColunaModel4.PercPrompeted,graficoColunaModel4.PercOM,graficoColunaModel4.PercTOM, graficoColunaModel4.PercTotal), display: graficoColunaModel4.PercPrompeted == 0? 'none' : 'block'}">
+                        <div class="div-bolha">
+                            <div class="bolha-resultado">
+                                <!-- {{ graficoColunaModel4.PercPrompeted | number:'1.1-1' }} -->
+                                {{ graficoColunaModel4.PercPrompeted }}
+                            </div>
+                            <div class="seta-resultado">
+                                <div class={{validaSigPrompeted(graficoColunaModel4)}}></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="coluna2"
+                        [ngStyle]="{ height: ajusteDeColuna2(graficoColunaModel4.PercPrompeted,graficoColunaModel4.PercOM,graficoColunaModel4.PercTOM, graficoColunaModel4.PercTotal), display: graficoColunaModel4.PercOM == 0? 'none' : 'block'}">
+                        <div class="div-bolha">
+                            <div class="bolha-resultado">
+                                <!-- {{ graficoColunaModel4.PercOM | number:'1.1-1' }} -->
+                                {{ graficoColunaModel4.PercOM }}
+                            </div>
+                            <div class="seta-resultado">
+                                <div class={{validaSigOm(graficoColunaModel4)}}></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="coluna3"
+                        [ngStyle]="{ height: ajusteDeColuna3(graficoColunaModel4.PercPrompeted,graficoColunaModel4.PercOM,graficoColunaModel4.PercTOM, graficoColunaModel4.PercTotal), display: graficoColunaModel4.PercTOM == 0? 'none' : 'block'}">
+                        <div class="div-bolha">
+                            <div class="bolha-resultado">
+                                <!-- {{ graficoColunaModel4.PercTOM | number:'1.1-1' }} -->
+                                {{ graficoColunaModel4.PercTOM }}
+                            </div>
+
+                            <div class="seta-resultado">
+                                <div class={{validaSigTom(graficoColunaModel4)}}></div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="div-texto-bottom">
+                        <div class="div-resultado-bottom">
+                            <!-- {{graficoColunaModel4.DescMarca}} -->
+                            <p [ngClass]="{'base-vermelha' : graficoColunaModel4.BaseMinima != '' , '':graficoColunaModel4.BaseMinima==''}"
+                                class="paragrafo-valor-base">{{ graficoColunaModel4.BaseAbs }}</p>
+                        </div>
+                    </div>
+                </div>
+            </td>
+
+            <td>
+                <div class="div-principal-grafico-colunas">
+
+                    <div class="group-filtro-coluna">
+                        <select-image [IndexCombo]=4 (ImageModelMarcas)="onchangeMarcaColuna5($event)"></select-image>
+                    </div>
+
+                    <div class="bolha-topo-grafico">
+                        <div class="bolha-resultado-topo">
+                            <!-- {{ graficoColunaModel5.PercTotal | number:'1.1-1' }} -->
+                            {{ graficoColunaModel5.PercTotal }}
+                        </div>
+                        <div class="seta-resultado">
+                            <div class={{validaSigTotal(graficoColunaModel5)}}></div>
+                        </div>
+                    </div>
+                    <div class="coluna-sem-dados"
+                        [ngStyle]="{  display: validaColunaSemDados(graficoColunaModel5)? 'none' : 'block'}">
+                    </div>
+                    <div class="coluna1"
+                        [ngStyle]="{ height: ajusteDeColuna1(graficoColunaModel5.PercPrompeted,graficoColunaModel5.PercOM,graficoColunaModel5.PercTOM, graficoColunaModel5.PercTotal), display: graficoColunaModel5.PercPrompeted == 0? 'none' : 'block'}">
+                        <div class="div-bolha">
+                            <div class="bolha-resultado">
+                                <!-- {{ graficoColunaModel5.PercPrompeted | number:'1.1-1' }} -->
+                                {{ graficoColunaModel5.PercPrompeted }}
+                            </div>
+                            <div class="seta-resultado">
+                                <div class={{validaSigPrompeted(graficoColunaModel5)}}></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="coluna2"
+                        [ngStyle]="{ height: ajusteDeColuna2(graficoColunaModel5.PercPrompeted,graficoColunaModel5.PercOM,graficoColunaModel5.PercTOM, graficoColunaModel5.PercTotal), display: graficoColunaModel5.PercOM == 0? 'none' : 'block'}">
+                        <div class="div-bolha">
+                            <div class="bolha-resultado">
+                                <!-- {{ graficoColunaModel5.PercOM | number:'1.1-1' }} -->
+                                {{ graficoColunaModel5.PercOM }}
+                            </div>
+                            <div class="seta-resultado">
+                                <div class={{validaSigOm(graficoColunaModel5)}}></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="coluna3"
+                        [ngStyle]="{ height: ajusteDeColuna3(graficoColunaModel5.PercPrompeted,graficoColunaModel5.PercOM,graficoColunaModel5.PercTOM, graficoColunaModel5.PercTotal), display: graficoColunaModel5.PercTOM == 0? 'none' : 'block'}">
+                        <div class="div-bolha">
+                            <div class="bolha-resultado">
+                                <!-- {{ graficoColunaModel5.PercTOM | number:'1.1-1' }} -->
+                                {{ graficoColunaModel5.PercTOM }}
+                            </div>
+
+                            <div class="seta-resultado">
+                                <div class={{validaSigTom(graficoColunaModel5)}}></div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="div-texto-bottom">
+                        <div class="div-resultado-bottom">
+                            <!-- {{graficoColunaModel5.DescMarca}} -->
+                            <p [ngClass]="{'base-vermelha' : graficoColunaModel5.BaseMinima != '' , '':graficoColunaModel5.BaseMinima==''}"
+                                class="paragrafo-valor-base">{{ graficoColunaModel5.BaseAbs }}</p>
+
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
+
+
+<div class="descricao-base">
+    {{verificaMsgBase()}}
+</div>

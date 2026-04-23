@@ -1,0 +1,312 @@
+<app-sidebar></app-sidebar>
+<app-navbar></app-navbar>
+
+<div class="container-dashboard-duplo" *ngIf="paginaAtiva" >
+
+    <div class="card-longo" id="comparativo-marcas">
+        <div class="container-card">
+            <div class="header-card">
+                <div class="container-title">
+                    <div class="title">
+                        {{'dashboard-six-grafico1-titulo' | translate}}
+                    </div>
+                    <div class="legend">
+                        {{'dashboard-six-grafico1-subtitulo' | translate}}
+                    </div>
+                    <!-- <div class="legend-sub">
+                        <div class="container-sig">
+                            <div class="sig-positive"> </div>
+                            <div class="sig-negative"> </div> {{'dashboard-sig' | translate}}
+                        </div>
+                    </div> -->
+                </div>
+                <div class="container-export">
+                    <div class="icon-export" (click)="exportToExcelGrafico1()">
+                        <div class="icon-excel">
+                        </div>
+                        <div class="titulo-exportar">{{'dashboard-exporta' | translate}}</div>
+                    </div>
+                    <div class="icon-export" (click)="exportToPptComparativoMarcas()">
+                        <div class="icon-powerpoint">
+                        </div>
+                        <div class="titulo-exportar">{{'dashboard-exporta' | translate}}</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="content-card p-relative">
+                <div class="container-legenda">
+                    <div class="container-texto">
+                        <div class="sinal-roxo"></div>
+                        <div class="texto-legenda">{{'dashboard-two-leg-Awareness' | translate}}</div>
+                    </div>
+                    <div class="container-texto">
+                        <div class="sinal-roxo-claro"></div>
+                        <div class="texto-legenda">{{'dashboard-two-leg-Spontaneous' | translate}}</div>
+                    </div>
+                    <div class="container-texto">
+                        <div class="sinal-cinza-claro"></div>
+                        <div class="texto-legenda">{{'dashboard-two-leg-Prompeted' | translate}}</div>
+                    </div>
+                    <div class="container-texto">
+                        <div class="sinal-verde"></div>
+                        <div class="texto-legenda">{{'dashboard-two-leg-total-Awareness' | translate}}</div>
+                    </div>
+                </div>             
+            </div> -->
+
+            <!-- <div class="desc-onda-top">
+              
+                <div class="group-filtro-coluna">
+                    <ng-select placeholder="N/A" id="tipoAtivoModel" class="selectFiltroColunaQ-top"
+                        [items]="filtroService.listaOnda" (change)="onchangeOndaColuna1(onda1)" [(ngModel)]="onda1"
+                        bindLabel="DescItem" [searchable]="false" [clearable]="false" [multiple]="false">
+                    </ng-select>
+                </div>
+                {{'top-evolutivo.titulo4' | translate}} -->
+            <!-- </div> -->
+
+            <grafico-barras-top-marcas [graficoBVCTop10]="graficoBVCTop10"></grafico-barras-top-marcas>
+
+            <!-- <div class="content-card">
+                <app-aviso-sem-dados></app-aviso-sem-dados>
+            </div> -->
+        </div>
+    </div>
+
+    <div class="card-pequeno-alongado" id="comparativo-marcas-evolutivo">
+        <div class="container-card">
+            <div class="header-card">
+                <div class="container-title">
+                    <div class="title">
+                        {{'dashboard-six-grafico2-titulo' | translate}}
+                    </div>
+                    <div class="legend">
+                        {{'dashboard-six-grafico1-subtitulo' | translate}}
+
+                        <!-- <select-checkbox-bvc  (ModelAtributo)="onChangeAtributo($event)">
+                        </select-checkbox-bvc> -->
+                    </div>
+
+
+
+                    <!-- <div class="legend-sub">
+                        <div class="container-sig">
+                            <div class="sig-positive"> </div>
+                            <div class="sig-negative"> </div> {{'dashboard-sig' | translate}}
+                        </div>
+                    </div> -->
+                </div>
+                <div class="container-export">
+
+                    <div class="icon-export" (click)="exportToExcelGrafico2()">
+                        <div class="icon-excel">
+                        </div>
+                        <div class="titulo-exportar">{{'dashboard-exporta' | translate}}</div>
+                    </div>
+                    <div class="icon-export" (click)="exportToPptEvolutivoMarcas()">
+                        <div class="icon-powerpoint">
+                        </div>
+                        <div class="titulo-exportar">{{'dashboard-exporta' | translate}}</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="content-card p-relative">
+                <div class="container-legenda">
+                    <div class="container-texto">
+                        <div class="sinal-roxo"></div>
+                        <div class="texto-legenda">{{'dashboard-two-leg-Awareness' | translate}}</div>
+                    </div>
+                    <div class="container-texto">
+                        <div class="sinal-roxo-claro"></div>
+                        <div class="texto-legenda">{{'dashboard-two-leg-Spontaneous' | translate}}</div>
+                    </div>
+                    <div class="container-texto">
+                        <div class="sinal-cinza-claro"></div>
+                        <div class="texto-legenda">{{'dashboard-two-leg-Prompeted' | translate}}</div>
+                    </div>
+                    <div class="container-texto">
+                        <div class="sinal-verde"></div>
+                        <div class="texto-legenda">{{'dashboard-two-leg-total-Awareness' | translate}}</div>
+                    </div>
+                </div>             
+            </div> -->
+
+
+            <grafico-barras-top-evolutivo (ondaColuna11)="onchangeOndaTop($event,1)"
+            (ondaColuna22)="onchangeOndaTop($event,2)" (ondaColuna33)="onchangeOndaTop($event,3)"
+            (ondaColuna44)="onchangeOndaTop($event,4)" [filtro]="ModelAtributo" 
+            [graficoBVCEvolutivo1]="graficoBVCEvolutivo1"
+            [graficoBVCEvolutivo2]="graficoBVCEvolutivo2"
+            [graficoBVCEvolutivo3]="graficoBVCEvolutivo3"
+            [graficoBVCEvolutivo4]="graficoBVCEvolutivo4"
+            ></grafico-barras-top-evolutivo>
+
+            <!-- <div class="content-card">
+                <app-aviso-sem-dados></app-aviso-sem-dados>
+            </div> -->
+        </div>
+    </div>
+
+
+</div>
+
+<div class="container-dashboard-top-auto" style="display: none;" >
+
+    <div class="card" id="comparativo-marcas-duplo-mercado" style="height: 610px" >
+        <div class="container-card">
+            <div class="header-card">
+                <div class="container-title">
+                    <div class="title">
+                        {{'dashboard-six-grafico3-titulo' | translate}}
+                    </div>
+                    <div class="legend">
+                        {{'dashboard-six-grafico3-subtitulo' | translate}}
+                    </div>
+                    <!-- <div class="legend-sub">
+                        <div class="container-sig">
+                            <div class="sig-positive"> </div>
+                            <div class="sig-negative"> </div> {{'dashboard-sig' | translate}}
+                        </div>
+                    </div> -->
+                    <div class="legend-sub">
+                        <div class="container-sig">
+                            <!-- <div class="sig-positive"> </div> -->
+                            <div class="sig-square"> </div> {{'dashboard-square' | translate}}
+                        </div>
+                    </div>
+                </div>
+                <div class="container-export">
+                    <div class="icon-export" (click)="exportToExcelGrafico3()">
+                        <div class="icon-excel">
+                        </div>
+                        <div class="titulo-exportar">{{'dashboard-exporta' | translate}}</div>
+                    </div>
+                    <div class="icon-export" (click)="exportToPptComparativoMarcasDuplo()">
+                        <div class="icon-powerpoint">
+                        </div>
+                        <div class="titulo-exportar">{{'dashboard-exporta' | translate}}</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="content-card p-relative">
+                <div class="container-legenda">
+                    <div class="container-texto">
+                        <div class="sinal-roxo"></div>
+                        <div class="texto-legenda">{{'dashboard-two-leg-Awareness' | translate}}</div>
+                    </div>
+                    <div class="container-texto">
+                        <div class="sinal-roxo-claro"></div>
+                        <div class="texto-legenda">{{'dashboard-two-leg-Spontaneous' | translate}}</div>
+                    </div>
+                    <div class="container-texto">
+                        <div class="sinal-cinza-claro"></div>
+                        <div class="texto-legenda">{{'dashboard-two-leg-Prompeted' | translate}}</div>
+                    </div>
+                    <div class="container-texto">
+                        <div class="sinal-verde"></div>
+                        <div class="texto-legenda">{{'dashboard-two-leg-total-Awareness' | translate}}</div>
+                    </div>
+                </div>             
+            </div> -->
+
+            <grafico-barras-marcas-duplo-mercado (ondaColuna1)="onchangeOndaDuplo($event,1)"
+                (ondaColuna2)="onchangeOndaDuplo($event,2)" (ondaColuna3)="onchangeOndaDuplo($event,3)"
+                (ondaColuna4)="onchangeOndaDuplo($event,4)" (ondaColuna5)="onchangeOndaDuplo($event,5)"
+                (ondaColuna6)="onchangeOndaDuplo($event,6)" (ondaColuna7)="onchangeOndaDuplo($event,7)"
+                (ondaColuna8)="onchangeOndaDuplo($event,8)" (ondaColuna9)="onchangeOndaDuplo($event,9)"
+                (ondaColuna10)="onchangeOndaDuplo($event,10)" (marcaColuna1)="onchangeDuploMarca($event,1)"
+                (marcaColuna2)="onchangeDuploMarca($event,2)" (marcaColuna3)="onchangeDuploMarca($event,3)"
+                (marcaColuna4)="onchangeDuploMarca($event,4)" (marcaColuna5)="onchangeDuploMarca($event,5)"
+                [graficoColunaModel10]="grafico3ColunaModel1" [graficoColunaModel20]="grafico3ColunaModel2"
+                [graficoColunaModel30]="grafico3ColunaModel3" [graficoColunaModel40]="grafico3ColunaModel4"
+                [graficoColunaModel50]="grafico3ColunaModel5" [graficoColunaModel60]="grafico3ColunaModel6"
+                [graficoColunaModel70]="grafico3ColunaModel7" [graficoColunaModel80]="grafico3ColunaModel8"
+                [graficoColunaModel90]="grafico3ColunaModel9" [graficoColunaModel100]="grafico3ColunaModel10">
+            </grafico-barras-marcas-duplo-mercado>
+
+            <!-- <div class="content-card">
+                <app-aviso-sem-dados></app-aviso-sem-dados>
+            </div> -->
+        </div>
+    </div>
+
+
+    <div class="card" id="comparativo-marcas-mercado-onda" style="height: 595px">
+        <div class="container-card">
+            <div class="header-card">
+                <div class="container-title">
+                    <div class="title">
+                        {{'dashboard-six-grafico4-titulo' | translate}}
+                    </div>
+                    <div class="legend">
+                        {{'dashboard-six-grafico4-subtitulo' | translate}}
+                    </div>
+                    <!-- <div class="legend-sub">
+                        <div class="container-sig">
+                            <div class="sig-positive"> </div>
+                            <div class="sig-negative"> </div> {{'dashboard-sig' | translate}}
+                        </div>
+                    </div> -->
+                    <div class="legend-sub">
+                        <div class="container-sig">
+                            <!-- <div class="sig-positive"> </div> -->
+                            <div class="sig-square"> </div> {{'dashboard-square' | translate}}
+                        </div>
+                    </div>
+                </div>
+                <div class="container-export">
+                    <div class="icon-export" (click)="exportToExcelGrafico4()">
+                        <div class="icon-excel">
+                        </div>
+                        <div class="titulo-exportar">{{'dashboard-exporta' | translate}}</div>
+                    </div>
+                    <div class="icon-export" (click)="exportToPptComparativoMarcasEvolutivo()">
+                        <div class="icon-powerpoint">
+                        </div>
+                        <div class="titulo-exportar">{{'dashboard-exporta' | translate}}</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="content-card p-relative">
+                <div class="container-legenda">
+                    <div class="container-texto">
+                        <div class="sinal-roxo"></div>
+                        <div class="texto-legenda">{{'dashboard-two-leg-Awareness' | translate}}</div>
+                    </div>
+                    <div class="container-texto">
+                        <div class="sinal-roxo-claro"></div>
+                        <div class="texto-legenda">{{'dashboard-two-leg-Spontaneous' | translate}}</div>
+                    </div>
+                    <div class="container-texto">
+                        <div class="sinal-cinza-claro"></div>
+                        <div class="texto-legenda">{{'dashboard-two-leg-Prompeted' | translate}}</div>
+                    </div>
+                    <div class="container-texto">
+                        <div class="sinal-verde"></div>
+                        <div class="texto-legenda">{{'dashboard-two-leg-total-Awareness' | translate}}</div>
+                    </div>
+                </div>             
+            </div> -->
+
+            <grafico-barras-evolutivo-marcas-mercado (ondaColuna10)="onchangeEvolutivoOnda($event,1)"
+                (ondaColuna20)="onchangeEvolutivoOnda($event,2)" (ondaColuna30)="onchangeEvolutivoOnda($event,3)"
+                (ondaColuna40)="onchangeEvolutivoOnda($event,4)" (marcaGrafico0)="onchangeMarcaEvolutivo($event)"
+                [graficoColunaModel1]="grafico2ColunaModel1" [graficoColunaModel2]="grafico2ColunaModel2"
+                [graficoColunaModel3]="grafico2ColunaModel3" [graficoColunaModel4]="grafico2ColunaModel4">
+            </grafico-barras-evolutivo-marcas-mercado>
+
+            <!-- <div class="content-card">
+                <app-aviso-sem-dados></app-aviso-sem-dados>
+            </div> -->
+        </div>
+    </div>
+
+</div>
+
+
+
+<footer-bottom></footer-bottom>

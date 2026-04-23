@@ -1,0 +1,154 @@
+V1|15:13:48.951 == Class: FiltrosDataAccess             Method: FiltroAtributos                         Routine: ERROR***       Message: []Conversion failed when converting the varchar value 'A' to data type int.
+V1|15:17:38.160 == Class: FiltrosDataAccess             Method: FiltroAtributos                         Routine: ERROR***       Message: []Conversion failed when converting the varchar value 'A' to data type int.
+V1|15:17:56.599 == Class: FiltrosDataAccess             Method: FiltroAtributos                         Routine: ERROR***       Message: []Conversion failed when converting the varchar value 'A' to data type int.
+V1|15:18:23.789 == Class: FiltrosDataAccess             Method: FiltroAtributos                         Routine: ERROR***       Message: []Conversion failed when converting the varchar value 'A' to data type int.
+V1|15:18:31.983 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: []Invalid column name 'URL'.
+Invalid column name 'IP'.
+V1|15:19:46.363 == Class: FiltrosDataAccess             Method: FiltroAtributos                         Routine: ERROR***       Message: []Conversion failed when converting the varchar value 'A' to data type int.
+V1|15:19:50.309 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: []Invalid column name 'URL'.
+Invalid column name 'IP'.
+V1|15:22:13.041 == Class: FiltrosDataAccess             Method: FiltroAtributos                         Routine: ERROR***       Message: []Conversion failed when converting the varchar value 'A' to data type int.
+V1|15:22:17.232 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: []Invalid column name 'URL'.
+Invalid column name 'IP'.
+V1|15:25:47.888 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: []Invalid column name 'URL'.
+Invalid column name 'IP'.
+V1|15:26:31.845 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: []Invalid column name 'URL'.
+Invalid column name 'IP'.
+V1|15:27:53.022 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: []Invalid column name 'URL'.
+Invalid column name 'IP'.
+V1|15:28:27.353 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: []Invalid column name 'URL'.
+Invalid column name 'IP'.
+V1|15:28:58.752 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: []Invalid column name 'URL'.
+Invalid column name 'IP'.
+V1|15:29:21.079 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: []Invalid column name 'URL'.
+Invalid column name 'IP'.
+V1|17:26:14.352 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: []Invalid column name 'URL'.
+Invalid column name 'IP'.
+V1|17:26:33.363 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: [ipsos@teste.com.br]Invalid column name 'URL'.
+Invalid column name 'IP'.
+V1|17:30:04.743 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: [ipsos@teste.com.br]Invalid column name 'URL'.
+Invalid column name 'IP'.
+V1|17:31:15.146 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: [ipsos@teste.com.br]Invalid column name 'URL'.
+Invalid column name 'IP'.
+V1|17:31:31.009 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: [ipsos@teste.com.br]Invalid column name 'URL'.
+Invalid column name 'IP'.
+V1|17:33:01.911 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: [ipsos@teste.com.br]Invalid column name 'URL'.
+Invalid column name 'IP'.
+V1|17:33:21.908 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: [ipsos@teste.com.br]Invalid column name 'URL'.
+Invalid column name 'IP'.
+V1|17:34:34.436 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: [ipsos@teste.com.br]Invalid column name 'URL'.
+Invalid column name 'IP'.
+V1|17:35:45.480 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: [ipsos@teste.com.br]Invalid column name 'URL'.
+Invalid column name 'IP'.
+V1|17:36:58.690 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: [ipsos@teste.com.br]Invalid column name 'URL'.
+Invalid column name 'IP'.
+V1|17:39:12.818 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: [ipsos@teste.com.br]Invalid column name 'URL'.
+Invalid column name 'IP'.
+V1|17:52:22.584 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: [ipsos@teste.com.br]Invalid column name 'URL'.
+Invalid column name 'IP'.
+V1|17:56:37.334 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: [ipsos@teste.com.br]Invalid column name 'URL'.
+Invalid column name 'IP'.
+V1|17:58:25.341 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: [ipsos@teste.com.br]Invalid column name 'URL'.
+Invalid column name 'IP'.
+V1|17:58:59.403 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: [ipsos@teste.com.br]Invalid column name 'URL'.
+Invalid column name 'IP'.
+V1|18:00:43.695 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: [ipsos@teste.com.br]Invalid column name 'URL'.
+Invalid column name 'IP'.
+V1|18:01:47.133 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: [ipsos@teste.com.br]Invalid column name 'URL'.
+Invalid column name 'IP'.
+V1|18:02:35.100 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: [ipsos@teste.com.br]Invalid column name 'URL'.
+Invalid column name 'IP'.
+V1|18:03:14.709 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: [ipsos@teste.com.br]Invalid column name 'URL'.
+Invalid column name 'IP'.
+V1|18:12:19.754 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: [ipsos@teste.com.br]Invalid column name 'URL'.
+Invalid column name 'IP'.
+V1|18:12:32.701 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: [ipsos@teste.com.br]Invalid column name 'URL'.
+Invalid column name 'IP'.
+V1|18:12:43.746 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: [ipsos@teste.com.br]Invalid column name 'URL'.
+Invalid column name 'IP'.
+V1|18:13:33.949 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: [ipsos@teste.com.br]Invalid column name 'URL'.
+Invalid column name 'IP'.
+V1|18:14:15.741 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: [ipsos@teste.com.br]Invalid column name 'URL'.
+Invalid column name 'IP'.
+V1|18:21:14.776 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: [ipsos@teste.com.br]Invalid column name 'URL'.
+Invalid column name 'IP'.
+V1|18:26:44.543 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: [ipsos@teste.com.br]Invalid column name 'URL'.
+Invalid column name 'IP'.
+V1|18:29:46.808 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: [ipsos@teste.com.br]Invalid column name 'URL'.
+Invalid column name 'IP'.
+V1|18:34:05.565 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: [ipsos@teste.com.br]Invalid column name 'URL'.
+Invalid column name 'IP'.
+V1|18:37:50.241 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: []Invalid column name 'URL'.
+Invalid column name 'IP'.
+V1|18:42:30.943 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: []Invalid column name 'URL'.
+Invalid column name 'IP'.
+V1|18:43:48.378 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: []Invalid column name 'URL'.
+Invalid column name 'IP'.
+V1|18:45:17.784 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: []Invalid column name 'URL'.
+Invalid column name 'IP'.
+V1|18:45:46.743 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: []Invalid column name 'URL'.
+Invalid column name 'IP'.
+V1|18:45:55.867 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: []Invalid column name 'URL'.
+Invalid column name 'IP'.
+V1|18:46:46.932 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: []Invalid column name 'URL'.
+Invalid column name 'IP'.
+V1|18:47:29.010 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: []Invalid column name 'URL'.
+Invalid column name 'IP'.
+V1|18:47:31.604 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: []Invalid column name 'URL'.
+Invalid column name 'IP'.
+V1|18:47:45.565 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: []Invalid column name 'URL'.
+Invalid column name 'IP'.
+V1|18:48:14.135 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: []Invalid column name 'URL'.
+Invalid column name 'IP'.
+V1|18:48:29.561 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: []Invalid column name 'URL'.
+Invalid column name 'IP'.
+V1|18:49:37.761 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: []Invalid column name 'URL'.
+Invalid column name 'IP'.
+V1|18:49:47.189 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: []Invalid column name 'URL'.
+Invalid column name 'IP'.
+V1|18:49:54.664 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: []Invalid column name 'URL'.
+Invalid column name 'IP'.
+V1|18:50:02.101 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: []Invalid column name 'URL'.
+Invalid column name 'IP'.
+V1|18:50:38.776 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: []Invalid column name 'URL'.
+Invalid column name 'IP'.
+V1|18:52:20.914 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: []Invalid column name 'URL'.
+Invalid column name 'IP'.
+V1|18:52:53.302 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: []Invalid column name 'URL'.
+Invalid column name 'IP'.
+V1|18:53:21.149 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: []Invalid column name 'URL'.
+Invalid column name 'IP'.
+V1|18:53:44.444 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: []Invalid column name 'URL'.
+Invalid column name 'IP'.
+V1|18:55:03.326 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: []Invalid column name 'URL'.
+Invalid column name 'IP'.
+V1|18:55:11.608 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: []Invalid column name 'URL'.
+Invalid column name 'IP'.
+V1|18:55:28.702 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: []Invalid column name 'URL'.
+Invalid column name 'IP'.
+V1|18:55:38.646 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: []Invalid column name 'URL'.
+Invalid column name 'IP'.
+V1|18:56:03.772 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: []Invalid column name 'URL'.
+Invalid column name 'IP'.
+V1|18:57:20.567 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: []Invalid column name 'URL'.
+Invalid column name 'IP'.
+V1|19:00:21.983 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: []Invalid column name 'URL'.
+Invalid column name 'IP'.
+V1|19:03:54.599 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: []Invalid column name 'URL'.
+Invalid column name 'IP'.
+V1|19:03:57.475 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: []Invalid column name 'URL'.
+Invalid column name 'IP'.
+V1|19:06:03.041 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: []Invalid column name 'URL'.
+Invalid column name 'IP'.
+V1|19:06:22.970 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: []Invalid column name 'URL'.
+Invalid column name 'IP'.
+V1|19:06:27.363 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: []Invalid column name 'URL'.
+Invalid column name 'IP'.
+V1|19:06:34.609 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: []Invalid column name 'URL'.
+Invalid column name 'IP'.
+V1|19:06:48.442 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: []Invalid column name 'URL'.
+Invalid column name 'IP'.
+V1|19:07:04.242 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: []Invalid column name 'URL'.
+Invalid column name 'IP'.
+V1|19:07:52.929 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: []Invalid column name 'URL'.
+Invalid column name 'IP'.

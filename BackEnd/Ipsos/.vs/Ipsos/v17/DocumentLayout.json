@@ -1,0 +1,102 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\GithLatam\\BHTEnlatados\\BackEnd\\Ipsos\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C93B8893-00C3-480E-B134-782453D30F63}|DataAccess\\DataAccess.csproj|c:\\githlatam\\bhtenlatados\\backend\\ipsos\\dataaccess\\dashboardthree\\dashboardthreedataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C93B8893-00C3-480E-B134-782453D30F63}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\dashboardthree\\dashboardthreedataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8883AF4B-739C-45A0-BB3B-44723FBECEEB}|WebApi\\WebApi.csproj|c:\\githlatam\\bhtenlatados\\backend\\ipsos\\webapi\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{8883AF4B-739C-45A0-BB3B-44723FBECEEB}|WebApi\\WebApi.csproj|solutionrelative:webapi\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C93B8893-00C3-480E-B134-782453D30F63}|DataAccess\\DataAccess.csproj|C:\\GithLatam\\BHTEnlatados\\BackEnd\\Ipsos\\dataaccess\\usuario\\usuariodataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C93B8893-00C3-480E-B134-782453D30F63}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\usuario\\usuariodataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8883AF4B-739C-45A0-BB3B-44723FBECEEB}|WebApi\\WebApi.csproj|C:\\GithLatam\\BHTEnlatados\\BackEnd\\Ipsos\\webapi\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8883AF4B-739C-45A0-BB3B-44723FBECEEB}|WebApi\\WebApi.csproj|solutionrelative:webapi\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{736955A2-5D6A-4EFA-B06B-1FA5289F725E}|Entities\\Entities.csproj|C:\\GithLatam\\BHTEnlatados\\BackEnd\\Ipsos\\entities\\usuario\\usuariomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{736955A2-5D6A-4EFA-B06B-1FA5289F725E}|Entities\\Entities.csproj|solutionrelative:entities\\usuario\\usuariomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DashboardThreeDataAccess.cs",
+              "DocumentMoniker": "C:\\GithLatam\\BHTEnlatados\\BackEnd\\Ipsos\\DataAccess\\DashboardThree\\DashboardThreeDataAccess.cs",
+              "RelativeDocumentMoniker": "DataAccess\\DashboardThree\\DashboardThreeDataAccess.cs",
+              "ToolTip": "C:\\GithLatam\\BHTEnlatados\\BackEnd\\Ipsos\\DataAccess\\DashboardThree\\DashboardThreeDataAccess.cs",
+              "RelativeToolTip": "DataAccess\\DashboardThree\\DashboardThreeDataAccess.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAjwMgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-18T19:37:38.622Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\GithLatam\\BHTEnlatados\\BackEnd\\Ipsos\\WebApi\\Web.config",
+              "RelativeDocumentMoniker": "WebApi\\Web.config",
+              "ToolTip": "C:\\GithLatam\\BHTEnlatados\\BackEnd\\Ipsos\\WebApi\\Web.config",
+              "RelativeToolTip": "WebApi\\Web.config",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAgwBQAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2026-04-14T02:41:31.723Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UsuarioModel.cs",
+              "DocumentMoniker": "C:\\GithLatam\\BHTEnlatados\\BackEnd\\Ipsos\\Entities\\Usuario\\UsuarioModel.cs",
+              "RelativeDocumentMoniker": "Entities\\Usuario\\UsuarioModel.cs",
+              "ToolTip": "C:\\GithLatam\\BHTEnlatados\\BackEnd\\Ipsos\\Entities\\Usuario\\UsuarioModel.cs",
+              "RelativeToolTip": "Entities\\Usuario\\UsuarioModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T02:41:07.471Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UsuarioDataAccess.cs",
+              "DocumentMoniker": "C:\\GithLatam\\BHTEnlatados\\BackEnd\\Ipsos\\DataAccess\\Usuario\\UsuarioDataAccess.cs",
+              "RelativeDocumentMoniker": "DataAccess\\Usuario\\UsuarioDataAccess.cs",
+              "ToolTip": "C:\\GithLatam\\BHTEnlatados\\BackEnd\\Ipsos\\DataAccess\\Usuario\\UsuarioDataAccess.cs",
+              "RelativeToolTip": "DataAccess\\Usuario\\UsuarioDataAccess.cs",
+              "ViewState": "AQIAAO0AAAAAAAAAAAAAAPcAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T02:40:21.779Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UsuarioController.cs",
+              "DocumentMoniker": "C:\\GithLatam\\BHTEnlatados\\BackEnd\\Ipsos\\WebApi\\Controllers\\UsuarioController.cs",
+              "RelativeDocumentMoniker": "WebApi\\Controllers\\UsuarioController.cs",
+              "ToolTip": "C:\\GithLatam\\BHTEnlatados\\BackEnd\\Ipsos\\WebApi\\Controllers\\UsuarioController.cs",
+              "RelativeToolTip": "WebApi\\Controllers\\UsuarioController.cs",
+              "ViewState": "AQIAAD8BAAAAAAAAAAAIwEgBAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T02:40:01.37Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

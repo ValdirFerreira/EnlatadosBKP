@@ -1,0 +1,393 @@
+<app-sidebar></app-sidebar>
+<app-navbar></app-navbar>
+
+<div class="container-dashboard-duplo">
+
+    <div class="card-medio" id="grafico1">
+        <div class="container-card">
+            <div class="header-card">
+                <div class="container-title">
+                    <div class="title">
+                        {{'dashboard-seven-grafico1-titulo' | translate}}
+                    </div>
+                    <!-- <div class="legend">
+                        {{'dashboard-seven-grafico1-subtitulo' | translate}}
+                    </div> -->
+                    <div class="legend-sub">
+                        <div class="container-sig">
+                            <div class="sig-positive"> </div>
+                            <div class="sig-negative"> </div> {{'dashboard-sig'
+                            | translate}}
+                        </div>
+                        <div class="container-legenda">
+                            <div class="container-texto">
+                                <div class="sinal-azul-escuro"></div>
+                                <div
+                                    class="texto-legenda">{{'dashboard-comunicacao-titulo1'
+                                    | translate}}</div>
+                            </div>
+
+                            <div class="container-texto">
+                                <div class="sinal-cinza-claro"></div>
+                                <div
+                                    class="texto-legenda">{{'dashboard-comunicacao-titulo2'
+                                    | translate}}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-export">
+                    <div class="icon-export" (click)="exportToExcelGrafico1()">
+                        <div class="icon-excel">
+                        </div>
+                        <div class="titulo-exportar">{{'dashboard-exporta' |
+                            translate}}</div>
+                    </div>
+                    <div class="icon-export" (click)="exportToPpt1()">
+                        <div class="icon-powerpoint">
+                        </div>
+                        <div class="titulo-exportar">{{'dashboard-exporta' |
+                            translate}}</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="content-card p-relative">
+                <div class="container-legenda">
+                    <div class="container-texto">
+                        <div class="sinal-azul-escuro"></div>
+                        <div class="texto-legenda">Nestle Leite Infantil</div>
+                    </div>
+
+                    <div class="container-texto">
+                        <div class="sinal-cinza-claro"></div>
+                        <div class="texto-legenda">Norma</div>
+                    </div>
+                    <div class="container-texto">
+                        <div class="sinal-verde"></div>
+                        <div class="texto-legenda">{{'dashboard-two-leg-total-Awareness' | translate}}</div>
+                    </div>
+                </div>
+            </div> -->
+
+            <grafico-coluna-duplo
+                [graficoComunicacaoRecall]="graficoComunicacaoRecall"></grafico-coluna-duplo>
+
+            <!-- <div class="content-card">
+                <app-aviso-sem-dados></app-aviso-sem-dados>
+            </div> -->
+        </div>
+    </div>
+
+    <div class="card-medio" id="comparativo-marcas-evolutivo"
+        *ngIf="ativaGraficoImagens">
+        <div class="container-card">
+            <div class="header-card">
+                <div class="container-title">
+                    <div class="title">
+                        <!-- {{'dashboard-seven-grafico2-titulo' | translate}} -->
+
+                        <div class="desc-onda-top"
+                            *ngIf="listaAtributoSTB.length">
+                            <div class="group-filtro-coluna">
+                                <ng-select placeholder id="tipoAtivoModel"
+                                    class="selectFiltroColunaQ-top"
+                                    [items]="listaAtributoSTB"
+                                    (change)="onchangeSTB(ModelSTB)"
+                                    [(ngModel)]="ModelSTB" bindLabel="DescItem"
+                                    [searchable]="false" [clearable]="false"
+                                    [multiple]="false">
+                                </ng-select>
+                            </div>
+                        </div>
+
+                        <!-- <select-checkbox-STB  (ModelAtributo)="onChangeAtributo($event)">
+                        </select-checkbox-STB> -->
+                    </div>
+                    <div class="legend">
+                        <!-- {{'dashboard-seven-grafico2-subtitulo' | translate}} -->
+                    </div>
+
+                    <!-- <div class="legend-sub">
+                        <div class="container-sig">
+                            <div class="sig-positive"> </div>
+                            <div class="sig-negative"> </div> {{'dashboard-sig' | translate}}
+                        </div>
+                    </div> -->
+                </div>
+                <!-- <div class="container-export">
+                    <div class="icon-export" (click)="exportToExcelGrafico1()">
+                        <div class="icon-excel">
+                        </div>
+                        <div class="titulo-exportar">{{'dashboard-exporta' | translate}}</div>
+                    </div>
+                    <div class="icon-export" >
+                        <div class="icon-powerpoint">
+                        </div>
+                        <div class="titulo-exportar">{{'dashboard-exporta' | translate}}</div>
+                    </div>
+                </div> -->
+            </div>
+
+            <!-- <div class="content-card p-relative">
+                <div class="container-legenda">
+                    <div class="container-texto">
+                        <div class="sinal-roxo"></div>
+                        <div class="texto-legenda">{{'dashboard-two-leg-Awareness' | translate}}</div>
+                    </div>
+                    <div class="container-texto">
+                        <div class="sinal-roxo-claro"></div>
+                        <div class="texto-legenda">{{'dashboard-two-leg-Spontaneous' | translate}}</div>
+                    </div>
+                    <div class="container-texto">
+                        <div class="sinal-cinza-claro"></div>
+                        <div class="texto-legenda">{{'dashboard-two-leg-Prompeted' | translate}}</div>
+                    </div>
+                    <div class="container-texto">
+                        <div class="sinal-verde"></div>
+                        <div class="texto-legenda">{{'dashboard-two-leg-total-Awareness' | translate}}</div>
+                    </div>
+                </div>
+            </div> -->
+
+            <grafico-propaganda
+                [graficoComunicacaoQuadroResumo]="graficoComunicacaoQuadroResumo"
+                [codFoto]="idItemSTBFoto"></grafico-propaganda>
+
+            <!-- <div class="content-card">
+                <app-aviso-sem-dados></app-aviso-sem-dados>
+            </div> -->
+        </div>
+    </div>
+
+</div>
+
+<div class="container-dashboard-duplo-base">
+
+    <div class="card-medio" id="grafico3">
+        <div class="container-card">
+            <div class="header-card">
+                <div class="container-title">
+                    <div class="title">
+                        {{'dashboard-seven-grafico3-titulo' | translate}}
+                    </div>
+                    <div class="legend">
+                        {{'dashboard-seven-grafico1-subtitulo' | translate}}
+                    </div>
+                    <div class="legend-sub">
+                        <!-- <div class="container-sig">
+                            <div class="sig-positive"> </div>
+                            <div class="sig-negative"> </div> {{'dashboard-sig' | translate}}
+                        </div> -->
+                    </div>
+                </div>
+                <div class="container-export">
+                    <div class="icon-export" (click)="exportToExcelGrafico2()">
+                        <div class="icon-excel">
+                        </div>
+                        <div class="titulo-exportar">{{'dashboard-exporta' |
+                            translate}}</div>
+                    </div>
+                    <div class="icon-export" (click)="exportToPpt3()">
+                        <div class="icon-powerpoint">
+                        </div>
+                        <div class="titulo-exportar">{{'dashboard-exporta' |
+                            translate}}</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="content-card p-relative">
+                <div class="container-legenda">
+                    <div class="container-texto">
+                        <div class="sinal-azul-escuro"></div>
+                        <div class="texto-legenda">Nestle Leite Infantil</div>
+                    </div>
+
+                    <div class="container-texto">
+                        <div class="sinal-cinza-claro"></div>
+                        <div class="texto-legenda">Norma</div>
+                    </div>
+                    <div class="container-texto">
+                        <div class="sinal-verde"></div>
+                        <div class="texto-legenda">{{'dashboard-two-leg-total-Awareness' | translate}}</div>
+                    </div>
+                </div>
+            </div> -->
+
+            <grafico-colunas-simples
+                [graficoComunicacaoVisto]="graficoComunicacaoVisto"></grafico-colunas-simples>
+
+            <!-- <div class="content-card">
+                <app-aviso-sem-dados></app-aviso-sem-dados>
+            </div> -->
+        </div>
+    </div>
+
+    <div class="card-medio" id="grafico4">
+        <div class="container-card">
+            <div class="header-card">
+                <div class="container-title">
+                    <div class="title">
+                        {{'dashboard-seven-grafico4-titulo' | translate}}
+                    </div>
+                    <div class="legend">
+                        {{'dashboard-seven-grafico1-subtitulo' | translate}}
+                    </div>
+
+                    <div class="legend-sub">
+                        <div class="container-sig">
+                            <div class="sig-positive"> </div>
+                            <div class="sig-negative"> </div> {{'dashboard-sig'
+                            | translate}}
+                        </div>
+
+                        <div class="container-legenda">
+                            <div class="container-texto">
+                                <div class="sinal-azul-escuro"></div>
+                                <div
+                                    class="texto-legenda">{{'dashboard-comunicacao-titulo1'
+                                    | translate}}</div>
+                            </div>
+
+                            <div class="container-texto">
+                                <div class="sinal-cinza-claro"></div>
+                                <div
+                                    class="texto-legenda">{{'dashboard-comunicacao-titulo2'
+                                    | translate}}</div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="legend-sub">
+                        <div class="container-sig">
+                            <!-- <div class="sig-positive"> </div> -->
+                            <div class="sig-square-base"> </div> <div
+                                style="width: 56px;">Base</div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="container-export">
+                    <div class="icon-export" (click)="exportToExcelGrafico3()">
+                        <div class="icon-excel">
+                        </div>
+                        <div class="titulo-exportar">{{'dashboard-exporta' |
+                            translate}}</div>
+                    </div>
+                    <div class="icon-export" (click)="exportToPpt4()">
+                        <div class="icon-powerpoint">
+                        </div>
+                        <div class="titulo-exportar">{{'dashboard-exporta' |
+                            translate}}</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="container-legenda">
+                <div class="container-texto">
+                    <div class="sinal-azul-escuro"></div>
+                    <div class="texto-legenda">Nestle Leite Infantil</div>
+                </div>
+
+                <div class="container-texto">
+                    <div class="sinal-cinza-claro"></div>
+                    <div class="texto-legenda">Norma</div>
+                </div>
+
+            </div> -->
+
+            <grafico-diagnostico-propaganda
+                [graficoComunicacaoDiagnostico]="graficoComunicacaoDiagnostico">
+            </grafico-diagnostico-propaganda>
+
+            <!-- <div class="content-card">
+                <app-aviso-sem-dados></app-aviso-sem-dados>
+            </div> -->
+        </div>
+    </div>
+
+</div>
+
+<div class="container-dashboard-duplo-base">
+    <div class="card-medio" id="grafico5">
+        <div class="container-card">
+            <div class="header-card">
+                <div class="container-title">
+                    <div class="title">
+                        {{'dashboard-seven-grafico5-titulo' | translate}}
+                    </div>
+                    <div class="legend">
+                        {{'dashboard-seven-grafico1-subtitulo' | translate}}
+                    </div>
+                    <div class="legend-sub">
+
+                    </div>
+                </div>
+                <div class="container-export">
+                    <div class="icon-export" (click)="exportToExcelGrafico4()">
+                        <div class="icon-excel">
+                        </div>
+                        <div class="titulo-exportar">{{'dashboard-exporta' |
+                            translate}}</div>
+                    </div>
+                    <div class="icon-export" (click)="exportToPpt5()">
+                        <div class="icon-powerpoint">
+                        </div>
+                        <div class="titulo-exportar">{{'dashboard-exporta' |
+                            translate}}</div>
+                    </div>
+                </div>
+            </div>
+
+            <grafico-colunas-simples
+                [graficoComunicacaoVisto]="graficoComunicacaoSource"></grafico-colunas-simples>
+
+        </div>
+    </div>
+
+</div>
+
+
+<div class="container-dashboard-vista">
+    <div class="card-medio" id="grafico5">
+        <div class="container-card">
+            <div class="header-card">
+                <div class="container-title">
+                    <div class="title">
+                        <!-- {{'dashboard-seven-grafico5-titulo' | translate}} -->
+                         Novo Grafico -- Verificar
+                    </div>
+                    <div class="legend">
+                        {{'dashboard-seven-grafico1-subtitulo' | translate}}
+                    </div>
+                    <div class="legend-sub">
+
+                    </div>
+                </div>
+                <div class="container-export">
+                    <div class="icon-export" >
+                        <div class="icon-excel">
+                        </div>
+                        <div class="titulo-exportar">{{'dashboard-exporta' |
+                            translate}}</div>
+                    </div>
+                    <div class="icon-export" >
+                        <div class="icon-powerpoint">
+                        </div>
+                        <div class="titulo-exportar">{{'dashboard-exporta' |
+                            translate}}</div>
+                    </div>
+                </div>
+            </div>
+
+          
+
+        </div>
+    </div>
+
+</div>
+
+
+<footer-bottom></footer-bottom>

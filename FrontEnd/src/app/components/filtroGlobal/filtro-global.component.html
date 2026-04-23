@@ -1,0 +1,109 @@
+<div class="container-filtro">
+
+    <!-- <div class="group-filtro" *ngIf="router.url.includes('/dashboard-awareness') || router.url.includes('/dashboard-funil')" >
+        <ng-select placeholder="Denominators" id="tipoAtivoModel" class="selectFiltroTarget" bindLabel="DescItem"
+            [items]="filtroService.listaDenominators" [searchable]="false" [clearable]="false"
+            [(ngModel)]="filtroService.ModelDenominators" [multiple]="false"></ng-select>
+    </div> -->
+    
+
+    
+
+    <div   class="group-filtro">
+        <ng-select placeholder="Target" id="tipoAtivoModel" class="selectFiltroTarget" bindLabel="DescItem"
+            [items]="filtroService.listaTarget" [searchable]="false" [clearable]="true"
+            [(ngModel)]="filtroService.ModelTarget" [multiple]="false"></ng-select>
+    </div>
+    <div class="group-filtro">
+        <ng-select placeholder="Região" id="tipoAtivoModel" class="selectFiltroRegiao" bindLabel="DescItem"
+            [items]="filtroService.listaRegiao" [searchable]="false" [clearable]="true" 
+            [(ngModel)]="filtroService.ModelRegiao" [multiple]="true"></ng-select>
+    </div>
+
+    <!-- [closeOnSelect]="false" -->
+
+    <div class="group-filtro">
+        <ng-select placeholder="Demográfico" id="tipoAtivoModel" class="selectFiltroDemografico" bindLabel="DescItem"
+            [items]="filtroService.listaDemografico" [searchable]="false" [clearable]="true" 
+            [(ngModel)]="filtroService.ModelDemografico" [multiple]="true"></ng-select>
+    </div>
+
+    <!-- <div class="group-filtro">
+        <ng-select placeholder="Marca" id="tipoAtivoModel" class="selectFiltroMarca" bindLabel="DescItem"
+            [items]="filtroService.listaMarcas" [searchable]="false" [clearable]="false"
+            [(ngModel)]="filtroService.ModelMarcas" [multiple]="false"></ng-select>
+    </div> -->
+
+    <div  class="group-filtro" style="position: relative; top: -3px;">
+        <ng-select placeholder="Wave" id="tipoAtivoModel" class="selectFiltroGlobal" bindLabel="DescItem"
+            [items]="filtroService.listaOnda" [searchable]="false" [clearable]="false"
+            [(ngModel)]="filtroService.ModelOnda" [multiple]="false"></ng-select>
+    </div>
+
+    <div class="group-filtro">
+        <div class="btn-filtrar" (click)="executaFiltrar()">
+            {{'filtro.btn.filtrar' | translate}}
+        </div>
+    </div>
+</div>
+
+
+<div class="container-filtro-mobile">
+
+    <div class="container-titulo-mobile-filtro">
+
+        <div class="titulo-filtros-mobile">Filtros</div>
+        <div (click)="closeFiltro()"><img class="fechar-menu-icone" src="assets/imagePages/fechar-menu.svg"></div>
+    </div>
+
+    <!-- <div class="group-filtro">
+        <div class="titulo-filtros-mobile">Filtros</div>
+        <div ><img class="fechar-menu-icone" src="assets/imagePages/fechar-menu.svg"></div>
+    </div> -->
+    <div class="linha-separacao"></div>
+
+    
+
+    <!-- <div class="group-filtro" *ngIf="router.url.includes('/dashboard-awareness') || router.url.includes('/dashboard-funil')">
+        <ng-select placeholder="Denominators" id="tipoAtivoModel" class="selectFiltroVisao" bindLabel="DescItem"
+            [items]="filtroService.listaDenominators" [searchable]="false" [clearable]="false"
+            [(ngModel)]="filtroService.ModelDenominators" [multiple]="false"></ng-select>
+    </div> -->
+
+
+    <div *ngIf="router.url.includes('/dashboard-awareness') || router.url.includes('/dashboard-funil') " class="group-filtro">
+        <ng-select placeholder="Target" id="tipoAtivoModel" class="selectFiltroVisao" bindLabel="DescItem"
+            [items]="filtroService.listaTarget" [searchable]="false" [clearable]="true"
+            [(ngModel)]="filtroService.ModelTarget" [multiple]="true"></ng-select>
+    </div>
+
+    <div class="group-filtro">
+        <ng-select placeholder="Região" id="tipoAtivoModel" class="selectFiltroVisao" bindLabel="DescItem"
+            [items]="filtroService.listaRegiao" [searchable]="false" [clearable]="true"
+            [(ngModel)]="filtroService.ModelRegiao" [multiple]="true"></ng-select>
+    </div>
+
+    <div class="group-filtro">
+        <ng-select placeholder="Demográfico" id="tipoAtivoModel" class="selectFiltroVisao" bindLabel="DescItem"
+            [items]="filtroService.listaDemografico" [searchable]="false" [clearable]="true"
+            [(ngModel)]="filtroService.ModelDemografico" [multiple]="true"></ng-select>
+    </div>
+
+    <!-- <div class="group-filtro">
+        <ng-select placeholder="Marca" id="tipoAtivoModel" class="selectFiltroVisao" bindLabel="DescItem"
+            [items]="filtroService.listaMarcas" [searchable]="false" [clearable]="false"
+            [(ngModel)]="filtroService.ModelMarcas" [multiple]="false"></ng-select>
+    </div>    -->
+
+    <div   class="group-filtro">
+        <ng-select placeholder="Wave" id="tipoAtivoModel" class="selectFiltroVisao" bindLabel="DescItem"
+            [items]="filtroService.listaOnda" [searchable]="false" [clearable]="false"
+            [(ngModel)]="filtroService.ModelOnda" [multiple]="false"></ng-select>
+    </div>
+
+    <div class="group-filtro">
+        <div class="btn-filtrar" (click)="executaFiltrar()">
+            Filtrar
+        </div>
+    </div>
+</div>

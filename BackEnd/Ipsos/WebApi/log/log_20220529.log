@@ -1,0 +1,2 @@
+V1|00:53:46.013 == Class: DashBoardFourDataAccess       Method: CarregarGraficoImagemEvolutivaExcel     Routine: ERROR***       Message: []Referência de objeto não definida para uma instância de um objeto.
+V1|04:51:38.747 == Class: FiltrosDataAccess             Method: FiltroRegiao                            Routine: ERROR***       Message: []Referência de objeto não definida para uma instância de um objeto.

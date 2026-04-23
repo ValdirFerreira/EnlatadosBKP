@@ -1,0 +1,40 @@
+<div class="container-checkbox">
+
+  <div class="btn-filtro-marca" (click)="openContainerMarcas()">
+    <div class="titulo-checkbox">Escolha as marcas</div>
+    <div class="seta-down" [ngClass]="{'seta-up': activeCheckbox, 'seta-down': !activeCheckbox}"></div>
+  </div>
+
+  <div class="panel-checkbox" [ngStyle]="{ display: !activeCheckbox? 'none' : 'flex'}">
+    <div class="card-checkbox">
+      <ng-container *ngFor="let item of listaMarcas">
+  
+        <div *ngIf="item.Ordem <5"  class="checkbox">
+          <mat-checkbox (click)="onMarcaChanged(item)" [checked]=true>
+            {{item.DescItem}}
+          </mat-checkbox>
+        </div>
+
+            
+        <div *ngIf="item.Ordem >=5"  class="checkbox">
+          <mat-checkbox (click)="onMarcaChanged(item)">
+            {{item.DescItem}}
+          </mat-checkbox>
+        </div>
+
+      </ng-container>
+
+
+    </div>
+
+  
+  <div class="btn-aplica-filtro" (click)="ExecutarEmitFiltrar()">
+      <div class="text-filtrar">Filtrar</div>
+    </div>
+
+  </div>
+
+
+
+
+</div>

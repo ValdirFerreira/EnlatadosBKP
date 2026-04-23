@@ -1,0 +1,63 @@
+<div class="container-grafico">
+    <table border="0" cellpadding="0" cellspacing="0" class="tabelagrafico">
+        <tr>
+            <td *ngFor="let item of graficoColunaModel">
+                <div class="div-principal-grafico-colunas"
+                    [ngStyle]="{ background: item.DescPeriodo == 'selecionado'? '#e0e0e0' : '' }">
+                    <div class="bolha-topo-grafico">
+                        <div class="bolha-resultado-topo">
+                            <!-- {{ item.NPS | number:'1.1-1' }} -->
+                            {{ item.NPS }}
+                        </div>
+                    </div>
+                    <div class="coluna1"
+                        [ngStyle]="{ height: ajusteDeColuna1(item.Promotores,item.Neutros,item.Detratores, item.NPS), display: item.Promotores == 0? 'none' : 'block'}">
+                        <div class="div-bolha">
+                            <div class="bolha-resultado">
+                                <!-- {{ item.Promotores | number:'1.1-1' }} -->
+                                {{ item.Promotores }}
+                            </div>
+                            <div class="seta-resultado">
+                                                        <div class="sig-negative"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="coluna2"
+                        [ngStyle]="{ height: ajusteDeColuna2(item.Promotores,item.Neutros,item.Detratores, item.NPS), display: item.Neutros == 0? 'none' : 'block'}">
+                        <div class="div-bolha">
+                            <div class="bolha-resultado">
+                                <!-- {{ item.Neutros | number:'1.1-1' }} -->
+                                {{ item.Neutros }}
+                            </div>
+                            <div class="seta-resultado">
+                                <div class="sig-positive"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="coluna3"
+                        [ngStyle]="{ height: ajusteDeColuna3(item.Promotores,item.Neutros,item.Detratores, item.NPS), display: item.Detratores == 0? 'none' : 'block'}">
+                        <div class="div-bolha">
+                            <div class="bolha-resultado">
+                                <!-- {{ item.Detratores | number:'1.1-1' }} -->
+                                {{ item.Detratores }}
+                            </div>
+
+                            <div class="seta-resultado">
+                                <div class="sig-negative"></div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="div-texto-bottom">
+                        <div class="div-resultado-bottom">
+                            {{item.Descricao}}
+                            <p class="paragrafo-valor-base">{{ item.Base }}</p>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>

@@ -1,0 +1,289 @@
+.container-barras-marcas-duplo {
+    display: flex; 
+    // height: 1120px;  
+    // height: 100vw;
+
+    @media screen and (max-width: 1020px) {
+        overflow: hidden;
+        overflow-x: auto;
+    }
+
+    .separacao-filtro {
+        height: 95px;
+    }
+
+    .periodo-barras {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        color: #000000;
+        height: 50px;
+    }
+
+    .coluna-descricao {
+        width: 225px;
+        height: 48px;
+        background: #fefefe;
+
+        .titulo-coluna {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 16px;
+            display: flex;
+            align-items: center;
+            color: #1b212d;
+            width: 220px;
+            height: 48px;
+        }
+    }
+
+    .coluna-barra {
+        // width: 240px;
+        height: 48px;
+        background: #fefefe;
+
+        .cor-conteudo-barra {
+            background: #f8f8fa;
+        }
+
+        .conteudo-duplo {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            left: 5px;
+        }
+
+        .conteudo-barra-total {
+            width: 98px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .linha-divisao {
+                background: #ccd4db;
+                position: relative;
+                top: 23px;
+                height: 55px;
+                width: 1px;
+            }
+
+            .linha-divisao-branca {
+                position: relative;
+                top: 23px;
+                height: 55px;
+                width: 1px;
+            }
+        }
+
+        .conteudo-linha-positiva {
+            width: 70px;
+            display: flex;
+            border-radius: 2px;
+            align-items: center;
+            justify-content: initial;
+        }
+
+        .conteudo-linha-negativa {
+            width: 70px;
+            display: flex;
+            border-radius: 2px;
+            align-items: center;
+            justify-content: end;
+        }
+
+        .barra {
+            width: 50px;
+        }
+
+        .valor-barra {
+            height: 15px;
+            width: 18px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 16px;
+            color: #6e778b;
+            border-radius: 2px;
+            margin: 6px;
+        }
+
+        .valor-barra-sig {
+            height: 15px;
+            width: 18px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 16px;
+            color: #6e778b;
+            // border: 1px solid #4056b7;
+            border: 1px solid ;
+            border-radius: 2px;
+            margin: 6px;
+            padding: 2px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .valor-info {
+            text-align: center;
+        }
+
+        .sem-valor-barra {
+            height: 15px;
+            width: 18px;
+        }
+
+        .porc-barra-positivo {
+            height: 10px;
+            background: #4056b7;
+            border-radius: 2px;
+            cursor: pointer;
+        }
+
+        .porc-barra-negativo {
+            height: 10px;
+            background: #fefefe;
+            border: 1px solid #4056b7;
+            border-radius: 2px;
+            cursor: pointer;
+        }
+    }
+
+    .total-coluna {
+        margin: auto;
+        margin-top: 10px;
+        background: #fff;
+        width: 20px;
+        height: 20px;
+
+        .texto-total {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 20px;
+            text-align: center;
+            color: #6e778b;
+        }
+    }
+}
+
+.group-filtro-coluna {
+    display: flex;
+    justify-content: center;
+}
+
+.tooltip-barra {
+    box-sizing: border-box;
+    visibility: hidden;
+    transition:visibility 30ms;
+    align-items: baseline;
+    flex-direction: column;
+    position: absolute;
+    padding: 8px 16px;
+    width: 110px;
+    height: 55px;
+    background: #fefefe;
+    border: 1px solid #f8f8f8;
+    box-shadow: 0px 0.5px 2px rgb(53 51 52 / 16%);
+    border-radius: 4px;
+    z-index: 999;
+    margin-top: -71px;
+    margin-left: 27px;
+
+    // @media screen and (max-width: 1020px) {
+    //     display: none;
+    // }
+}
+
+.container-tooltip {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 18px;
+
+    .titulo-tooltip {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 110%;
+        display: flex;
+        align-items: center;
+        color: #1b212d;
+    }
+
+    .valor-tooltip {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 110%;
+        display: flex;
+        align-items: center;
+        color: #6e778b;
+    }
+}
+
+// .porc-barra-positivo:hover .tooltip-barra {
+//     visibility: visible;
+// }
+
+// .porc-barra-negativo:hover .tooltip-barra {
+//     visibility: visible;
+// }
+
+.conteudo-barra-total:hover .tooltip-barra {
+    visibility: visible;
+}
+
+// .conteudo-linha-positiva :hover .tooltip-barra {
+//     visibility: visible;
+// }
+
+.selectFiltroColunaEvolutivo,
+.selectFiltroColunaQ {
+    background: #fefefe;
+    border: 0px solid transparent;
+    box-sizing: border-box;
+    border-radius: 3px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    color: #000000;
+    padding-bottom: 5px;
+}
+
+::ng-deep .ng-select.selectFiltroColunaEvolutivo .ng-select-container {
+    height: 40px;
+    border: 0px solid;
+    width: 190px;
+    outline: none !important;
+    margin-right: 16px;
+    @media screen and (max-width: 1020px) {
+        width: 90% !important;
+    }
+}
+
+::ng-deep .ng-select.selectFiltroColunaQ .ng-select-container {
+    height: 40px;
+    border: 0px solid;
+    width: 80px;
+    outline: none !important;
+
+    @media screen and (max-width: 1020px) {
+        width: 75px !important;
+    }
+}
+
+::ng-deep .ng-select.ng-select-focused:not(.ng-select-opened) > .ng-select-container {
+    box-shadow: none !important;
+}

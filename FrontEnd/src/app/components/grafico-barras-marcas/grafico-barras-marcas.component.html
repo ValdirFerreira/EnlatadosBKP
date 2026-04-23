@@ -1,0 +1,450 @@
+<div class="container-barras-marcas">
+    <div class="coluna-descricao">
+        <div class="separacao-filtro">
+
+        </div>
+
+        <div *ngFor="let item of graficoColunaModel1;let i = index">
+            <!-- <div class="titulo-coluna" [ngClass]="{'cor-conteudo-barra': i%2 !== 0 ,'' : i%2 === 0}">
+                {{item.Descricao}}
+            </div> -->
+            <div class="titulo-coluna">
+                {{item.Descricao}}
+            </div>
+        </div>
+
+    </div>
+
+    <div class="coluna-barra">
+        <div class="separacao-filtro">
+            <div class="group-filtro-coluna">
+                <select-image [IndexCombo]=0 (ImageModelMarcas)="onchangeMarcaColuna1($event)"></select-image>
+            </div>
+        </div>
+
+        <div *ngFor="let item of graficoColunaModel1;let i = index">
+            <div class="conteudo-barra-total" *ngIf="item.PercAtual >= 0"
+                [ngClass]="{'cor-conteudo-barra': i%2 !== 0 ,'' : i%2 === 0}">
+
+                <div class="conteudo-linha-negativa">
+
+                    <div class="sem-valor-barra">
+                        <div class="valor-info"></div>
+                    </div>
+                    <div class="porc-barra-negativo" [style]="montaCorBarra(item)"
+                        [ngStyle]="{ width: porcBarraNegativa(0),border:  0 <= 0 ? '0 solid ': '1 solid '}"
+                        >
+                    </div>
+
+                </div>
+
+                <div *ngIf="qtdLinhas== i" class="linha-divisao-branca"></div>
+                <div *ngIf="qtdLinhas!= i" class="linha-divisao"></div>
+
+                <div class="conteudo-linha-positiva">
+
+                    <div class="porc-barra-positivo"
+                        [ngStyle]="{ width: porcBarraPositiva(item.PercAtual) , background: item.CorSiteMarca}"> </div>
+
+                  
+                    <div class="valor-barra" [style]="montaCorBarraTesteSig(item)"
+                        [ngClass]="{'valor-barra-sig' : item.PercAtual> 20 , '':item.PercAtual< 20  }">
+                        <div class="valor-info">{{item.PercAtual}}</div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="conteudo-barra-total" *ngIf="item.PercAtual < 0"
+                [ngClass]="{'cor-conteudo-barra': i%2 !== 0 ,'' : i%2 === 0}">
+
+                <div class="conteudo-linha-negativa">
+
+                    <div class="valor-barra" [style]="montaCorBarraTesteSig(item)"
+                        [ngClass]="{'valor-barra-sig' : item.PercAtual < -80 , '' :item.PercAtual>-80 }">
+                        <div class="valor-info">{{item.PercAtual}}</div>
+                    </div>
+
+                    <div class="porc-barra-negativo"  [style]="montaCorBarra(item)"
+                        [ngStyle]="{ width: porcBarraNegativa(item.PercAtual)}">
+                    </div>
+
+                </div>
+
+
+                <div *ngIf="qtdLinhas== i" class="linha-divisao-branca"></div>
+                <div *ngIf="qtdLinhas!= i" class="linha-divisao"></div>
+
+                <div class="conteudo-linha-positiva">
+
+                    <div class="porc-barra-positivo"
+                        [ngStyle]="{ width: porcBarraPositiva(item.PercAtual) , background: item.CorSiteMarca}"> </div>
+
+                    <div class="sem-valor-barra">
+                        <div class="valor-info"></div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="total-coluna">
+            <div [ngClass]="{'base-vermelha' : graficoColunaModel1[0]?.BaseMinima != '' , '':graficoColunaModel1[0]?.BaseMinima==''}" class="texto-total">
+                {{graficoColunaModel1[0]?.Base}}
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="coluna-barra">
+        <div class="separacao-filtro">
+            <div class="group-filtro-coluna">
+                <select-image [IndexCombo]=1 (ImageModelMarcas)="onchangeMarcaColuna2($event)"></select-image>
+            </div>
+        </div>
+
+        <div *ngFor="let item of graficoColunaModel2;let i = index">
+            <div class="conteudo-barra-total" *ngIf="item.PercAtual >= 0"
+                [ngClass]="{'cor-conteudo-barra': i%2 !== 0 ,'' : i%2 === 0}">
+
+                <div class="conteudo-linha-negativa">
+
+                    <div class="sem-valor-barra">
+                        <div class="valor-info"></div>
+                    </div>
+                    <div class="porc-barra-negativo" [style]="montaCorBarra(item)"
+                        [ngStyle]="{ width: porcBarraNegativa(0),border:  0 <= 0 ? '0 solid ': '1 solid '}">
+                    </div>
+
+                </div>
+
+                <div *ngIf="qtdLinhas== i" class="linha-divisao-branca"></div>
+                <div *ngIf="qtdLinhas!= i" class="linha-divisao"></div>
+
+                <div class="conteudo-linha-positiva">
+
+                    <div class="porc-barra-positivo"
+                        [ngStyle]="{ width: porcBarraPositiva(item.PercAtual) , background: item.CorSiteMarca}"> </div>
+
+                    <div class="valor-barra" [style]="montaCorBarraTesteSig(item)"
+                        [ngClass]="{'valor-barra-sig' : item.PercAtual> 20 , '':item.PercAtual< 20  }">
+                        <div class="valor-info">{{item.PercAtual}}</div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="conteudo-barra-total" *ngIf="item.PercAtual < 0"
+                [ngClass]="{'cor-conteudo-barra': i%2 !== 0 ,'' : i%2 === 0}">
+
+                <div class="conteudo-linha-negativa">
+
+                    <div class="valor-barra" [style]="montaCorBarraTesteSig(item)"
+                        [ngClass]="{'valor-barra-sig' : item.PercAtual < -80 , '' :item.PercAtual>-80 }">
+                        <div class="valor-info">{{item.PercAtual}}</div>
+                    </div>
+
+                    <div class="porc-barra-negativo" [style]="montaCorBarra(item)"
+                        [ngStyle]="{ width: porcBarraNegativa(item.PercAtual),border:  item.PercAtual > 0 ? '0 solid ': '1 solid '}">
+                    </div>
+
+                </div>
+
+
+                <div *ngIf="qtdLinhas== i" class="linha-divisao-branca"></div>
+                <div *ngIf="qtdLinhas!= i" class="linha-divisao"></div>
+
+                <div class="conteudo-linha-positiva">
+
+                    <div class="porc-barra-positivo"
+                        [ngStyle]="{ width: porcBarraPositiva(item.PercAtual) , background: item.CorSiteMarca}"> </div>
+
+                    <div class="sem-valor-barra">
+                        <div class="valor-info"></div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="total-coluna">
+            <div [ngClass]="{'base-vermelha' : graficoColunaModel2[0]?.BaseMinima != '' , '':graficoColunaModel2[0]?.BaseMinima==''}" class="texto-total">
+                {{graficoColunaModel2[0]?.Base}}
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="coluna-barra">
+        <div class="separacao-filtro">
+            <div class="group-filtro-coluna">
+                <select-image [IndexCombo]=2 (ImageModelMarcas)="onchangeMarcaColuna3($event)"></select-image>
+            </div>
+        </div>
+
+        <div *ngFor="let item of graficoColunaModel3;let i = index">
+            <div class="conteudo-barra-total" *ngIf="item.PercAtual >= 0"
+                [ngClass]="{'cor-conteudo-barra': i%2 !== 0 ,'' : i%2 === 0}">
+
+                <div class="conteudo-linha-negativa">
+
+                    <div class="sem-valor-barra">
+                        <div class="valor-info"></div>
+                    </div>
+                    <div class="porc-barra-negativo" [style]="montaCorBarra(item)"
+                        [ngStyle]="{ width: porcBarraNegativa(0),border:  0 <= 0 ? '0 solid ': '1 solid '}">
+                    </div>
+
+                </div>
+
+                <div *ngIf="qtdLinhas== i" class="linha-divisao-branca"></div>
+                <div *ngIf="qtdLinhas!= i" class="linha-divisao"></div>
+
+                <div class="conteudo-linha-positiva">
+
+                    <div class="porc-barra-positivo"
+                        [ngStyle]="{ width: porcBarraPositiva(item.PercAtual) , background: item.CorSiteMarca}"> </div>
+
+                    <div class="valor-barra" [style]="montaCorBarraTesteSig(item)"
+                        [ngClass]="{'valor-barra-sig' : item.PercAtual> 20 , '':item.PercAtual< 20  }">
+                        <div class="valor-info">{{item.PercAtual}}</div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="conteudo-barra-total" *ngIf="item.PercAtual < 0"
+                [ngClass]="{'cor-conteudo-barra': i%2 !== 0 ,'' : i%2 === 0}">
+
+                <div class="conteudo-linha-negativa">
+
+                    <div class="valor-barra" [style]="montaCorBarraTesteSig(item)"
+                        [ngClass]="{'valor-barra-sig' : item.PercAtual < -80 , '' :item.PercAtual>-80 }">
+                        <div class="valor-info">{{item.PercAtual}}</div>
+                    </div>
+
+                    <div class="porc-barra-negativo" [style]="montaCorBarra(item)"
+                        [ngStyle]="{ width: porcBarraNegativa(item.PercAtual),border:  item.PercAtual > 0 ? '0 solid ': '1 solid '}">
+                    </div>
+
+                </div>
+
+
+                <div *ngIf="qtdLinhas== i" class="linha-divisao-branca"></div>
+                <div *ngIf="qtdLinhas!= i" class="linha-divisao"></div>
+
+                <div class="conteudo-linha-positiva">
+
+                    <div class="porc-barra-positivo"
+                        [ngStyle]="{ width: porcBarraPositiva(item.PercAtual) , background: item.CorSiteMarca}"> </div>
+
+                    <div class="sem-valor-barra">
+                        <div class="valor-info"></div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="total-coluna">
+            <div [ngClass]="{'base-vermelha' : graficoColunaModel3[0]?.BaseMinima != '' , '':graficoColunaModel3[0]?.BaseMinima==''}" class="texto-total">
+                {{graficoColunaModel3[0]?.Base}}
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="coluna-barra">
+        <div class="separacao-filtro">
+            <div class="group-filtro-coluna">
+                <select-image [IndexCombo]=3 (ImageModelMarcas)="onchangeMarcaColuna4($event)"></select-image>
+            </div>
+        </div>
+
+        <div *ngFor="let item of graficoColunaModel4;let i = index">
+            <div class="conteudo-barra-total" *ngIf="item.PercAtual >= 0"
+                [ngClass]="{'cor-conteudo-barra': i%2 !== 0 ,'' : i%2 === 0}">
+
+                <div class="conteudo-linha-negativa">
+
+                    <div class="sem-valor-barra">
+                        <div class="valor-info"></div>
+                    </div>
+                    <div class="porc-barra-negativo" [style]="montaCorBarra(item)"
+                        [ngStyle]="{ width: porcBarraNegativa(0),border:  0 <= 0 ? '0 solid ': '1 solid '}">
+                    </div>
+
+                </div>
+
+                <div *ngIf="qtdLinhas== i" class="linha-divisao-branca"></div>
+                <div *ngIf="qtdLinhas!= i" class="linha-divisao"></div>
+
+                <div class="conteudo-linha-positiva">
+
+                    <div class="porc-barra-positivo"
+                        [ngStyle]="{ width: porcBarraPositiva(item.PercAtual) , background: item.CorSiteMarca}"> </div>
+
+                    <div class="valor-barra" [style]="montaCorBarraTesteSig(item)"
+                        [ngClass]="{'valor-barra-sig' : item.PercAtual> 20 , '':item.PercAtual< 20  }">
+                        <div class="valor-info">{{item.PercAtual}}</div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="conteudo-barra-total" *ngIf="item.PercAtual < 0"
+                [ngClass]="{'cor-conteudo-barra': i%2 !== 0 ,'' : i%2 === 0}">
+
+                <div class="conteudo-linha-negativa">
+
+                    <div class="valor-barra" [style]="montaCorBarraTesteSig(item)"
+                        [ngClass]="{'valor-barra-sig' : item.PercAtual < -80 , '' :item.PercAtual>-80 }">
+                        <div class="valor-info">{{item.PercAtual}}</div>
+                    </div>
+
+                    <div class="porc-barra-negativo" [style]="montaCorBarra(item)"
+                        [ngStyle]="{ width: porcBarraNegativa(item.PercAtual),border:  item.PercAtual > 0 ? '0 solid ': '1 solid '}">
+                    </div>
+
+                </div>
+
+
+                <div *ngIf="qtdLinhas== i" class="linha-divisao-branca"></div>
+                <div *ngIf="qtdLinhas!= i" class="linha-divisao"></div>
+
+                <div class="conteudo-linha-positiva">
+
+                    <div class="porc-barra-positivo"
+                        [ngStyle]="{ width: porcBarraPositiva(item.PercAtual) , background: item.CorSiteMarca}"> </div>
+
+                    <div class="sem-valor-barra">
+                        <div class="valor-info"></div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="total-coluna">
+            <div [ngClass]="{'base-vermelha' : graficoColunaModel4[0]?.BaseMinima != '' , '':graficoColunaModel4[0]?.BaseMinima==''}" class="texto-total">
+                {{graficoColunaModel4[0]?.Base}}
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="coluna-barra">
+        <div class="separacao-filtro">
+            <div class="group-filtro-coluna">
+                <select-image [IndexCombo]=4 (ImageModelMarcas)="onchangeMarcaColuna5($event)"></select-image>
+            </div>
+        </div>
+
+        <div *ngFor="let item of graficoColunaModel5;let i = index">
+            <div class="conteudo-barra-total" *ngIf="item.PercAtual >= 0"
+                [ngClass]="{'cor-conteudo-barra': i%2 !== 0 ,'' : i%2 === 0}">
+
+                <div class="conteudo-linha-negativa">
+
+                    <div class="sem-valor-barra">
+                        <div class="valor-info"></div>
+                    </div>
+                    <div class="porc-barra-negativo" [style]="montaCorBarra(item)"
+                        [ngStyle]="{ width: porcBarraNegativa(0),border:  0 <= 0 ? '0 solid ': '1 solid '}">
+                    </div>
+
+                </div>
+
+                <div *ngIf="qtdLinhas== i" class="linha-divisao-branca"></div>
+                <div *ngIf="qtdLinhas!= i" class="linha-divisao"></div>
+
+                <div class="conteudo-linha-positiva">
+
+                    <div class="porc-barra-positivo"
+                        [ngStyle]="{ width: porcBarraPositiva(item.PercAtual) , background: item.CorSiteMarca}"> </div>
+
+                    <div class="valor-barra" [style]="montaCorBarraTesteSig(item)"
+                        [ngClass]="{'valor-barra-sig' : item.PercAtual> 20 , '':item.PercAtual< 20  }">
+                        <div class="valor-info">{{item.PercAtual}}</div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="conteudo-barra-total" *ngIf="item.PercAtual < 0"
+                [ngClass]="{'cor-conteudo-barra': i%2 !== 0 ,'' : i%2 === 0}">
+
+                <div class="conteudo-linha-negativa">
+
+                    <div class="valor-barra" [style]="montaCorBarraTesteSig(item)"
+                        [ngClass]="{'valor-barra-sig' : item.PercAtual < -80 , '' :item.PercAtual>-80 }">
+                        <div class="valor-info">{{item.PercAtual}}</div>
+                    </div>
+
+                    <div class="porc-barra-negativo" [style]="montaCorBarra(item)"
+                        [ngStyle]="{ width: porcBarraNegativa(item.PercAtual),border:  item.PercAtual > 0 ? '0 solid ': '1 solid '}">
+                    </div>
+
+                </div>
+
+
+                <div *ngIf="qtdLinhas== i" class="linha-divisao-branca"></div>
+                <div *ngIf="qtdLinhas!= i" class="linha-divisao"></div>
+
+                <div class="conteudo-linha-positiva">
+
+                    <div class="porc-barra-positivo"
+                        [ngStyle]="{ width: porcBarraPositiva(item.PercAtual) , background: item.CorSiteMarca}"> </div>
+
+                    <div class="sem-valor-barra">
+                        <div class="valor-info"></div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="total-coluna">
+            <div [ngClass]="{'base-vermelha' : graficoColunaModel5[0]?.BaseMinima != '' , '':graficoColunaModel5[0]?.BaseMinima==''}" class="texto-total">
+                {{graficoColunaModel5[0]?.Base}}
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="descricao-base">
+    {{verificaMsgBase()}}
+</div>

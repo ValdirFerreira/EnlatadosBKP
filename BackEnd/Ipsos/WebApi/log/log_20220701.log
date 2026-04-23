@@ -1,0 +1,18 @@
+V1|17:13:03.901 == Class: DashBoardFourDataAccess       Method: ComparativoMarcas                       Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_FiltroMarca'. Cannot insert duplicate key in object 'dbo.tblTMP_FiltroMarca'. The duplicate key value is (1, E84B4140-41C7-4880-9CD3-107EEE9A0EF1, 1, 1).
+The statement has been terminated.
+V1|17:13:11.002 == Class: DashBoardFourDataAccess       Method: ComparativoMarcas                       Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_FiltroMarca'. Cannot insert duplicate key in object 'dbo.tblTMP_FiltroMarca'. The duplicate key value is (1, 48313336-DDA2-4375-AF73-ACFDAADF8B46, 1, 1).
+The statement has been terminated.
+V1|17:25:26.459 == Class: DashBoardFourDataAccess       Method: ComparativoMarcas                       Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_FiltroMarca'. Cannot insert duplicate key in object 'dbo.tblTMP_FiltroMarca'. The duplicate key value is (1, BA08E675-8378-4E91-B922-DCF59F9250BA, 1, 1).
+The statement has been terminated.
+V1|17:25:30.261 == Class: DashBoardFourDataAccess       Method: ComparativoMarcas                       Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_FiltroMarca'. Cannot insert duplicate key in object 'dbo.tblTMP_FiltroMarca'. The duplicate key value is (1, AC0AFF19-7E28-44D5-926F-F7A74C67D80E, 1, 1).
+The statement has been terminated.
+V1|17:27:57.739 == Class: DashBoardFourDataAccess       Method: ComparativoMarcas                       Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_FiltroMarca'. Cannot insert duplicate key in object 'dbo.tblTMP_FiltroMarca'. The duplicate key value is (1, 402566BF-1FEC-4DF2-A2D0-F66CE4D40EBC, 4, 1).
+The statement has been terminated.
+V1|17:29:23.266 == Class: DashBoardFourDataAccess       Method: ComparativoMarcas                       Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_FiltroMarca'. Cannot insert duplicate key in object 'dbo.tblTMP_FiltroMarca'. The duplicate key value is (1, 85EC71E0-B7A4-42F4-BEF6-217124B1895B, 1, 1).
+The statement has been terminated.
+V1|17:29:41.058 == Class: DashBoardFourDataAccess       Method: ComparativoMarcas                       Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_FiltroMarca'. Cannot insert duplicate key in object 'dbo.tblTMP_FiltroMarca'. The duplicate key value is (1, AD7E6EBB-E525-4644-AB67-0D4EB0CDB1EC, 1, 1).
+The statement has been terminated.
+V1|17:29:43.184 == Class: DashBoardFourDataAccess       Method: ComparativoMarcas                       Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_FiltroMarca'. Cannot insert duplicate key in object 'dbo.tblTMP_FiltroMarca'. The duplicate key value is (1, 5FE3EB2C-BCDB-445E-8467-4860A34E39BC, 1, 1).
+The statement has been terminated.
+V1|17:32:16.648 == Class: DashBoardFourDataAccess       Method: ComparativoMarcas                       Routine: ERROR***       Message: [ipsos@teste.com.br]Violation of PRIMARY KEY constraint 'PK_tblTMP_FiltroMarca'. Cannot insert duplicate key in object 'dbo.tblTMP_FiltroMarca'. The duplicate key value is (1, 6BB359E9-D0FF-4A19-9FE7-8D9ED5A44F48, 1, 1).
+The statement has been terminated.

@@ -1,0 +1,292 @@
+<app-sidebar></app-sidebar>
+<app-navbar></app-navbar>
+<div class="container-dashboard">
+
+    <div class="card" id="comparativo-marcas" *ngIf="ativaGraficoComparativoMarcas">
+        <div class="container-card">
+            <div class="header-card">
+                <div class="container-title">
+                    <div class="title">
+                        {{'dashboard-two-grafico1-titulo' | translate}}
+                    </div>
+                    <div class="legend">
+                        {{'dashboard-two-grafico1-subtitulo' | translate}}
+                    </div>
+                    <div class="legend-sub">
+                        <div class="container-sig">
+                            <div class="sig-positive"> </div>
+                            <div class="sig-negative"> </div> {{'dashboard-sig' | translate}}
+                        </div>
+                    </div>
+                </div>
+                <div class="container-export">
+                    <div class="icon-export" (click)="exportToExcelGrafico1()">
+                        <div class="icon-excel">
+                        </div>
+                        <div class="titulo-exportar">{{'dashboard-exporta' | translate}}</div>
+                    </div>
+                    <div class="icon-export" (click)="exportToPptComparativoMarcas()">
+                        <div class="icon-powerpoint">
+                        </div>
+                        <div class="titulo-exportar">{{'dashboard-exporta' | translate}}</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-card p-relative">
+                <div class="container-legenda">
+                    <div class="container-texto">
+                        <div class="sinal-roxo"></div>
+                        <div class="texto-legenda">{{'dashboard-two-leg-Awareness' | translate}}</div>
+                    </div>
+                    <div class="container-texto">
+                        <div class="sinal-roxo-claro"></div>
+                        <div class="texto-legenda">{{'dashboard-two-leg-Spontaneous' | translate}}</div>
+                    </div>
+                    <div class="container-texto">
+                        <div class="sinal-cinza-claro"></div>
+                        <div class="texto-legenda">{{'dashboard-two-leg-Prompeted' | translate}}</div>
+                    </div>
+                    <div class="container-texto">
+                        <div class="sinal-verde"></div>
+                        <div class="texto-legenda">{{'dashboard-two-leg-total-Awareness' | translate}}</div>
+                    </div>
+                </div>
+
+                <grafico-colunas-marcas    class="scroll" 
+                (marcaColuna1) ="onchangeMarca($event,1)" 
+                (marcaColuna2) ="onchangeMarca($event,2)"
+                (marcaColuna3) ="onchangeMarca($event,3)"
+                (marcaColuna4) ="onchangeMarca($event,4)"
+                (marcaColuna5) ="onchangeMarca($event,5)"
+                [graficoColunaModel1]="graficoColunaModel1"
+                [graficoColunaModel2]="graficoColunaModel2"
+                [graficoColunaModel3]="graficoColunaModel3"
+                [graficoColunaModel4]="graficoColunaModel4"
+                [graficoColunaModel5]="graficoColunaModel5">
+                </grafico-colunas-marcas>
+
+            </div>
+
+            <!-- <div class="content-card">
+                <app-aviso-sem-dados></app-aviso-sem-dados>
+            </div> -->
+        </div>
+
+    
+    </div>
+   
+
+    <div class="card" id="evolutivo-marcas" *ngIf="ativaGraficoComparativoMarcas">
+        <div class="container-card">
+            <div class="header-card">
+                <div class="container-title">
+                    <div class="title">
+                        {{'dashboard-two-grafico2-titulo' | translate}}
+                    </div>
+                    <div class="legend">
+
+                        {{'dashboard-two-grafico2-subtitulo' | translate}}
+                    </div>
+                    <div class="legend-sub">
+                        <div class="container-sig">
+                            <div class="sig-positive"> </div>
+                            <div class="sig-negative"> </div> {{'dashboard-sig' | translate}}
+                        </div>
+                    </div>
+                </div>
+                <div class="container-export">
+                    <div class="icon-export" (click)="exportToExcelGrafico2()">
+                        <div class="icon-excel">
+                        </div>
+                        <div class="titulo-exportar">{{'dashboard-exporta' | translate}}</div>
+                    </div>
+                    <div class="icon-export" (click)="exportToPptEvolutivoMarcas()">
+                        <div class="icon-powerpoint">
+                        </div>
+                        <div class="titulo-exportar">{{'dashboard-exporta' | translate}}</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-card p-relative">
+                <div class="container-legenda">
+                    <div class="container-texto">
+                        <div class="sinal-roxo"></div>
+                        <div class="texto-legenda">{{'dashboard-two-leg-Awareness' | translate}}</div>
+                    </div>
+                    <div class="container-texto">
+                        <div class="sinal-roxo-claro"></div>
+                        <div class="texto-legenda">{{'dashboard-two-leg-Spontaneous' | translate}}</div>
+                    </div>
+                    <div class="container-texto">
+                        <div class="sinal-cinza-claro"></div>
+                        <div class="texto-legenda">{{'dashboard-two-leg-Prompeted' | translate}}</div>
+                    </div>
+                    <div class="container-texto">
+                        <div class="sinal-verde"></div>
+                        <div class="texto-legenda">{{'dashboard-two-leg-total-Awareness' | translate}}</div>
+                    </div>
+                </div>
+
+                <grafico-colunas-evolutivo-marcas   class="scroll" 
+                (ondaColuna1) ="onchangeOnda($event,1)" 
+                (ondaColuna2) ="onchangeOnda($event,2)"
+                (ondaColuna3) ="onchangeOnda($event,3)"
+                (ondaColuna4) ="onchangeOnda($event,4)"
+               (marcaGrafico) ="onchangeMarcaEvolutivo($event)"
+
+                [graficoColunaModel1]="grafico2ColunaModel1"
+                [graficoColunaModel2]="grafico2ColunaModel2"
+                [graficoColunaModel3]="grafico2ColunaModel3"
+                [graficoColunaModel4]="grafico2ColunaModel4">          
+                </grafico-colunas-evolutivo-marcas>
+
+            </div>
+
+            <!-- <div class="content-card">
+                <app-aviso-sem-dados></app-aviso-sem-dados>
+            </div> -->
+        </div>
+    </div>
+
+
+
+    <!-- ABAIXO SOMENTE APARECE GRAFICOS QUANDO SELECIONA DENOMINATORS -->
+
+    <div class="card" id="comparativo-marcas" *ngIf="ativaGraficoComparativoMarcasDenominators">
+        <div class="container-card">
+            <div class="header-card">
+                <div class="container-title">
+                    <div class="title">
+                        {{'dashboard-two-grafico1-titulo' | translate}}
+                    </div>
+                    <div class="legend">
+                        {{'dashboard-two-grafico1-subtitulo' | translate}}
+                    </div>
+                    <div class="legend-sub">
+                        <div class="container-sig">
+                            <div class="sig-positive"> </div>
+                            <div class="sig-negative"> </div> {{'dashboard-sig' | translate}}
+                        </div>
+                    </div>
+                </div>
+                <div class="container-export">
+                    <div class="icon-export" (click)="exportToExcelGrafico1Denominators()">
+                        <div class="icon-excel">
+                        </div>
+                        <div class="titulo-exportar">{{'dashboard-exporta' | translate}}</div>
+                    </div>
+                    <div class="icon-export" (click)="exportToPptComparativoMarcas()">
+                        <div class="icon-powerpoint">
+                        </div>
+                        <div class="titulo-exportar">{{'dashboard-exporta' | translate}}</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-card p-relative">
+                <div class="container-legenda">
+                    <div class="container-texto">
+                        <div class="sinal-roxo"></div>
+                        <div class="texto-legenda">{{'dashboard-two-leg-Awareness-brand' | translate}}</div>
+                    </div>
+                    <div class="container-texto">
+                        <div class="sinal-roxo-claro"></div>
+                        <div class="texto-legenda">{{'dashboard-two-leg-Spontaneous-ad' | translate}}</div>
+                    </div>                   
+                </div>
+
+                <grafico-colunas-marcas-denominators    class="scroll" 
+                (marcaColuna1) ="onchangeMarca($event,1)" 
+                (marcaColuna2) ="onchangeMarca($event,2)"
+                (marcaColuna3) ="onchangeMarca($event,3)"
+                (marcaColuna4) ="onchangeMarca($event,4)"
+                (marcaColuna5) ="onchangeMarca($event,5)"
+                [graficoColunaModel1]="graficoColunaModel1"
+                [graficoColunaModel2]="graficoColunaModel2"
+                [graficoColunaModel3]="graficoColunaModel3"
+                [graficoColunaModel4]="graficoColunaModel4"
+                [graficoColunaModel5]="graficoColunaModel5">
+                </grafico-colunas-marcas-denominators>
+
+            </div>
+
+            <!-- <div class="content-card">
+                <app-aviso-sem-dados></app-aviso-sem-dados>
+            </div> -->
+        </div>
+
+    
+    </div>
+
+
+    <div class="card" id="evolutivo-marcas" *ngIf="ativaGraficoComparativoMarcasDenominators">
+        <div class="container-card">
+            <div class="header-card">
+                <div class="container-title">
+                    <div class="title">
+                        {{'dashboard-two-grafico2-titulo' | translate}}
+                    </div>
+                    <div class="legend">
+
+                        {{'dashboard-two-grafico2-subtitulo' | translate}}
+                    </div>
+                    <div class="legend-sub">
+                        <div class="container-sig">
+                            <div class="sig-positive"> </div>
+                            <div class="sig-negative"> </div> {{'dashboard-sig' | translate}}
+                        </div>
+                    </div>
+                </div>
+                <div class="container-export">
+                    <div class="icon-export" (click)="exportToExcelGrafico2Denominators()">
+                        <div class="icon-excel">
+                        </div>
+                        <div class="titulo-exportar">{{'dashboard-exporta' | translate}}</div>
+                    </div>
+                    <div class="icon-export" (click)="exportToPptEvolutivoMarcas()">
+                        <div class="icon-powerpoint">
+                        </div>
+                        <div class="titulo-exportar">{{'dashboard-exporta' | translate}}</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-card p-relative">
+                <div class="container-legenda">
+                    <div class="container-texto">
+                        <div class="sinal-roxo"></div>
+                        <div class="texto-legenda">{{'dashboard-two-leg-Awareness-brand' | translate}}</div>
+                    </div>
+                    <div class="container-texto">
+                        <div class="sinal-roxo-claro"></div>
+                        <div class="texto-legenda">{{'dashboard-two-leg-Spontaneous-ad' | translate}}</div>
+                    </div>                   
+                </div>
+
+                <grafico-colunas-evolutivo-marcas-denominators   class="scroll" 
+                (ondaColuna1) ="onchangeOnda($event,1)" 
+                (ondaColuna2) ="onchangeOnda($event,2)"
+                (ondaColuna3) ="onchangeOnda($event,3)"
+                (ondaColuna4) ="onchangeOnda($event,4)"
+               (marcaGrafico) ="onchangeMarcaEvolutivo($event)"
+
+                [graficoColunaModel1]="grafico2ColunaModel1"
+                [graficoColunaModel2]="grafico2ColunaModel2"
+                [graficoColunaModel3]="grafico2ColunaModel3"
+                [graficoColunaModel4]="grafico2ColunaModel4">          
+                </grafico-colunas-evolutivo-marcas-denominators>
+
+            </div>
+
+            <!-- <div class="content-card">
+                <app-aviso-sem-dados></app-aviso-sem-dados>
+            </div> -->
+        </div>
+    </div>
+
+
+</div>
+
+<footer-bottom></footer-bottom>

@@ -1,0 +1,37 @@
+V1|13:36:59.724 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: []Invalid object name 'tblLog'.
+V1|14:00:09.397 == Class: UsuarioDataAccess             Method: CarregarPopUpMsn                        Routine: ERROR***       Message: [ipsos@teste.com.br]Could not find stored procedure 'pr_Lista_PopUp'.
+V1|14:00:10.276 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: [ipsos@teste.com.br]Invalid object name 'tblLog'.
+V1|14:01:17.543 == Class: UsuarioDataAccess             Method: CarregarPopUpMsn                        Routine: ERROR***       Message: [ipsos@teste.com.br]Could not find stored procedure 'pr_Lista_PopUp'.
+V1|14:01:17.730 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: [ipsos@teste.com.br]Invalid object name 'tblLog'.
+V1|14:10:35.900 == Class: UsuarioDataAccess             Method: CarregarPopUpMsn                        Routine: ERROR***       Message: [ipsos@teste.com.br]Could not find stored procedure 'pr_Lista_PopUp'.
+V1|14:10:36.662 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: [ipsos@teste.com.br]Invalid object name 'tblLog'.
+V1|14:12:16.352 == Class: UsuarioDataAccess             Method: CarregarPopUpMsn                        Routine: ERROR***       Message: [ipsos@teste.com.br]Could not find stored procedure 'pr_Lista_PopUp'.
+V1|14:12:17.925 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: [ipsos@teste.com.br]Invalid object name 'tblLog'.
+V1|14:12:22.724 == Class: UsuarioDataAccess             Method: CarregarPopUpMsn                        Routine: ERROR***       Message: [ipsos@teste.com.br]Could not find stored procedure 'pr_Lista_PopUp'.
+V1|14:12:22.883 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: [ipsos@teste.com.br]Invalid object name 'tblLog'.
+V1|14:12:43.110 == Class: UsuarioDataAccess             Method: CarregarPopUpMsn                        Routine: ERROR***       Message: [ipsos@teste.com.br]Could not find stored procedure 'pr_Lista_PopUp'.
+V1|14:12:44.090 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: [ipsos@teste.com.br]Invalid object name 'tblLog'.
+V1|14:18:53.625 == Class: UsuarioDataAccess             Method: CarregarPopUpMsn                        Routine: ERROR***       Message: [ipsos@teste.com.br]Could not find stored procedure 'pr_Lista_PopUp'.
+V1|14:18:56.112 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: [ipsos@teste.com.br]Invalid object name 'tblLog'.
+V1|22:50:30.333 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: []Invalid object name 'tblLog'.
+V1|22:50:33.441 == Class: UsuarioDataAccess             Method: CarregarPopUpMsn                        Routine: ERROR***       Message: [ipsos@teste.com.br]Could not find stored procedure 'pr_Lista_PopUp'.
+V1|22:50:34.464 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: [ipsos@teste.com.br]Invalid object name 'tblLog'.
+V1|22:51:36.288 == Class: UsuarioDataAccess             Method: CarregarPopUpMsn                        Routine: ERROR***       Message: [ipsos@teste.com.br]Could not find stored procedure 'pr_Lista_PopUp'.
+V1|22:51:37.647 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: [ipsos@teste.com.br]Invalid object name 'tblLog'.
+V1|22:53:05.410 == Class: UsuarioDataAccess             Method: CarregarPopUpMsn                        Routine: ERROR***       Message: [ipsos@teste.com.br]Could not find stored procedure 'pr_Lista_PopUp'.
+V1|22:53:08.550 == Class: UsuarioDataAccess             Method: CarregarPopUpMsn                        Routine: ERROR***       Message: [ipsos@teste.com.br]Could not find stored procedure 'pr_Lista_PopUp'.
+V1|22:53:08.877 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: [ipsos@teste.com.br]Invalid object name 'tblLog'.
+V1|22:53:43.259 == Class: UsuarioDataAccess             Method: CarregarPopUpMsn                        Routine: ERROR***       Message: [ipsos@teste.com.br]Could not find stored procedure 'pr_Lista_PopUp'.
+V1|22:53:44.666 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: [ipsos@teste.com.br]Invalid object name 'tblLog'.
+V1|22:56:26.910 == Class: UsuarioDataAccess             Method: CarregarPopUpMsn                        Routine: ERROR***       Message: [ipsos@teste.com.br]Could not find stored procedure 'pr_Lista_PopUp'.
+V1|22:56:27.690 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: [ipsos@teste.com.br]Invalid object name 'tblLog'.
+V1|22:57:47.264 == Class: UsuarioDataAccess             Method: CarregarPopUpMsn                        Routine: ERROR***       Message: [ipsos@teste.com.br]Could not find stored procedure 'pr_Lista_PopUp'.
+V1|22:57:48.140 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: [ipsos@teste.com.br]Invalid object name 'tblLog'.
+V1|22:58:07.822 == Class: UsuarioDataAccess             Method: CarregarPopUpMsn                        Routine: ERROR***       Message: [ipsos@teste.com.br]Could not find stored procedure 'pr_Lista_PopUp'.
+V1|22:58:08.073 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: [ipsos@teste.com.br]Invalid object name 'tblLog'.
+V1|22:59:15.864 == Class: UsuarioDataAccess             Method: CarregarPopUpMsn                        Routine: ERROR***       Message: [ipsos@teste.com.br]Could not find stored procedure 'pr_Lista_PopUp'.
+V1|22:59:26.272 == Class: UsuarioDataAccess             Method: CarregarPopUpMsn                        Routine: ERROR***       Message: [ipsos@teste.com.br]Could not find stored procedure 'pr_Lista_PopUp'.
+V1|22:59:26.438 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: [ipsos@teste.com.br]Invalid object name 'tblLog'.
+V1|23:03:18.586 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: [ipsos@teste.com.br]Invalid object name 'tblLog'.
+V1|23:03:41.350 == Class: UsuarioDataAccess             Method: CarregarPopUpMsn                        Routine: ERROR***       Message: [ipsos@teste.com.br]Could not find stored procedure 'pr_Lista_PopUp'.
+V1|23:03:42.490 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: [ipsos@teste.com.br]Invalid object name 'tblLog'.

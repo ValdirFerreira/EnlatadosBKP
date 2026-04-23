@@ -1,0 +1,49 @@
+V1|12:40:18.102 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: []Invalid object name 'tblLog'.
+V1|12:40:43.800 == Class: UsuarioDataAccess             Method: ListBancos                              Routine: ERROR***       Message: [ipsos@teste.com.br]Invalid object name 'tblBanco'.
+V1|12:40:43.887 == Class: UsuarioDataAccess             Method: ListlUsersBanco                         Routine: ERROR***       Message: [ipsos@teste.com.br]Invalid object name 'tblUserBanco'.
+V1|12:42:11.136 == Class: UsuarioDataAccess             Method: ListBancos                              Routine: ERROR***       Message: [ipsos@teste.com.br]Invalid object name 'tblBanco'.
+V1|12:43:44.524 == Class: UsuarioDataAccess             Method: CarregarPopUpMsn                        Routine: ERROR***       Message: []Could not find stored procedure 'pr_Lista_PopUp'.
+V1|12:43:48.827 == Class: FiltrosDataAccess             Method: FiltroRegiao                            Routine: ERROR***       Message: []Could not find stored procedure 'sp_FiltroRegiao'.
+V1|12:43:49.024 == Class: FiltrosDataAccess             Method: FiltroDemografico                       Routine: ERROR***       Message: []Could not find stored procedure 'sp_FiltroDemografico'.
+V1|12:43:49.211 == Class: FiltrosDataAccess             Method: FiltroOnda                              Routine: ERROR***       Message: []Could not find stored procedure 'sp_FiltroOnda'.
+V1|12:43:49.385 == Class: FiltrosDataAccess             Method: FiltroMarcas                            Routine: ERROR***       Message: []Could not find stored procedure 'sp_FiltroMarcas'.
+V1|12:45:23.706 == Class: TraducaoDataAccess            Method: ObterTraducao                           Routine: ERROR***       Message: []Could not find stored procedure 'pr_Lista_Traducao'.
+V1|12:45:24.970 == Class: TraducaoDataAccess            Method: ObterTraducao                           Routine: ERROR***       Message: []Could not find stored procedure 'pr_Lista_Traducao'.
+V1|12:45:25.029 == Class: FiltrosDataAccess             Method: FiltroTarget                            Routine: ERROR***       Message: []Could not find stored procedure 'sp_FiltroTarget'.
+V1|12:45:25.211 == Class: FiltrosDataAccess             Method: FiltroRegiao                            Routine: ERROR***       Message: []Could not find stored procedure 'sp_FiltroRegiao'.
+V1|12:45:25.427 == Class: FiltrosDataAccess             Method: FiltroDemografico                       Routine: ERROR***       Message: []Could not find stored procedure 'sp_FiltroDemografico'.
+V1|12:45:25.644 == Class: FiltrosDataAccess             Method: FiltroOnda                              Routine: ERROR***       Message: []Could not find stored procedure 'sp_FiltroOnda'.
+V1|12:45:25.856 == Class: FiltrosDataAccess             Method: FiltroMarcas                            Routine: ERROR***       Message: []Could not find stored procedure 'sp_FiltroMarcas'.
+V1|12:45:44.282 == Class: UsuarioDataAccess             Method: CarregarPopUpMsn                        Routine: ERROR***       Message: []Could not find stored procedure 'pr_Lista_PopUp'.
+V1|12:46:13.677 == Class: TraducaoDataAccess            Method: ObterTraducao                           Routine: ERROR***       Message: []Could not find stored procedure 'pr_Lista_Traducao'.
+V1|12:46:16.599 == Class: FiltrosDataAccess             Method: FiltroTarget                            Routine: ERROR***       Message: []Could not find stored procedure 'sp_FiltroTarget'.
+V1|12:46:16.872 == Class: FiltrosDataAccess             Method: FiltroRegiao                            Routine: ERROR***       Message: []Could not find stored procedure 'sp_FiltroRegiao'.
+V1|12:46:17.116 == Class: FiltrosDataAccess             Method: FiltroDemografico                       Routine: ERROR***       Message: []Could not find stored procedure 'sp_FiltroDemografico'.
+V1|12:46:17.322 == Class: FiltrosDataAccess             Method: FiltroOnda                              Routine: ERROR***       Message: []Could not find stored procedure 'sp_FiltroOnda'.
+V1|12:46:17.582 == Class: FiltrosDataAccess             Method: FiltroMarcas                            Routine: ERROR***       Message: []Could not find stored procedure 'sp_FiltroMarcas'.
+V1|12:46:21.397 == Class: UsuarioDataAccess             Method: CarregarPopUpMsn                        Routine: ERROR***       Message: []Could not find stored procedure 'pr_Lista_PopUp'.
+V1|12:47:36.761 == Class: TraducaoDataAccess            Method: ObterTraducao                           Routine: ERROR***       Message: []Could not find stored procedure 'pr_Lista_Traducao'.
+V1|12:47:38.144 == Class: FiltrosDataAccess             Method: FiltroTarget                            Routine: ERROR***       Message: []Could not find stored procedure 'sp_FiltroTarget'.
+V1|12:47:38.472 == Class: FiltrosDataAccess             Method: FiltroRegiao                            Routine: ERROR***       Message: []Could not find stored procedure 'sp_FiltroRegiao'.
+V1|12:47:38.714 == Class: FiltrosDataAccess             Method: FiltroDemografico                       Routine: ERROR***       Message: []Could not find stored procedure 'sp_FiltroDemografico'.
+V1|12:47:38.958 == Class: FiltrosDataAccess             Method: FiltroOnda                              Routine: ERROR***       Message: []Could not find stored procedure 'sp_FiltroOnda'.
+V1|12:47:39.176 == Class: FiltrosDataAccess             Method: FiltroMarcas                            Routine: ERROR***       Message: []Could not find stored procedure 'sp_FiltroMarcas'.
+V1|12:47:44.337 == Class: UsuarioDataAccess             Method: CarregarPopUpMsn                        Routine: ERROR***       Message: []Could not find stored procedure 'pr_Lista_PopUp'.
+V1|14:56:09.013 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: []Invalid object name 'tblLog'.
+V1|14:56:20.201 == Class: UsuarioDataAccess             Method: CarregarPopUpMsn                        Routine: ERROR***       Message: [ipsos@teste.com.br]Could not find stored procedure 'pr_Lista_PopUp'.
+V1|14:56:21.095 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: [ipsos@teste.com.br]Invalid object name 'tblLog'.
+V1|14:56:43.034 == Class: UsuarioDataAccess             Method: CarregarPopUpMsn                        Routine: ERROR***       Message: [ipsos@teste.com.br]Could not find stored procedure 'pr_Lista_PopUp'.
+V1|14:56:44.045 == Class: UsuarioDataAccess             Method: CarregarPopUpMsn                        Routine: ERROR***       Message: [ipsos@teste.com.br]Could not find stored procedure 'pr_Lista_PopUp'.
+V1|14:58:27.465 == Class: UsuarioDataAccess             Method: CarregarPopUpMsn                        Routine: ERROR***       Message: [ipsos@teste.com.br]Could not find stored procedure 'pr_Lista_PopUp'.
+V1|14:58:39.125 == Class: UsuarioDataAccess             Method: CarregarPopUpMsn                        Routine: ERROR***       Message: [ipsos@teste.com.br]Could not find stored procedure 'pr_Lista_PopUp'.
+V1|14:59:03.524 == Class: UsuarioDataAccess             Method: CarregarPopUpMsn                        Routine: ERROR***       Message: [ipsos@teste.com.br]Could not find stored procedure 'pr_Lista_PopUp'.
+V1|15:01:53.757 == Class: UsuarioDataAccess             Method: CarregarPopUpMsn                        Routine: ERROR***       Message: [ipsos@teste.com.br]Could not find stored procedure 'pr_Lista_PopUp'.
+V1|15:07:58.176 == Class: UsuarioDataAccess             Method: CarregarPopUpMsn                        Routine: ERROR***       Message: []Could not find stored procedure 'pr_Lista_PopUp'.
+V1|15:09:32.595 == Class: UsuarioDataAccess             Method: CarregarPopUpMsn                        Routine: ERROR***       Message: []Could not find stored procedure 'pr_Lista_PopUp'.
+V1|15:09:50.021 == Class: UsuarioDataAccess             Method: CarregarPopUpMsn                        Routine: ERROR***       Message: []Could not find stored procedure 'pr_Lista_PopUp'.
+V1|15:10:45.833 == Class: UsuarioDataAccess             Method: CarregarPopUpMsn                        Routine: ERROR***       Message: []Could not find stored procedure 'pr_Lista_PopUp'.
+V1|15:11:36.334 == Class: UsuarioDataAccess             Method: CarregarPopUpMsn                        Routine: ERROR***       Message: []Could not find stored procedure 'pr_Lista_PopUp'.
+V1|15:17:35.466 == Class: UsuarioDataAccess             Method: CarregarPopUpMsn                        Routine: ERROR***       Message: []Could not find stored procedure 'pr_Lista_PopUp'.
+V1|15:18:06.583 == Class: UsuarioDataAccess             Method: CarregarPopUpMsn                        Routine: ERROR***       Message: []Could not find stored procedure 'pr_Lista_PopUp'.
+V1|15:19:06.236 == Class: UsuarioDataAccess             Method: CarregarPopUpMsn                        Routine: ERROR***       Message: []Could not find stored procedure 'pr_Lista_PopUp'.
+V1|15:31:02.670 == Class: UsuarioDataAccess             Method: CarregarPopUpMsn                        Routine: ERROR***       Message: []Could not find stored procedure 'pr_Lista_PopUp'.

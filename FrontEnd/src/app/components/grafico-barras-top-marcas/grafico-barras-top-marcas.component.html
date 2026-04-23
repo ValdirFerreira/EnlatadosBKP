@@ -1,0 +1,354 @@
+<div class="container-barras-top-marcas">
+    <div class="coluna-descricao">
+        <div class="separacao-filtro">
+
+        </div>
+
+
+        <div *ngFor="let item of graficoBVCTop10;let i = index">
+            <div [ngStyle]="{ color: item.CorSiteMarca}" class="titulo-coluna"
+                [ngClass]="{'cor-conteudo-barra': i%2 !== 0 ,'' : i%2 === 0}">
+                {{item.DescMarca}}
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <div class="coluna-barra">
+        <div class="separacao-filtro">
+            <div class="container-titulo-barra">
+                <div class="grupo-icones">
+                    <div class="icone-descricao">
+                        <div class="icone-coracao">
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="titulo-barra">
+                    {{'grafico-barras-top-marcas.titulo1' | translate}}
+                </div>
+            </div>
+        </div>
+        <div *ngFor="let item of graficoBVCTop10;let i = index">
+            <div class="conteudo-barra-total" *ngIf="item.ShareDesejo >= 0"
+                [ngClass]="{'cor-conteudo-barra': i%2 !== 0 ,'' : i%2 === 0}">
+
+                <div class="conteudo-linha-negativa">
+
+                    <div class="sem-valor-barra">
+                        <div class="valor-info"></div>
+                    </div>
+                    <div class="porc-barra-negativo"
+                        [ngStyle]="{ width: porcBarraNegativa(0),border:  0 <= 0 ? '0 solid ': '0 solid '}">
+                    </div>
+
+                </div>
+
+                <div *ngIf="qtdLinhas== i" class="linha-divisao-branca"></div>
+                <div *ngIf="qtdLinhas!= i" class="linha-divisao"></div>
+
+                <div class="conteudo-linha-positiva">
+
+                    <div class="porc-barra-positivo" [ngStyle]="{ width: porcBarraPositiva(item.ShareDesejo)}"> </div>
+
+
+                    <!-- <div class="valor-barra" 
+                        [ngClass]="{'valor-barra-sig' : item.ShareDesejo> 20 , '':item.ShareDesejo< 20  }">
+                        <div class="valor-info">{{item.ShareDesejo}}</div>
+                    </div> -->
+
+
+                    <div class="valor-barra">
+                        <!-- <div class="valor-info">{{item.ShareDesejo}}</div> -->
+                        <div class="valor-info">{{item.ShareDesejo | number:'1.2-2'}}</div>                     
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="conteudo-barra-total" *ngIf="item.ShareDesejo < 0"
+                [ngClass]="{'cor-conteudo-barra': i%2 !== 0 ,'' : i%2 === 0}">
+
+                <div class="conteudo-linha-negativa">
+
+                    <!-- <div class="valor-barra"
+                        [ngClass]="{'valor-barra-sig' : item.ShareDesejo < -20 , '' :item.ShareDesejo>-20 }">
+                        <div class="valor-info">{{item.ShareDesejo}}</div>
+                    </div> -->
+
+                    <div class="valor-barra">
+                        <!-- <div class="valor-info">{{item.ShareDesejo}}</div> -->
+                        <div class="valor-info">{{item.ShareDesejo | number:'1.2-2'}}</div>   
+                    </div>
+
+                    <div class="porc-barra-negativo" [ngStyle]="{ width: porcBarraNegativa(item.ShareDesejo)}">
+                    </div>
+
+                </div>
+
+
+                <div *ngIf="qtdLinhas== i" class="linha-divisao-branca"></div>
+                <div *ngIf="qtdLinhas!= i" class="linha-divisao"></div>
+
+                <div class="conteudo-linha-positiva">
+
+                    <div class="porc-barra-positivo"
+                        [ngStyle]="{ width: porcBarraPositiva(item.ShareDesejo) , background: item.CorSiteMarca}">
+                    </div>
+
+                    <div class="sem-valor-barra">
+                        <div class="valor-info"></div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="total-coluna">
+            <div class="texto-total"
+                [ngClass]="{'base-vermelha' : graficoBVCTop10[0]?.BaseMinimaShareDesejo != '' , '':graficoBVCTop10[0]?.BaseMinimaShareDesejo==''}">
+                {{graficoBVCTop10[0]?.BaseShareDesejo}}
+            </div>
+        </div>
+    </div>
+
+    <div style="display: none;" class="icone-separacao">
+        +/-
+    </div>
+
+
+    <div   class="coluna-barra">
+        <div class="separacao-filtro">
+            <div class="container-titulo-barra">
+                <div class="grupo-icones">
+                    <div style="display: none;" class="icone-descricao">
+                        <div class="icone-efeito">
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="titulo-barra">
+                    <!-- {{'grafico-barras-top-marcas.titulo2' | translate}} -->
+                </div>
+            </div>
+        </div>
+
+        <div *ngFor="let item of graficoBVCTop10;let i = index">
+            <div class="conteudo-barra-total" *ngIf="item.Efeitos >= 0"
+                [ngClass]="{'cor-conteudo-barra': i%2 !== 0 ,'' : i%2 === 0}">
+
+                <div class="conteudo-linha-negativa">
+
+                    <div class="sem-valor-barra">
+                        <div class="valor-info"></div>
+                    </div>
+                    <!-- <div class="porc-barra-negativo" [style]="montaCorBarraEfeitos(item)"
+                        [ngStyle]="{ width: porcBarraNegativa(0),border:  0 <= 0 ? '0 solid ': '0 solid '}">
+                    </div> -->
+
+                </div>
+
+                <div style="display: none;" *ngIf="qtdLinhas== i" class="linha-divisao-branca"></div>
+                <div style="display: none;" *ngIf="qtdLinhas!= i" class="linha-divisao"></div>
+
+                <div class="conteudo-linha-positiva">
+
+                    <div style="display: none;" class="porc-barra-positivo"
+                        [ngStyle]="{ width: porcBarraPositiva(item.Efeitos) , background: '#27AE60'}"> </div>
+
+                    <div style="display: none;" class="valor-barra" [style]="montaCorBarraShareEfeitos(item)">
+                        <!-- <div class="valor-info">{{item.Efeitos}}</div> -->
+                        <div class="valor-info">{{item.Efeitos | number:'1.2-2'}}</div>   
+                    </div>
+
+                    <!-- <div class="valor-barra" [style]="montaCorBarraShareEfeitos(item)"
+                        [ngClass]="{'valor-barra-sig' : item.Efeitos> 20 , '':item.Efeitos< 20  }">
+                        <div class="valor-info">{{item.Efeitos}}</div>
+                    </div> -->
+
+                </div>
+
+            </div>
+
+
+            <div class="conteudo-barra-total" *ngIf="item.Efeitos < 0"
+                [ngClass]="{'cor-conteudo-barra': i%2 !== 0 ,'' : i%2 === 0}">
+
+                <div class="conteudo-linha-negativa">
+
+                    <!-- <div class="valor-barra" [style]="montaCorBarraShareEfeitos(item)"
+                        [ngClass]="{'valor-barra-sig' : item.Efeitos < -20 , '' :item.Efeitos>-20 }">
+                        <div class="valor-info">{{item.Efeitos}}</div>
+                    </div> -->
+
+                    <div class="valor-barra" [style]="montaCorBarraShareEfeitos(item)">
+                        <!-- <div class="valor-info">{{item.Efeitos}}</div> -->
+                        <div class="valor-info">{{item.Efeitos | number:'1.2-2'}}</div>   
+                    </div>
+
+                    <div class="porc-barra-negativo" [style]="montaCorBarraEfeitos(item)"
+                        [ngStyle]="{ width: porcBarraNegativa(item.Efeitos)}">
+                    </div>
+
+                </div>
+
+
+                <div *ngIf="qtdLinhas== i" class="linha-divisao-branca"></div>
+                <div *ngIf="qtdLinhas!= i" class="linha-divisao"></div>
+
+                <div class="conteudo-linha-positiva">
+
+                    <div class="porc-barra-positivo"
+                        [ngStyle]="{ width: porcBarraPositiva(item.Efeitos) , background: '#27AE60'}"> </div>
+
+                    <div class="sem-valor-barra">
+                        <div class="valor-info"></div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <div style="display: none;" class="total-coluna">
+            <div class="texto-total"
+                [ngClass]="{'base-vermelha' : graficoBVCTop10[0]?.BaseMinimaEfeitos != '' , '':graficoBVCTop10[0]?.BaseMinimaEfeitos==''}">
+                {{graficoBVCTop10[0]?.BaseEfeitos}}
+            </div>
+        </div>
+
+    </div>
+
+    <div style="display: none;"  class="icone-separacao">
+        =
+    </div>
+
+    <div   class="coluna-barra">
+        <div class="separacao-filtro">
+            <div class="container-titulo-barra">
+                <div style="display: none;" class="grupo-icones">
+                    <div class="icone-descricao">
+                        <div class="icone-equity">
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div style="display: none;" class="titulo-barra">
+                    {{'grafico-barras-top-marcas.titulo3' | translate}}
+                </div>
+            </div>
+        </div>
+
+        <div *ngFor="let item of graficoBVCTop10;let i = index">
+            <div class="conteudo-barra-total" *ngIf="item.Equity >= 0"
+                [ngClass]="{'cor-conteudo-barra': i%2 !== 0 ,'' : i%2 === 0}">
+
+                <div style="display: none;" class="conteudo-linha-negativa">
+
+                    <div class="sem-valor-barra">
+                        <div class="valor-info"></div>
+                    </div>
+                    <div class="porc-barra-negativo" [style]="montaCorBarraEquity(item)"
+                        [ngStyle]="{ width: porcBarraNegativa(0),border:  0 <= 0 ? '0 solid ': '0 solid '}">
+                    </div>
+
+                </div>
+
+                <div style="display: none;" *ngIf="qtdLinhas== i" class="linha-divisao-branca"></div>
+                <div style="display: none;" *ngIf="qtdLinhas!= i" class="linha-divisao"></div>
+
+                <div style="display: none;" class="conteudo-linha-positiva">
+
+                    <div class="porc-barra-positivo"
+                        [ngStyle]="{ width: porcBarraPositiva(item.Equity) , background: '#4056B7'}"> </div>
+
+
+                    <!-- <div class="valor-barra" [style]="montaCorBarraShareEquity(item)"
+                        [ngClass]="{'valor-barra-sig' : item.Equity> 20 , '':item.Equity< 20  }">
+                        <div class="valor-info">{{item.Equity}}</div>
+                    </div> -->
+                    <div class="valor-barra" [style]="montaCorBarraShareEquity(item)">
+                        <!-- <div class="valor-info">{{item.Equity}}</div> -->
+                        <div class="valor-info">{{item.Equity | number:'1.2-2'}}</div>   
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="conteudo-barra-total" *ngIf="item.Equity < 0"
+                [ngClass]="{'cor-conteudo-barra': i%2 !== 0 ,'' : i%2 === 0}">
+
+                <div class="conteudo-linha-negativa">
+
+                    <!-- <div class="valor-barra" [style]="montaCorBarraShareEquity(item)"
+                        [ngClass]="{'valor-barra-sig' : item.Equity < -20 , '' :item.Equity>-20 }">
+                        <div class="valor-info">{{item.Equity}}</div>
+                    </div> -->
+
+                    <div class="valor-barra" [style]="montaCorBarraShareEquity(item)">
+                        <!-- <div class="valor-info">{{item.Equity}}</div> -->
+                        <div class="valor-info">{{item.Equity | number:'1.2-2'}}</div>
+                    </div>
+
+                    <div class="porc-barra-negativo" [style]="montaCorBarraEquity(item)"
+                        [ngStyle]="{ width: porcBarraNegativa(item.Equity)}">
+                    </div>
+
+                </div>
+
+
+                <div *ngIf="qtdLinhas== i" class="linha-divisao-branca"></div>
+                <div *ngIf="qtdLinhas!= i" class="linha-divisao"></div>
+
+                <div class="conteudo-linha-positiva">
+
+                    <div class="porc-barra-positivo"
+                        [ngStyle]="{ width: porcBarraPositiva(item.Equity) , background: '#4056B7'}"> </div>
+
+                    <div class="sem-valor-barra">
+                        <div class="valor-info"></div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <div style="display: none;" class="total-coluna">
+            <div class="texto-total"
+                [ngClass]="{'base-vermelha' : graficoBVCTop10[0]?.BaseMinimaEquity != '' , '':graficoBVCTop10[0]?.BaseMinimaEquity==''}">
+                {{graficoBVCTop10[0]?.BaseEquity}}
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+</div>
+<div class="descricao-base">
+    {{verificaMsgBase()}}
+</div>

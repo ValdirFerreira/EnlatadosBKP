@@ -1,0 +1,28 @@
+::ng-deep .ng-select.ng-select-single .ng-select-container .ng-value-container,
+::ng-deep .ng-select.ng-select-single .ng-select-container .ng-value-container .ng-value {
+    white-space: normal !important;
+    text-align: center;
+}
+.card-info-for-text {
+  background: linear-gradient(135deg, #e8f3ff, #f2f8ff); /* azul suave */
+  border-left: 4px solid #4a90e2; /* azul de destaque */
+  border-radius: 10px;
+  padding: 18px 22px;
+  font-family: "Inter", "Segoe UI", sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #1e3a5f;
+  box-shadow: 0 2px 8px rgba(0, 90, 180, 0.1);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-info-for-text strong {
+  color: #2a6edb;
+  font-weight: 600;
+  font-size: 15.5px;
+}
+
+.card-info-for-text:hover {
+  background: linear-gradient(135deg, #dcefff, #edf6ff);
+  box-shadow: 0 4px 12px rgba(0, 90, 180, 0.15);
+}

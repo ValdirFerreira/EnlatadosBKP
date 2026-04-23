@@ -1,0 +1,2 @@
+V1|15:58:59.282 == Class: UsuarioDataAccess             Method: CarregarPopUpMsn                        Routine: ERROR***       Message: [ipsos@teste.com.br]Procedure or function 'pr_Lista_PopUp' expects parameter '@CodUserParam', which was not supplied.
+V1|16:00:20.579 == Class: UsuarioDataAccess             Method: CarregarPopUpMsn                        Routine: ERROR***       Message: [ipsos@teste.com.br]Procedure or function 'pr_Lista_PopUp' expects parameter '@CodUserParam', which was not supplied.

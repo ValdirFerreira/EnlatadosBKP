@@ -1,0 +1,261 @@
+<div class="container-tabela-coluna" id="container-tabela-amarela">
+
+
+  <div class="container-grafico">
+    <table border="0" cellpadding="0" cellspacing="0" class="tabelagrafico">
+      <tr>
+        <td *ngFor="let item of graficoComunicacaoRecall">
+          <div class="div-principal-grafico">
+
+
+            <div class="div-colunas-dupla">
+
+              <div class="seta-resultado-coluna">
+                <div class={{validaSig(item.VisibilidadeTesteSIGMarca)}}></div>
+              </div>
+
+              <div class="div-colunas">
+
+                <div class="bolha-topo-grafico">
+                  <div *ngIf="!graficoHoras" class="bolha-resultado-topo" bolha-cor-cinza>
+                    {{ converterFloatUmaCasaDecimal(item.VisibilidadeMarca) }}
+                  </div>
+
+                  <div *ngIf="graficoHoras" class="bolha-resultado-topo-horas" bolha-cor-cinza>
+                    {{ converterFloatUmaCasaDecimal(item.VisibilidadeMarca) }}
+                  </div>
+
+                </div>
+                <div class="container-coluna">
+                  <!-- <div class="coluna-pontilhada"
+                [ngStyle]="{ height: calcularPorcentagemPontilhado(item.Qtd) + '%', bottom: calcularPorcentagem(item.Qtd) + '%'}">
+              </div> -->
+                  <div class="coluna-pontilhada" style="height: 100%;">
+                  </div>
+                  <div class="coluna-azul"
+                    [ngStyle]="{ height: calcularPorcentagemColuna(item.VisibilidadeMarca) + '%'}">
+                    <div class="div-bolha">
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="div-colunas">
+
+                <div class="bolha-topo-grafico">
+                  <div *ngIf="!graficoHoras" class="bolha-resultado-topo" bolha-cor-cinza>
+                    {{ converterFloatUmaCasaDecimal(item.VisibilidadeNorma) }}
+                  </div>
+
+
+
+                  <div *ngIf="graficoHoras" class="bolha-resultado-topo-horas" bolha-cor-cinza>
+                    {{ converterFloatUmaCasaDecimal(item.VisibilidadeNorma) }}
+                  </div>
+
+                </div>
+                <div class="container-coluna">
+                  <!-- <div class="coluna-pontilhada"
+                [ngStyle]="{ height: calcularPorcentagemPontilhado(item.Qtd) + '%', bottom: calcularPorcentagem(item.Qtd) + '%'}">
+              </div> -->
+                  <div class="coluna-pontilhada" style="height: 100%;">
+                  </div>
+                  <div class="coluna-cinza"
+                    [ngStyle]="{ height: calcularPorcentagemColuna(item.VisibilidadeNorma) + '%'}">
+                    <div class="div-bolha">
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="div-texto-geral">
+              <div class="div-resultado-geral">
+                {{'recall-coluna1.titulo' | translate}}
+              </div>
+
+              <div class="div-sub-resultado">
+                {{'recall-coluna1.SubTitulo' | translate}}
+                <p [ngClass]="{'base-vermelha' : item.VisibilidadeBaseMinima != '' , '':item.VisibilidadeBaseMinima==''  }"
+                  class="paragrafo-valor-base">{{item.VisibilidadeBase}}</p>
+              </div>
+            </div>
+          </div>
+
+
+        </td>
+
+        <td *ngFor="let item of graficoComunicacaoRecall">
+          <div class="div-principal-grafico">
+
+
+            <div class="div-colunas-dupla">
+
+              <div class="seta-resultado-coluna">
+                <div class={{validaSig(item.LinkageTesteSIGMarca)}}></div>
+              </div>
+
+              <div class="div-colunas">
+
+                <div class="bolha-topo-grafico">
+                  <div *ngIf="!graficoHoras" class="bolha-resultado-topo" bolha-cor-cinza>
+                    {{ converterFloatUmaCasaDecimal(item.LinkageMarca) }}
+                  </div>
+
+                  <div *ngIf="graficoHoras" class="bolha-resultado-topo-horas" bolha-cor-cinza>
+                    {{ converterFloatUmaCasaDecimal(item.LinkageMarca) }}
+                  </div>
+
+                </div>
+                <div class="container-coluna">
+                  <!-- <div class="coluna-pontilhada"
+                [ngStyle]="{ height: calcularPorcentagemPontilhado(item.Qtd) + '%', bottom: calcularPorcentagem(item.Qtd) + '%'}">
+              </div> -->
+                  <div class="coluna-pontilhada" style="height: 100%;">
+                  </div>
+                  <div class="coluna-azul" [ngStyle]="{ height: calcularPorcentagemColuna(item.LinkageMarca) + '%'}">
+                    <div class="div-bolha">
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="div-colunas">
+
+                <div class="bolha-topo-grafico">
+                  <div *ngIf="!graficoHoras" class="bolha-resultado-topo" bolha-cor-cinza>
+                    {{ converterFloatUmaCasaDecimal(item.LinkageNorma) }}
+                  </div>
+
+
+
+                  <div *ngIf="graficoHoras" class="bolha-resultado-topo-horas" bolha-cor-cinza>
+                    {{ converterFloatUmaCasaDecimal(item.LinkageNorma) }}
+                  </div>
+
+                </div>
+                <div class="container-coluna">
+                  <!-- <div class="coluna-pontilhada"
+                [ngStyle]="{ height: calcularPorcentagemPontilhado(item.Qtd) + '%', bottom: calcularPorcentagem(item.Qtd) + '%'}">
+              </div> -->
+                  <div class="coluna-pontilhada" style="height: 100%;">
+                  </div>
+                  <div class="coluna-cinza" [ngStyle]="{ height: calcularPorcentagemColuna(item.LinkageNorma) + '%'}">
+                    <div class="div-bolha">
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="div-texto-geral">
+              <div class="div-resultado-geral">
+                {{'recall-coluna2.titulo' | translate}}
+              </div>
+
+              <div class="div-sub-resultado">
+                {{'recall-coluna2.SubTitulo' | translate}}
+                <p [ngClass]="{'base-vermelha' : item.LinkageBaseMinima != '' , '':item.LinkageBaseMinima==''  }"
+                  class="paragrafo-valor-base">{{item.LinkageBase}}</p>
+              </div>
+            </div>
+          </div>
+
+
+        </td>
+
+        <td *ngFor="let item of graficoComunicacaoRecall">
+          <div class="div-principal-grafico">
+
+
+            <div class="div-colunas-dupla">
+
+              <div class="seta-resultado-coluna">
+                <div class={{validaSig(item.RecalTesteSIGMarca)}}></div>
+              </div>
+
+              <div class="div-colunas">
+
+                <div class="bolha-topo-grafico">
+                  <div *ngIf="!graficoHoras" class="bolha-resultado-topo" bolha-cor-cinza>
+                    {{ converterFloatUmaCasaDecimal(item.RecalMarca) }}
+                  </div>
+
+                  <div *ngIf="graficoHoras" class="bolha-resultado-topo-horas" bolha-cor-cinza>
+                    {{ converterFloatUmaCasaDecimal(item.RecalMarca) }}
+                  </div>
+
+                </div>
+                <div class="container-coluna">
+                  <!-- <div class="coluna-pontilhada"
+                [ngStyle]="{ height: calcularPorcentagemPontilhado(item.Qtd) + '%', bottom: calcularPorcentagem(item.Qtd) + '%'}">
+              </div> -->
+                  <div class="coluna-pontilhada" style="height: 100%;">
+                  </div>
+                  <div class="coluna-azul" [ngStyle]="{ height: calcularPorcentagemColuna(item.RecalMarca) + '%'}">
+                    <div class="div-bolha">
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="div-colunas">
+
+                <div class="bolha-topo-grafico">
+                  <div *ngIf="!graficoHoras" class="bolha-resultado-topo" bolha-cor-cinza>
+                    {{ converterFloatUmaCasaDecimal(item.RecalNorma) }}
+                  </div>
+
+
+
+                  <div *ngIf="graficoHoras" class="bolha-resultado-topo-horas" bolha-cor-cinza>
+                    {{ converterFloatUmaCasaDecimal(item.RecalNorma) }}
+                  </div>
+
+                </div>
+                <div class="container-coluna">
+                  <!-- <div class="coluna-pontilhada"
+                [ngStyle]="{ height: calcularPorcentagemPontilhado(item.Qtd) + '%', bottom: calcularPorcentagem(item.Qtd) + '%'}">
+              </div> -->
+                  <div class="coluna-pontilhada" style="height: 100%;">
+                  </div>
+                  <div class="coluna-cinza" [ngStyle]="{ height: calcularPorcentagemColuna(item.RecalNorma) + '%'}">
+                    <div class="div-bolha">
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="div-texto-geral">
+              <div class="div-resultado-geral">
+                {{'recall-coluna3.titulo' | translate}}
+              </div>
+
+              <div class="div-sub-resultado">
+                {{'recall-coluna3.SubTitulo' | translate}}
+                <p [ngClass]="{'base-vermelha' : item.RecalBaseMinima != '' , '':item.RecalBaseMinima==''  }"
+                  class="paragrafo-valor-base">{{item.RecalBase}}</p>
+              </div>
+            </div>
+          </div>
+
+
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<div class="descricao-base">
+  {{verificaMsgBase()}}
+</div>

@@ -1,0 +1,12 @@
+V1|02:58:06.463 == Class: TraducaoDataAccess            Method: ObterTraducao                           Routine: ERROR***       Message: []Could not find stored procedure 'pr_Lista_Traducao'.
+V1|02:59:13.874 == Class: TraducaoDataAccess            Method: ObterTraducao                           Routine: ERROR***       Message: []Could not find stored procedure 'pr_Lista_Traducao'.
+V1|03:08:40.645 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: []Invalid object name 'tblLog'.
+V1|03:08:44.388 == Class: UsuarioDataAccess             Method: CarregarPopUpMsn                        Routine: ERROR***       Message: [ipsos@teste.com.br]Invalid object name 'tblMensagemPopUp'.
+V1|03:08:44.660 == Class: FiltrosDataAccess             Method: FiltroTarget                            Routine: ERROR***       Message: []Could not find stored procedure 'sp_FiltroTarget'.
+V1|03:08:45.079 == Class: FiltrosDataAccess             Method: FiltroRegiao                            Routine: ERROR***       Message: []Could not find stored procedure 'sp_FiltroRegiao'.
+V1|03:08:45.394 == Class: FiltrosDataAccess             Method: FiltroDemografico                       Routine: ERROR***       Message: []Could not find stored procedure 'sp_FiltroDemografico'.
+V1|03:08:45.738 == Class: FiltrosDataAccess             Method: FiltroOnda                              Routine: ERROR***       Message: []Could not find stored procedure 'sp_FiltroOnda'.
+V1|03:08:46.178 == Class: FiltrosDataAccess             Method: FiltroMarcas                            Routine: ERROR***       Message: []Could not find stored procedure 'sp_FiltroMarcas'.
+V1|21:17:02.884 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: []Invalid object name 'tblLog'.
+V1|21:17:05.923 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: [ipsos@teste.com.br]Invalid object name 'tblLog'.
+V1|21:22:18.873 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: [ipsos@teste.com.br]Invalid object name 'tblLog'.

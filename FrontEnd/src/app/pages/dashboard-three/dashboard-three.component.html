@@ -1,0 +1,136 @@
+<app-sidebar></app-sidebar>
+<app-navbar></app-navbar>
+<div class="container-dashboard">
+
+    <div class="card" id="comparativo-experiencia" *ngIf="ativaGraficoComparativoMarcas">
+        <div class="container-card">
+            <div class="header-card">
+                <div class="container-title">
+                    <div class="title">
+                        {{'dashboard-three-grafico1-titulo' | translate}}
+                    </div>
+                    <div class="legend">
+                        {{'dashboard-three-grafico1-subtitulo' | translate}}
+                    </div>
+                    <div class="legend-sub">
+                        <div class="container-sig">
+                            <div class="sig-positive"> </div>
+                            <div class="sig-negative"> </div> {{'dashboard-sig' | translate}}
+                        </div>
+                    </div>
+                </div>
+                <div class="container-export">
+                    <div class="icon-export" (click)="exportToExcelGrafico1()">
+                        <div class="icon-excel">
+                        </div>
+                        <div class="titulo-exportar">{{'dashboard-exporta' | translate}}</div>
+                    </div>
+                    <div class="icon-export" (click)="exportToPptComparativoExperiencia()">
+                        <div class="icon-powerpoint">
+                        </div>
+                        <div class="titulo-exportar">{{'dashboard-exporta' | translate}}</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-card p-relative">
+                <div class="container-legenda">
+                    <div class="container-texto">
+                        <div class="sinal-cinza-claro"></div>
+                        <div class="texto-legenda">{{'dashboard-three-leg-wave-anterior' | translate}}</div>
+                    </div>
+                </div>
+
+                <grafico-funil  
+                [graficoFunil1]="graficoFunil1"
+                [graficoFunil2]="graficoFunil2"
+                [graficoFunil3]="graficoFunil3"
+                [graficoFunil4]="graficoFunil4"
+                [graficoFunil5]="graficoFunil5"
+                [graficoFunil6]="graficoFunil6"
+                [graficoFunil7]="graficoFunil7"
+                [graficoFunil8]="graficoFunil8"
+
+                (marcaColuna1) ="onchangeMarca($event,1)" 
+                (marcaColuna2) ="onchangeMarca($event,2)" 
+                (marcaColuna3) ="onchangeMarca($event,3)" 
+                (marcaColuna4) ="onchangeMarca($event,4)" 
+                (marcaColuna5) ="onchangeMarca($event,5)" 
+                (marcaColuna6) ="onchangeMarca($event,6)" 
+                (marcaColuna7) ="onchangeMarca($event,7)" 
+                (marcaColuna8) ="onchangeMarca($event,8)" >
+            </grafico-funil>
+
+            </div>
+
+            <!-- <div class="content-card">
+                <app-aviso-sem-dados></app-aviso-sem-dados>
+            </div> -->
+        </div>
+    </div>
+
+
+    <div class="card" id="evolutivo-marcas" *ngIf="ativaGraficoEvolutivoMarcas">
+        <div class="container-card">
+            <div class="header-card">
+                <div class="container-title">
+                    <div class="title">
+
+                        {{'dashboard-three-grafico2-titulo' | translate}}
+                    </div>
+                    <div class="legend">
+                        {{'dashboard-three-grafico2-subtitulo' | translate}}
+                    </div>
+                    <div class="legend-sub">
+                        <div class="container-sig">
+                            <div class="sig-positive"> </div>
+                            <div class="sig-negative"> </div> {{'dashboard-sig' | translate}}
+                        </div>
+                    </div>
+                </div>
+                <div class="container-export">
+                    <div class="icon-export" (click)="exportToExcelGrafico2()">
+                        <div class="icon-excel">
+                        </div>
+                        <div class="titulo-exportar">{{'dashboard-exporta' | translate}}</div>
+                    </div>
+                    <div class="icon-export" (click)="exportToPptEvolutivoMarcas()">
+                        <div class="icon-powerpoint">
+                        </div>
+                        <div class="titulo-exportar">{{'dashboard-exporta' | translate}}</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-card p-relative">
+                <!-- <div class="container-legenda">                  
+                    <div class="container-texto">
+                        <div class="sinal-cinza-claro"></div>
+                        <div class="texto-legenda">Wave Anterior</div>
+                    </div>                   
+                </div> -->
+                <grafico-funil-evolutivo  
+                (ondaColuna1) ="onchangeOnda($event,1)" 
+                (ondaColuna2) ="onchangeOnda($event,2)"
+                (ondaColuna3) ="onchangeOnda($event,3)"
+                (ondaColuna4) ="onchangeOnda($event,4)"
+               (marcaGrafico) ="onchangeMarcaEvolutivo($event)"
+
+                [graficoFunil1]="grafico2Funil1"
+                [graficoFunil2]="grafico2Funil2"
+                [graficoFunil3]="grafico2Funil3"
+                [graficoFunil4]="grafico2Funil4">
+              </grafico-funil-evolutivo> 
+
+            </div>
+
+            <!-- <div class="content-card">
+                <app-aviso-sem-dados></app-aviso-sem-dados>
+            </div> -->
+        </div>
+    </div>
+
+
+</div>
+
+<footer-bottom></footer-bottom>

@@ -1,0 +1,59 @@
+<div class="container-diagnostico-propaganda">
+
+    <div class="conteudo-linha">
+
+        <div class="descricao-linha"></div>
+
+        <div class="grupo-colunas">
+
+        </div>
+
+        <div class="coluna-titulo">
+            {{'dashboard-diagnostico-propaganda.GAP' | translate}}
+        </div>
+
+    </div>
+
+
+    <div class="container-dados">
+
+
+        <ng-container *ngFor="let item of graficoComunicacaoDiagnostico;let i = index">
+
+            <div class="conteudo-linha">
+
+                <div class="descricao-linha">{{item.Descricao}}</div>
+
+                <div class="grupo-colunas">
+                    <div class="card-coluna">
+                        <div [ngStyle]="{ color: item.BaseMinima ? 'red' : '#6e778b'}" class="porc-coluna valor-base ">
+                            {{item.Base}}
+                        </div>
+                        <div class="coluna-marca" [ngStyle]="{ width: calcularPorcentagemColuna(item.Perc) + '%'}">
+                        </div>
+                        <div class="porc-coluna">{{item.Perc}}</div>
+                        <div style="width: 25px !important;" class={{validaSig(item.TesteSig)}}></div>
+                    </div>
+                    <div class="card-coluna">
+                        <div class="porc-coluna valor-sem-base"></div>
+                        <div class="coluna-cinza" [ngStyle]="{ width: calcularPorcentagemColuna(item.PercNorma) + '%'}">
+                        </div>
+                        <div class="porc-coluna">{{item.PercNorma}}</div>
+                    </div>
+                </div>
+
+                <div class="coluna-valor">
+                    {{item.GAP}}
+                </div>
+
+            </div>
+        </ng-container>
+
+    </div>
+
+</div>
+
+
+<div class="descricao-base">
+    {{verificaMsgBase()}}
+</div>

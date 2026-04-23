@@ -1,0 +1,829 @@
+V1|09:48:20.600 == Class: LogDataAccess                 Method: InsertLog                               Routine: ERROR***       Message: []Referência de objeto não definida para uma instância de um objeto.
+V1|09:56:38.048 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|09:56:38.516 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|09:56:41.728 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|09:56:41.973 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|09:56:44.811 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|09:56:45.051 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|09:56:47.032 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|09:56:48.701 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|09:56:48.758 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|09:56:50.225 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|09:56:50.331 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|09:56:50.836 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|09:58:07.724 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|09:58:07.777 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|09:58:10.414 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|09:58:11.326 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|09:58:13.595 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|09:58:14.727 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|09:58:15.989 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|09:58:16.035 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|09:58:16.089 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|09:58:16.684 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|09:58:17.569 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|09:58:18.320 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|09:58:40.718 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|10:02:50.025 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|10:02:51.411 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|10:11:42.226 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|10:11:44.012 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|10:11:45.313 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|10:11:46.115 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|10:11:50.479 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|10:11:51.700 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|10:11:53.586 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|10:11:56.652 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|10:11:59.706 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|10:12:01.961 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|10:12:03.236 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|10:12:03.619 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|10:44:41.382 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|10:44:43.568 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|10:44:46.620 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|10:44:49.762 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|10:44:51.661 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|10:44:53.501 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|10:44:53.573 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|10:44:56.868 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|10:44:56.993 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|10:44:57.484 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|10:44:59.407 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|10:45:01.613 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:09:42.376 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:09:42.417 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:09:47.522 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:09:52.382 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:09:52.956 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:09:54.272 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:09:54.491 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:09:58.286 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:10:01.714 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:10:02.256 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:10:04.799 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:10:07.374 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:13:06.021 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:13:06.391 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:13:09.015 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:13:09.835 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:13:11.607 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:13:16.505 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:13:20.051 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:13:24.490 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:13:28.150 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:13:30.503 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:13:31.383 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:13:32.117 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:13:32.714 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:13:35.162 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:13:35.244 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:13:38.673 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:13:41.586 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:14:27.820 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:14:28.386 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:14:32.016 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:14:32.692 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:14:37.736 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:14:37.951 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:14:40.573 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:14:41.678 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:14:42.111 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:14:42.504 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:14:44.559 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:14:44.586 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:16:16.490 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:16:16.930 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:16:20.985 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:16:23.096 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:16:25.419 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:16:25.571 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:16:29.856 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:16:33.597 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:16:34.811 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:16:35.201 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:16:35.777 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:16:35.827 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:16:37.944 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:16:38.261 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:16:38.736 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:16:42.209 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:16:44.869 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:16:47.630 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:20:48.564 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:20:48.630 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:20:50.842 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:20:51.286 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:20:54.082 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:20:55.537 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:20:56.043 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:21:00.965 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:21:03.123 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:21:05.499 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:21:07.910 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:21:08.305 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:21:08.360 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:21:08.460 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:21:09.519 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:21:11.071 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:21:11.092 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:21:14.520 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:21:52.066 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:21:53.811 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:21:56.462 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:22:07.497 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:22:09.245 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:22:13.156 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:22:13.667 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:22:15.044 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:22:19.842 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:22:20.338 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:22:23.404 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:22:24.724 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:22:24.843 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:22:27.050 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:22:27.130 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:22:29.049 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:22:32.230 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:22:35.153 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:23:53.369 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:23:53.527 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:23:57.574 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:23:59.662 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:24:02.924 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:24:07.689 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:24:09.892 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:24:11.056 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:24:13.232 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:24:14.419 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:24:15.751 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:24:16.295 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:25:11.578 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:25:15.572 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:25:23.442 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:25:23.960 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:25:24.493 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:25:28.918 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:25:28.979 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:25:29.029 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:25:35.733 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:25:35.782 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:25:38.551 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:25:41.294 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:26:47.132 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:26:47.388 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:26:52.026 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:26:53.087 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:26:56.800 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:26:58.194 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:26:59.960 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:27:01.494 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:27:01.748 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:27:04.218 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:27:04.278 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:27:05.582 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:28:10.739 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:28:11.044 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:28:18.762 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:28:25.559 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:28:26.607 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:28:27.866 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:28:30.496 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:28:30.574 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:28:30.655 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:28:35.915 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:28:36.140 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:28:38.292 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:28:50.535 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:28:51.263 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:28:52.799 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:28:55.844 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:28:56.929 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:29:02.280 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:29:02.698 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:29:07.500 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:29:07.566 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:29:09.251 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:29:09.709 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:29:12.287 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:29:33.915 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:29:34.540 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:29:37.337 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:29:38.607 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:29:40.244 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:29:42.805 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:29:43.146 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:29:46.116 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:29:50.019 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:29:50.578 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:29:52.982 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:29:57.532 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:30:42.845 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:30:43.607 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:30:46.668 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:30:46.713 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:30:51.826 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:30:51.873 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:30:52.861 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:30:54.592 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:30:58.172 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:30:59.018 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:30:59.123 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:31:02.475 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:31:44.833 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:31:45.210 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:31:49.116 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:31:51.508 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:31:58.791 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:32:01.499 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:32:02.636 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:32:04.311 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:32:04.991 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:32:05.366 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:32:06.567 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:32:08.113 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:54:08.290 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:54:09.154 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:54:12.400 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:54:16.914 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:54:21.964 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:54:25.004 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:54:26.162 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:54:29.716 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:54:29.875 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:54:31.073 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:54:32.668 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:54:34.333 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:56:56.992 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:56:57.040 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:57:00.375 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:57:01.653 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:57:06.408 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:57:06.937 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:57:10.067 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:57:10.624 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:57:10.670 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:57:12.945 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:57:13.015 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:57:13.955 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:58:15.894 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:58:16.179 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:58:18.796 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:58:19.880 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:58:21.068 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:58:25.193 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:58:27.471 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:58:31.044 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:58:34.624 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:58:36.091 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:58:36.392 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|11:58:39.731 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:06:34.195 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:06:38.014 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:06:40.267 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:06:41.602 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:06:43.046 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:06:43.912 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:06:44.095 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:06:44.170 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:06:47.277 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:06:48.498 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:06:48.603 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:06:52.326 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:06:54.893 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:06:56.056 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:06:58.718 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:06:58.765 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:06:59.435 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:07:01.297 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:07:01.451 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:07:02.799 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:07:05.292 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:07:42.672 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:07:43.073 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:07:45.560 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:07:46.910 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:07:47.651 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:07:51.392 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:07:53.644 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:07:55.950 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:07:57.300 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:07:58.568 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:07:58.622 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:08:01.281 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:09:46.191 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:09:50.803 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:09:54.239 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:09:55.016 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:09:56.412 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:09:58.897 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:09:59.399 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:10:03.207 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:10:03.512 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:10:03.641 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:10:06.120 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:10:09.002 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:24:32.339 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:24:32.385 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:24:38.008 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:24:40.986 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:24:44.876 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:24:45.203 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:24:49.182 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:24:49.465 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:24:49.731 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:24:49.848 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:24:52.008 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:24:52.886 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:25:01.088 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:25:01.155 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:25:05.825 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:25:06.749 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:25:08.906 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:25:11.517 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:25:12.110 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:25:12.709 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:25:15.767 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:25:15.811 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:25:16.321 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:25:18.258 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:27:51.429 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:27:53.084 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:27:54.956 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:27:58.049 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:27:58.926 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:28:00.021 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:29:49.670 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:29:49.978 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:29:52.736 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:29:55.230 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:30:03.088 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:30:03.336 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:30:08.070 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:30:13.812 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:30:13.994 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:30:15.239 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:30:17.596 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:30:22.138 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:32:36.313 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:32:37.388 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:32:40.560 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:32:42.870 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:32:49.029 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:32:49.906 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:32:54.527 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:32:55.271 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:32:57.413 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:32:57.516 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:33:00.131 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:33:00.976 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:33:36.681 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:33:38.308 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:33:41.238 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:33:44.254 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:33:46.597 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:33:47.132 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:33:49.202 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:33:49.476 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:33:53.893 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:33:53.977 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:33:56.495 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:33:57.503 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:34:31.137 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|12:35:27.860 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|18:21:30.625 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|18:21:31.308 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|18:21:33.253 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|18:21:35.708 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|18:21:36.135 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|18:21:38.117 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|18:21:39.731 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|18:21:41.778 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|18:21:45.201 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|18:21:45.394 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|18:21:47.013 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|18:21:54.193 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|18:21:54.293 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|18:21:57.065 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|18:21:57.110 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|18:22:01.211 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|18:22:03.335 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|18:22:07.387 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|18:22:08.160 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|18:22:11.194 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|18:22:13.703 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|18:22:15.578 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.
+V1|18:22:17.324 == Class: DashBoardTwoDataAccess        Method: CarregarGraficoComparativoMarcas        Routine: ERROR***       Message: [ipsos@teste.com.br]Divide by zero error encountered.
+The statement has been terminated.

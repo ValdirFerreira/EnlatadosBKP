@@ -3,16 +3,32 @@
   "WorkspaceRootPath": "C:\\GithLatam\\BHTEnlatados\\BackEnd\\Ipsos\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C93B8893-00C3-480E-B134-782453D30F63}|DataAccess\\DataAccess.csproj|c:\\githlatam\\bhtenlatados\\backend\\ipsos\\dataaccess\\dashboardthree\\dashboardthreedataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C93B8893-00C3-480E-B134-782453D30F63}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\dashboardthree\\dashboardthreedataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{736955A2-5D6A-4EFA-B06B-1FA5289F725E}|Entities\\Entities.csproj|c:\\githlatam\\bhtenlatados\\backend\\ipsos\\entities\\graficohighchart\\graficolinhasmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{736955A2-5D6A-4EFA-B06B-1FA5289F725E}|Entities\\Entities.csproj|solutionrelative:entities\\graficohighchart\\graficolinhasmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8883AF4B-739C-45A0-BB3B-44723FBECEEB}|WebApi\\WebApi.csproj|c:\\githlatam\\bhtenlatados\\backend\\ipsos\\webapi\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{8883AF4B-739C-45A0-BB3B-44723FBECEEB}|WebApi\\WebApi.csproj|solutionrelative:webapi\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{8883AF4B-739C-45A0-BB3B-44723FBECEEB}|WebApi\\WebApi.csproj|c:\\githlatam\\bhtenlatados\\backend\\ipsos\\webapi\\controllers\\dashboardfourcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8883AF4B-739C-45A0-BB3B-44723FBECEEB}|WebApi\\WebApi.csproj|solutionrelative:webapi\\controllers\\dashboardfourcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F34043E2-9524-4C4A-8347-D9D78C4D8BEE}|Business\\Business.csproj|c:\\githlatam\\bhtenlatados\\backend\\ipsos\\business\\tratadados\\tratamentodados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F34043E2-9524-4C4A-8347-D9D78C4D8BEE}|Business\\Business.csproj|solutionrelative:business\\tratadados\\tratamentodados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C93B8893-00C3-480E-B134-782453D30F63}|DataAccess\\DataAccess.csproj|C:\\GithLatam\\BHTEnlatados\\BackEnd\\Ipsos\\dataaccess\\usuario\\usuariodataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C93B8893-00C3-480E-B134-782453D30F63}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\usuario\\usuariodataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{736955A2-5D6A-4EFA-B06B-1FA5289F725E}|Entities\\Entities.csproj|c:\\githlatam\\bhtenlatados\\backend\\ipsos\\entities\\graficofunil\\graficofunil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{736955A2-5D6A-4EFA-B06B-1FA5289F725E}|Entities\\Entities.csproj|solutionrelative:entities\\graficofunil\\graficofunil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C93B8893-00C3-480E-B134-782453D30F63}|DataAccess\\DataAccess.csproj|c:\\githlatam\\bhtenlatados\\backend\\ipsos\\dataaccess\\dashboardthree\\dashboardthreedataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C93B8893-00C3-480E-B134-782453D30F63}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\dashboardthree\\dashboardthreedataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8883AF4B-739C-45A0-BB3B-44723FBECEEB}|WebApi\\WebApi.csproj|C:\\GithLatam\\BHTEnlatados\\BackEnd\\Ipsos\\webapi\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{8883AF4B-739C-45A0-BB3B-44723FBECEEB}|WebApi\\WebApi.csproj|solutionrelative:webapi\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8883AF4B-739C-45A0-BB3B-44723FBECEEB}|WebApi\\WebApi.csproj|C:\\GithLatam\\BHTEnlatados\\BackEnd\\Ipsos\\webapi\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,24 +46,76 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TratamentoDados.cs",
+              "DocumentMoniker": "C:\\GithLatam\\BHTEnlatados\\BackEnd\\Ipsos\\Business\\TrataDados\\TratamentoDados.cs",
+              "RelativeDocumentMoniker": "Business\\TrataDados\\TratamentoDados.cs",
+              "ToolTip": "C:\\GithLatam\\BHTEnlatados\\BackEnd\\Ipsos\\Business\\TrataDados\\TratamentoDados.cs",
+              "RelativeToolTip": "Business\\TrataDados\\TratamentoDados.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-24T03:45:55.312Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "GraficoLinhasModel.cs",
+              "DocumentMoniker": "C:\\GithLatam\\BHTEnlatados\\BackEnd\\Ipsos\\Entities\\GraficoHighChart\\GraficoLinhasModel.cs",
+              "RelativeDocumentMoniker": "Entities\\GraficoHighChart\\GraficoLinhasModel.cs",
+              "ToolTip": "C:\\GithLatam\\BHTEnlatados\\BackEnd\\Ipsos\\Entities\\GraficoHighChart\\GraficoLinhasModel.cs",
+              "RelativeToolTip": "Entities\\GraficoHighChart\\GraficoLinhasModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAYwAcAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-24T03:44:21.022Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DashBoardFourController.cs",
+              "DocumentMoniker": "C:\\GithLatam\\BHTEnlatados\\BackEnd\\Ipsos\\WebApi\\Controllers\\DashBoardFourController.cs",
+              "RelativeDocumentMoniker": "WebApi\\Controllers\\DashBoardFourController.cs",
+              "ToolTip": "C:\\GithLatam\\BHTEnlatados\\BackEnd\\Ipsos\\WebApi\\Controllers\\DashBoardFourController.cs",
+              "RelativeToolTip": "WebApi\\Controllers\\DashBoardFourController.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAowDgAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-24T03:35:30.25Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GraficoFunil.cs",
+              "DocumentMoniker": "C:\\GithLatam\\BHTEnlatados\\BackEnd\\Ipsos\\Entities\\GraficoFunil\\GraficoFunil.cs",
+              "RelativeDocumentMoniker": "Entities\\GraficoFunil\\GraficoFunil.cs",
+              "ToolTip": "C:\\GithLatam\\BHTEnlatados\\BackEnd\\Ipsos\\Entities\\GraficoFunil\\GraficoFunil.cs",
+              "RelativeToolTip": "Entities\\GraficoFunil\\GraficoFunil.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAiwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-24T02:05:34.494Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "DashboardThreeDataAccess.cs",
               "DocumentMoniker": "C:\\GithLatam\\BHTEnlatados\\BackEnd\\Ipsos\\DataAccess\\DashboardThree\\DashboardThreeDataAccess.cs",
               "RelativeDocumentMoniker": "DataAccess\\DashboardThree\\DashboardThreeDataAccess.cs",
               "ToolTip": "C:\\GithLatam\\BHTEnlatados\\BackEnd\\Ipsos\\DataAccess\\DashboardThree\\DashboardThreeDataAccess.cs",
               "RelativeToolTip": "DataAccess\\DashboardThree\\DashboardThreeDataAccess.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAjwMgAAAAAAAAA",
+              "ViewState": "AQIAABkAAAAAAAAAAAAgwMsAAAA3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-18T19:37:38.622Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "Web.config",
               "DocumentMoniker": "C:\\GithLatam\\BHTEnlatados\\BackEnd\\Ipsos\\WebApi\\Web.config",
               "RelativeDocumentMoniker": "WebApi\\Web.config",
@@ -60,7 +128,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "UsuarioModel.cs",
               "DocumentMoniker": "C:\\GithLatam\\BHTEnlatados\\BackEnd\\Ipsos\\Entities\\Usuario\\UsuarioModel.cs",
               "RelativeDocumentMoniker": "Entities\\Usuario\\UsuarioModel.cs",
@@ -72,7 +140,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "UsuarioDataAccess.cs",
               "DocumentMoniker": "C:\\GithLatam\\BHTEnlatados\\BackEnd\\Ipsos\\DataAccess\\Usuario\\UsuarioDataAccess.cs",
               "RelativeDocumentMoniker": "DataAccess\\Usuario\\UsuarioDataAccess.cs",
@@ -80,11 +148,12 @@
               "RelativeToolTip": "DataAccess\\Usuario\\UsuarioDataAccess.cs",
               "ViewState": "AQIAAO0AAAAAAAAAAAAAAPcAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-14T02:40:21.779Z"
+              "WhenOpened": "2026-04-14T02:40:21.779Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "UsuarioController.cs",
               "DocumentMoniker": "C:\\GithLatam\\BHTEnlatados\\BackEnd\\Ipsos\\WebApi\\Controllers\\UsuarioController.cs",
               "RelativeDocumentMoniker": "WebApi\\Controllers\\UsuarioController.cs",

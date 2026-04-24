@@ -4,12 +4,11 @@ export class GraficoLinhasHighChartModel {
   data: Array<DataModel>;
   marker: any;
   tipoDados: number;
-
 }
 
 export class GraficoLinhasModel {
   Periodos: Array<string>;
-  Grafico: Array<GraficoLinhasHighChartModel>
+  Grafico: Array<GraficoLinhasHighChartModel>;
   Cores: Array<string>;
   Bases: Array<string>;
 }
@@ -21,8 +20,11 @@ export class DataModel {
   valorbase: number;
   sig: string;
   tipoDados: number;
-  media:number;
-  baseminima:string;
+  media: number;
+  baseminima: string;
+  BaseAnt: number;
+  MediaAnt: number;
+  BaseMinimaAnt: string;
+  GrupoAtributo: string;
+  CorAtributo: string;
 }
-
-

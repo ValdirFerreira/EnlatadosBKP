@@ -36,8 +36,19 @@ namespace Entities.GraficoFunil
         public string LoyaltyTesteAtual { get; set; }
         public decimal LoyaltyADV { get; set; }
 
-        public string BaseMinimaAtual { get; set; }
+        // 🔥 NOVOS CAMPOS (Calc6)
+        public decimal Calc6Anterior { get; set; }
+        public decimal Calc6Atual { get; set; }
+        public string Calc6TesteAtual { get; set; }
+        public decimal Calc6ADV { get; set; }
 
+        // 🔥 NOVOS CAMPOS (Calc7)
+        public decimal Calc7Anterior { get; set; }
+        public decimal Calc7Atual { get; set; }
+        public string Calc7TesteAtual { get; set; }
+        public decimal Calc7ADV { get; set; }
+
+        public string BaseMinimaAtual { get; set; }
         public string BaseMinimaAnterior { get; set; }
     }
 
@@ -56,7 +67,6 @@ namespace Entities.GraficoFunil
             GraficoFunil6 = new GraficoFunil();
             GraficoFunil7 = new GraficoFunil();
             GraficoFunil8 = new GraficoFunil();
-           
         }
 
         public GraficoFunil GraficoFunil1 { get; set; }
@@ -68,6 +78,4 @@ namespace Entities.GraficoFunil
         public GraficoFunil GraficoFunil7 { get; set; }
         public GraficoFunil GraficoFunil8 { get; set; }
     }
-
-
 }

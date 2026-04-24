@@ -34,6 +34,8 @@ namespace Business.TrataDados
                     DescMarca = String.Concat(d.DescMarca, "-OLD"),
                     CorSiteMarca = d.CorSiteMarca,
                     Descricao = d.Descricao,
+                    GrupoAtributo = d.GrupoAtributo,
+                    CorAtributo = d.CorAtributo,
                     PercAnterior = d.PercAnterior,
                     PercAtual = d.PercAnterior,
                     Resposta = d.Resposta,
@@ -72,22 +74,7 @@ namespace Business.TrataDados
 
                 foreach (var item in grafico.Select(a => new { a.Descricao }).Distinct().ToList())
                 {
-
-                    //string descricao = string.Concat(item.Descricao);
-                    ////string valorBase = string.Concat(item.Base);
-                    ////retorno.Bases.Add(valorBase);
-                    //if (item.Descricao.Length > 40)
-                    //{
-                    //    retorno.Periodos.Add(string.Concat(item.Descricao.Substring(0, 40), "..."));
-                    //}
-                    //else
-                    //{
-                    //    retorno.Periodos.Add(item.Descricao);
-                    //}
-
                     retorno.Periodos.Add(item.Descricao);
-
-
                 }
 
                 foreach (var item in categorias)
@@ -112,7 +99,9 @@ namespace Business.TrataDados
                         a.BaseMinima,
                         a.BaseAnt,
                         a.MediaAnt,
-                        a.BaseMinimaAnt
+                        a.BaseMinimaAnt,
+                        a.GrupoAtributo,
+                        a.CorAtributo
                     }).ToList();
 
                     foreach (var itemArray in listaDados)
@@ -129,7 +118,9 @@ namespace Business.TrataDados
                             baseminima = itemArray.BaseMinima,
                             BaseAnt = itemArray.BaseAnt,
                             MediaAnt = itemArray.MediaAnt,
-                            BaseMinimaAnt = itemArray.BaseMinimaAnt
+                            BaseMinimaAnt = itemArray.BaseMinimaAnt,
+                            GrupoAtributo = itemArray.GrupoAtributo,
+                            CorAtributo = itemArray.CorAtributo
                         });
                     }
 
@@ -278,8 +269,6 @@ namespace Business.TrataDados
 
                 foreach (var item in grafico.OrderBy(a => a.Descricao).Select(a => new { a.DescPeriodo, a.Base }).Distinct().ToList())
                 {
-                    //decimal total = grafico.Where(w => w.Descricao.ToUpper() == "TOTAL" && w.DescPeriodo == item.DescPeriodo).Select(s => s.Valor).FirstOrDefault();
-                    //string descricao = string.Concat(item.DescPeriodo, " <br>", total);
                     string descricao = string.Concat(item.DescPeriodo);
                     string valorBase = string.Concat(item.Base);
                     retorno.Bases.Add(valorBase);
@@ -324,7 +313,7 @@ namespace Business.TrataDados
         public static TabelaPadraoAdHoc TratarDadosTabelaAdHocAtributo(List<TabelaAdHoc> dados, List<TabelaAdHocAtributo> titulos)
         {
             var retorno = new TabelaPadraoAdHoc();
-   
+
             retorno.Titulos.AddRange(titulos);
             var bases = new TabelaAdHoc();
 

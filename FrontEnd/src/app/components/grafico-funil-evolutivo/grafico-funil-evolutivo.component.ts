@@ -179,6 +179,36 @@ export class GraficoFunilEvolutivoComponent implements OnInit {
         return 'sig-vazio';
     }
 
+    validaSigCalc6(graficoFunil1: GraficoFunil) {
+
+        if (graficoFunil1.BaseAbsAtual != 0) {
+            if (graficoFunil1.Calc6TesteAtual == 'MAIOR')
+                return 'sig-positive';
+
+            if (graficoFunil1.Calc6TesteAtual == 'MENOR')
+                return 'sig-negative';
+
+            if (graficoFunil1.Calc6TesteAtual == 'IGUAL')
+                return 'sig-vazio';
+        }
+        return 'sig-vazio';
+    }
+
+    validaSigCalc7(graficoFunil1: GraficoFunil) {
+
+        if (graficoFunil1.BaseAbsAtual != 0) {
+            if (graficoFunil1.Calc7TesteAtual == 'MAIOR')
+                return 'sig-positive';
+
+            if (graficoFunil1.Calc7TesteAtual == 'MENOR')
+                return 'sig-negative';
+
+            if (graficoFunil1.Calc7TesteAtual == 'IGUAL')
+                return 'sig-vazio';
+        }
+        return 'sig-vazio';
+    }
+
     setCorGrafico() {
         if (!this.ModelMarcas) {
 

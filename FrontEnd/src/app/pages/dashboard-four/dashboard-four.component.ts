@@ -709,7 +709,7 @@ export class DashboardFourComponent implements OnInit {
 
   }
 
-  graficoLinha1() {
+graficoLinha1() {
 
     var graficoImagemPuraEvolutivoColunaModel = new GraficoLinhasModel();
 
@@ -730,14 +730,60 @@ export class DashboardFourComponent implements OnInit {
 
           var grafico = [] as any;
           var index = 0;
-          // var cores = this.getArrayColors(graficoImagemPuraEvolutivoColunaModel.Grafico.length);
-          var cores = ['#ffffff'];//this.graficoImagemPuraEvolutivoColuna1Model.Cores;
-
-          // COR CINZA #75787c
+          var cores = ['transparent'];
 
           if (this.graficoImagemPuraEvolutivoColuna1Model?.Grafico?.length) {
 
             var lista = this.graficoImagemPuraEvolutivoColuna1Model.Grafico.reverse();
+
+            // ── Extrai dados de grupo da primeira série (todas têm os mesmos atributos) ──
+            const primeiraSerieData: any[] = (lista[0]?.data || []);
+
+            // Monta plotBands: faixa colorida para cada grupo de atributos consecutivos
+            const plotBands: any[] = [];
+            const gruposLegenda: { descricao: string; cor: string }[] = [];
+            let grupoAtual = '';
+            let bandStart = 0;
+
+            primeiraSerieData.forEach((ponto: any, i: number) => {
+              const grupo = ponto.GrupoAtributo || '';
+              const cor = ponto.CorAtributo || '#ffffff';
+
+              if (grupo !== grupoAtual) {
+                // Fecha banda anterior
+                if (i > 0) {
+                  plotBands.push({
+                    from: bandStart - 0.5,
+                    to: i - 0.5,
+                    color: this._hexToRgba(gruposLegenda.length > 0
+                      ? gruposLegenda[gruposLegenda.length - 1].cor
+                      : '#ffffff', 0.15),
+                    zIndex: 0
+                  });
+                }
+                // Registra legenda de grupo (sem duplicar)
+                if (!gruposLegenda.find(g => g.descricao === grupo)) {
+                  gruposLegenda.push({ descricao: grupo, cor });
+                }
+                grupoAtual = grupo;
+                bandStart = i;
+              }
+            });
+
+            // Fecha última banda
+            if (primeiraSerieData.length > 0) {
+              plotBands.push({
+                from: bandStart - 0.5,
+                to: primeiraSerieData.length - 0.5,
+                color: this._hexToRgba(gruposLegenda.length > 0
+                  ? gruposLegenda[gruposLegenda.length - 1].cor
+                  : '#ffffff', 0.15),
+                zIndex: 0
+              });
+            }
+
+            // ── Renderiza legenda de grupos abaixo do container do gráfico ──
+            this._renderizaLegendaGrupos('container-coluna-0-legenda', gruposLegenda);
 
             lista?.forEach(((item) => {
 
@@ -750,7 +796,6 @@ export class DashboardFourComponent implements OnInit {
                 showInLegend: false,
                 marker: {
                   symbol: "circle",
-                  // fillColor: '#FFFFFF', // BOLINHA VAZADA
                   lineWidth: 2,
                   radius: 4,
                   lineColor: cores[index]
@@ -779,8 +824,9 @@ export class DashboardFourComponent implements OnInit {
                 inverted: true,
                 spacingTop: 0,
                 spacingLeft: 18,
+           
                 height: 858,
-                width: 460,
+                width: 400,
                 title: {
                   text: "Texto",
                   enabled: false,
@@ -789,7 +835,6 @@ export class DashboardFourComponent implements OnInit {
                   enabled: true,
                 },
                 type: "spline",
-                // //backgroundColor: "#F8F8F8",
                 style: {
                   fontFamily: "Poppins",
                 },
@@ -804,8 +849,8 @@ export class DashboardFourComponent implements OnInit {
                 enabled: false,
                 alignColumns: true,
                 itemDistance: 30,
+                
                 spacingBottom: 0,
-
                 itemStyle: {
                   fontSize: '12px',
                   fontWeight: 'normal',
@@ -814,9 +859,7 @@ export class DashboardFourComponent implements OnInit {
                   color: '#585656',
                   lineHeight: '20px',
                   textAlign: 'left',
-
                 },
-
               },
               xAxis: [{
                 lineWidth: 1,
@@ -824,35 +867,48 @@ export class DashboardFourComponent implements OnInit {
                 lineColor: '#ffffff',
                 gridLineWidth: 1,
                 tickInterval: 1,
-                // opposite: true,
-                // reversed: false,
-                // reversedStacks: false,
+                
                 categories: this.graficoImagemPuraEvolutivoColuna1Model.Periodos,
+                plotBands: plotBands,   // ← cores de fundo por grupo
                 labels: {
-
-                  enabled: true,
+                  enabled: true, 
+                  html: true,
                   floating: true,
-                  //  rotation: 0,
                   align: 'left',
-                  style: {
+                   x: 10, // move tudo pra direita sem quebrar o layout
 
+//                   formatter: function () {
+//   const index = this.pos;
+//   const chart = this.chart;
+//   const serie = chart.series[0]; // ou ajuste se tiver várias
+
+//   const value = serie.yData[index];
+
+//   // return `
+//   //   <div style="margin-left:40px; font-size:12px; font-family:Poppins;">
+//   //     ${this.value} - <b>${value}</b>
+//   //   </div>
+//   // `;
+//   return `
+//     <div  style="width: 10px; margin-left:40px; font-size:12px; font-family:Poppins; position:relative; right:30px;">
+//     <div style="position:absolute; right:30px;">  ${this.value}     </div>
+//     </div>
+//   `;
+// },
+                  
+                  style: {
                     fontSize: '12px',
                     fontWeight: 'normal',
                     fontFamily: 'Poppins',
                     fontStyle: 'normal',
                     color: '#585656',
                     lineHeight: '20px',
-                    textAlign: 'right',
-                    width: 390,
+                    textAlign: 'left',
+                    width: 300,                 
+                    
                   },
                 },
-
-
               }, {
-                // top: '50%',
-                // height: '50%',
-
-                // gridLineColor: '#ffffff',
                 lineColor: '#ffffff',
                 gridLineWidth: 1,
                 reversed: false,
@@ -880,22 +936,13 @@ export class DashboardFourComponent implements OnInit {
                 lineWidth: 1,
                 gridLineColor: '#ffffff',
                 lineColor: '#ffffff',
-
                 gridLineWidth: 1,
                 tickInterval: 1,
-                label: {
-                  enabled: true,
-
-                },
-                title: {
-                  text: "undef",
-                  enabled: false,
-                },
+                label: { enabled: true },
+                title: { text: "undef", enabled: false },
                 labels: {
                   enabled: false,
                   align: 'right',
-                  // x: -2,
-
                   style: {
                     fontSize: '12px',
                     fontWeight: 'normal',
@@ -905,107 +952,29 @@ export class DashboardFourComponent implements OnInit {
                   },
                 },
               },
-
               tooltip: {
                 shared: false,
                 valueSuffix: "",
                 enabled: false,
                 useHTML: true,
-
                 headerFormat: '',
-
                 formatter(this: Highcharts.TooltipFormatterContextObject) {
                   var pointer = this.point as any;
                   return '<div style="max-height: 0px !important;font-family: Poppins;font-style: normal;font-weight: 600;text-align: left;width: 95px"> Média  </div>  <div style="font-weight: 400;text-align: right;">   ' + pointer?.y + '%</div>'
-                    + '<div style="max-height: 0px !important;font-family: Poppins;font-style: normal;font-weight: 600;text-align: left;width: 95px">  Base </div>  <div style="font-weight: 400;text-align: right;">   ' + pointer?.valorbase + '</div>  '
-                  // + '<div style="max-height: 0px !important;font-family: Poppins;font-style: normal;font-weight: 600;text-align: left;width: 95px"> Período</div>  <div style="font-weight: 400;text-align: right;">   ' + pointer?.periodo + '</div> ';
-
+                    + '<div style="max-height: 0px !important;font-family: Poppins;font-style: normal;font-weight: 600;text-align: left;width: 95px">  Base </div>  <div style="font-weight: 400;text-align: right;">   ' + pointer?.valorbase + '</div>  ';
                 },
-
-                // pointFormat:
-
-                //   this.textoPoupUpGraficoLinha,
-
-                // outside: true,
-                // backgroundColor: "rgba(246, 246, 246, 1)",
-                // borderRadius: 30,
-                // borderColor: "#bbbbbb",
-                // borderWidth: 1.5,
-                // style: { opacity: 1, background: "rgba(246, 246, 246, 1)" },
-                // followPointer: true
               },
-              credits: {
-                enabled: false,
-              },
+              credits: { enabled: false },
               plotOptions: {
-                areaspline: {
-                  fillOpacity: 0.1,
-                },
-                // series: {
-                //   stickyTracking: true,
-                //   events: {
-                //     mouseOver: function () {
-                //       var hoverSeries = this;
-
-                //       this.chart.series.forEach(function (s) {
-                //         if (s != hoverSeries) {
-                //           // Turn off other series labels
-                //           s.update({
-                //             dataLabels: {
-                //               enabled: false
-                //             }
-                //           });
-                //         } else {
-                //           // Turn on hover series labels
-                //           hoverSeries.update({
-                //             dataLabels: {
-                //               enabled: true
-                //             }
-                //           });
-                //         }
-                //       });
-                //     },
-                //     mouseOut: function () {
-                //       this.chart.series.forEach(function (s) {
-                //         // Reset all series
-                //         s.setState('');
-                //         s.update({
-                //           dataLabels: {
-                //             enabled: true
-                //           }
-                //         });
-                //       });
-                //     }
-                //   }
-                // },
+                areaspline: { fillOpacity: 0.1 },
                 enableMouseTracking: true,
                 line: {
                   fillColor: '#FFFFFF',
                   dataLabels: {
                     enabled: false,
                     useHTML: true,
-
                     formatter: function () {
-
-                      // if (this.y == 0) {
-                      //   return this.x;
-                      // }
-
-                      // // if (this.y.toString().length < 3)
-                      // //   return "<div> <div>" + this.y.toString() + ',0' + "</div>" + '<br>' + "<div>" + this.x + "</div>" + "</div>";
-                      // // else
-                      // //   return "<div> <div>" + this.y.toString().replace(".", ",") + "</div>" + '<br>' + "<div>" + this.x + "</div>" + "</div>";
-
-                      // if (this.y.toString().length < 3)
-                      //   return this.y.toString() + ',0';
-                      // else
-                      //   return this.y.toString().replace(".", ",");
-
-                      // return "<div> <div>" + this.y.toString() + "</div>" + "<div>" + " <img class='logo-marcas' src='assets/imagePages/logo-pequeno.svg'>" + "</div>" + "</div>";
-                      // return this.y.toString();
-
                       return "<div style='display:flex'>  <div>" + this.y.toString() + "</div>" + "<div style='displey:flex;' class='sig-negative'> <div>" + "<div>";
-
                     },
                     style: {
                       fontSize: '12px',
@@ -1016,34 +985,12 @@ export class DashboardFourComponent implements OnInit {
                     },
                   }
                 },
-
               },
               series: this.graficoImagemPuraEvolutivoColuna1Model.Grafico,
-
               colors: cores,
-
-              //   responsive: {
-              //     rules: [{
-              //         condition: {
-              //             maxWidth: 500
-              //         },
-              //         chartOptions: {
-              //             legend: {
-              //                 layout: 'horizontal',
-              //                 align: 'center',
-              //                 verticalAlign: 'bottom'
-              //             }
-              //         }
-              //     }]
-              // },
-
-              exporting: {
-                enabled: false,
-              },
+              exporting: { enabled: false },
               rules: [{
-                condition: {
-                  maxWidth: 1000
-                },
+                condition: { maxWidth: 1000 },
                 chartOptions: {
                   legend: {
                     layout: 'horizontal',
@@ -1054,21 +1001,66 @@ export class DashboardFourComponent implements OnInit {
                 }
               }]
             }
+
+            if (this.graficoImagemPuraEvolutivoColuna1Model?.Grafico?.length) {
+              Highcharts.chart(graficoImagemPuraEvolutivoColuna1ModelHighchart).destroy();
+              Highcharts.chart(graficoImagemPuraEvolutivoColuna1ModelHighchart);
+            }
           }
-
-
-
-
-          if (this.graficoImagemPuraEvolutivoColuna1Model?.Grafico?.length) {
-            Highcharts.chart(graficoImagemPuraEvolutivoColuna1ModelHighchart).destroy();
-            Highcharts.chart(graficoImagemPuraEvolutivoColuna1ModelHighchart);
-          }
-
-
         }
       )
+  }
 
+  // ── Converte hex em rgba com opacidade ──────────────────────────────────────
+  private _hexToRgba(hex: string, alpha: number): string {
+    if (!hex || hex === '') return `rgba(200,200,200,${alpha})`;
+    const clean = hex.replace('#', '');
+    const r = parseInt(clean.substring(0, 2), 16);
+    const g = parseInt(clean.substring(2, 4), 16);
+    const b = parseInt(clean.substring(4, 6), 16);
+    return `rgba(${r},${g},${b},${alpha})`;
+  }
 
+  // ── Renderiza legenda de grupos como HTML abaixo do gráfico ────────────────
+  private _renderizaLegendaGrupos(
+    containerId: string,
+    grupos: { descricao: string; cor: string }[]
+  ): void {
+    // Aguarda o DOM estar pronto
+    setTimeout(() => {
+      const el = document.getElementById(containerId);
+      if (!el) return;
+
+      el.innerHTML = '';
+      el.style.display = 'flex';
+      el.style.flexWrap = 'wrap';
+      el.style.gap = '8px';
+      el.style.padding = '8px 0';
+      el.style.fontFamily = 'Poppins';
+
+      grupos.forEach(grupo => {
+        const item = document.createElement('div');
+        item.style.display = 'flex';
+        item.style.alignItems = 'center';
+        item.style.gap = '6px';
+        item.style.fontSize = '12px';
+        item.style.color = '#585656';
+
+        const bolinha = document.createElement('div');
+        bolinha.style.width = '14px';
+        bolinha.style.height = '14px';
+        bolinha.style.borderRadius = '3px';
+        bolinha.style.backgroundColor = grupo.cor || '#cccccc';
+        bolinha.style.flexShrink = '0';
+
+        const texto = document.createElement('span');
+        texto.textContent = grupo.descricao;
+
+        item.appendChild(bolinha);
+        item.appendChild(texto);
+        el.appendChild(item);
+      });
+    }, 100);
   }
 
   graficoLinha(nomeDiv, sequencia, marca: PadraoComboFiltro) {
@@ -1185,7 +1177,7 @@ export class DashboardFourComponent implements OnInit {
                 inverted: true,
                 spacingTop: 0,
                 height: 858,
-                width: 87,
+                width: 120,
                 title: {
                   text: "Texto",
                   enabled: false,

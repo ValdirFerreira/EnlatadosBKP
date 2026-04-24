@@ -33,6 +33,18 @@
                 </div>
 
                 <div class="coluna-dados">
+
+                    <div class="linha-dados">
+                        <div class="descricao-linha">Total</div>
+
+                        <div class="container-funil-porc">
+                            <div
+                                [ngClass]="{'base-vermelha' : graficoFunil1.BaseMinimaAtual != '' , '':graficoFunil1.BaseMinimaAtual==''}"
+                                class="text-funil-base">{{graficoFunil1.BaseAbsAtual}}</div>
+                        </div>
+
+                    </div>
+
                     <div class="linha-dados">
                         <div class="descricao-linha">
                             {{'grafico-funil-conhecimento' | translate}}</div>
@@ -269,17 +281,6 @@
 
                     </div>
 
-                    <div class="linha-dados">
-                        <div class="descricao-linha"></div>
-
-                        <div class="container-funil-porc">
-                            <div
-                                [ngClass]="{'base-vermelha' : graficoFunil1.BaseMinimaAtual != '' , '':graficoFunil1.BaseMinimaAtual==''}"
-                                class="text-funil-base">{{graficoFunil1.BaseAbsAtual}}</div>
-                        </div>
-
-                    </div>
-
                 </div>
 
             </div>
@@ -302,6 +303,16 @@
                 <div class="coluna-dados">
                     <div class="linha-dados">
                         <div class="separacao-dados-periodo"></div>
+                    </div>
+
+                     <div class="linha-dados">
+
+                        <div class="container-funil-porc">
+                            <div
+                                [ngClass]="{'base-vermelha' : graficoFunil2.BaseMinimaAtual != '' , '':graficoFunil2.BaseMinimaAtual==''}"
+                                class="text-funil-base">{{graficoFunil2.BaseAbsAtual}}</div>
+                        </div>
+
                     </div>
 
                     <div class="linha-dados">
@@ -512,15 +523,7 @@
 
                     </div>
 
-                    <div class="linha-dados">
-
-                        <div class="container-funil-porc">
-                            <div
-                                [ngClass]="{'base-vermelha' : graficoFunil2.BaseMinimaAtual != '' , '':graficoFunil2.BaseMinimaAtual==''}"
-                                class="text-funil-base">{{graficoFunil2.BaseAbsAtual}}</div>
-                        </div>
-
-                    </div>
+                   
 
                 </div>
             </div>
@@ -542,6 +545,16 @@
                 <div class="coluna-dados">
                     <div class="linha-dados">
                         <div class="separacao-dados-periodo"></div>
+                    </div>
+
+                      <div class="linha-dados">
+
+                        <div class="container-funil-porc">
+                            <div
+                                [ngClass]="{'base-vermelha' : graficoFunil3.BaseMinimaAtual != '' , '':graficoFunil3.BaseMinimaAtual==''}"
+                                class="text-funil-base">{{graficoFunil3.BaseAbsAtual}}</div>
+                        </div>
+
                     </div>
 
                     <div class="linha-dados">
@@ -751,15 +764,7 @@
 
                     </div>
 
-                    <div class="linha-dados">
-
-                        <div class="container-funil-porc">
-                            <div
-                                [ngClass]="{'base-vermelha' : graficoFunil3.BaseMinimaAtual != '' , '':graficoFunil3.BaseMinimaAtual==''}"
-                                class="text-funil-base">{{graficoFunil3.BaseAbsAtual}}</div>
-                        </div>
-
-                    </div>
+                  
 
                 </div>
             </div>
@@ -782,6 +787,16 @@
                 <div class="coluna-dados">
                     <div class="linha-dados">
                         <div class="separacao-dados-periodo"></div>
+                    </div>
+
+                     <div class="linha-dados">
+
+                        <div class="container-funil-porc">
+                            <div
+                                [ngClass]="{'base-vermelha' : graficoFunil4.BaseMinimaAtual != '' , '':graficoFunil4.BaseMinimaAtual==''}"
+                                class="text-funil-base">{{graficoFunil4.BaseAbsAtual}}</div>
+                        </div>
+
                     </div>
 
                     <div class="linha-dados">
@@ -992,15 +1007,7 @@
 
                     </div>
 
-                    <div class="linha-dados">
-
-                        <div class="container-funil-porc">
-                            <div
-                                [ngClass]="{'base-vermelha' : graficoFunil4.BaseMinimaAtual != '' , '':graficoFunil4.BaseMinimaAtual==''}"
-                                class="text-funil-base">{{graficoFunil4.BaseAbsAtual}}</div>
-                        </div>
-
-                    </div>
+                   
 
                 </div>
 

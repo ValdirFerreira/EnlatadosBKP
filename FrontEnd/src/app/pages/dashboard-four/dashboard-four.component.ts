@@ -447,7 +447,7 @@ export class DashboardFourComponent implements OnInit {
                     fontFamily: 'Poppins',
                     fontStyle: 'normal',
                     color: '#3B3E44',
-                     lineHeight: '8px',
+                    lineHeight: '8px',
                     textAlign: 'left',
                     height: '5px',
                   },
@@ -705,11 +705,15 @@ export class DashboardFourComponent implements OnInit {
     this.graficoLinha("container-coluna-2", 2, this.marcaColuna2);
     this.graficoLinha("container-coluna-3", 3, this.marcaColuna3);
     this.graficoLinha("container-coluna-4", 4, this.marcaColuna4);
-    this.graficoLinha("container-coluna-5", 5, this.marcaColuna5);
+    // this.graficoLinha("container-coluna-5", 5, this.marcaColuna5);
 
   }
 
-graficoLinha1() {
+
+
+
+  listaGroup: ItemGrafico[];
+  graficoLinha1() {
 
     var graficoImagemPuraEvolutivoColunaModel = new GraficoLinhasModel();
 
@@ -744,6 +748,24 @@ graficoLinha1() {
             const gruposLegenda: { descricao: string; cor: string }[] = [];
             let grupoAtual = '';
             let bandStart = 0;
+
+
+            const mapa = new Map<string, any>();
+
+            primeiraSerieData.forEach((ponto, i) => {
+              const grupo = ponto.GrupoAtributo || '';
+
+              if (!mapa.has(grupo)) {
+                mapa.set(grupo, {
+                  index: i,
+                  grupo,
+                  cor: ponto.CorAtributo || '#ffffff'
+                });
+              }
+            });
+
+            this.listaGroup = Array.from(mapa.values());
+
 
             primeiraSerieData.forEach((ponto: any, i: number) => {
               const grupo = ponto.GrupoAtributo || '';
@@ -824,7 +846,7 @@ graficoLinha1() {
                 inverted: true,
                 spacingTop: 0,
                 spacingLeft: 18,
-           
+
                 height: 858,
                 width: 400,
                 title: {
@@ -849,7 +871,7 @@ graficoLinha1() {
                 enabled: false,
                 alignColumns: true,
                 itemDistance: 30,
-                
+
                 spacingBottom: 0,
                 itemStyle: {
                   fontSize: '12px',
@@ -867,35 +889,35 @@ graficoLinha1() {
                 lineColor: '#ffffff',
                 gridLineWidth: 1,
                 tickInterval: 1,
-                
+
                 categories: this.graficoImagemPuraEvolutivoColuna1Model.Periodos,
                 plotBands: plotBands,   // ← cores de fundo por grupo
                 labels: {
-                  enabled: true, 
+                  enabled: true,
                   html: true,
                   floating: true,
                   align: 'left',
-                   x: 10, // move tudo pra direita sem quebrar o layout
+                  x: 10, // move tudo pra direita sem quebrar o layout
 
-//                   formatter: function () {
-//   const index = this.pos;
-//   const chart = this.chart;
-//   const serie = chart.series[0]; // ou ajuste se tiver várias
+                  //                   formatter: function () {
+                  //   const index = this.pos;
+                  //   const chart = this.chart;
+                  //   const serie = chart.series[0]; // ou ajuste se tiver várias
 
-//   const value = serie.yData[index];
+                  //   const value = serie.yData[index];
 
-//   // return `
-//   //   <div style="margin-left:40px; font-size:12px; font-family:Poppins;">
-//   //     ${this.value} - <b>${value}</b>
-//   //   </div>
-//   // `;
-//   return `
-//     <div  style="width: 10px; margin-left:40px; font-size:12px; font-family:Poppins; position:relative; right:30px;">
-//     <div style="position:absolute; right:30px;">  ${this.value}     </div>
-//     </div>
-//   `;
-// },
-                  
+                  //   // return `
+                  //   //   <div style="margin-left:40px; font-size:12px; font-family:Poppins;">
+                  //   //     ${this.value} - <b>${value}</b>
+                  //   //   </div>
+                  //   // `;
+                  //   return `
+                  //     <div  style="width: 10px; margin-left:40px; font-size:12px; font-family:Poppins; position:relative; right:30px;">
+                  //     <div style="position:absolute; right:30px;">  ${this.value}     </div>
+                  //     </div>
+                  //   `;
+                  // },
+
                   style: {
                     fontSize: '12px',
                     fontWeight: 'normal',
@@ -904,8 +926,8 @@ graficoLinha1() {
                     color: '#585656',
                     lineHeight: '20px',
                     textAlign: 'left',
-                    width: 300,                 
-                    
+                    width: 300,
+
                   },
                 },
               }, {
@@ -2116,4 +2138,11 @@ graficoLinha1() {
     );
   }
 
+}
+
+
+export class ItemGrafico {
+  index: number;
+  grupo: string;
+  cor: string;
 }

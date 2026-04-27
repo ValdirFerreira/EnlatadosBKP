@@ -34,16 +34,7 @@
 
                 <div class="coluna-dados">
 
-                    <div class="linha-dados">
-                        <div class="descricao-linha">Total</div>
-
-                        <div class="container-funil-porc">
-                            <div
-                                [ngClass]="{'base-vermelha' : graficoFunil1.BaseMinimaAtual != '' , '':graficoFunil1.BaseMinimaAtual==''}"
-                                class="text-funil-base">{{graficoFunil1.BaseAbsAtual}}</div>
-                        </div>
-
-                    </div>
+                   
 
                     <div class="linha-dados">
                         <div class="descricao-linha">
@@ -179,7 +170,7 @@
                     <div class="linha-dados">
                         <div class="descricao-linha">
                             <!-- {{'grafico-funil-ultimas-4-semanas'| translate}} -->
-                            Últimas 4 semanas
+                            Último Mês
                         </div>
 
                         <div class="container-funil-porc">
@@ -216,8 +207,7 @@
                     <div class="linha-dados">
                         <div class="descricao-linha">
                             <!-- {{'grafico-funil-prefere'| translate}} -->
-                            Prefere
-                        </div>
+                            Preferência</div>
 
                         <div class="container-funil-porc">
 
@@ -246,26 +236,28 @@
 
                     </div>
 
-                    <div class="linha-dados">
+                    <div class="linha-dados" style="margin-top:40px;">
                         <div class="descricao-linha">
 
-                            <!-- {{'grafico-funil-rejeita'| translate}} -->
-                            Rejeita
+                            <!-- {{'grafico-funil-Rejeição'| translate}} -->
+                            Rejeição
 
                         </div>
 
                         <div class="container-funil-porc">
 
-                            <div class="porc-funil"
+                            <!-- <div class="porc-funil"
                                 [ngStyle]="{  background: setCorGrafico() ,width: definePorcentagem(graficoFunil1.Calc7Atual)}">
                                 <div class="bolha-porc-funil">
                                     <div
                                         class="text-bolha-porc-funil">{{graficoFunil1.Calc7Atual}}</div>
                                 </div>
-                            </div>
+                            </div> -->
+                            <div
+                                        class="text-bolha-porc-funil">{{graficoFunil1.Calc7Atual}}</div>
                         </div>
 
-                        <div class="seta-resultado">
+                        <!-- <div class="seta-resultado">
                             <div class={{validaSigCalc7(graficoFunil1)}}></div>
                         </div>
                         <div class="seta-resultado-funil">
@@ -277,6 +269,17 @@
                                 <div
                                     class="text-bolha">{{graficoFunil1.Calc7ADV}}</div>
                             </div>
+                        </div> -->
+
+                    </div>
+
+                     <div class="linha-dados" >
+                        <div class="descricao-linha">Total</div>
+
+                        <div class="container-funil-porc">
+                            <div
+                                [ngClass]="{'base-vermelha' : graficoFunil1.BaseMinimaAtual != '' , '':graficoFunil1.BaseMinimaAtual==''}"
+                                class="text-funil-base">{{graficoFunil1.BaseAbsAtual}}</div>
                         </div>
 
                     </div>
@@ -301,19 +304,11 @@
                 </div>
 
                 <div class="coluna-dados">
-                    <div class="linha-dados">
+                    <div class="linha-dados" >
                         <div class="separacao-dados-periodo"></div>
                     </div>
 
-                     <div class="linha-dados">
-
-                        <div class="container-funil-porc">
-                            <div
-                                [ngClass]="{'base-vermelha' : graficoFunil2.BaseMinimaAtual != '' , '':graficoFunil2.BaseMinimaAtual==''}"
-                                class="text-funil-base">{{graficoFunil2.BaseAbsAtual}}</div>
-                        </div>
-
-                    </div>
+                   
 
                     <div class="linha-dados">
 
@@ -494,19 +489,22 @@
 
                     </div>
 
-                    <div class="linha-dados">
+                    <div class="linha-dados" style="margin-top:40px;">
 
                         <div class="container-funil-porc">
 
-                            <div class="porc-funil"
+                            <!-- <div class="porc-funil"
                                 [ngStyle]="{  background: setCorGrafico(), width: definePorcentagem(graficoFunil2.Calc7Atual)}">
                                 <div class="bolha-porc-funil">
                                     <div
                                         class="text-bolha-porc-funil">{{graficoFunil2.Calc7Atual}}</div>
                                 </div>
-                            </div>
-                        </div>
+                            </div> -->
 
+                            <div
+                                        class="text-bolha-porc-funil">{{graficoFunil2.Calc7Atual}}</div>
+                        </div>
+<!-- 
                         <div class="seta-resultado">
                             <div class={{validaSigCalc7(graficoFunil2)}}></div>
                         </div>
@@ -519,10 +517,20 @@
                                 <div
                                     class="text-bolha">{{graficoFunil2.Calc7ADV}}</div>
                             </div>
-                        </div>
+                        </div> -->
 
                     </div>
 
+
+                      <div class="linha-dados" >
+
+                        <div class="container-funil-porc">
+                            <div
+                                [ngClass]="{'base-vermelha' : graficoFunil2.BaseMinimaAtual != '' , '':graficoFunil2.BaseMinimaAtual==''}"
+                                class="text-funil-base">{{graficoFunil2.BaseAbsAtual}}</div>
+                        </div>
+
+                    </div>
                    
 
                 </div>
@@ -547,15 +555,7 @@
                         <div class="separacao-dados-periodo"></div>
                     </div>
 
-                      <div class="linha-dados">
-
-                        <div class="container-funil-porc">
-                            <div
-                                [ngClass]="{'base-vermelha' : graficoFunil3.BaseMinimaAtual != '' , '':graficoFunil3.BaseMinimaAtual==''}"
-                                class="text-funil-base">{{graficoFunil3.BaseAbsAtual}}</div>
-                        </div>
-
-                    </div>
+                    
 
                     <div class="linha-dados">
                         <div class="container-funil-porc">
@@ -735,20 +735,23 @@
 
                     </div>
 
-                    <div class="linha-dados">
+                    <div class="linha-dados" style="margin-top:40px;">
 
                         <div class="container-funil-porc">
 
-                            <div class="porc-funil"
+                            <!-- <div class="porc-funil"
                                 [ngStyle]="{  background: setCorGrafico(), width: definePorcentagem(graficoFunil3.Calc7Atual)}">
                                 <div class="bolha-porc-funil">
                                     <div
                                         class="text-bolha-porc-funil">{{graficoFunil3.Calc7Atual}}</div>
                                 </div>
-                            </div>
+                            </div> -->
+
+                            <div
+                                        class="text-bolha-porc-funil">{{graficoFunil3.Calc7Atual}}</div>
                         </div>
 
-                        <div class="seta-resultado">
+                        <!-- <div class="seta-resultado">
                             <div class={{validaSigCalc7(graficoFunil3)}}></div>
                         </div>
                         <div class="seta-resultado-funil">
@@ -760,11 +763,21 @@
                                 <div
                                     class="text-bolha">{{graficoFunil3.Calc7ADV}}</div>
                             </div>
-                        </div>
+                        </div> -->
 
                     </div>
 
                   
+  <div class="linha-dados" >
+
+                        <div class="container-funil-porc">
+                            <div
+                                [ngClass]="{'base-vermelha' : graficoFunil3.BaseMinimaAtual != '' , '':graficoFunil3.BaseMinimaAtual==''}"
+                                class="text-funil-base">{{graficoFunil3.BaseAbsAtual}}</div>
+                        </div>
+
+                    </div>
+
 
                 </div>
             </div>
@@ -789,15 +802,7 @@
                         <div class="separacao-dados-periodo"></div>
                     </div>
 
-                     <div class="linha-dados">
-
-                        <div class="container-funil-porc">
-                            <div
-                                [ngClass]="{'base-vermelha' : graficoFunil4.BaseMinimaAtual != '' , '':graficoFunil4.BaseMinimaAtual==''}"
-                                class="text-funil-base">{{graficoFunil4.BaseAbsAtual}}</div>
-                        </div>
-
-                    </div>
+                    
 
                     <div class="linha-dados">
                         <div class="container-funil-porc">
@@ -978,20 +983,22 @@
 
                     </div>
 
-                    <div class="linha-dados">
+                    <div class="linha-dados" style="margin-top:40px;">
 
                         <div class="container-funil-porc">
 
-                            <div class="porc-funil"
+                            <!-- <div class="porc-funil"
                                 [ngStyle]="{  background: setCorGrafico(), width: definePorcentagem(graficoFunil4.Calc7Atual)}">
                                 <div class="bolha-porc-funil">
                                     <div
                                         class="text-bolha-porc-funil">{{graficoFunil4.Calc7Atual}}</div>
                                 </div>
-                            </div>
+                            </div> -->
+                             <div
+                                        class="text-bolha-porc-funil">{{graficoFunil4.Calc7Atual}}</div>
                         </div>
 
-                        <div class="seta-resultado">
+                        <!-- <div class="seta-resultado">
                             <div class={{validaSigCalc7(graficoFunil4)}}></div>
                         </div>
                         <div class="seta-resultado-funil">
@@ -1003,10 +1010,20 @@
                                 <div
                                     class="text-bolha">{{graficoFunil4.Calc7ADV}}</div>
                             </div>
-                        </div>
+                        </div> -->
 
                     </div>
 
+
+                     <div class="linha-dados">
+
+                        <div class="container-funil-porc">
+                            <div
+                                [ngClass]="{'base-vermelha' : graficoFunil4.BaseMinimaAtual != '' , '':graficoFunil4.BaseMinimaAtual==''}"
+                                class="text-funil-base">{{graficoFunil4.BaseAbsAtual}}</div>
+                        </div>
+
+                    </div>
                    
 
                 </div>

@@ -713,6 +713,9 @@ export class DashboardFourComponent implements OnInit {
 
 
   listaGroup: ItemGrafico[];
+
+     gruposLegendaSub: { descricao: string; cor: string }[] = [];
+
   graficoLinha1() {
 
     var graficoImagemPuraEvolutivoColunaModel = new GraficoLinhasModel();
@@ -786,6 +789,7 @@ export class DashboardFourComponent implements OnInit {
                 // Registra legenda de grupo (sem duplicar)
                 if (!gruposLegenda.find(g => g.descricao === grupo)) {
                   gruposLegenda.push({ descricao: grupo, cor });
+                  this.gruposLegendaSub.push({ descricao: grupo, cor });
                 }
                 grupoAtual = grupo;
                 bandStart = i;

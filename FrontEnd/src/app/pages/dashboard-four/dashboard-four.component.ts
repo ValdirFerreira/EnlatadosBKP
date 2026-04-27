@@ -726,6 +726,7 @@ export class DashboardFourComponent implements OnInit {
     filtros.Sequencia = 0;
 
     filtros.ParamBIA = this.tipoBia2 ? 1 : 2;
+    this.gruposLegendaSub= [];
 
     this.dashBoardFourService.ImagemEvolutiva(filtros)
       .subscribe((response: GraficoLinhasModel) => {

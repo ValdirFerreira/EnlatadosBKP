@@ -28,6 +28,7 @@ import { GraficoDiagnosticoPropagandaModule } from 'src/app/components/grafico-d
 import { SelectCheckboxSTBModule } from 'src/app/components/select-checkbox-STB/select-checkbox-STB.module';
 import { NgSelectModule } from '@ng-select/ng-select';
 import { FormsModule } from '@angular/forms';
+import { ComunicacaoLikeDislikeModule } from 'src/app/components/grafico-ComunicacaoLikeDislike/comunicacao-like-dislike.module';
 
 
 @NgModule({
@@ -58,6 +59,7 @@ import { FormsModule } from '@angular/forms';
     SelectCheckboxSTBModule,
     NgSelectModule,
     FormsModule ,
+    ComunicacaoLikeDislikeModule
   ]
 })
 export class DashboardSevenModule { }

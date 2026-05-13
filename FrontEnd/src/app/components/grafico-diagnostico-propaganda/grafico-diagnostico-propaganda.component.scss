@@ -6,13 +6,16 @@
 
     .conteudo-linha {
         height: 48px;
-        width: 100%;
+        width: 97%;
         background: #fefefe;
         display: flex;
         align-items: center;
+       
 
         .descricao-linha {
-            width: 300px;
+            // width: 300px;
+             padding: 20px;
+             width: 100%;
             font-style: normal;
             font-weight: 500;
             font-size: 12px;
@@ -24,7 +27,8 @@
         }
 
         .grupo-colunas {
-            width: 200px;
+            // width: 200px;
+              width: 100%;
 
             @media screen and (max-width: 1020px) {
                 width: inherit;

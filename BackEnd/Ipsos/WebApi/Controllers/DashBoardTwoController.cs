@@ -23,7 +23,8 @@ namespace WebApi.Controllers
 
         private DashBoardTwoDataAccess _context = new DashBoardTwoDataAccess(Usuario.Email);
 
-       
+        private ComunicacaoLikeDislikeDataAccess _contextComunicacao = new ComunicacaoLikeDislikeDataAccess(Usuario.Email);
+
 
 
         [HttpPost]
@@ -46,5 +47,34 @@ namespace WebApi.Controllers
                 return Request.CreateResponse(HttpStatusCode.InternalServerError, response);
             }
         }
+
+
+
+        [HttpPost]
+        [Route("CarregarComunicacaoLikeDislikeComparativoMarcas")]
+        public HttpResponseMessage CarregarComunicacaoLikeDislikeComparativoMarcas(FiltroPadrao filtro)
+        {
+            var response = new Response();
+
+            try
+            {
+                var list = _contextComunicacao.CarregarComparativoMarcas(filtro);
+
+                return Request.CreateResponse(HttpStatusCode.OK, list);
+            }
+            catch (SqlException ex)
+            {
+                LogText.Instance.Error(
+                    this.GetType().Name,
+                    System.Reflection.MethodBase.GetCurrentMethod().Name,
+                    "Sistema" + ex.Message);
+
+                response.StatusCode = (int)HttpStatusCode.InternalServerError;
+                response.Error = $"Bad request - ({ex.Message})";
+
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, response);
+            }
+        }
+
     }
 }

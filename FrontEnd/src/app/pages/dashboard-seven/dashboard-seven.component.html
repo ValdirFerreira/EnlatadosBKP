@@ -79,7 +79,8 @@
         </div>
     </div>
 
-    <div class="card-medio" style="min-height: 575px;"  id="comparativo-marcas-evolutivo"
+    <div class="card-medio" style="min-height: 575px;"
+        id="comparativo-marcas-evolutivo"
         *ngIf="ativaGraficoImagens">
         <div class="container-card">
             <div class="header-card">
@@ -164,7 +165,7 @@
 
 <div class="container-dashboard-duplo-base">
 
-    <div class="card-medio" id="grafico3">
+    <div class="card-medio" style="display: none;" id="grafico3">
         <div class="container-card">
             <div class="header-card">
                 <div class="container-title">
@@ -349,45 +350,95 @@
 
 </div>
 
-
 <div class="container-dashboard-vista">
-    <div class="card-medio" id="grafico5">
+
+    <div class="card" id="comparativo-marcas"
+        *ngIf="ativaComunicacaoLikeDislike">
         <div class="container-card">
             <div class="header-card">
                 <div class="container-title">
                     <div class="title">
-                        <!-- {{'dashboard-seven-grafico5-titulo' | translate}} -->
-                         Novo Grafico -- Verificar
+                        <!-- {{'dashboard-two-grafico1-titulo' | translate}} -->
+                         Likes / Dislikes
                     </div>
                     <div class="legend">
-                        {{'dashboard-seven-grafico1-subtitulo' | translate}}
+                        {{'dashboard-two-grafico1-subtitulo' | translate}}
                     </div>
                     <div class="legend-sub">
-
+                        <div class="container-sig">
+                            <div class="sig-positive"> </div>
+                            <div class="sig-negative"> </div> {{'dashboard-sig'
+                            | translate}}
+                        </div>
                     </div>
                 </div>
-                <div class="container-export">
-                    <div class="icon-export" >
+                <!-- <div class="container-export">
+                    <div class="icon-export" (click)="exportToExcelGrafico1()">
                         <div class="icon-excel">
                         </div>
-                        <div class="titulo-exportar">{{'dashboard-exporta' |
-                            translate}}</div>
+                        <div class="titulo-exportar">{{'dashboard-exporta' | translate}}</div>
                     </div>
-                    <div class="icon-export" >
+                    <div class="icon-export" (click)="exportToPptComparativoMarcas()">
                         <div class="icon-powerpoint">
                         </div>
-                        <div class="titulo-exportar">{{'dashboard-exporta' |
-                            translate}}</div>
+                        <div class="titulo-exportar">{{'dashboard-exporta' | translate}}</div>
                     </div>
-                </div>
+                </div> -->
             </div>
 
-          
+            <div class="content-card p-relative">
+                <div class="container-legenda">
 
+                    <div class="container-texto">
+                        <div class="sinal-vermelho"></div>
+                        <div class="texto-legenda">Não gostei nada</div>
+                    </div>
+                    <div class="container-texto">
+                        <div class="sinal-laranja"></div>
+                        <div class="texto-legenda">Não gostei muito</div>
+                    </div>
+                    <div class="container-texto">
+                        <div class="sinal-cinza-22"></div>
+                        <div class="texto-legenda">Não gostei nem
+                            desgostei</div>
+                    </div>
+                    <div class="container-texto">
+                        <div class="sinal-verde-claro"></div>
+                        <div class="texto-legenda">Gostei um pouco</div>
+                    </div>
+                    <div class="container-texto">
+                        <div class="sinal-verde-escuro"></div>
+                        <div class="texto-legenda">Gostei muito</div>
+                    </div>
+
+                    <div class="container-texto">
+                        <div class="sinal-t2b"></div>
+                        <div class="texto-legenda">T2B </div>
+                    </div>
+                </div>
+
+                <comunicacao-like-dislike class="scroll"
+                    (marcaColuna1)="onchangeMarca($event,1)"
+                    (marcaColuna2)="onchangeMarca($event,2)"
+                    (marcaColuna3)="onchangeMarca($event,3)"
+                    (marcaColuna4)="onchangeMarca($event,4)"
+                    (marcaColuna5)="onchangeMarca($event,5)"
+                    [comunicacaoLikeDislikeModel1]="comunicacaoLikeDislikeModel1"
+                    [comunicacaoLikeDislikeModel2]="comunicacaoLikeDislikeModel2"
+                    [comunicacaoLikeDislikeModel3]="comunicacaoLikeDislikeModel3"
+                    [comunicacaoLikeDislikeModel4]="comunicacaoLikeDislikeModel4"
+                    [comunicacaoLikeDislikeModel5]="comunicacaoLikeDislikeModel5">
+                </comunicacao-like-dislike>
+
+            </div>
+
+            <!-- <div class="content-card">
+                <app-aviso-sem-dados></app-aviso-sem-dados>
+            </div> -->
         </div>
+
     </div>
 
 </div>
-
 
 <footer-bottom></footer-bottom>

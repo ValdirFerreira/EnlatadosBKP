@@ -57,6 +57,314 @@ namespace Business.Exportacoes
             }
         }
 
+
+
+
+        public byte[] DownloadComunicacaoLikeDislikeComparativoMarcas(
+    ComunicacaoLikeDislikeFullLoad grafico,
+    string tituloPlanilha,
+    List<TraducaoComponente> listaTraducaoComponente)
+        {
+            string fileName = "";
+            string templateFileName = "";
+
+            try
+            {
+                string strDownloadNome;
+
+                strDownloadNome = "Modelo_Exportação_Gráficos_Padrao";
+
+                string strPath = AdjustPath(HttpContext.Current.Server.MapPath("~")) +
+                                 @"Arquivos\ExcelExportacao\workspace\";
+
+                fileName = strPath +
+                           strDownloadNome +
+                           DateTime.Now.ToString("yyyy-MM-dd HH':'mm':'ss':'fff")
+                           .Replace("-", "")
+                           .Replace(":", "")
+                           .Replace(" ", "") + ".xlsx";
+
+                templateFileName = AdjustPath(HttpContext.Current.Server.MapPath("~")) +
+                                   @"Arquivos\ExcelExportacao\Modelos\" +
+                                   strDownloadNome + ".xlsx";
+
+                GetNewFileMemory(ref templateFileName);
+
+                if (File.Exists(fileName))
+                    File.Delete(fileName);
+
+                MemoryStream returnedMemoryStream = null;
+
+                using (var file = new FileStream(fileName, FileMode.CreateNew))
+                {
+                    using (var temp = new FileStream(templateFileName, FileMode.Open))
+                    {
+                        ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
+
+                        ExcelPackage package = new ExcelPackage(file, temp);
+
+                        ExcelWorksheet wworksheet = package.Workbook.Worksheets["Data"];
+
+                        wworksheet.View.ShowHeaders = true;
+                        wworksheet.View.ShowGridLines = false;
+
+                        // Título
+                        wworksheet.Cells[3, 2].Value = tituloPlanilha;
+
+                        int currentRow = 6;
+                        int colNameTable = 3;
+                        int lastColName = 0;
+
+                        if (grafico != null)
+                        {
+                            // Cabeçalho marcas
+                            wworksheet.Cells[currentRow, colNameTable].Value = grafico.ComunicacaoLikeDislike1.DescMarca;
+                            colNameTable++;
+
+                            wworksheet.Cells[currentRow, colNameTable].Value = grafico.ComunicacaoLikeDislike2.DescMarca;
+                            colNameTable++;
+
+                            wworksheet.Cells[currentRow, colNameTable].Value = grafico.ComunicacaoLikeDislike3.DescMarca;
+                            colNameTable++;
+
+                            wworksheet.Cells[currentRow, colNameTable].Value = grafico.ComunicacaoLikeDislike4.DescMarca;
+                            colNameTable++;
+
+                            wworksheet.Cells[currentRow, colNameTable].Value = grafico.ComunicacaoLikeDislike5.DescMarca;
+
+                            lastColName = colNameTable;
+
+                            // Formatação cabeçalho
+                            wworksheet.Cells[
+                                ExcelUtil.GetCelulaByColumnIndex(3, 6) + ":" +
+                                ExcelUtil.GetCelulaByColumnIndex(lastColName, currentRow)]
+                                .Style.Font.Size = 11;
+
+                            wworksheet.Cells[
+                                ExcelUtil.GetCelulaByColumnIndex(3, 6) + ":" +
+                                ExcelUtil.GetCelulaByColumnIndex(lastColName, currentRow)]
+                                .Style.Font.Name = "Arial Nova Cond";
+
+                            wworksheet.Cells[
+                                ExcelUtil.GetCelulaByColumnIndex(3, 6) + ":" +
+                                ExcelUtil.GetCelulaByColumnIndex(lastColName, currentRow)]
+                                .Style.Font.Bold = true;
+
+                            wworksheet.Cells[
+                                ExcelUtil.GetCelulaByColumnIndex(3, 6) + ":" +
+                                ExcelUtil.GetCelulaByColumnIndex(lastColName, currentRow)]
+                                .Style.Border.Top.Style = ExcelBorderStyle.Thin;
+
+                            wworksheet.Cells[
+                                ExcelUtil.GetCelulaByColumnIndex(3, 6) + ":" +
+                                ExcelUtil.GetCelulaByColumnIndex(lastColName, currentRow)]
+                                .Style.Border.Left.Style = ExcelBorderStyle.Thin;
+
+                            wworksheet.Cells[
+                                ExcelUtil.GetCelulaByColumnIndex(3, 6) + ":" +
+                                ExcelUtil.GetCelulaByColumnIndex(lastColName, currentRow)]
+                                .Style.Border.Bottom.Style = ExcelBorderStyle.Thin;
+
+                            wworksheet.Cells[
+                                ExcelUtil.GetCelulaByColumnIndex(3, 6) + ":" +
+                                ExcelUtil.GetCelulaByColumnIndex(lastColName, currentRow)]
+                                .Style.Border.Right.Style = ExcelBorderStyle.Thin;
+
+                            wworksheet.Cells[
+                                ExcelUtil.GetCelulaByColumnIndex(3, 6) + ":" +
+                                ExcelUtil.GetCelulaByColumnIndex(lastColName, currentRow)]
+                                .Style.HorizontalAlignment = ExcelHorizontalAlignment.Center;
+
+                            wworksheet.Cells[
+                                ExcelUtil.GetCelulaByColumnIndex(3, 6) + ":" +
+                                ExcelUtil.GetCelulaByColumnIndex(lastColName, currentRow)]
+                                .Style.VerticalAlignment = ExcelVerticalAlignment.Center;
+
+                            currentRow++;
+                            colNameTable = 2;
+
+                            // Legendas laterais
+                            wworksheet.Cells[currentRow, colNameTable].Value = "Gostei muito";
+                            currentRow++;
+
+                            wworksheet.Cells[currentRow, colNameTable].Value = "Gostei um pouco";
+                            currentRow++;
+
+                            wworksheet.Cells[currentRow, colNameTable].Value = "Não gostei nem desgostei";
+                            currentRow++;
+
+                            wworksheet.Cells[currentRow, colNameTable].Value = "Não gostei muito";
+                            currentRow++;
+
+                            wworksheet.Cells[currentRow, colNameTable].Value = "Não gostei nada";
+                            currentRow++;
+
+                            wworksheet.Cells[currentRow, colNameTable].Value = "T2B";
+                            currentRow++;
+
+                            wworksheet.Cells[currentRow, colNameTable].Value = "Base";
+
+                            currentRow = 7;
+                            colNameTable = 3;
+
+                            var listaGraficos = new List<ComunicacaoLikeDislike>
+                    {
+                        grafico.ComunicacaoLikeDislike1,
+                        grafico.ComunicacaoLikeDislike2,
+                        grafico.ComunicacaoLikeDislike3,
+                        grafico.ComunicacaoLikeDislike4,
+                        grafico.ComunicacaoLikeDislike5
+                    };
+
+                            foreach (var item in listaGraficos)
+                            {
+                                currentRow = 7;
+
+                                // Gostei muito
+                                wworksheet.Cells[currentRow, colNameTable].Value = item.PercGostei;
+
+                                if (item.TesteSIGGostei == "MENOR")
+                                    wworksheet.Cells[currentRow, colNameTable].Style.Font.Color.SetColor(Color.Red);
+
+                                if (item.TesteSIGGostei == "MAIOR")
+                                    wworksheet.Cells[currentRow, colNameTable].Style.Font.Color.SetColor(Color.Blue);
+
+                                currentRow++;
+
+                                // Gostei pouco
+                                wworksheet.Cells[currentRow, colNameTable].Value = item.PercGosteiPouco;
+
+                                if (item.TesteSIGGosteiPouco == "MENOR")
+                                    wworksheet.Cells[currentRow, colNameTable].Style.Font.Color.SetColor(Color.Red);
+
+                                if (item.TesteSIGGosteiPouco == "MAIOR")
+                                    wworksheet.Cells[currentRow, colNameTable].Style.Font.Color.SetColor(Color.Blue);
+
+                                currentRow++;
+
+                                // Nenhum
+                                wworksheet.Cells[currentRow, colNameTable].Value = item.PercNenhum;
+
+                                if (item.TesteSIGNenhum == "MENOR")
+                                    wworksheet.Cells[currentRow, colNameTable].Style.Font.Color.SetColor(Color.Red);
+
+                                if (item.TesteSIGNenhum == "MAIOR")
+                                    wworksheet.Cells[currentRow, colNameTable].Style.Font.Color.SetColor(Color.Blue);
+
+                                currentRow++;
+
+                                // Não gostei
+                                wworksheet.Cells[currentRow, colNameTable].Value = item.PercNaoGostei;
+
+                                if (item.TesteSigNaoGostei == "MENOR")
+                                    wworksheet.Cells[currentRow, colNameTable].Style.Font.Color.SetColor(Color.Red);
+
+                                if (item.TesteSigNaoGostei == "MAIOR")
+                                    wworksheet.Cells[currentRow, colNameTable].Style.Font.Color.SetColor(Color.Blue);
+
+                                currentRow++;
+
+                                // Não gostei nada
+                                wworksheet.Cells[currentRow, colNameTable].Value = item.PercNaoGosteiPouco;
+
+                                if (item.TesteSigNaoGosteiPouco == "MENOR")
+                                    wworksheet.Cells[currentRow, colNameTable].Style.Font.Color.SetColor(Color.Red);
+
+                                if (item.TesteSigNaoGosteiPouco == "MAIOR")
+                                    wworksheet.Cells[currentRow, colNameTable].Style.Font.Color.SetColor(Color.Blue);
+
+                                currentRow++;
+
+                                // T2B
+                                wworksheet.Cells[currentRow, colNameTable].Value = item.PercT2B;
+
+                                if (item.TesteSigT2B == "MENOR")
+                                    wworksheet.Cells[currentRow, colNameTable].Style.Font.Color.SetColor(Color.Red);
+
+                                if (item.TesteSigT2B == "MAIOR")
+                                    wworksheet.Cells[currentRow, colNameTable].Style.Font.Color.SetColor(Color.Blue);
+
+                                currentRow++;
+
+                                // Base
+                                wworksheet.Cells[currentRow, colNameTable].Value = item.BaseAbs;
+
+                                colNameTable++;
+                            }
+
+                            lastColName = colNameTable - 1;
+
+                            // Formatação dados
+                            wworksheet.Cells[
+                                ExcelUtil.GetCelulaByColumnIndex(2, 7) + ":" +
+                                ExcelUtil.GetCelulaByColumnIndex(lastColName, currentRow)]
+                                .Style.Font.Size = 11;
+
+                            wworksheet.Cells[
+                                ExcelUtil.GetCelulaByColumnIndex(2, 7) + ":" +
+                                ExcelUtil.GetCelulaByColumnIndex(lastColName, currentRow)]
+                                .Style.Font.Name = "Arial Nova Cond";
+
+                            wworksheet.Cells[
+                                ExcelUtil.GetCelulaByColumnIndex(2, 7) + ":" +
+                                ExcelUtil.GetCelulaByColumnIndex(lastColName, currentRow)]
+                                .Style.Font.Bold = true;
+
+                            wworksheet.Cells[
+                                ExcelUtil.GetCelulaByColumnIndex(2, 7) + ":" +
+                                ExcelUtil.GetCelulaByColumnIndex(lastColName, currentRow)]
+                                .Style.Border.Left.Style = ExcelBorderStyle.Thin;
+
+                            wworksheet.Cells[
+                                ExcelUtil.GetCelulaByColumnIndex(2, 7) + ":" +
+                                ExcelUtil.GetCelulaByColumnIndex(lastColName, currentRow)]
+                                .Style.Border.Bottom.Style = ExcelBorderStyle.Thin;
+
+                            wworksheet.Cells[
+                                ExcelUtil.GetCelulaByColumnIndex(2, 7) + ":" +
+                                ExcelUtil.GetCelulaByColumnIndex(lastColName, currentRow)]
+                                .Style.Border.Right.Style = ExcelBorderStyle.Thin;
+
+                            wworksheet.Cells[
+                                ExcelUtil.GetCelulaByColumnIndex(2, 7) + ":" +
+                                ExcelUtil.GetCelulaByColumnIndex(lastColName, currentRow)]
+                                .Style.HorizontalAlignment = ExcelHorizontalAlignment.Center;
+
+                            wworksheet.Cells[
+                                ExcelUtil.GetCelulaByColumnIndex(2, 7) + ":" +
+                                ExcelUtil.GetCelulaByColumnIndex(lastColName, currentRow)]
+                                .Style.VerticalAlignment = ExcelVerticalAlignment.Center;
+                        }
+
+                        wworksheet.Select();
+
+                        using (MemoryStream memoryStream = new MemoryStream())
+                        {
+                            package.SaveAs(memoryStream);
+
+                            memoryStream.Position = 0;
+
+                            returnedMemoryStream = memoryStream;
+                        }
+                    }
+                }
+
+                return File.ReadAllBytes(@"" + fileName);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                File.Delete(fileName);
+                File.Delete(templateFileName);
+            }
+        }
+
+
+
+
         #region DownloadDashboardTwo
         public byte[] DownloadDashboardTwoComparativoMarcas(GraficoColunasFullLoad grafico, string tituloPlanilha, List<TraducaoComponente> listaTraducaoComponente)
         {

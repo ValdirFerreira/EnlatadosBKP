@@ -54,3 +54,73 @@
     white-space: normal !important;
     text-align: center;
 }
+
+
+.container-legenda {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: start;
+    gap: 16px;
+    margin-top: 16px;
+    margin-bottom: 20px ;
+    padding: 8px 0;
+}
+
+.container-texto {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 6px;
+}
+
+.texto-legenda {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 16px;
+    color: #585656;
+    
+}
+
+.sinal-verde-escuro {
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
+    background-color: #00c853;
+}
+
+.sinal-verde-claro {
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
+    background-color: #64dd17;
+}
+
+.sinal-cinza-22 {
+    width: 12px;
+    height: 12px;
+    border-radius: 20px;
+    background-color: #bdbdbd;
+}
+
+.sinal-laranja {
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
+    background-color: #ff7043;
+}
+
+.sinal-vermelho {
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
+    background-color: #d50000;
+}
+
+.sinal-t2b {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #0fafa9;
+}

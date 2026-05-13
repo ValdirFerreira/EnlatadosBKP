@@ -15,7 +15,7 @@ export class SelectImageComponent implements OnInit {
   @Input('titulo') tituloPagina: string;
   @Input() pageAtual: string;
   @Input() home: boolean = false;
-  // @Output() ModelMarcas: PadraoComboFiltro;
+  @Input() disabled: boolean = false;
   @Output('ImageModelMarcas') ImageModelMarcas: EventEmitter<PadraoComboFiltro> = new EventEmitter<PadraoComboFiltro>();
 
   @Input() IndexCombo: number = 0;
@@ -30,7 +30,6 @@ export class SelectImageComponent implements OnInit {
   ) { }
 
   public listaMarcas: Array<PadraoComboFiltro>;
-  // //MODEL
   public ModelMarcas: PadraoComboFiltro;
 
 
@@ -69,11 +68,10 @@ export class SelectImageComponent implements OnInit {
       this.descInicial = this.filtroService.listaMarcas[0].DescItem;
       return "assets/marcas/" + this.filtroService.listaMarcas[0].IdItem + ".svg";
     }
-    else{
+    else {
       this.descInicial = '';
       return "assets/marcas/0.svg";
     }
   }
 
 }
-

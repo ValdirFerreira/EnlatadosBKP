@@ -47,6 +47,7 @@
     <Compile Include="GraficoAranha\GraficoAranhaRetornoProcedure.cs" />
     <Compile Include="GraficoBVCEvolutivo\GraficoBVCEvolutivo.cs" />
     <Compile Include="GraficoBVCTop10\GraficoBVCTop10.cs" />
+    <Compile Include="GraficoColunas\ComunicacaoLikeDislike.cs" />
     <Compile Include="GraficoColunas\GraficoColunas.cs" />
     <Compile Include="GraficoComunicacaoDiagnostico\GraficoComunicacaoDiagnostico.cs" />
     <Compile Include="GraficoComunicacaoRecall\GraficoComunicacaoRecall.cs" />

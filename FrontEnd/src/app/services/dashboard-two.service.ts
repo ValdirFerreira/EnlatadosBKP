@@ -4,6 +4,7 @@ import { environment } from 'src/environments/environment';
 import { FiltroPadrao, FiltroPadraoFullLoad } from '../models/Filtros/FiltroPadrao';
 import { GraficoColunaModel } from '../models/grafico-coluna/grafico-coluna';
 import { AuthService } from './auth.service';
+import { ComunicacaoLikeDislikeModel } from '../models/grafico-coluna/ComunicacaoLikeDislikeModel';
 
 @Injectable({
   providedIn: 'root'
@@ -25,6 +26,14 @@ export class DashBoardTwoService {
       filtro
     );
   }
+
+
+  carregarComunicacaoLikeDislikeComparativoMarcas(filtro: FiltroPadrao) {
+  return this.httpClient.post<ComunicacaoLikeDislikeModel>(
+    `${this.baseUrl}/DashBoardTwo/CarregarComunicacaoLikeDislikeComparativoMarcas/`,
+    filtro
+  );
+}
  
   
 }

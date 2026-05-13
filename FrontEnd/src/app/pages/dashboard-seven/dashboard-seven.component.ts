@@ -20,6 +20,7 @@ import { GraficoComunicacaoRecall } from 'src/app/models/GraficoComunicacaoRecal
 import { GraficoComunicacaoDiagnostico } from 'src/app/models/GraficoComunicacaoDiagnostico/GraficoComunicacaoDiagnostico';
 import { ComunicacaoQuadroResumo } from 'src/app/models/ComunicacaoQuadroResumo/ComunicacaoQuadroResumo';
 import { LogService } from 'src/app/services/log.service';
+import { ComunicacaoLikeDislikeModel } from 'src/app/models/grafico-coluna/ComunicacaoLikeDislikeModel';
 
 
 
@@ -52,6 +53,7 @@ export class DashboardSevenComponent implements OnInit {
     private authService: AuthService,
     private session: Session,
     private logService: LogService,
+    private dashBoardTwoService: DashBoardTwoService,
   ) { }
 
   ngOnInit(): void {
@@ -68,6 +70,8 @@ export class DashboardSevenComponent implements OnInit {
 
     EventEmitterService.get("emit-dashboard-seven").subscribe((x) => {
       this.carregaFiltroSTB();
+
+      this.carregarGraficos();
 
       this.logService.GravaLogRota(this.router.url).subscribe(
       );
@@ -185,6 +189,8 @@ export class DashboardSevenComponent implements OnInit {
     this.carregarGraficoComunicacaoVisto();
     this.carregarGraficoComunicacaoDiagnostico();
     this.carregarGraficoComunicacaoSource();
+
+    this.carregarComunicacaoLikeDislikeFirstLoad();
   }
 
 
@@ -316,6 +322,187 @@ export class DashboardSevenComponent implements OnInit {
   }
 
 
+
+
+ativaComunicacaoLikeDislike: boolean = true;
+
+carregarComunicacaoLikeDislikeFirstLoad() {
+
+    var filtroColuna1 = this.carregaFiltros();
+    filtroColuna1.Marca = new Array<PadraoComboFiltro>();
+    filtroColuna1.Marca.push(this.marcaColuna1);
+    filtroColuna1.Sequencia = 1;
+
+    this.dashBoardTwoService.carregarComunicacaoLikeDislikeComparativoMarcas(filtroColuna1)
+        .subscribe((coluna1: ComunicacaoLikeDislikeModel) => {
+          debugger
+            this.comunicacaoLikeDislikeModel1 = coluna1;
+        }, (error) => console.error(error));
+
+
+
+    var filtroColuna2 = this.carregaFiltros();
+    filtroColuna2.Marca = new Array<PadraoComboFiltro>();
+    filtroColuna2.Marca.push(this.marcaColuna2);
+    filtroColuna2.Sequencia = 2;
+
+    this.dashBoardTwoService.carregarComunicacaoLikeDislikeComparativoMarcas(filtroColuna2)
+        .subscribe((coluna2: ComunicacaoLikeDislikeModel) => {
+            this.comunicacaoLikeDislikeModel2 = coluna2;
+        }, (error) => console.error(error));
+
+
+
+    var filtroColuna3 = this.carregaFiltros();
+    filtroColuna3.Marca = new Array<PadraoComboFiltro>();
+    filtroColuna3.Marca.push(this.marcaColuna3);
+    filtroColuna3.Sequencia = 3;
+
+    this.dashBoardTwoService.carregarComunicacaoLikeDislikeComparativoMarcas(filtroColuna3)
+        .subscribe((coluna3: ComunicacaoLikeDislikeModel) => {
+            this.comunicacaoLikeDislikeModel3 = coluna3;
+        }, (error) => console.error(error));
+
+
+
+    var filtroColuna4 = this.carregaFiltros();
+    filtroColuna4.Marca = new Array<PadraoComboFiltro>();
+    filtroColuna4.Marca.push(this.marcaColuna4);
+    filtroColuna4.Sequencia = 4;
+
+    this.dashBoardTwoService.carregarComunicacaoLikeDislikeComparativoMarcas(filtroColuna4)
+        .subscribe((coluna4: ComunicacaoLikeDislikeModel) => {
+            this.comunicacaoLikeDislikeModel4 = coluna4;
+        }, (error) => console.error(error));
+
+
+
+    var filtroColuna5 = this.carregaFiltros();
+    filtroColuna5.Marca = new Array<PadraoComboFiltro>();
+    filtroColuna5.Marca.push(this.marcaColuna5);
+    filtroColuna5.Sequencia = 5;
+
+    this.dashBoardTwoService.carregarComunicacaoLikeDislikeComparativoMarcas(filtroColuna5)
+        .subscribe((coluna5: ComunicacaoLikeDislikeModel) => {
+
+            this.comunicacaoLikeDislikeModel5 = coluna5;
+
+            this.ativaComunicacaoLikeDislike = true;
+
+        }, (error) => console.error(error));
+}
+
+
+
+carregarGraficos() {
+
+    this.filtroService.FiltroMarcas(this.filtroService.ModelRegiao)
+        .subscribe((response: Array<PadraoComboFiltro>) => {
+
+            this.filtroService.listaMarcas = response;
+
+            this.marcaColuna1 = null;
+            this.marcaColuna2 = null;
+            this.marcaColuna3 = null;
+            this.marcaColuna4 = null;
+            this.marcaColuna5 = null;
+
+            this.ativaComunicacaoLikeDislike = false;
+
+            this.comunicacaoLikeDislikeModel1 = null;
+            this.comunicacaoLikeDislikeModel2 = null;
+            this.comunicacaoLikeDislikeModel3 = null;
+            this.comunicacaoLikeDislikeModel4 = null;
+            this.comunicacaoLikeDislikeModel5 = null;
+
+            this.carregaFiltroMarcas();
+
+            this.carregarComunicacaoLikeDislikeFirstLoad();
+
+        }, (error) => console.error(error));
+}
+
+ public carregaFiltroMarcas() {
+
+    if (!this.marcaColuna1)
+      this.marcaColuna1 = this.filtroService.listaMarcas[0]
+
+    if (!this.marcaColuna2)
+      this.marcaColuna2 = this.filtroService.listaMarcas[1]
+
+    if (!this.marcaColuna3)
+      this.marcaColuna3 = this.filtroService.listaMarcas[2]
+
+    if (!this.marcaColuna4)
+      this.marcaColuna4 = this.filtroService.listaMarcas[3]
+
+    if (!this.marcaColuna5)
+      this.marcaColuna5 = this.filtroService.listaMarcas[4]
+
+
+  }
+
+
+comunicacaoLikeDislikeModel1 = new ComunicacaoLikeDislikeModel();
+comunicacaoLikeDislikeModel2 = new ComunicacaoLikeDislikeModel();
+comunicacaoLikeDislikeModel3 = new ComunicacaoLikeDislikeModel();
+comunicacaoLikeDislikeModel4 = new ComunicacaoLikeDislikeModel();
+comunicacaoLikeDislikeModel5 = new ComunicacaoLikeDislikeModel();
+
+
+  // Filtros de Marca para utilização da geração do Excel Grafico Comparativo Marcas 
+  marcaColuna1: PadraoComboFiltro;
+  marcaColuna2: PadraoComboFiltro;
+  marcaColuna3: PadraoComboFiltro;
+  marcaColuna4: PadraoComboFiltro;
+  marcaColuna5: PadraoComboFiltro;
+
+  onchangeMarca(item: PadraoComboFiltro, nCol: number) {
+
+    var filtroColuna = this.carregaFiltros();
+
+    filtroColuna.Marca = new Array<PadraoComboFiltro>();
+    filtroColuna.Marca.push(item);
+
+    filtroColuna.Sequencia = nCol;
+    filtroColuna.ParamDenominators = 1;
+
+    this.dashBoardTwoService
+        .carregarComunicacaoLikeDislikeComparativoMarcas(filtroColuna)
+        .subscribe((retorno: ComunicacaoLikeDislikeModel) => {
+
+            switch (nCol) {
+
+                case 1:
+                    this.comunicacaoLikeDislikeModel1 = retorno;
+                    this.marcaColuna1 = item;
+                    break;
+
+                case 2:
+                    this.comunicacaoLikeDislikeModel2 = retorno;
+                    this.marcaColuna2 = item;
+                    break;
+
+                case 3:
+                    this.comunicacaoLikeDislikeModel3 = retorno;
+                    this.marcaColuna3 = item;
+                    break;
+
+                case 4:
+                    this.comunicacaoLikeDislikeModel4 = retorno;
+                    this.marcaColuna4 = item;
+                    break;
+
+                case 5:
+                    this.comunicacaoLikeDislikeModel5 = retorno;
+                    this.marcaColuna5 = item;
+                    break;
+            }
+
+        },
+        (error) => console.error(error),
+        () => { });
+}
 
   
 }

@@ -53,6 +53,7 @@ namespace WebApi.Controllers
         private ExportaGraficoColuna _exportaExcelGraficoColuna = new ExportaGraficoColuna();
         private DashBoardEightDataAccess _contextDashBoardEight = new DashBoardEightDataAccess(Usuario.Email);
         private DashBoardNineDataAccess _contextDashboardNine = new DashBoardNineDataAccess(Usuario.Email);
+        private ComunicacaoLikeDislikeDataAccess _contextComunicacao = new ComunicacaoLikeDislikeDataAccess(Usuario.Email);
 
         #region DownloadDashboardTwo
 
@@ -75,6 +76,44 @@ namespace WebApi.Controllers
                 return ResponseMessage(Request.CreateErrorResponse(HttpStatusCode.InternalServerError, ex.Message));
             }
         }
+
+
+        [HttpPost]
+        [Route("DownloadComunicacaoLikeDislikeComparativoMarcas")]
+        public async Task<IHttpActionResult> DownloadComunicacaoLikeDislikeComparativoMarcas(FiltroPadraoExcel filtro)
+        {
+            try
+            {
+                MemoryStream result;
+
+                var comunicacaoLikeDislikeFullLoad = _contextComunicacao.CarregarComparativoMarcasExcel(filtro);
+
+                var listTraducao = _contextTraducao.ObtemTraducoes();
+
+                result = new MemoryStream(
+                    _exportaExcelGraficoColuna.DownloadComunicacaoLikeDislikeComparativoMarcas(
+                        comunicacaoLikeDislikeFullLoad,
+                        filtro.TituloGrafico,
+                        listTraducao));
+
+                return new ArquivoResult(
+                    result,
+                    Request,
+                    "Arquivo" + " " +
+                    DateTime.Now.ToString("yyyy-MM-dd HH':'mm':'ss':'fff")
+                    .Replace("-", "")
+                    .Replace(":", "")
+                    .Replace(" ", "") + ".xlsx");
+            }
+            catch (Exception ex)
+            {
+                return ResponseMessage(
+                    Request.CreateErrorResponse(
+                        HttpStatusCode.InternalServerError,
+                        ex.Message));
+            }
+        }
+
 
 
         [HttpPost]

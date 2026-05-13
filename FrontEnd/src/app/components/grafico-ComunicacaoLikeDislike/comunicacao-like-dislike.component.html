@@ -1,0 +1,462 @@
+<div class="container-grafico">
+    <table border="0" cellpadding="0" cellspacing="0" class="tabelagrafico">
+        <tr>
+
+            <!-- COLUNA 1 -->
+            <td>
+                <div class="div-principal-grafico-colunas">
+
+                    <div class="group-filtro-coluna">
+                        <!-- <select-image   [IndexCombo]=0 (ImageModelMarcas)="onchangeMarcaColuna1($event)"></select-image> -->
+                       <!-- <select-image [disabled]="true" [IndexCombo]=0 (ImageModelMarcas)="onchangeMarcaColuna1($event)"></select-image> -->
+                    </div>
+
+                    <div class="bolha-topo-grafico">
+                        <div class="bolha-resultado-topo">
+                            {{ comunicacaoLikeDislikeModel1.PercT2B }}
+                        </div>
+                        <div class="seta-resultado">
+                            <div class={{validaSig(comunicacaoLikeDislikeModel1.TesteSigT2B)}}></div>
+                        </div>
+                    </div>
+
+                    <div class="coluna-sem-dados"
+                        [ngStyle]="{ display: validaColunaSemDados(comunicacaoLikeDislikeModel1) ? 'none' : 'block'}">
+                    </div>
+
+                    <div class="coluna1"
+                        [ngStyle]="{ height: ajusteColuna(comunicacaoLikeDislikeModel1.PercGostei), display: comunicacaoLikeDislikeModel1.PercGostei == 0 ? 'none' : 'block'}">
+                        <div class="div-bolha">
+                            <div class="bolha-resultado">
+                                {{ comunicacaoLikeDislikeModel1.PercGostei }}
+                            </div>
+                            <div class="seta-resultado">
+                                <div class={{validaSig(comunicacaoLikeDislikeModel1.TesteSIGGostei)}}></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="coluna2"
+                        [ngStyle]="{ height: ajusteColuna(comunicacaoLikeDislikeModel1.PercGosteiPouco), display: comunicacaoLikeDislikeModel1.PercGosteiPouco == 0 ? 'none' : 'block'}">
+                        <div class="div-bolha">
+                            <div class="bolha-resultado">
+                                {{ comunicacaoLikeDislikeModel1.PercGosteiPouco }}
+                            </div>
+                            <div class="seta-resultado">
+                                <div class={{validaSig(comunicacaoLikeDislikeModel1.TesteSIGGosteiPouco)}}></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="coluna3"
+                        [ngStyle]="{ height: ajusteColuna(comunicacaoLikeDislikeModel1.PercNenhum), display: comunicacaoLikeDislikeModel1.PercNenhum == 0 ? 'none' : 'block'}">
+                        <div class="div-bolha">
+                            <div class="bolha-resultado">
+                                {{ comunicacaoLikeDislikeModel1.PercNenhum }}
+                            </div>
+                            <div class="seta-resultado">
+                                <div class={{validaSig(comunicacaoLikeDislikeModel1.TesteSIGNenhum)}}></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="coluna4"
+                        [ngStyle]="{ height: ajusteColuna(comunicacaoLikeDislikeModel1.PercNaoGostei), display: comunicacaoLikeDislikeModel1.PercNaoGostei == 0 ? 'none' : 'block'}">
+                        <div class="div-bolha">
+                            <div class="bolha-resultado">
+                                {{ comunicacaoLikeDislikeModel1.PercNaoGostei }}
+                            </div>
+                            <div class="seta-resultado">
+                                <div class={{validaSig(comunicacaoLikeDislikeModel1.TesteSigNaoGostei)}}></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="coluna5"
+                        [ngStyle]="{ height: ajusteColuna(comunicacaoLikeDislikeModel1.PercNaoGosteiPouco), display: comunicacaoLikeDislikeModel1.PercNaoGosteiPouco == 0 ? 'none' : 'block'}">
+                        <div class="div-bolha">
+                            <div class="bolha-resultado">
+                                {{ comunicacaoLikeDislikeModel1.PercNaoGosteiPouco }}
+                            </div>
+                            <div class="seta-resultado">
+                                <div class={{validaSig(comunicacaoLikeDislikeModel1.TesteSigNaoGosteiPouco)}}></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="div-texto-bottom">
+                        <div class="div-resultado-bottom">
+                            <p [ngClass]="{'base-vermelha' : comunicacaoLikeDislikeModel1.BaseMinima != '' , '':comunicacaoLikeDislikeModel1.BaseMinima==''}"
+                                class="paragrafo-valor-base">{{ comunicacaoLikeDislikeModel1.BaseAbs }}</p>
+                        </div>
+                    </div>
+                </div>
+            </td>
+
+            <!-- COLUNA 2 -->
+            <td style="display: none;">
+                <div class="div-principal-grafico-colunas">
+
+                    <div class="group-filtro-coluna">
+                        <select-image [IndexCombo]=1 (ImageModelMarcas)="onchangeMarcaColuna2($event)"></select-image>
+                    </div>
+
+                    <div class="bolha-topo-grafico">
+                        <div class="bolha-resultado-topo">
+                            {{ comunicacaoLikeDislikeModel2.PercT2B }}
+                        </div>
+                        <div class="seta-resultado">
+                            <div class={{validaSig(comunicacaoLikeDislikeModel2.TesteSigT2B)}}></div>
+                        </div>
+                    </div>
+
+                    <div class="coluna-sem-dados"
+                        [ngStyle]="{ display: validaColunaSemDados(comunicacaoLikeDislikeModel2) ? 'none' : 'block'}">
+                    </div>
+
+                    <div class="coluna1"
+                        [ngStyle]="{ height: ajusteColuna(comunicacaoLikeDislikeModel2.PercGostei), display: comunicacaoLikeDislikeModel2.PercGostei == 0 ? 'none' : 'block'}">
+                        <div class="div-bolha">
+                            <div class="bolha-resultado">
+                                {{ comunicacaoLikeDislikeModel2.PercGostei }}
+                            </div>
+                            <div class="seta-resultado">
+                                <div class={{validaSig(comunicacaoLikeDislikeModel2.TesteSIGGostei)}}></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="coluna2"
+                        [ngStyle]="{ height: ajusteColuna(comunicacaoLikeDislikeModel2.PercGosteiPouco), display: comunicacaoLikeDislikeModel2.PercGosteiPouco == 0 ? 'none' : 'block'}">
+                        <div class="div-bolha">
+                            <div class="bolha-resultado">
+                                {{ comunicacaoLikeDislikeModel2.PercGosteiPouco }}
+                            </div>
+                            <div class="seta-resultado">
+                                <div class={{validaSig(comunicacaoLikeDislikeModel2.TesteSIGGosteiPouco)}}></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="coluna3"
+                        [ngStyle]="{ height: ajusteColuna(comunicacaoLikeDislikeModel2.PercNenhum), display: comunicacaoLikeDislikeModel2.PercNenhum == 0 ? 'none' : 'block'}">
+                        <div class="div-bolha">
+                            <div class="bolha-resultado">
+                                {{ comunicacaoLikeDislikeModel2.PercNenhum }}
+                            </div>
+                            <div class="seta-resultado">
+                                <div class={{validaSig(comunicacaoLikeDislikeModel2.TesteSIGNenhum)}}></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="coluna4"
+                        [ngStyle]="{ height: ajusteColuna(comunicacaoLikeDislikeModel2.PercNaoGostei), display: comunicacaoLikeDislikeModel2.PercNaoGostei == 0 ? 'none' : 'block'}">
+                        <div class="div-bolha">
+                            <div class="bolha-resultado">
+                                {{ comunicacaoLikeDislikeModel2.PercNaoGostei }}
+                            </div>
+                            <div class="seta-resultado">
+                                <div class={{validaSig(comunicacaoLikeDislikeModel2.TesteSigNaoGostei)}}></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="coluna5"
+                        [ngStyle]="{ height: ajusteColuna(comunicacaoLikeDislikeModel2.PercNaoGosteiPouco), display: comunicacaoLikeDislikeModel2.PercNaoGosteiPouco == 0 ? 'none' : 'block'}">
+                        <div class="div-bolha">
+                            <div class="bolha-resultado">
+                                {{ comunicacaoLikeDislikeModel2.PercNaoGosteiPouco }}
+                            </div>
+                            <div class="seta-resultado">
+                                <div class={{validaSig(comunicacaoLikeDislikeModel2.TesteSigNaoGosteiPouco)}}></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="div-texto-bottom">
+                        <div class="div-resultado-bottom">
+                            <p [ngClass]="{'base-vermelha' : comunicacaoLikeDislikeModel2.BaseMinima != '' , '':comunicacaoLikeDislikeModel2.BaseMinima==''}"
+                                class="paragrafo-valor-base">{{ comunicacaoLikeDislikeModel2.BaseAbs }}</p>
+                        </div>
+                    </div>
+                </div>
+            </td>
+
+            <!-- COLUNA 3 -->
+            <td style="display: none;">
+                <div class="div-principal-grafico-colunas">
+
+                    <div class="group-filtro-coluna">
+                        <select-image [IndexCombo]=2 (ImageModelMarcas)="onchangeMarcaColuna3($event)"></select-image>
+                    </div>
+
+                    <div class="bolha-topo-grafico">
+                        <div class="bolha-resultado-topo">
+                            {{ comunicacaoLikeDislikeModel3.PercT2B }}
+                        </div>
+                        <div class="seta-resultado">
+                            <div class={{validaSig(comunicacaoLikeDislikeModel3.TesteSigT2B)}}></div>
+                        </div>
+                    </div>
+
+                    <div class="coluna-sem-dados"
+                        [ngStyle]="{ display: validaColunaSemDados(comunicacaoLikeDislikeModel3) ? 'none' : 'block'}">
+                    </div>
+
+                    <div class="coluna1"
+                        [ngStyle]="{ height: ajusteColuna(comunicacaoLikeDislikeModel3.PercGostei), display: comunicacaoLikeDislikeModel3.PercGostei == 0 ? 'none' : 'block'}">
+                        <div class="div-bolha">
+                            <div class="bolha-resultado">
+                                {{ comunicacaoLikeDislikeModel3.PercGostei }}
+                            </div>
+                            <div class="seta-resultado">
+                                <div class={{validaSig(comunicacaoLikeDislikeModel3.TesteSIGGostei)}}></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="coluna2"
+                        [ngStyle]="{ height: ajusteColuna(comunicacaoLikeDislikeModel3.PercGosteiPouco), display: comunicacaoLikeDislikeModel3.PercGosteiPouco == 0 ? 'none' : 'block'}">
+                        <div class="div-bolha">
+                            <div class="bolha-resultado">
+                                {{ comunicacaoLikeDislikeModel3.PercGosteiPouco }}
+                            </div>
+                            <div class="seta-resultado">
+                                <div class={{validaSig(comunicacaoLikeDislikeModel3.TesteSIGGosteiPouco)}}></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="coluna3"
+                        [ngStyle]="{ height: ajusteColuna(comunicacaoLikeDislikeModel3.PercNenhum), display: comunicacaoLikeDislikeModel3.PercNenhum == 0 ? 'none' : 'block'}">
+                        <div class="div-bolha">
+                            <div class="bolha-resultado">
+                                {{ comunicacaoLikeDislikeModel3.PercNenhum }}
+                            </div>
+                            <div class="seta-resultado">
+                                <div class={{validaSig(comunicacaoLikeDislikeModel3.TesteSIGNenhum)}}></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="coluna4"
+                        [ngStyle]="{ height: ajusteColuna(comunicacaoLikeDislikeModel3.PercNaoGostei), display: comunicacaoLikeDislikeModel3.PercNaoGostei == 0 ? 'none' : 'block'}">
+                        <div class="div-bolha">
+                            <div class="bolha-resultado">
+                                {{ comunicacaoLikeDislikeModel3.PercNaoGostei }}
+                            </div>
+                            <div class="seta-resultado">
+                                <div class={{validaSig(comunicacaoLikeDislikeModel3.TesteSigNaoGostei)}}></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="coluna5"
+                        [ngStyle]="{ height: ajusteColuna(comunicacaoLikeDislikeModel3.PercNaoGosteiPouco), display: comunicacaoLikeDislikeModel3.PercNaoGosteiPouco == 0 ? 'none' : 'block'}">
+                        <div class="div-bolha">
+                            <div class="bolha-resultado">
+                                {{ comunicacaoLikeDislikeModel3.PercNaoGosteiPouco }}
+                            </div>
+                            <div class="seta-resultado">
+                                <div class={{validaSig(comunicacaoLikeDislikeModel3.TesteSigNaoGosteiPouco)}}></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="div-texto-bottom">
+                        <div class="div-resultado-bottom">
+                            <p [ngClass]="{'base-vermelha' : comunicacaoLikeDislikeModel3.BaseMinima != '' , '':comunicacaoLikeDislikeModel3.BaseMinima==''}"
+                                class="paragrafo-valor-base">{{ comunicacaoLikeDislikeModel3.BaseAbs }}</p>
+                        </div>
+                    </div>
+                </div>
+            </td>
+
+            <!-- COLUNA 4 -->
+            <td style="display: none;">
+                <div class="div-principal-grafico-colunas">
+
+                    <div class="group-filtro-coluna">
+                        <select-image [IndexCombo]=3 (ImageModelMarcas)="onchangeMarcaColuna4($event)"></select-image>
+                    </div>
+
+                    <div class="bolha-topo-grafico">
+                        <div class="bolha-resultado-topo">
+                            {{ comunicacaoLikeDislikeModel4.PercT2B }}
+                        </div>
+                        <div class="seta-resultado">
+                            <div class={{validaSig(comunicacaoLikeDislikeModel4.TesteSigT2B)}}></div>
+                        </div>
+                    </div>
+
+                    <div class="coluna-sem-dados"
+                        [ngStyle]="{ display: validaColunaSemDados(comunicacaoLikeDislikeModel4) ? 'none' : 'block'}">
+                    </div>
+
+                    <div class="coluna1"
+                        [ngStyle]="{ height: ajusteColuna(comunicacaoLikeDislikeModel4.PercGostei), display: comunicacaoLikeDislikeModel4.PercGostei == 0 ? 'none' : 'block'}">
+                        <div class="div-bolha">
+                            <div class="bolha-resultado">
+                                {{ comunicacaoLikeDislikeModel4.PercGostei }}
+                            </div>
+                            <div class="seta-resultado">
+                                <div class={{validaSig(comunicacaoLikeDislikeModel4.TesteSIGGostei)}}></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="coluna2"
+                        [ngStyle]="{ height: ajusteColuna(comunicacaoLikeDislikeModel4.PercGosteiPouco), display: comunicacaoLikeDislikeModel4.PercGosteiPouco == 0 ? 'none' : 'block'}">
+                        <div class="div-bolha">
+                            <div class="bolha-resultado">
+                                {{ comunicacaoLikeDislikeModel4.PercGosteiPouco }}
+                            </div>
+                            <div class="seta-resultado">
+                                <div class={{validaSig(comunicacaoLikeDislikeModel4.TesteSIGGosteiPouco)}}></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="coluna3"
+                        [ngStyle]="{ height: ajusteColuna(comunicacaoLikeDislikeModel4.PercNenhum), display: comunicacaoLikeDislikeModel4.PercNenhum == 0 ? 'none' : 'block'}">
+                        <div class="div-bolha">
+                            <div class="bolha-resultado">
+                                {{ comunicacaoLikeDislikeModel4.PercNenhum }}
+                            </div>
+                            <div class="seta-resultado">
+                                <div class={{validaSig(comunicacaoLikeDislikeModel4.TesteSIGNenhum)}}></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="coluna4"
+                        [ngStyle]="{ height: ajusteColuna(comunicacaoLikeDislikeModel4.PercNaoGostei), display: comunicacaoLikeDislikeModel4.PercNaoGostei == 0 ? 'none' : 'block'}">
+                        <div class="div-bolha">
+                            <div class="bolha-resultado">
+                                {{ comunicacaoLikeDislikeModel4.PercNaoGostei }}
+                            </div>
+                            <div class="seta-resultado">
+                                <div class={{validaSig(comunicacaoLikeDislikeModel4.TesteSigNaoGostei)}}></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="coluna5"
+                        [ngStyle]="{ height: ajusteColuna(comunicacaoLikeDislikeModel4.PercNaoGosteiPouco), display: comunicacaoLikeDislikeModel4.PercNaoGosteiPouco == 0 ? 'none' : 'block'}">
+                        <div class="div-bolha">
+                            <div class="bolha-resultado">
+                                {{ comunicacaoLikeDislikeModel4.PercNaoGosteiPouco }}
+                            </div>
+                            <div class="seta-resultado">
+                                <div class={{validaSig(comunicacaoLikeDislikeModel4.TesteSigNaoGosteiPouco)}}></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="div-texto-bottom">
+                        <div class="div-resultado-bottom">
+                            <p [ngClass]="{'base-vermelha' : comunicacaoLikeDislikeModel4.BaseMinima != '' , '':comunicacaoLikeDislikeModel4.BaseMinima==''}"
+                                class="paragrafo-valor-base">{{ comunicacaoLikeDislikeModel4.BaseAbs }}</p>
+                        </div>
+                    </div>
+                </div>
+            </td>
+
+            <!-- COLUNA 5 -->
+           <td style="display: none;">
+                <div class="div-principal-grafico-colunas">
+
+                    <div class="group-filtro-coluna">
+                        <select-image [IndexCombo]=4 (ImageModelMarcas)="onchangeMarcaColuna5($event)"></select-image>
+                    </div>
+
+                    <div class="bolha-topo-grafico">
+                        <div class="bolha-resultado-topo">
+                            {{ comunicacaoLikeDislikeModel5.PercT2B }}
+                        </div>
+                        <div class="seta-resultado">
+                            <div class={{validaSig(comunicacaoLikeDislikeModel5.TesteSigT2B)}}></div>
+                        </div>
+                    </div>
+
+                    <div class="coluna-sem-dados"
+                        [ngStyle]="{ display: validaColunaSemDados(comunicacaoLikeDislikeModel5) ? 'none' : 'block'}">
+                    </div>
+
+                    <div class="coluna1"
+                        [ngStyle]="{ height: ajusteColuna(comunicacaoLikeDislikeModel5.PercGostei), display: comunicacaoLikeDislikeModel5.PercGostei == 0 ? 'none' : 'block'}">
+                        <div class="div-bolha">
+                            <div class="bolha-resultado">
+                                {{ comunicacaoLikeDislikeModel5.PercGostei }}
+                            </div>
+                            <div class="seta-resultado">
+                                <div class={{validaSig(comunicacaoLikeDislikeModel5.TesteSIGGostei)}}></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="coluna2"
+                        [ngStyle]="{ height: ajusteColuna(comunicacaoLikeDislikeModel5.PercGosteiPouco), display: comunicacaoLikeDislikeModel5.PercGosteiPouco == 0 ? 'none' : 'block'}">
+                        <div class="div-bolha">
+                            <div class="bolha-resultado">
+                                {{ comunicacaoLikeDislikeModel5.PercGosteiPouco }}
+                            </div>
+                            <div class="seta-resultado">
+                                <div class={{validaSig(comunicacaoLikeDislikeModel5.TesteSIGGosteiPouco)}}></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="coluna3"
+                        [ngStyle]="{ height: ajusteColuna(comunicacaoLikeDislikeModel5.PercNenhum), display: comunicacaoLikeDislikeModel5.PercNenhum == 0 ? 'none' : 'block'}">
+                        <div class="div-bolha">
+                            <div class="bolha-resultado">
+                                {{ comunicacaoLikeDislikeModel5.PercNenhum }}
+                            </div>
+                            <div class="seta-resultado">
+                                <div class={{validaSig(comunicacaoLikeDislikeModel5.TesteSIGNenhum)}}></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="coluna4"
+                        [ngStyle]="{ height: ajusteColuna(comunicacaoLikeDislikeModel5.PercNaoGostei), display: comunicacaoLikeDislikeModel5.PercNaoGostei == 0 ? 'none' : 'block'}">
+                        <div class="div-bolha">
+                            <div class="bolha-resultado">
+                                {{ comunicacaoLikeDislikeModel5.PercNaoGostei }}
+                            </div>
+                            <div class="seta-resultado">
+                                <div class={{validaSig(comunicacaoLikeDislikeModel5.TesteSigNaoGostei)}}></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="coluna5"
+                        [ngStyle]="{ height: ajusteColuna(comunicacaoLikeDislikeModel5.PercNaoGosteiPouco), display: comunicacaoLikeDislikeModel5.PercNaoGosteiPouco == 0 ? 'none' : 'block'}">
+                        <div class="div-bolha">
+                            <div class="bolha-resultado">
+                                {{ comunicacaoLikeDislikeModel5.PercNaoGosteiPouco }}
+                            </div>
+                            <div class="seta-resultado">
+                                <div class={{validaSig(comunicacaoLikeDislikeModel5.TesteSigNaoGosteiPouco)}}></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="div-texto-bottom">
+                        <div class="div-resultado-bottom">
+                            <p [ngClass]="{'base-vermelha' : comunicacaoLikeDislikeModel5.BaseMinima != '' , '':comunicacaoLikeDislikeModel5.BaseMinima==''}"
+                                class="paragrafo-valor-base">{{ comunicacaoLikeDislikeModel5.BaseAbs }}</p>
+                        </div>
+                    </div>
+                </div>
+            </td>
+
+        </tr>
+    </table>
+</div>
+
+<div class="descricao-base">
+    {{verificaMsgBase()}}
+</div>

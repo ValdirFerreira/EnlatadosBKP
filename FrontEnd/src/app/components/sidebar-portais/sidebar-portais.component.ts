@@ -53,6 +53,8 @@ export class SidebarPortaisComponent implements OnInit {
     this.menuService.activeMenu = menu;
     this.menuService.menuSelecao = menu.toString();
 
+    this.redefineFiltroOndas();
+
 
     // if (menu == 1) {
     //   this.menuService.nomePage = this.translate.instant('navbar.dashboard-one');
@@ -128,6 +130,9 @@ export class SidebarPortaisComponent implements OnInit {
   redefineFiltroSemDenominators() {
     if (this.filtroService.listaDenominators)
       this.filtroService.ModelDenominators = this.filtroService.listaDenominators[0];
+
+
+  
   }
 
   FiltroMarcas() {
@@ -234,6 +239,26 @@ export class SidebarPortaisComponent implements OnInit {
     // console.log(textoDescriptografado);
 
   }
+
+
+
+redefineFiltroOndas()
+{
+// alert()
+//   location.reload();
+//     this.filtroService.FiltroOnda()
+//       .subscribe((response: Array<PadraoComboFiltro>) => {
+//         this.filtroService.listaOnda = response;
+//         this.filtroService.ModelOnda = response[0];
+
+        
+
+//    }, (error) => console.error(error),
+//         () => {
+//         }
+//       )
+
+}
 
   alertUserLogin() {
     alert("você precisa fazer o login novamente");

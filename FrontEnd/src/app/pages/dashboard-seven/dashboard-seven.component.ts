@@ -69,9 +69,21 @@ export class DashboardSevenComponent implements OnInit {
     this.menuService.menuSelecao = "7"
 
     EventEmitterService.get("emit-dashboard-seven").subscribe((x) => {
-      this.carregaFiltroSTB();
 
-      this.carregarGraficos();
+      this.filtroService.FiltroOnda()
+        .subscribe((response: Array<PadraoComboFiltro>) => {
+          this.filtroService.listaOnda = response;
+          // this.filtroService.ModelOnda = response[0];
+          this.carregaFiltroSTB();
+
+          this.carregarGraficos();
+
+        }, (error) => console.error(error),
+          () => {
+          }
+        )
+
+
 
       this.logService.GravaLogRota(this.router.url).subscribe(
       );
@@ -108,7 +120,7 @@ export class DashboardSevenComponent implements OnInit {
 
 
     var filtros = new FiltroPadrao();
-    var list =[];
+    var list = [];
     list.push(this.filtroService.ModelTarget);
     filtros.Target = list;
     filtros.Regiao = this.filtroService.ModelRegiao;
@@ -134,7 +146,7 @@ export class DashboardSevenComponent implements OnInit {
           this.carregarGraficoComunicacaoDiagnostico();
           this.carregarGraficoComunicacaoRecall();
 
-           this.carregarGraficoComunicacaoSource();
+          this.carregarGraficoComunicacaoSource();
 
         }, (error) => { console.error(error) },
           () => { })
@@ -144,7 +156,7 @@ export class DashboardSevenComponent implements OnInit {
       this.carregarGraficoComunicacaoDiagnostico();
       this.carregarGraficoComunicacaoRecall();
 
-       this.carregarGraficoComunicacaoSource();
+      this.carregarGraficoComunicacaoSource();
     }
   }
 
@@ -324,9 +336,9 @@ export class DashboardSevenComponent implements OnInit {
 
 
 
-ativaComunicacaoLikeDislike: boolean = true;
+  ativaComunicacaoLikeDislike: boolean = true;
 
-carregarComunicacaoLikeDislikeFirstLoad() {
+  carregarComunicacaoLikeDislikeFirstLoad() {
 
     var filtroColuna1 = this.carregaFiltros();
     filtroColuna1.Marca = new Array<PadraoComboFiltro>();
@@ -334,10 +346,10 @@ carregarComunicacaoLikeDislikeFirstLoad() {
     filtroColuna1.Sequencia = 1;
 
     this.dashBoardTwoService.carregarComunicacaoLikeDislikeComparativoMarcas(filtroColuna1)
-        .subscribe((coluna1: ComunicacaoLikeDislikeModel) => {
-          debugger
-            this.comunicacaoLikeDislikeModel1 = coluna1;
-        }, (error) => console.error(error));
+      .subscribe((coluna1: ComunicacaoLikeDislikeModel) => {
+        debugger
+        this.comunicacaoLikeDislikeModel1 = coluna1;
+      }, (error) => console.error(error));
 
 
 
@@ -347,9 +359,9 @@ carregarComunicacaoLikeDislikeFirstLoad() {
     filtroColuna2.Sequencia = 2;
 
     this.dashBoardTwoService.carregarComunicacaoLikeDislikeComparativoMarcas(filtroColuna2)
-        .subscribe((coluna2: ComunicacaoLikeDislikeModel) => {
-            this.comunicacaoLikeDislikeModel2 = coluna2;
-        }, (error) => console.error(error));
+      .subscribe((coluna2: ComunicacaoLikeDislikeModel) => {
+        this.comunicacaoLikeDislikeModel2 = coluna2;
+      }, (error) => console.error(error));
 
 
 
@@ -359,9 +371,9 @@ carregarComunicacaoLikeDislikeFirstLoad() {
     filtroColuna3.Sequencia = 3;
 
     this.dashBoardTwoService.carregarComunicacaoLikeDislikeComparativoMarcas(filtroColuna3)
-        .subscribe((coluna3: ComunicacaoLikeDislikeModel) => {
-            this.comunicacaoLikeDislikeModel3 = coluna3;
-        }, (error) => console.error(error));
+      .subscribe((coluna3: ComunicacaoLikeDislikeModel) => {
+        this.comunicacaoLikeDislikeModel3 = coluna3;
+      }, (error) => console.error(error));
 
 
 
@@ -371,9 +383,9 @@ carregarComunicacaoLikeDislikeFirstLoad() {
     filtroColuna4.Sequencia = 4;
 
     this.dashBoardTwoService.carregarComunicacaoLikeDislikeComparativoMarcas(filtroColuna4)
-        .subscribe((coluna4: ComunicacaoLikeDislikeModel) => {
-            this.comunicacaoLikeDislikeModel4 = coluna4;
-        }, (error) => console.error(error));
+      .subscribe((coluna4: ComunicacaoLikeDislikeModel) => {
+        this.comunicacaoLikeDislikeModel4 = coluna4;
+      }, (error) => console.error(error));
 
 
 
@@ -383,46 +395,46 @@ carregarComunicacaoLikeDislikeFirstLoad() {
     filtroColuna5.Sequencia = 5;
 
     this.dashBoardTwoService.carregarComunicacaoLikeDislikeComparativoMarcas(filtroColuna5)
-        .subscribe((coluna5: ComunicacaoLikeDislikeModel) => {
+      .subscribe((coluna5: ComunicacaoLikeDislikeModel) => {
 
-            this.comunicacaoLikeDislikeModel5 = coluna5;
+        this.comunicacaoLikeDislikeModel5 = coluna5;
 
-            this.ativaComunicacaoLikeDislike = true;
+        this.ativaComunicacaoLikeDislike = true;
 
-        }, (error) => console.error(error));
-}
+      }, (error) => console.error(error));
+  }
 
 
 
-carregarGraficos() {
+  carregarGraficos() {
 
     this.filtroService.FiltroMarcas(this.filtroService.ModelRegiao)
-        .subscribe((response: Array<PadraoComboFiltro>) => {
+      .subscribe((response: Array<PadraoComboFiltro>) => {
 
-            this.filtroService.listaMarcas = response;
+        this.filtroService.listaMarcas = response;
 
-            this.marcaColuna1 = null;
-            this.marcaColuna2 = null;
-            this.marcaColuna3 = null;
-            this.marcaColuna4 = null;
-            this.marcaColuna5 = null;
+        this.marcaColuna1 = null;
+        this.marcaColuna2 = null;
+        this.marcaColuna3 = null;
+        this.marcaColuna4 = null;
+        this.marcaColuna5 = null;
 
-            this.ativaComunicacaoLikeDislike = false;
+        this.ativaComunicacaoLikeDislike = false;
 
-            this.comunicacaoLikeDislikeModel1 = null;
-            this.comunicacaoLikeDislikeModel2 = null;
-            this.comunicacaoLikeDislikeModel3 = null;
-            this.comunicacaoLikeDislikeModel4 = null;
-            this.comunicacaoLikeDislikeModel5 = null;
+        this.comunicacaoLikeDislikeModel1 = null;
+        this.comunicacaoLikeDislikeModel2 = null;
+        this.comunicacaoLikeDislikeModel3 = null;
+        this.comunicacaoLikeDislikeModel4 = null;
+        this.comunicacaoLikeDislikeModel5 = null;
 
-            this.carregaFiltroMarcas();
+        this.carregaFiltroMarcas();
 
-            this.carregarComunicacaoLikeDislikeFirstLoad();
+        this.carregarComunicacaoLikeDislikeFirstLoad();
 
-        }, (error) => console.error(error));
-}
+      }, (error) => console.error(error));
+  }
 
- public carregaFiltroMarcas() {
+  public carregaFiltroMarcas() {
 
     if (!this.marcaColuna1)
       this.marcaColuna1 = this.filtroService.listaMarcas[0]
@@ -443,11 +455,11 @@ carregarGraficos() {
   }
 
 
-comunicacaoLikeDislikeModel1 = new ComunicacaoLikeDislikeModel();
-comunicacaoLikeDislikeModel2 = new ComunicacaoLikeDislikeModel();
-comunicacaoLikeDislikeModel3 = new ComunicacaoLikeDislikeModel();
-comunicacaoLikeDislikeModel4 = new ComunicacaoLikeDislikeModel();
-comunicacaoLikeDislikeModel5 = new ComunicacaoLikeDislikeModel();
+  comunicacaoLikeDislikeModel1 = new ComunicacaoLikeDislikeModel();
+  comunicacaoLikeDislikeModel2 = new ComunicacaoLikeDislikeModel();
+  comunicacaoLikeDislikeModel3 = new ComunicacaoLikeDislikeModel();
+  comunicacaoLikeDislikeModel4 = new ComunicacaoLikeDislikeModel();
+  comunicacaoLikeDislikeModel5 = new ComunicacaoLikeDislikeModel();
 
 
   // Filtros de Marca para utilização da geração do Excel Grafico Comparativo Marcas 
@@ -468,41 +480,41 @@ comunicacaoLikeDislikeModel5 = new ComunicacaoLikeDislikeModel();
     filtroColuna.ParamDenominators = 1;
 
     this.dashBoardTwoService
-        .carregarComunicacaoLikeDislikeComparativoMarcas(filtroColuna)
-        .subscribe((retorno: ComunicacaoLikeDislikeModel) => {
+      .carregarComunicacaoLikeDislikeComparativoMarcas(filtroColuna)
+      .subscribe((retorno: ComunicacaoLikeDislikeModel) => {
 
-            switch (nCol) {
+        switch (nCol) {
 
-                case 1:
-                    this.comunicacaoLikeDislikeModel1 = retorno;
-                    this.marcaColuna1 = item;
-                    break;
+          case 1:
+            this.comunicacaoLikeDislikeModel1 = retorno;
+            this.marcaColuna1 = item;
+            break;
 
-                case 2:
-                    this.comunicacaoLikeDislikeModel2 = retorno;
-                    this.marcaColuna2 = item;
-                    break;
+          case 2:
+            this.comunicacaoLikeDislikeModel2 = retorno;
+            this.marcaColuna2 = item;
+            break;
 
-                case 3:
-                    this.comunicacaoLikeDislikeModel3 = retorno;
-                    this.marcaColuna3 = item;
-                    break;
+          case 3:
+            this.comunicacaoLikeDislikeModel3 = retorno;
+            this.marcaColuna3 = item;
+            break;
 
-                case 4:
-                    this.comunicacaoLikeDislikeModel4 = retorno;
-                    this.marcaColuna4 = item;
-                    break;
+          case 4:
+            this.comunicacaoLikeDislikeModel4 = retorno;
+            this.marcaColuna4 = item;
+            break;
 
-                case 5:
-                    this.comunicacaoLikeDislikeModel5 = retorno;
-                    this.marcaColuna5 = item;
-                    break;
-            }
+          case 5:
+            this.comunicacaoLikeDislikeModel5 = retorno;
+            this.marcaColuna5 = item;
+            break;
+        }
 
-        },
+      },
         (error) => console.error(error),
         () => { });
-}
+  }
 
-  
+
 }

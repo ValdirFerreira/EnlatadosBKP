@@ -102,6 +102,12 @@ namespace DataAccess.Filtros
                 var TrataFiltros = new TrataFiltros();
                 var parametros = TrataFiltros.MontaParametrosFiltros(filtro);
 
+                if (filtro.ParamTarget > 0)
+                {
+                    parametros.Add("@ParamListaTarget", "99");
+                }
+
+
                 using (SqlConnection conexaoBD = new SqlConnection(Conexao.strConexao))
                 {
                     retorno = conexaoBD.Query<PadraoComboFiltro>("pr_FiltroOnda", parametros, null, true, 300, System.Data.CommandType.StoredProcedure).ToList();

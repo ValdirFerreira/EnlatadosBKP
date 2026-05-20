@@ -5,6 +5,7 @@ import { HttpBackend, HttpClient, HttpHeaders, HttpParams } from '@angular/commo
 import { ParamGeralFiltro } from './param-filtro';
 import { Session } from '../pages/home/guards/session';
 import * as moment from 'moment';
+import { Router } from '@angular/router';
 
 @Injectable({
   providedIn: 'root'
@@ -49,7 +50,7 @@ export class FiltroGlobalService {
 
   private environmentAccess: string[] = ['DEV', 'HML', 'PROD'];
 
-  constructor(public httpClient: HttpClient, public httpClient2: HttpClient, handler: HttpBackend, private session: Session) {
+  constructor(public httpClient: HttpClient, public httpClient2: HttpClient, handler: HttpBackend, private session: Session, public router: Router) {
     this.httpClient2 = new HttpClient(handler);
   }
 
@@ -107,18 +108,38 @@ export class FiltroGlobalService {
     );
   }
 
-  FiltroOnda() {
+  FiltroOnda(filtro: number = null) {
+
+    debugger
+    
+
+    let filtroOnda = this.carregaParametrosFiltro();
+
+    //   // aplica somente na rota dashboard-brand-creator
+    if (this.router.url.indexOf('/dashboard-brand-creator') > -1) {
+      //alert('filtroOnda.ParamTarget = 99;');
+      filtroOnda.ParamTarget = 99;
+    }
+
+    // ou mantém a validação anterior também
+    // if (filtro) {
+    //   filtroOnda.ParamTarget = 99;
+    // }
+    // else{
+    //   filtroOnda.ParamTarget = null;
+    // }
+
     return this.httpClient.post<Array<PadraoComboFiltro>>(
       `${this.baseUrl}/filtros/FiltroOnda/`,
-      this.carregaParametrosFiltro()
+      filtroOnda
     );
   }
 
   FiltroMarcas(modelRegiao: Array<PadraoComboFiltro> = null) {
     var filtro = this.carregaParametrosFiltro();
 
-    if(modelRegiao)
-     filtro.Regiao = modelRegiao;
+    if (modelRegiao)
+      filtro.Regiao = modelRegiao;
     // else{
     //   filtro.Regiao = this.listaRegiao
     // }
@@ -135,7 +156,7 @@ export class FiltroGlobalService {
       filtro.CodOndaParam = this.ModelOnda.IdItem;
     }
     else {
-      filtro.CodOndaParam = this.listaOnda? this.listaOnda[0].IdItem : 2;
+      filtro.CodOndaParam = this.listaOnda ? this.listaOnda[0].IdItem : 2;
     }
 
 
@@ -157,7 +178,7 @@ export class FiltroGlobalService {
   }
 
 
-  FiltroMarcasAdHoc(CodBlocoParam : number) {
+  FiltroMarcasAdHoc(CodBlocoParam: number) {
     var filtro = this.carregaParametrosFiltro();
     filtro.CodBlocoParam = CodBlocoParam;
     return this.httpClient.post<Array<PadraoComboFiltro>>(
@@ -183,7 +204,7 @@ export class FiltroGlobalService {
 
   FiltroAtributos(tipoBia: number) {
     var param = this.carregaParametrosFiltro();
-     param.ParamTarget = tipoBia
+    param.ParamTarget = tipoBia
 
     // if (this.ModelTarget && this.ModelTarget.IdItem > 1) {
     //   param.ParamBIA = this.ModelTarget.IdItem;
@@ -199,8 +220,8 @@ export class FiltroGlobalService {
     //   param.CodOndaParam = this.listaOnda? this.listaOnda[0].IdItem : 2;
     // }
 
-param.ParamBIA = 1;
-param.CodOndaParam = this.ModelOnda.IdItem;
+    param.ParamBIA = 1;
+    param.CodOndaParam = this.ModelOnda.IdItem;
 
     return this.httpClient.post<Array<PadraoComboFiltro>>(
       `${this.baseUrl}/filtros/FiltroAtributos/`,
@@ -225,9 +246,9 @@ param.CodOndaParam = this.ModelOnda.IdItem;
     );
   }
 
-  FiltroAdHoc() { 
+  FiltroAdHoc() {
 
-    
+
     return this.httpClient.post<Array<PadraoComboFiltro>>(
       `${this.baseUrl}/filtros/FiltroAdHoc/`,
       null

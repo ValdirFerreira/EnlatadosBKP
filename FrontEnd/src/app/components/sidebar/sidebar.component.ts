@@ -108,6 +108,9 @@ export class SidebarComponent implements OnInit {
     }
 
     if (menu == 6) {
+
+
+
       this.FiltroMarcas();
       this.menuService.nomePage = this.translate.instant('navbar.dashboard-six');
       this.router.navigate(['/dashboard-brand-creator']);
@@ -160,12 +163,40 @@ export class SidebarComponent implements OnInit {
 
   }
 
+
+   redefineFiltroOndas(menu: number = null) {
+
+
+    // let filtroOnda = null;
+    // // aplica somente na rota dashboard-brand-creator
+    // if (menu == 6) {
+    //   location.reload();
+    //   filtroOnda = 99;
+    // }
+
+    //    this.filtroService.listaOnda = null;
+    //     this.filtroService.ModelOnda = null;
+
+    // this.filtroService.FiltroOnda()
+    //   .subscribe((response: Array<PadraoComboFiltro>) => {
+    //     this.filtroService.listaOnda = response;
+    //     this.filtroService.ModelOnda = response[0];
+        
+
+    //   }, (error) => console.error(error),
+    //     () => {
+    //     }
+    //   )
+
+  }
+
+
   FiltroMarcas() {
 
     this.filtroService.FiltroOnda()
       .subscribe((response: Array<PadraoComboFiltro>) => {
-        this.filtroService.listaOnda = response;
-        this.filtroService.ModelOnda = response[0];
+        // this.filtroService.listaOnda = response;
+        // this.filtroService.ModelOnda = response[0];
 
         // this.filtroService.FiltroRegiao()
         // .subscribe((response: Array<PadraoComboFiltro>) => {

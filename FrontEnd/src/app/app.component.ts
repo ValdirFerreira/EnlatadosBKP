@@ -5,6 +5,7 @@ import { FiltroGlobalService } from './services/filtro-global.service';
 import * as moment from 'moment';
 import { AuthService } from './services/auth.service';
 import { Session } from './pages/home/guards/session';
+import { filter } from 'rxjs/operators';
 
 @Component({
   selector: 'app-root',
@@ -30,6 +31,11 @@ export class AppComponent {
       this.translate.use('por');
     });
 
+
+
+ 
+
+
   }
 
   ngOnInit() {
@@ -51,6 +57,10 @@ export class AppComponent {
         this.callUpdateToken(false);
       }
     });
+
+
+
+
   }
 
 

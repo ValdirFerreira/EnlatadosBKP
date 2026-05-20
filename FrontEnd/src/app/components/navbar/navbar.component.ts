@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core'
-import { Router } from '@angular/router';
+import { NavigationEnd, Router } from '@angular/router';
+import { filter } from 'rxjs/operators';
 import { FiltroPadrao } from 'src/app/models/Filtros/FiltroPadrao';
 import { PadraoComboFiltro } from 'src/app/models/padrao-combo-filtro/padrao-combo-filtro';
 import { PopupMsn } from 'src/app/models/PopupMsn/PopupMsn';
@@ -43,6 +44,31 @@ export class NavbarComponent implements OnInit {
     // {
     //   this.authService.verificaAcesso();
     // }
+
+
+    this.router.events
+      .pipe(
+        filter(event => event instanceof NavigationEnd)
+      )
+      .subscribe((event: NavigationEnd) => {
+
+        // alert(event.urlAfterRedirects);
+
+        // executa sempre que trocar rota
+        this.filtroService.FiltroOnda()
+          .subscribe((response: Array<PadraoComboFiltro>) => {
+            this.filtroService.listaOnda = response;
+             this.filtroService.ModelOnda = response[0];
+
+
+
+          }, (error) => console.error(error),
+            () => {
+            }
+          )
+
+      });
+
 
     var arrayMes = new Array(12);
     arrayMes[0] = "Janeiro";

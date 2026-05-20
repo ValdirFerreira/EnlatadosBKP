@@ -142,7 +142,22 @@ export class DashboardSixComponent implements OnInit {
 
       this.paginaAtiva = false;
 
-      this.carregarGraficos();
+     // alert("Carregando dados, aguarde um momento...");
+
+      this.filtroService.FiltroOnda(99)
+        .subscribe((response: Array<PadraoComboFiltro>) => {
+          this.filtroService.listaOnda = response;
+          // this.filtroService.ModelOnda = response[0];
+
+
+          this.carregarGraficos();
+
+        }, (error) => console.error(error),
+          () => {
+          }
+        )
+
+
 
       this.logService.GravaLogRota(this.router.url).subscribe(
       );

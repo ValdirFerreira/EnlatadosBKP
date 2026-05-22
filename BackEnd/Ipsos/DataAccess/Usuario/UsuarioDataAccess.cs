@@ -43,7 +43,7 @@ namespace DataAccess.Usuario
                 parametros.Add("@CodUserParam", filtro.CodUser);
                 parametros.Add("@CodIdiomaParam", filtro.CodIdioma);
 
-                using (SqlConnection conexaoBD = new SqlConnection(Conexao.strConexaoBHTNestleGrupo))
+                using (SqlConnection conexaoBD = new SqlConnection(Conexao.strConexao))
                 {
                     var list = conexaoBD.Query<PopupMsn>("pr_Lista_PopUp", parametros, null, false, 300, System.Data.CommandType.StoredProcedure).ToList();
 
@@ -128,7 +128,7 @@ namespace DataAccess.Usuario
                 {
                     string sqlComand = @"SELECT *  FROM tblUser with(nolock) where  FlagAtivo = 1 and  CodUser = @CodUser";
 
-                    using (SqlConnection conexaoBD = new SqlConnection(Conexao.strConexaoBHTNestleGrupo))
+                    using (SqlConnection conexaoBD = new SqlConnection(Conexao.strConexao))
                     {
                         var param = new DynamicParameters();
                         param.Add("@CodUser", IpsosSecureResult.UsuarioId);
@@ -158,7 +158,7 @@ namespace DataAccess.Usuario
 
                 string sqlComand = @"SELECT *  FROM tblUser with(nolock) where  FlagAtivo = 1 and  CodUser = @CodUser";
 
-                using (SqlConnection conexaoBD = new SqlConnection(Conexao.strConexaoBHTNestleGrupo))
+                using (SqlConnection conexaoBD = new SqlConnection(Conexao.strConexao))
                 {
                     var param = new DynamicParameters();
                     param.Add("@CodUser", login.CodUser);
@@ -180,7 +180,7 @@ namespace DataAccess.Usuario
             {
                 string sqlComand = @"SELECT *  FROM tblUser with(nolock) where Email =" + "'" + email + "'";
 
-                using (SqlConnection conexaoBD = new SqlConnection(Conexao.strConexaoBHTNestleGrupo))
+                using (SqlConnection conexaoBD = new SqlConnection(Conexao.strConexao))
                 {
 
                     var listusers = conexaoBD.Query<UsuarioModel>(sqlComand, null, null, false, 300, CommandType.Text).ToList();
@@ -210,7 +210,7 @@ namespace DataAccess.Usuario
                 usuarioModel.Token = "";
                 usuarioModel.Password = "Mudar@123";// "nestle1234";
 
-                using (SqlConnection conexaoBD = new SqlConnection(Conexao.strConexaoBHTNestleGrupo))
+                using (SqlConnection conexaoBD = new SqlConnection(Conexao.strConexao))
                 {
                     var q = @"insert into tblUser
                                                 (Name
@@ -271,7 +271,7 @@ namespace DataAccess.Usuario
 
                 usuarioModel.UpdateDate = DateTime.Now;
 
-                using (SqlConnection conexaoBD = new SqlConnection(Conexao.strConexaoBHTNestleGrupo))
+                using (SqlConnection conexaoBD = new SqlConnection(Conexao.strConexao))
                 {
                     var q = @"update tblUser set                                         
                                         FlagPopUp = @FlagPopUp, 
@@ -303,7 +303,7 @@ namespace DataAccess.Usuario
 
                 usuarioModel.UpdateDate = DateTime.Now;
 
-                using (SqlConnection conexaoBD = new SqlConnection(Conexao.strConexaoBHTNestleGrupo))
+                using (SqlConnection conexaoBD = new SqlConnection(Conexao.strConexao))
                 {
                     var q = @"update tblUser set                                         
                                         Name         = @Name,
@@ -345,7 +345,7 @@ namespace DataAccess.Usuario
             {
                 string sqlComand = @"update tblUser set Password = cast(HASHBYTES('SHA2_512', Password) as varchar(100)) where CodUser =" + CodUser;
 
-                using (SqlConnection conexaoBD = new SqlConnection(Conexao.strConexaoBHTNestleGrupo))
+                using (SqlConnection conexaoBD = new SqlConnection(Conexao.strConexao))
                 {
                     var exec = conexaoBD.Execute(sqlComand);
 
@@ -368,7 +368,7 @@ namespace DataAccess.Usuario
             {
                 string sqlComand = @"SELECT *  FROM tblUser with(nolock) ";
 
-                using (SqlConnection conexaoBD = new SqlConnection(Conexao.strConexaoBHTNestleGrupo))
+                using (SqlConnection conexaoBD = new SqlConnection(Conexao.strConexao))
                 {
 
                     var listusers = conexaoBD.Query<UsuarioModel>(sqlComand, null, null, false, 300, CommandType.Text).ToList();
@@ -399,7 +399,7 @@ namespace DataAccess.Usuario
             {
                 usuarioModel.FlagAtivo = false;
 
-                using (SqlConnection conexaoBD = new SqlConnection(Conexao.strConexaoBHTNestleGrupo))
+                using (SqlConnection conexaoBD = new SqlConnection(Conexao.strConexao))
                 {
                     var q = @"update tblUser set                                         
                                         FlagAtivo       = @FlagAtivo
@@ -429,7 +429,7 @@ namespace DataAccess.Usuario
         {
             try
             {
-                using (SqlConnection conexaoBD = new SqlConnection(Conexao.strConexaoBHTNestleGrupo))
+                using (SqlConnection conexaoBD = new SqlConnection(Conexao.strConexao))
                 {
                     var ChecaEmail = new EsqueceuSenhaModel();
 
@@ -524,7 +524,7 @@ namespace DataAccess.Usuario
                 parametros.Add("codEmailEnvioOUT", DbType.Int64, direction: ParameterDirection.Output);
                 string strSql = @"[BRSAP2SQL02\BRSAP2SQL02].IpsosMail.dbo.sp_InsereNovoQuickEmail";
 
-                using (SqlConnection conexaoBD = new SqlConnection(Conexao.strConexaoBHTNestleGrupo))
+                using (SqlConnection conexaoBD = new SqlConnection(Conexao.strConexao))
                 {
                     conexaoBD.Query<int>(strSql, parametros, null, true, null, commandType: CommandType.StoredProcedure);
                     int newID = parametros.Get<int>("codEmailEnvioOUT");
@@ -542,7 +542,7 @@ namespace DataAccess.Usuario
         {
             try
             {
-                using (SqlConnection conexaoBD = new SqlConnection(Conexao.strConexaoBHTNestleGrupo))
+                using (SqlConnection conexaoBD = new SqlConnection(Conexao.strConexao))
                 {
                     var ChecaToken = new ChecaTokenModel();
 
@@ -576,7 +576,7 @@ namespace DataAccess.Usuario
         {
             try
             {
-                using (SqlConnection conexaoBD = new SqlConnection(Conexao.strConexaoBHTNestleGrupo))
+                using (SqlConnection conexaoBD = new SqlConnection(Conexao.strConexao))
                 {
                     if (VerificarSeTokenJaFoiUtilizadoAoAlterarSenha(objAtualizarSenha.Token))
                     {
@@ -609,7 +609,7 @@ namespace DataAccess.Usuario
         {
             try
             {
-                using (SqlConnection conexaoBD = new SqlConnection(Conexao.strConexaoBHTNestleGrupo))
+                using (SqlConnection conexaoBD = new SqlConnection(Conexao.strConexao))
                 {
                     var Email = new AtualizarSenhaModel();
 
@@ -638,7 +638,7 @@ namespace DataAccess.Usuario
             {
                 string sqlComand = @"SELECT *  FROM tblUserBanco with(nolock) ";
 
-                using (SqlConnection conexaoBD = new SqlConnection(Conexao.strConexaoBHTNestleGrupo))
+                using (SqlConnection conexaoBD = new SqlConnection(Conexao.strConexao))
                 {
                     return conexaoBD.Query<UserBanco>(sqlComand, null, null, false, 300, CommandType.Text).ToList();
                 }
@@ -656,7 +656,7 @@ namespace DataAccess.Usuario
             {
                 string sqlComand = @"SELECT *  FROM tblBanco with(nolock) ";
 
-                using (SqlConnection conexaoBD = new SqlConnection(Conexao.strConexaoBHTNestleGrupo))
+                using (SqlConnection conexaoBD = new SqlConnection(Conexao.strConexao))
                 {
                     return conexaoBD.Query<BancoModel>(sqlComand, null, null, false, 300, CommandType.Text).ToList();
                 }
@@ -694,7 +694,7 @@ namespace DataAccess.Usuario
                 {
                     foreach (var userBanco in listUserBanco)
                     {
-                        using (SqlConnection conexaoBD = new SqlConnection(Conexao.strConexaoBHTNestleGrupo))
+                        using (SqlConnection conexaoBD = new SqlConnection(Conexao.strConexao))
                         {
                             var q = @"insert into tblUserBanco
                                                 (CodUser
@@ -732,7 +732,7 @@ namespace DataAccess.Usuario
         {
             try
             {
-                using (SqlConnection conexaoBD = new SqlConnection(Conexao.strConexaoBHTNestleGrupo))
+                using (SqlConnection conexaoBD = new SqlConnection(Conexao.strConexao))
                 {
                     var q = @"DELETE FROM tblUserBanco WHERE CodUser = " + CodUser;
 
@@ -778,7 +778,7 @@ namespace DataAccess.Usuario
                                               join tblBanco B with(nolock) on UB.CodBanco = B.CodBanco
                                               where  B.FlagAtivo = 1 and CodUser =  " + usuarioModel.CodUser;
 
-                using (SqlConnection conexaoBD = new SqlConnection(Conexao.strConexaoBHTNestleGrupo))
+                using (SqlConnection conexaoBD = new SqlConnection(Conexao.strConexao))
                 {
                     return conexaoBD.Query<BancoModel>(sqlComand, null, null, false, 300, CommandType.Text).ToList();
                 }

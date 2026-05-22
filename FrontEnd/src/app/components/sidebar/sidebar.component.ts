@@ -41,7 +41,19 @@ export class SidebarComponent implements OnInit {
 
   filtroMobileAtivo: boolean = false;
 
+  // ngOnInit(): void {
+  //   // this.ListPortalDisponivel();
+  // }
+
+   userADM: boolean = false;
+
+
   ngOnInit(): void {
+  
+    var user = this.session.getUserSession();
+    if (user)
+      this.userADM = user.CodUserPerfil == 1;
+
     // this.ListPortalDisponivel();
   }
 

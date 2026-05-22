@@ -110,7 +110,7 @@
       {{'sidebar.menu9' | translate}}</div>
   </div> -->
 
-  <div class="grupo-menu">
+  <div class="grupo-menu" *ngIf="userADM">
     <div class="container-icone-menu">
       <div class="comunicacao-inativo"
         [ngClass]="{'comunicacao-ativo':router.url.includes('/usuario') , 'comunicacao-inativo': !router.url.includes('/usuario')}"
